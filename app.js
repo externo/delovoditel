@@ -34,7 +34,6 @@ var server = http.createServer(function (req, res) {
         if (ext === 'html') {
           res.setHeader('Cache-Control', 'no-cache, no-store');
         }
-        res.json(env);
         res.end(data);
       }
     });
