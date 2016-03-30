@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="049e9152-c971-46cc-ac3f-2f62a80821dc" name="Default" comment="" />
+    <list default="true" id="049e9152-c971-46cc-ac3f-2f62a80821dc" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/states/admin/admin.js" afterPath="$PROJECT_DIR$/static/states/admin/admin.js" />
+    </list>
     <ignored path="nodejs.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path=".idea/dataSources.local.xml" />
@@ -35,10 +37,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="app.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="app.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.38169256" vertical-offset="459" max-vertical-offset="1054">
+            <state vertical-scroll-proportion="-13.357142" vertical-offset="306" max-vertical-offset="1054">
               <caret line="94" column="0" selection-start-line="94" selection-start-column="0" selection-end-line="94" selection-end-column="0" />
               <folding>
                 <element signature="e#776#881#0" expanded="false" />
@@ -72,20 +74,20 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="admin.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="admin.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/static/states/admin/admin.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="91" max-vertical-offset="1105">
-              <caret line="29" column="31" selection-start-line="29" selection-start-column="31" selection-end-line="29" selection-end-column="31" />
+            <state vertical-scroll-proportion="0.21416804" vertical-offset="193" max-vertical-offset="1139">
+              <caret line="26" column="42" selection-start-line="26" selection-start-column="42" selection-end-line="26" selection-end-column="42" />
               <folding>
                 <element signature="e#319#463#0" expanded="false" />
                 <element signature="e#411#452#0" expanded="false" />
-                <element signature="e#935#1054#0" expanded="false" />
-                <element signature="e#1002#1043#0" expanded="false" />
-                <element signature="e#1450#1658#0" expanded="false" />
-                <element signature="e#1511#1652#0" expanded="false" />
-                <element signature="e#1703#1736#0" expanded="false" />
-                <element signature="e#1779#1812#0" expanded="false" />
+                <element signature="e#1029#1148#0" expanded="false" />
+                <element signature="e#1096#1137#0" expanded="false" />
+                <element signature="e#1544#1752#0" expanded="false" />
+                <element signature="e#1605#1746#0" expanded="false" />
+                <element signature="e#1797#1830#0" expanded="false" />
+                <element signature="e#1873#1906#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -140,8 +142,8 @@
         <option value="$PROJECT_DIR$/server.js" />
         <option value="$PROJECT_DIR$/app.js" />
         <option value="$PROJECT_DIR$/static/index.html" />
-        <option value="$PROJECT_DIR$/static/states/admin/admin.js" />
         <option value="$PROJECT_DIR$/static/states/admin/admin-case.html" />
+        <option value="$PROJECT_DIR$/static/states/admin/admin.js" />
       </list>
     </option>
   </component>
@@ -472,26 +474,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/static/states/admin/admin.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="91" max-vertical-offset="1105">
-          <caret line="29" column="31" selection-start-line="29" selection-start-column="31" selection-end-line="29" selection-end-column="31" />
-          <folding>
-            <element signature="e#319#463#0" expanded="false" />
-            <element signature="e#411#452#0" expanded="false" />
-            <element signature="e#935#1054#0" expanded="false" />
-            <element signature="e#1002#1043#0" expanded="false" />
-            <element signature="e#1450#1658#0" expanded="false" />
-            <element signature="e#1511#1652#0" expanded="false" />
-            <element signature="e#1703#1736#0" expanded="false" />
-            <element signature="e#1779#1812#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.38169256" vertical-offset="459" max-vertical-offset="1054">
+        <state vertical-scroll-proportion="-13.357142" vertical-offset="306" max-vertical-offset="1054">
           <caret line="94" column="0" selection-start-line="94" selection-start-column="0" selection-end-line="94" selection-end-column="0" />
           <folding>
             <element signature="e#776#881#0" expanded="false" />
@@ -520,6 +505,23 @@
             <element signature="e#3436#3471#0" expanded="false" />
             <element signature="e#3549#3741#0" expanded="false" />
             <element signature="e#3607#3737#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/states/admin/admin.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.21416804" vertical-offset="193" max-vertical-offset="1139">
+          <caret line="26" column="42" selection-start-line="26" selection-start-column="42" selection-end-line="26" selection-end-column="42" />
+          <folding>
+            <element signature="e#319#463#0" expanded="false" />
+            <element signature="e#411#452#0" expanded="false" />
+            <element signature="e#1029#1148#0" expanded="false" />
+            <element signature="e#1096#1137#0" expanded="false" />
+            <element signature="e#1544#1752#0" expanded="false" />
+            <element signature="e#1605#1746#0" expanded="false" />
+            <element signature="e#1797#1830#0" expanded="false" />
+            <element signature="e#1873#1906#0" expanded="false" />
           </folding>
         </state>
       </provider>

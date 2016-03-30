@@ -23,6 +23,8 @@ function AdminController($http, $scope, CaseService, FileService) {
   };
 
   Admin.editCase = function () {
+    console.log('id: ' + Admin.currentCase._id);
+    console.log('cc: ' + Admin.currentCase);
     $http.put('/admin/case/' + Admin.currentCase._id, Admin.currentCase)
       .then(function (res) {
         Admin.cases = res.data;
