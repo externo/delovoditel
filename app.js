@@ -28,7 +28,7 @@ MongoClient.connect(connectionUrl, function(err, database) {
   gfs = Grid(db, mongo); // mongodb cursor
 
   // Start the application after the database connection is ready
-  app.listen(port);
+  app.listen(8080);
   //console.log("env: " + JSON.stringify(env));
 });
 
