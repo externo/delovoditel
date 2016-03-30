@@ -1,0 +1,59 @@
+<div class="box-body">
+
+  <div class="input-group">
+    <span class="input-group-addon"><i class="fa fa-book"></i></span>
+    <input type="text" class="form-control" placeholder="№"
+           ng-model="Admin.currentCase.number"
+           ng-value="Admin.currentCase.number">
+    <span class="input-group-addon"><i class="fa fa-university"></i></span>
+    <input type="text" class="form-control" placeholder="Съд"
+           ng-model="Admin.currentCase.court"
+           ng-value="Admin.currentCase.court">
+    <span class="input-group-addon"><i class="fa fa-graduation-cap"></i></span>
+    <input type="text" class="form-control" placeholder="Инстанция"
+           ng-model="Admin.currentCase.instance"
+           ng-value="Admin.currentCase.instance">
+    <span class="input-group-addon"><i class="fa fa-cogs"></i></span>
+    <input type="text" class="form-control" placeholder="Вид"
+           ng-model="Admin.currentCase.type"
+           ng-value="Admin.currentCase.type">
+    <span class="input-group-addon"><i class="fa fa-user"></i></span>
+    <input type="text" class="form-control" placeholder="Клиент"
+           ng-model="Admin.currentCase.client.name"
+           ng-value="Admin.currentCase.client.name">
+    <span class="input-group-addon"><i class="fa fa-phone"></i></span>
+    <input type="text" class="form-control" placeholder="GSM номер"
+           ng-model="Admin.currentCase.client.phone"
+           ng-value="Admin.currentCase.client.phone">
+  </div>
+
+  <!-- ADD scanned documents-->
+  <table class="table table-striped">
+    <thead>
+    <tr>
+      <th>
+        <div>
+          <input type="file" file-model="Admin.newFile"/>
+          <button ng-click="Admin.uploadFile(Admin.newFile)">Добави сканиран документ</button>
+        </div>
+    </tr>
+    </thead>
+    <tbody>
+    <tr ng-repeat="fileId in Admin.currentCase.files | orderBy: 'name'">
+      <td id="{{fileId}}"><a href="/file/{{fileId}}">{{fileId}}</a></td>
+      <td>
+        <button class="btn btn-danger pull-right" ng-click="Admin.removeFile(fileId)">
+          <span class="glyphicon glyphicon-remove"></span>
+        </button>
+      </td>
+    </tr>
+    </tbody>
+  </table>
+
+  <!-- ADD/Cancel buttons -->
+  <div class="form-group col-lg-2 pull-right">
+    <button class="btn btn-block btn-success" ng-click="Admin.editCase(Admin.currentCase); Admin.currentCase=null">Запази</button>
+    <button class="btn btn-block btn-danger" ng-click="Admin.click=false; Admin.currentCase=null">Отмени</button>
+  </div>
+
+</div>
