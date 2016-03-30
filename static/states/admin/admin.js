@@ -22,9 +22,8 @@ function AdminController($http, $scope, CaseService, FileService) {
     );
   };
 
-  Admin.editCase = function (currentCase) {
-    console.log('curr case before edit: ' + JSON.stringify(Admin.currentCase));
-    $http.put('/admin/case/' + currentCase._id, currentCase)
+  Admin.editCase = function () {
+    $http.put('/admin/case/' + Admin.currentCase._id, Admin.currentCase)
       .then(function (res) {
         Admin.cases = res.data;
         Admin.click = false;
@@ -62,7 +61,6 @@ function AdminController($http, $scope, CaseService, FileService) {
     })
       .then(function (res) {
         Admin.currentCase.files.push(res.data);
-        console.log('curr case after add files: ' + JSON.stringify(Admin.currentCase));
       });
   };
 
