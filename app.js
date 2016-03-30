@@ -18,7 +18,7 @@ app.use(bodyParser.urlencoded({extended: true}));
 var db;
 var gfs;
 var serverUrl = 'mongodb://127.9.95.130/admin';
-var connectionUrl = 'mongodb://127.9.95.130/admin' || 'mongodb://localhost/test';
+var connectionUrl = 'mongodb://admin:CcLv_dmpsmBW@127.9.95.130:27017/' || 'mongodb://localhost/test';
 
 // Initialize connection once
 MongoClient.connect(connectionUrl, function(err, database) {
