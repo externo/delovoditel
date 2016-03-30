@@ -1,43 +1,158 @@
-const http         = require('http'),
-      fs           = require('fs'),
-      path         = require('path'),
-      contentTypes = require('./utils/content-types'),
-      sysInfo      = require('./utils/sys-info'),
-      env          = process.env;
+'use strict';
 
-var server = http.createServer(function (req, res) {
-  var url = req.url;
-  if (url == '/') {
-    url += 'index.html';
-  }
+const env = process.env;
+var ip = env.NODE_IP || 'localhost';
+var port = env.NODE_PORT || 3000;
 
-  // IMPORTANT: Your application HAS to respond to GET /health with status 200
-  //            for OpenShift health monitoring
+var express = require('express');
+var bodyParser = require('body-parser');
+var mongo = require('mongodb');
+var MongoClient = mongo.MongoClient;
+var Grid = require('gridfs-stream');
+var app = express();
 
-  if (url == '/health') {
-    res.writeHead(200);
-    res.end();
-  } else if (url.indexOf('/info/') == 0) {
-    res.setHeader('Content-Type', 'application/json');
-    res.setHeader('Cache-Control', 'no-cache, no-store');
-    res.end(JSON.stringify(sysInfo[url.slice(6)]()));
-  } else {
-    fs.readFile('./static' + url, function (err, data) {
-      if (err) {
-        res.writeHead(404);
-        res.end();
-      } else {
-        var ext = path.extname(url).slice(1);
-        res.setHeader('Content-Type', contentTypes[ext]);
-        if (ext === 'html') {
-          res.setHeader('Cache-Control', 'no-cache, no-store');
+app.use(express.static(__dirname + '/static'));
+app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({extended: true}));
+
+var db;
+var gfs;
+var connectionUrl = "mongodb://" + ip + ":27017/test";
+
+// Initialize connection once
+MongoClient.connect(connectionUrl, function(err, database) {
+  if(err) throw err;
+
+  db = database;
+  gfs = Grid(db, mongo); // mongodb cursor
+
+  // Start the application after the database connection is ready
+  app.listen(port);
+  //console.log("env: " + JSON.stringify(env));
+});
+
+app.get('/admin/case', function (req, res) {
+  db.collection('cases').find()
+    .toArray(function (err, cases) {
+      res.json(cases);
+    }
+  )
+});
+
+app.post('/admin/case', function (req, res) {
+  db.collection('cases').insertOne(
+    req.body,
+    function (err, result) {
+      db.collection('cases').find()
+        .toArray(function (err, cases) {
+          res.json(cases);
         }
-        res.end(data);
-      }
+      );
     });
-  }
 });
 
-server.listen(env.NODE_PORT || 3000, env.NODE_IP || 'localhost', function () {
-  console.log(`Application worker ${process.pid} started...`);
+app.get('/admin/case/:id', function (req, res) {
+  var caseId = new mongo.ObjectID(req.params.id);
+  console.log(req.params.id);
+  db.collection('cases').findOne({_id: caseId}, function (err, doc) {
+    res.json(doc);
+  });
 });
+
+app.put('/admin/case/:id', function (req, res) {
+  var caseId = new mongo.ObjectID(req.params.id);
+  console.log('r b ' + JSON.stringify(req.body));
+  db.collection('cases').updateOne(
+    {_id: caseId},
+    {
+      $set: {
+        "number": req.body.number,
+        "court": req.body.court,
+        "instance": req.body.instance,
+        "type": req.body.type,
+        "client.name": req.body.client.name,
+        "client.phone": req.body.client.phone,
+        "files": req.body.files
+      },
+      $currentDate: {"lastModified": true}
+    },
+    function (err, results) {
+      db.collection('cases').find()
+        .toArray(function (err, cases) {
+          res.json(cases);
+        }
+      );
+    });
+});
+
+app.delete('/admin/case/:id', function (req, res) {
+  var caseId = new mongo.ObjectID(req.params.id);
+  db.collection('cases').deleteOne(
+    {_id: caseId},
+    function (err, results) {
+      db.collection('cases').find()
+        .toArray(function (err, cases) {
+          res.json(cases);
+        }
+      );
+    }
+  );
+});
+
+app.get('/admin/case/:id/file', function (req, res) {
+  gfs.files.find()
+    .map(function (doc) {
+      return {
+        id: doc._id,
+        name: doc.filename
+      };
+    })
+    .toArray(function (err, files) {
+      res.send(files);
+    });
+});
+
+app.get('/file/:id', function (req, res) {
+  gfs.findOne({_id: req.params.id}, function (err, file) {
+    if (err) return res.status(400).send(err);
+    if (!file) return res.status(404).send('');
+
+    res.set('Content-Type', file.contentType);
+    res.set('Content-Disposition', 'attachment; filename="' + file.filename + '"');
+
+    var readstream = gfs.createReadStream({
+      _id: file._id
+    });
+
+    readstream.on("error", function (err) {
+      console.log("Got error while processing stream " + err.message);
+      res.end();
+    });
+
+    readstream.pipe(res);
+  });
+});
+
+app.post('/file', function (req, res) {
+  var filename = req.headers.filename;
+  var writeStream = gfs.createWriteStream({
+    filename: filename
+  });
+
+  writeStream.on('finish', function () {
+    res.send(writeStream.id);
+  });
+
+  req.pipe(writeStream);
+});
+
+app.delete('/file/:id', function (req, res) {
+  gfs.remove({_id: req.params.id}, function (err, file) {
+    if (err) return res.status(400).send(err);
+    if (!file) return res.status(404).send('');
+
+    res.send(req.params.id);
+  });
+});
+
+//app.listen(port, ip);
