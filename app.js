@@ -22,11 +22,7 @@ MongoClient.connect(connectionUrl, function(err, database) {
   if(err) throw err;
 
   db = database;
-  gfs = Grid(db, mongo); // mongodb cursor
-
-  // Start the application after the database connection is ready
-  //app.listen(port);
-  //console.log("env: " + JSON.stringify(env));
+  gfs = Grid(db, mongo);
 });
 
 app.get('/admin/case', function (req, res) {
