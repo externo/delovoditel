@@ -4,7 +4,7 @@ angular
   .module('app', ['ngRoute'])
   .config(function ($routeProvider) {
     $routeProvider.when('/admin/case', {
-      templateUrl: 'states/admin/admin.html',
+      templateUrl: '/states/admin/admin.html',
       controller: 'AdminController'
     });
     $routeProvider.otherwise(
