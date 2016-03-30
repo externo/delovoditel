@@ -17,7 +17,7 @@ app.use(bodyParser.urlencoded({extended: true}));
 
 var db;
 var gfs;
-var connectionUrl = 'mongodb://' + process.env.OPENSHIFT_MONGODB_DB_HOST + '/admin' || 'mongodb://localhost/test';
+var connectionUrl = 'mongodb://' + process.env.OPENSHIFT_MONGODB_DB_HOST + ':27017/' || 'mongodb://localhost/test';
 
 // Initialize connection once
 MongoClient.connect(connectionUrl, function(err, database) {
