@@ -55,16 +55,20 @@ app.get('/admin/case/:id', function (req, res) {
 
 app.put('/admin/case/:id', function (req, res) {
   var caseId = new mongo.ObjectID(req.params.id);
+  console.log('r b ' + JSON.stringify(req.body));
   db.collection('cases').update(
-    {_id: req.params.id},
+    {_id: caseId},
     {
-      "number": req.body.number,
-      "court": req.body.court,
-      "instance": req.body.instance,
-      "type": req.body.type,
-      "client.name": req.body.client.name,
-      "client.phone": req.body.client.phone,
-      "files": req.body.files
+      $set: {
+        "number": req.body.number,
+        "court": req.body.court,
+        "instance": req.body.instance,
+        "type": req.body.type,
+        "client.name": req.body.client.name,
+        "client.phone": req.body.client.phone,
+        "files": req.body.files
+      },
+      $currentDate: {"lastModified": true}
     },
     function (err, results) {
       db.collection('cases').find()
