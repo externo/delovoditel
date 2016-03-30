@@ -27,6 +27,7 @@ function AdminController($http, $scope, CaseService, FileService) {
       .then(function (res) {
         Admin.cases = res.data;
         Admin.click = false;
+        Admin.currentCase=null;
       }
     );
   };
