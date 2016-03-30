@@ -14,11 +14,11 @@ var mongo = require('mongodb');
 var Grid = require('gridfs-stream');
 var app = express();
 
-app.use(express.static(__dirname + '/public'));
+app.use(express.static(__dirname + '/static'));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended: true}));
 
-var db = new mongo.Db('test', new mongo.Server(ip, 27017));
+var db = new mongo.Db('admin', new mongo.Server(ip, 27017));
 var gfs;
 db.open(function (err, db) {
   if (err) {
