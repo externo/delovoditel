@@ -25,7 +25,7 @@ MongoClient.connect(connectionUrl, function(err, database) {
   gfs = Grid(db, mongo); // mongodb cursor
 
   // Start the application after the database connection is ready
-  app.listen(port);
+  //app.listen(port);
   //console.log("env: " + JSON.stringify(env));
 });
 
@@ -153,4 +153,4 @@ app.delete('/file/:id', function (req, res) {
   });
 });
 
-//app.listen(port, ip);
+app.listen(port, ip);
