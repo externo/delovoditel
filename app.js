@@ -7,8 +7,8 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended: true}));
 app.use(express.static(__dirname + '/static'));
 
-//var connectionUrl = process.env.OPENSHIFT_MONGODB_DB_URL || 'mongodb://localhost/test';
-//mongoose.connect(connectionUrl);
+var connectionUrl = 'mongodb://' + process.env.OPENSHIFT_MONGODB_DB_HOST + ':27017/admin' || 'mongodb://localhost/test';
+mongoose.connect(connectionUrl);
 
 app.get('/process', function(req, res){
   res.json(process.env);
