@@ -1,8 +1,5 @@
-'use strict';
-
-const env = process.env;
-var ip = env.NODE_IP || 'localhost';
-var port = env.NODE_PORT || 3000;
+var ip = process.env.OPENSHIFT_NODEJS_IP || 'localhost';
+var port = process.env.OPENSHIFT_NODEJS_PORT || 3000;
 
 var express = require('express');
 var bodyParser = require('body-parser');
@@ -17,7 +14,8 @@ app.use(bodyParser.urlencoded({extended: true}));
 
 var db;
 var gfs;
-var connectionUrl = 'mongodb://' + process.env.OPENSHIFT_MONGODB_DB_HOST + ':27017/' || 'mongodb://localhost/test';
+var mongoUrl = process.env.OPENSHIFT_MONGODB_DB_URL;
+var connectionUrl = mongoUrl || 'mongodb://localhost/test';
 
 // Initialize connection once
 MongoClient.connect(connectionUrl, function(err, database) {
