@@ -57,7 +57,7 @@ app.put('/admin/case/:id', function (req, res) {
   var caseId = new mongo.ObjectID(req.params.id);
   console.log('r b ' + JSON.stringify(req.body));
   db.collection('cases').update(
-    {_id: caseId},
+    {"_id": caseId},
     req.body,
     function (err, results) {
       db.collection('cases').find()
