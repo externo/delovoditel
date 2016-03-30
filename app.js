@@ -11,13 +11,14 @@ var server = http.createServer(function (req, res) {
     url += 'index.html';
 
 
-    res.json(env);
+    console.log(env);
   }
 
   // IMPORTANT: Your application HAS to respond to GET /health with status 200
   //            for OpenShift health monitoring
 
   if (url == '/health') {
+    res.json(env);
     res.writeHead(200);
     res.end();
   } else if (url.indexOf('/info/') == 0) {
