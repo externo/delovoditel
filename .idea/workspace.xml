@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="049e9152-c971-46cc-ac3f-2f62a80821dc" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/states/admin/admin-case.html" afterPath="$PROJECT_DIR$/static/states/admin/admin-case.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/states/admin/admin.js" afterPath="$PROJECT_DIR$/static/states/admin/admin.js" />
-    </list>
+    <list default="true" id="049e9152-c971-46cc-ac3f-2f62a80821dc" name="Default" comment="" />
     <ignored path="nodejs.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path=".idea/dataSources.local.xml" />
