@@ -18,8 +18,8 @@ var mongoUrl = process.env.OPENSHIFT_MONGODB_DB_URL;
 var connectionUrl = mongoUrl || 'mongodb://localhost/test';
 
 // Initialize connection once
-MongoClient.connect(connectionUrl, function (err, database) {
-  if (err) throw err;
+MongoClient.connect(connectionUrl, function(err, database) {
+  if(err) throw err;
 
   db = database;
   gfs = Grid(db, mongo);
@@ -57,18 +57,9 @@ app.put('/admin/case/:id', function (req, res) {
   var caseId = new mongo.ObjectID(req.params.id);
   console.log('r b ' + JSON.stringify(req.body));
   db.collection('cases').update(
-    {"_id": "56fbfca9d63a668a4c0a906d"},
+    {_id: caseId},
     {
-      $set: {
-        "number": req.body.number,
-        "court": req.body.court,
-        "instance": req.body.instance,
-        "type": req.body.type,
-        "client.name": req.body.client.name,
-        "client.phone": req.body.client.phone,
-        "files": req.body.files
-      },
-      $currentDate: {"lastModified": true}
+      $set: req.body
     },
     function (err, results) {
       db.collection('cases').find()
