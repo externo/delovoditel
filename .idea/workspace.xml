@@ -2,75 +2,78 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="049e9152-c971-46cc-ac3f-2f62a80821dc" name="Default" comment="">
-      <change type="DELETED" beforePath="E:\ilia\AngularProjects\nodejs\static\styles\bootstrap\css\bootstrap.css" afterPath="" />
-      <change type="DELETED" beforePath="E:\ilia\AngularProjects\nodejs\static\styles\bootstrap\css\bootstrap.css.map" afterPath="" />
-      <change type="DELETED" beforePath="E:\ilia\AngularProjects\nodejs\static\styles\bootstrap\css\bootstrap.min.css" afterPath="" />
-      <change type="DELETED" beforePath="E:\ilia\AngularProjects\nodejs\static\styles\bootstrap\fonts\glyphicons-halflings-regular.eot" afterPath="" />
-      <change type="DELETED" beforePath="E:\ilia\AngularProjects\nodejs\static\styles\bootstrap\fonts\glyphicons-halflings-regular.svg" afterPath="" />
-      <change type="DELETED" beforePath="E:\ilia\AngularProjects\nodejs\static\styles\bootstrap\fonts\glyphicons-halflings-regular.ttf" afterPath="" />
-      <change type="DELETED" beforePath="E:\ilia\AngularProjects\nodejs\static\styles\bootstrap\fonts\glyphicons-halflings-regular.woff" afterPath="" />
-      <change type="DELETED" beforePath="E:\ilia\AngularProjects\nodejs\static\styles\bootstrap\fonts\glyphicons-halflings-regular.woff2" afterPath="" />
-      <change type="DELETED" beforePath="E:\ilia\AngularProjects\nodejs\static\styles\bootstrap\js\bootstrap.js" afterPath="" />
-      <change type="DELETED" beforePath="E:\ilia\AngularProjects\nodejs\static\styles\bootstrap\js\bootstrap.min.js" afterPath="" />
-      <change type="DELETED" beforePath="E:\ilia\AngularProjects\nodejs\static\styles\bootstrap\js\npm.js" afterPath="" />
-      <change type="DELETED" beforePath="E:\ilia\AngularProjects\nodejs\static\styles\css\bootstrap-rtl.css" afterPath="" />
-      <change type="DELETED" beforePath="E:\ilia\AngularProjects\nodejs\static\styles\css\bootstrap-rtl.min.css" afterPath="" />
-      <change type="DELETED" beforePath="E:\ilia\AngularProjects\nodejs\static\styles\css\bootstrap.css" afterPath="" />
-      <change type="DELETED" beforePath="E:\ilia\AngularProjects\nodejs\static\styles\css\bootstrap.min.css" afterPath="" />
-      <change type="DELETED" beforePath="E:\ilia\AngularProjects\nodejs\static\styles\css\plugins\morris.css" afterPath="" />
-      <change type="DELETED" beforePath="E:\ilia\AngularProjects\nodejs\static\styles\css\sb-admin-rtl.css" afterPath="" />
-      <change type="DELETED" beforePath="E:\ilia\AngularProjects\nodejs\static\styles\css\sb-admin.css" afterPath="" />
-      <change type="DELETED" beforePath="E:\ilia\AngularProjects\nodejs\static\styles\font-awesome\css\font-awesome.css" afterPath="" />
-      <change type="DELETED" beforePath="E:\ilia\AngularProjects\nodejs\static\styles\font-awesome\css\font-awesome.min.css" afterPath="" />
-      <change type="DELETED" beforePath="E:\ilia\AngularProjects\nodejs\static\styles\font-awesome\fonts\FontAwesome.otf" afterPath="" />
-      <change type="DELETED" beforePath="E:\ilia\AngularProjects\nodejs\static\styles\font-awesome\fonts\fontawesome-webfont.eot" afterPath="" />
-      <change type="DELETED" beforePath="E:\ilia\AngularProjects\nodejs\static\styles\font-awesome\fonts\fontawesome-webfont.svg" afterPath="" />
-      <change type="DELETED" beforePath="E:\ilia\AngularProjects\nodejs\static\styles\font-awesome\fonts\fontawesome-webfont.ttf" afterPath="" />
-      <change type="DELETED" beforePath="E:\ilia\AngularProjects\nodejs\static\styles\font-awesome\fonts\fontawesome-webfont.woff" afterPath="" />
-      <change type="DELETED" beforePath="E:\ilia\AngularProjects\nodejs\static\styles\font-awesome\less\bordered-pulled.less" afterPath="" />
-      <change type="DELETED" beforePath="E:\ilia\AngularProjects\nodejs\static\styles\font-awesome\less\core.less" afterPath="" />
-      <change type="DELETED" beforePath="E:\ilia\AngularProjects\nodejs\static\styles\font-awesome\less\fixed-width.less" afterPath="" />
-      <change type="DELETED" beforePath="E:\ilia\AngularProjects\nodejs\static\styles\font-awesome\less\font-awesome.less" afterPath="" />
-      <change type="DELETED" beforePath="E:\ilia\AngularProjects\nodejs\static\styles\font-awesome\less\icons.less" afterPath="" />
-      <change type="DELETED" beforePath="E:\ilia\AngularProjects\nodejs\static\styles\font-awesome\less\larger.less" afterPath="" />
-      <change type="DELETED" beforePath="E:\ilia\AngularProjects\nodejs\static\styles\font-awesome\less\list.less" afterPath="" />
-      <change type="DELETED" beforePath="E:\ilia\AngularProjects\nodejs\static\styles\font-awesome\less\mixins.less" afterPath="" />
-      <change type="DELETED" beforePath="E:\ilia\AngularProjects\nodejs\static\styles\font-awesome\less\path.less" afterPath="" />
-      <change type="DELETED" beforePath="E:\ilia\AngularProjects\nodejs\static\styles\font-awesome\less\rotated-flipped.less" afterPath="" />
-      <change type="DELETED" beforePath="E:\ilia\AngularProjects\nodejs\static\styles\font-awesome\less\spinning.less" afterPath="" />
-      <change type="DELETED" beforePath="E:\ilia\AngularProjects\nodejs\static\styles\font-awesome\less\stacked.less" afterPath="" />
-      <change type="DELETED" beforePath="E:\ilia\AngularProjects\nodejs\static\styles\font-awesome\less\variables.less" afterPath="" />
-      <change type="DELETED" beforePath="E:\ilia\AngularProjects\nodejs\static\styles\font-awesome\scss\_bordered-pulled.scss" afterPath="" />
-      <change type="DELETED" beforePath="E:\ilia\AngularProjects\nodejs\static\styles\font-awesome\scss\_core.scss" afterPath="" />
-      <change type="DELETED" beforePath="E:\ilia\AngularProjects\nodejs\static\styles\font-awesome\scss\_fixed-width.scss" afterPath="" />
-      <change type="DELETED" beforePath="E:\ilia\AngularProjects\nodejs\static\styles\font-awesome\scss\_icons.scss" afterPath="" />
-      <change type="DELETED" beforePath="E:\ilia\AngularProjects\nodejs\static\styles\font-awesome\scss\_larger.scss" afterPath="" />
-      <change type="DELETED" beforePath="E:\ilia\AngularProjects\nodejs\static\styles\font-awesome\scss\_list.scss" afterPath="" />
-      <change type="DELETED" beforePath="E:\ilia\AngularProjects\nodejs\static\styles\font-awesome\scss\_mixins.scss" afterPath="" />
-      <change type="DELETED" beforePath="E:\ilia\AngularProjects\nodejs\static\styles\font-awesome\scss\_path.scss" afterPath="" />
-      <change type="DELETED" beforePath="E:\ilia\AngularProjects\nodejs\static\styles\font-awesome\scss\_rotated-flipped.scss" afterPath="" />
-      <change type="DELETED" beforePath="E:\ilia\AngularProjects\nodejs\static\styles\font-awesome\scss\_spinning.scss" afterPath="" />
-      <change type="DELETED" beforePath="E:\ilia\AngularProjects\nodejs\static\styles\font-awesome\scss\_stacked.scss" afterPath="" />
-      <change type="DELETED" beforePath="E:\ilia\AngularProjects\nodejs\static\styles\font-awesome\scss\_variables.scss" afterPath="" />
-      <change type="DELETED" beforePath="E:\ilia\AngularProjects\nodejs\static\styles\font-awesome\scss\font-awesome.scss" afterPath="" />
-      <change type="DELETED" beforePath="E:\ilia\AngularProjects\nodejs\static\styles\fonts\glyphicons-halflings-regular.eot" afterPath="" />
-      <change type="DELETED" beforePath="E:\ilia\AngularProjects\nodejs\static\styles\fonts\glyphicons-halflings-regular.svg" afterPath="" />
-      <change type="DELETED" beforePath="E:\ilia\AngularProjects\nodejs\static\styles\fonts\glyphicons-halflings-regular.ttf" afterPath="" />
-      <change type="DELETED" beforePath="E:\ilia\AngularProjects\nodejs\static\styles\fonts\glyphicons-halflings-regular.woff" afterPath="" />
-      <change type="DELETED" beforePath="E:\ilia\AngularProjects\nodejs\static\styles\fonts\glyphicons-halflings-regular.woff2" afterPath="" />
-      <change type="DELETED" beforePath="E:\ilia\AngularProjects\nodejs\static\styles\js\bootstrap.js" afterPath="" />
-      <change type="DELETED" beforePath="E:\ilia\AngularProjects\nodejs\static\styles\js\bootstrap.min.js" afterPath="" />
-      <change type="DELETED" beforePath="E:\ilia\AngularProjects\nodejs\static\styles\js\jquery.js" afterPath="" />
-      <change type="DELETED" beforePath="E:\ilia\AngularProjects\nodejs\static\styles\js\plugins\flot\excanvas.min.js" afterPath="" />
-      <change type="DELETED" beforePath="E:\ilia\AngularProjects\nodejs\static\styles\js\plugins\flot\flot-data.js" afterPath="" />
-      <change type="DELETED" beforePath="E:\ilia\AngularProjects\nodejs\static\styles\js\plugins\flot\jquery.flot.js" afterPath="" />
-      <change type="DELETED" beforePath="E:\ilia\AngularProjects\nodejs\static\styles\js\plugins\flot\jquery.flot.pie.js" afterPath="" />
-      <change type="DELETED" beforePath="E:\ilia\AngularProjects\nodejs\static\styles\js\plugins\flot\jquery.flot.resize.js" afterPath="" />
-      <change type="DELETED" beforePath="E:\ilia\AngularProjects\nodejs\static\styles\js\plugins\flot\jquery.flot.tooltip.min.js" afterPath="" />
-      <change type="DELETED" beforePath="E:\ilia\AngularProjects\nodejs\static\styles\js\plugins\morris\morris-data.js" afterPath="" />
-      <change type="DELETED" beforePath="E:\ilia\AngularProjects\nodejs\static\styles\js\plugins\morris\morris.js" afterPath="" />
-      <change type="DELETED" beforePath="E:\ilia\AngularProjects\nodejs\static\styles\js\plugins\morris\morris.min.js" afterPath="" />
-      <change type="DELETED" beforePath="E:\ilia\AngularProjects\nodejs\static\styles\js\plugins\morris\raphael.min.js" afterPath="" />
+      <change type="DELETED" beforePath="E:\ilia\AngularProjects\nodejs\static\bootstrap\css\bootstrap.css" afterPath="" />
+      <change type="DELETED" beforePath="E:\ilia\AngularProjects\nodejs\static\bootstrap\css\bootstrap.css.map" afterPath="" />
+      <change type="DELETED" beforePath="E:\ilia\AngularProjects\nodejs\static\bootstrap\css\bootstrap.min.css" afterPath="" />
+      <change type="DELETED" beforePath="E:\ilia\AngularProjects\nodejs\static\bootstrap\fonts\glyphicons-halflings-regular.eot" afterPath="" />
+      <change type="DELETED" beforePath="E:\ilia\AngularProjects\nodejs\static\bootstrap\fonts\glyphicons-halflings-regular.svg" afterPath="" />
+      <change type="DELETED" beforePath="E:\ilia\AngularProjects\nodejs\static\bootstrap\fonts\glyphicons-halflings-regular.ttf" afterPath="" />
+      <change type="DELETED" beforePath="E:\ilia\AngularProjects\nodejs\static\bootstrap\fonts\glyphicons-halflings-regular.woff" afterPath="" />
+      <change type="DELETED" beforePath="E:\ilia\AngularProjects\nodejs\static\bootstrap\fonts\glyphicons-halflings-regular.woff2" afterPath="" />
+      <change type="DELETED" beforePath="E:\ilia\AngularProjects\nodejs\static\bootstrap\js\bootstrap.js" afterPath="" />
+      <change type="DELETED" beforePath="E:\ilia\AngularProjects\nodejs\static\bootstrap\js\bootstrap.min.js" afterPath="" />
+      <change type="DELETED" beforePath="E:\ilia\AngularProjects\nodejs\static\bootstrap\js\npm.js" afterPath="" />
+      <change type="DELETED" beforePath="E:\ilia\AngularProjects\nodejs\static\dist\css\AdminLTE.css" afterPath="" />
+      <change type="DELETED" beforePath="E:\ilia\AngularProjects\nodejs\static\dist\css\AdminLTE.min.css" afterPath="" />
+      <change type="DELETED" beforePath="E:\ilia\AngularProjects\nodejs\static\dist\css\skins\_all-skins.css" afterPath="" />
+      <change type="DELETED" beforePath="E:\ilia\AngularProjects\nodejs\static\dist\css\skins\_all-skins.min.css" afterPath="" />
+      <change type="DELETED" beforePath="E:\ilia\AngularProjects\nodejs\static\dist\css\skins\skin-black-light.css" afterPath="" />
+      <change type="DELETED" beforePath="E:\ilia\AngularProjects\nodejs\static\dist\css\skins\skin-black-light.min.css" afterPath="" />
+      <change type="DELETED" beforePath="E:\ilia\AngularProjects\nodejs\static\dist\css\skins\skin-black.css" afterPath="" />
+      <change type="DELETED" beforePath="E:\ilia\AngularProjects\nodejs\static\dist\css\skins\skin-black.min.css" afterPath="" />
+      <change type="DELETED" beforePath="E:\ilia\AngularProjects\nodejs\static\dist\css\skins\skin-blue-light.css" afterPath="" />
+      <change type="DELETED" beforePath="E:\ilia\AngularProjects\nodejs\static\dist\css\skins\skin-blue-light.min.css" afterPath="" />
+      <change type="DELETED" beforePath="E:\ilia\AngularProjects\nodejs\static\dist\css\skins\skin-blue.css" afterPath="" />
+      <change type="DELETED" beforePath="E:\ilia\AngularProjects\nodejs\static\dist\css\skins\skin-blue.min.css" afterPath="" />
+      <change type="DELETED" beforePath="E:\ilia\AngularProjects\nodejs\static\dist\css\skins\skin-green-light.css" afterPath="" />
+      <change type="DELETED" beforePath="E:\ilia\AngularProjects\nodejs\static\dist\css\skins\skin-green-light.min.css" afterPath="" />
+      <change type="DELETED" beforePath="E:\ilia\AngularProjects\nodejs\static\dist\css\skins\skin-green.css" afterPath="" />
+      <change type="DELETED" beforePath="E:\ilia\AngularProjects\nodejs\static\dist\css\skins\skin-green.min.css" afterPath="" />
+      <change type="DELETED" beforePath="E:\ilia\AngularProjects\nodejs\static\dist\css\skins\skin-purple-light.css" afterPath="" />
+      <change type="DELETED" beforePath="E:\ilia\AngularProjects\nodejs\static\dist\css\skins\skin-purple-light.min.css" afterPath="" />
+      <change type="DELETED" beforePath="E:\ilia\AngularProjects\nodejs\static\dist\css\skins\skin-purple.css" afterPath="" />
+      <change type="DELETED" beforePath="E:\ilia\AngularProjects\nodejs\static\dist\css\skins\skin-purple.min.css" afterPath="" />
+      <change type="DELETED" beforePath="E:\ilia\AngularProjects\nodejs\static\dist\css\skins\skin-red-light.css" afterPath="" />
+      <change type="DELETED" beforePath="E:\ilia\AngularProjects\nodejs\static\dist\css\skins\skin-red-light.min.css" afterPath="" />
+      <change type="DELETED" beforePath="E:\ilia\AngularProjects\nodejs\static\dist\css\skins\skin-red.css" afterPath="" />
+      <change type="DELETED" beforePath="E:\ilia\AngularProjects\nodejs\static\dist\css\skins\skin-red.min.css" afterPath="" />
+      <change type="DELETED" beforePath="E:\ilia\AngularProjects\nodejs\static\dist\css\skins\skin-yellow-light.css" afterPath="" />
+      <change type="DELETED" beforePath="E:\ilia\AngularProjects\nodejs\static\dist\css\skins\skin-yellow-light.min.css" afterPath="" />
+      <change type="DELETED" beforePath="E:\ilia\AngularProjects\nodejs\static\dist\css\skins\skin-yellow.css" afterPath="" />
+      <change type="DELETED" beforePath="E:\ilia\AngularProjects\nodejs\static\dist\css\skins\skin-yellow.min.css" afterPath="" />
+      <change type="DELETED" beforePath="E:\ilia\AngularProjects\nodejs\static\dist\img\avatar.png" afterPath="" />
+      <change type="DELETED" beforePath="E:\ilia\AngularProjects\nodejs\static\dist\img\avatar04.png" afterPath="" />
+      <change type="DELETED" beforePath="E:\ilia\AngularProjects\nodejs\static\dist\img\avatar2.png" afterPath="" />
+      <change type="DELETED" beforePath="E:\ilia\AngularProjects\nodejs\static\dist\img\avatar3.png" afterPath="" />
+      <change type="DELETED" beforePath="E:\ilia\AngularProjects\nodejs\static\dist\img\avatar5.png" afterPath="" />
+      <change type="DELETED" beforePath="E:\ilia\AngularProjects\nodejs\static\dist\img\boxed-bg.jpg" afterPath="" />
+      <change type="DELETED" beforePath="E:\ilia\AngularProjects\nodejs\static\dist\img\boxed-bg.png" afterPath="" />
+      <change type="DELETED" beforePath="E:\ilia\AngularProjects\nodejs\static\dist\img\credit\american-express.png" afterPath="" />
+      <change type="DELETED" beforePath="E:\ilia\AngularProjects\nodejs\static\dist\img\credit\cirrus.png" afterPath="" />
+      <change type="DELETED" beforePath="E:\ilia\AngularProjects\nodejs\static\dist\img\credit\mastercard.png" afterPath="" />
+      <change type="DELETED" beforePath="E:\ilia\AngularProjects\nodejs\static\dist\img\credit\mestro.png" afterPath="" />
+      <change type="DELETED" beforePath="E:\ilia\AngularProjects\nodejs\static\dist\img\credit\paypal.png" afterPath="" />
+      <change type="DELETED" beforePath="E:\ilia\AngularProjects\nodejs\static\dist\img\credit\paypal2.png" afterPath="" />
+      <change type="DELETED" beforePath="E:\ilia\AngularProjects\nodejs\static\dist\img\credit\visa.png" afterPath="" />
+      <change type="DELETED" beforePath="E:\ilia\AngularProjects\nodejs\static\dist\img\default-50x50.gif" afterPath="" />
+      <change type="DELETED" beforePath="E:\ilia\AngularProjects\nodejs\static\dist\img\icons.png" afterPath="" />
+      <change type="DELETED" beforePath="E:\ilia\AngularProjects\nodejs\static\dist\img\photo1.png" afterPath="" />
+      <change type="DELETED" beforePath="E:\ilia\AngularProjects\nodejs\static\dist\img\photo2.png" afterPath="" />
+      <change type="DELETED" beforePath="E:\ilia\AngularProjects\nodejs\static\dist\img\photo3.jpg" afterPath="" />
+      <change type="DELETED" beforePath="E:\ilia\AngularProjects\nodejs\static\dist\img\photo4.jpg" afterPath="" />
+      <change type="DELETED" beforePath="E:\ilia\AngularProjects\nodejs\static\dist\img\user1-128x128.jpg" afterPath="" />
+      <change type="DELETED" beforePath="E:\ilia\AngularProjects\nodejs\static\dist\img\user2-160x160.jpg" afterPath="" />
+      <change type="DELETED" beforePath="E:\ilia\AngularProjects\nodejs\static\dist\img\user3-128x128.jpg" afterPath="" />
+      <change type="DELETED" beforePath="E:\ilia\AngularProjects\nodejs\static\dist\img\user4-128x128.jpg" afterPath="" />
+      <change type="DELETED" beforePath="E:\ilia\AngularProjects\nodejs\static\dist\img\user5-128x128.jpg" afterPath="" />
+      <change type="DELETED" beforePath="E:\ilia\AngularProjects\nodejs\static\dist\img\user6-128x128.jpg" afterPath="" />
+      <change type="DELETED" beforePath="E:\ilia\AngularProjects\nodejs\static\dist\img\user7-128x128.jpg" afterPath="" />
+      <change type="DELETED" beforePath="E:\ilia\AngularProjects\nodejs\static\dist\img\user8-128x128.jpg" afterPath="" />
+      <change type="DELETED" beforePath="E:\ilia\AngularProjects\nodejs\static\dist\js\app.js" afterPath="" />
+      <change type="DELETED" beforePath="E:\ilia\AngularProjects\nodejs\static\dist\js\app.min.js" afterPath="" />
+      <change type="DELETED" beforePath="E:\ilia\AngularProjects\nodejs\static\dist\js\demo.js" afterPath="" />
+      <change type="DELETED" beforePath="E:\ilia\AngularProjects\nodejs\static\dist\js\pages\dashboard.js" afterPath="" />
+      <change type="DELETED" beforePath="E:\ilia\AngularProjects\nodejs\static\dist\js\pages\dashboard2.js" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/index.html" afterPath="$PROJECT_DIR$/static/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
@@ -97,29 +100,34 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/static/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-0.02640845" vertical-offset="6849" max-vertical-offset="10421">
-              <caret line="402" column="16" selection-start-line="398" selection-start-column="17" selection-end-line="402" selection-end-column="16" />
+            <state vertical-scroll-proportion="-12.538462" vertical-offset="11472" max-vertical-offset="12053">
+              <caret line="694" column="46" selection-start-line="694" selection-start-column="46" selection-end-line="694" selection-end-column="46" />
               <folding>
-                <element signature="n#style#0;n#div#0;n#div#0;n#a#0;n#li#0;n#ul#0;n#li#1;n#ul#0;n#li#2;n#ul#0;n#div#0;n#nav#0;n#header#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#0;n#div#0;n#a#0;n#li#1;n#ul#0;n#li#1;n#ul#0;n#li#2;n#ul#0;n#div#0;n#nav#0;n#header#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#0;n#div#0;n#a#0;n#li#2;n#ul#0;n#li#1;n#ul#0;n#li#2;n#ul#0;n#div#0;n#nav#0;n#header#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#0;n#div#0;n#a#0;n#li#3;n#ul#0;n#li#1;n#ul#0;n#li#2;n#ul#0;n#div#0;n#nav#0;n#header#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <marker date="1459514563740" expanded="true" signature="1229:23676" placeholder="..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="app.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/static/dist/js/app.js">
+      <file leaf-file-name="usa.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/static/styles/js/maps/usa.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="3570" max-vertical-offset="12767">
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="4352">
               <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding>
-                <element signature="n#!!doc" expanded="true" />
-              </folding>
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index-colory.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/static/index-colory.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="10421">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -265,6 +273,7 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -297,71 +306,8 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="nodejs" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="nodejs" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="static" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="states" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="admin" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="nodejs" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="nodejs" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="static" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="dist" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="js" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="nodejs" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="nodejs" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="static" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="dist" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -422,8 +368,8 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="true" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
+    <editor active="false" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -431,19 +377,19 @@
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.13762811" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.13762811" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -471,13 +417,178 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/static/index.html">
       <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="10421">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1459514563740" expanded="true" signature="1229:23676" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="260" max-vertical-offset="867">
+          <caret line="55" column="47" selection-start-line="55" selection-start-column="47" selection-end-line="55" selection-end-column="47" />
+          <folding>
+            <element signature="e#776#881#0" expanded="false" />
+            <element signature="e#845#875#0" expanded="false" />
+            <element signature="e#929#1142#0" expanded="false" />
+            <element signature="e#1008#1138#0" expanded="false" />
+            <element signature="e#1085#1123#0" expanded="false" />
+            <element signature="e#1193#1371#0" expanded="false" />
+            <element signature="e#1343#1367#0" expanded="false" />
+            <element signature="e#1422#1954#0" expanded="false" />
+            <element signature="e#2008#2280#0" expanded="false" />
+            <element signature="e#2143#2273#0" expanded="false" />
+            <element signature="e#2220#2258#0" expanded="false" />
+            <element signature="e#2336#2531#0" expanded="false" />
+            <element signature="e#2381#2460#0" expanded="false" />
+            <element signature="e#2396#2453#0" expanded="false" />
+            <element signature="e#2497#2527#0" expanded="false" />
+            <element signature="e#2576#3112#0" expanded="false" />
+            <element signature="e#2635#3108#0" expanded="false" />
+            <element signature="e#2907#2934#0" expanded="false" />
+            <element signature="e#2980#3075#0" expanded="false" />
+            <element signature="e#3154#3373#0" expanded="false" />
+            <element signature="e#3237#3265#0" expanded="false" />
+            <element signature="e#3308#3343#0" expanded="false" />
+            <element signature="e#3421#3613#0" expanded="false" />
+            <element signature="e#3479#3609#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/states/admin/admin.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="193" max-vertical-offset="1139">
+          <caret line="26" column="58" selection-start-line="26" selection-start-column="58" selection-end-line="26" selection-end-column="58" />
+          <folding>
+            <element signature="e#319#463#0" expanded="false" />
+            <element signature="e#411#452#0" expanded="false" />
+            <element signature="e#1045#1164#0" expanded="false" />
+            <element signature="e#1112#1153#0" expanded="false" />
+            <element signature="e#1560#1768#0" expanded="false" />
+            <element signature="e#1621#1762#0" expanded="false" />
+            <element signature="e#1813#1846#0" expanded="false" />
+            <element signature="e#1889#1922#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/states/admin/admin-case.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="459" max-vertical-offset="1088">
+          <caret line="55" column="74" selection-start-line="55" selection-start-column="74" selection-end-line="55" selection-end-column="96" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/states/admin/admin.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="527" max-vertical-offset="1003">
+          <caret line="31" column="37" selection-start-line="31" selection-start-column="35" selection-end-line="31" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/js/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="102" max-vertical-offset="306">
+          <caret line="6" column="21" selection-start-line="6" selection-start-column="21" selection-end-line="6" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="10421">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1459514563740" expanded="true" signature="1229:23676" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="260" max-vertical-offset="867">
+          <caret line="55" column="47" selection-start-line="55" selection-start-column="47" selection-end-line="55" selection-end-column="47" />
+          <folding>
+            <element signature="e#776#881#0" expanded="false" />
+            <element signature="e#845#875#0" expanded="false" />
+            <element signature="e#929#1142#0" expanded="false" />
+            <element signature="e#1008#1138#0" expanded="false" />
+            <element signature="e#1085#1123#0" expanded="false" />
+            <element signature="e#1193#1371#0" expanded="false" />
+            <element signature="e#1343#1367#0" expanded="false" />
+            <element signature="e#1422#1954#0" expanded="false" />
+            <element signature="e#2008#2280#0" expanded="false" />
+            <element signature="e#2143#2273#0" expanded="false" />
+            <element signature="e#2220#2258#0" expanded="false" />
+            <element signature="e#2336#2531#0" expanded="false" />
+            <element signature="e#2381#2460#0" expanded="false" />
+            <element signature="e#2396#2453#0" expanded="false" />
+            <element signature="e#2497#2527#0" expanded="false" />
+            <element signature="e#2576#3112#0" expanded="false" />
+            <element signature="e#2635#3108#0" expanded="false" />
+            <element signature="e#2907#2934#0" expanded="false" />
+            <element signature="e#2980#3075#0" expanded="false" />
+            <element signature="e#3154#3373#0" expanded="false" />
+            <element signature="e#3237#3265#0" expanded="false" />
+            <element signature="e#3308#3343#0" expanded="false" />
+            <element signature="e#3421#3613#0" expanded="false" />
+            <element signature="e#3479#3609#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/states/admin/admin.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="193" max-vertical-offset="1139">
+          <caret line="26" column="58" selection-start-line="26" selection-start-column="58" selection-end-line="26" selection-end-column="58" />
+          <folding>
+            <element signature="e#319#463#0" expanded="false" />
+            <element signature="e#411#452#0" expanded="false" />
+            <element signature="e#1045#1164#0" expanded="false" />
+            <element signature="e#1112#1153#0" expanded="false" />
+            <element signature="e#1560#1768#0" expanded="false" />
+            <element signature="e#1621#1762#0" expanded="false" />
+            <element signature="e#1813#1846#0" expanded="false" />
+            <element signature="e#1889#1922#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/states/admin/admin-case.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="459" max-vertical-offset="1088">
+          <caret line="55" column="74" selection-start-line="55" selection-start-column="74" selection-end-line="55" selection-end-column="96" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/states/admin/admin.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="527" max-vertical-offset="1003">
+          <caret line="31" column="37" selection-start-line="31" selection-start-column="35" selection-end-line="31" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/js/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="102" max-vertical-offset="306">
+          <caret line="6" column="21" selection-start-line="6" selection-start-column="21" selection-end-line="6" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/index.html">
+      <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="952">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="n#style#0;n#div#0;n#div#0;n#a#0;n#li#0;n#ul#0;n#li#1;n#ul#0;n#li#2;n#ul#0;n#div#0;n#nav#0;n#header#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#a#0;n#li#1;n#ul#0;n#li#1;n#ul#0;n#li#2;n#ul#0;n#div#0;n#nav#0;n#header#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#a#0;n#li#2;n#ul#0;n#li#1;n#ul#0;n#li#2;n#ul#0;n#div#0;n#nav#0;n#header#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#a#0;n#li#3;n#ul#0;n#li#1;n#ul#0;n#li#2;n#ul#0;n#div#0;n#nav#0;n#header#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <marker date="1459514563740" expanded="true" signature="1229:23676" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -561,10 +672,7 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="31" max-vertical-offset="612">
           <caret line="4" column="17" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
           <folding>
-            <element signature="n#style#0;n#div#0;n#div#0;n#a#0;n#li#0;n#ul#0;n#li#1;n#ul#0;n#li#2;n#ul#0;n#div#0;n#nav#0;n#header#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#a#0;n#li#1;n#ul#0;n#li#1;n#ul#0;n#li#2;n#ul#0;n#div#0;n#nav#0;n#header#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#a#0;n#li#2;n#ul#0;n#li#1;n#ul#0;n#li#2;n#ul#0;n#div#0;n#nav#0;n#header#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#a#0;n#li#3;n#ul#0;n#li#1;n#ul#0;n#li#2;n#ul#0;n#div#0;n#nav#0;n#header#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <marker date="1459514563740" expanded="true" signature="1229:23676" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -648,10 +756,7 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="31" max-vertical-offset="612">
           <caret line="4" column="17" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
           <folding>
-            <element signature="n#style#0;n#div#0;n#div#0;n#a#0;n#li#0;n#ul#0;n#li#1;n#ul#0;n#li#2;n#ul#0;n#div#0;n#nav#0;n#header#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#a#0;n#li#1;n#ul#0;n#li#1;n#ul#0;n#li#2;n#ul#0;n#div#0;n#nav#0;n#header#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#a#0;n#li#2;n#ul#0;n#li#1;n#ul#0;n#li#2;n#ul#0;n#div#0;n#nav#0;n#header#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#a#0;n#li#3;n#ul#0;n#li#1;n#ul#0;n#li#2;n#ul#0;n#div#0;n#nav#0;n#header#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <marker date="1459514563740" expanded="true" signature="1229:23676" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -735,10 +840,7 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="646">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="n#style#0;n#div#0;n#div#0;n#a#0;n#li#0;n#ul#0;n#li#1;n#ul#0;n#li#2;n#ul#0;n#div#0;n#nav#0;n#header#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#a#0;n#li#1;n#ul#0;n#li#1;n#ul#0;n#li#2;n#ul#0;n#div#0;n#nav#0;n#header#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#a#0;n#li#2;n#ul#0;n#li#1;n#ul#0;n#li#2;n#ul#0;n#div#0;n#nav#0;n#header#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#a#0;n#li#3;n#ul#0;n#li#1;n#ul#0;n#li#2;n#ul#0;n#div#0;n#nav#0;n#header#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <marker date="1459514563740" expanded="true" signature="1229:23676" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -762,10 +864,7 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="357" max-vertical-offset="646">
           <caret line="21" column="17" selection-start-line="21" selection-start-column="17" selection-end-line="21" selection-end-column="17" />
           <folding>
-            <element signature="n#style#0;n#div#0;n#div#0;n#a#0;n#li#0;n#ul#0;n#li#1;n#ul#0;n#li#2;n#ul#0;n#div#0;n#nav#0;n#header#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#a#0;n#li#1;n#ul#0;n#li#1;n#ul#0;n#li#2;n#ul#0;n#div#0;n#nav#0;n#header#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#a#0;n#li#2;n#ul#0;n#li#1;n#ul#0;n#li#2;n#ul#0;n#div#0;n#nav#0;n#header#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#a#0;n#li#3;n#ul#0;n#li#1;n#ul#0;n#li#2;n#ul#0;n#div#0;n#nav#0;n#header#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <marker date="1459514563740" expanded="true" signature="1229:23676" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -912,33 +1011,29 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/static/dist/js/pages/dashboard.js">
+    <entry file="file://$PROJECT_DIR$/static/index-colory.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="3587">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="10421">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/dist/js/app.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="12767">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/static/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.02640845" vertical-offset="6849" max-vertical-offset="10421">
-          <caret line="402" column="16" selection-start-line="398" selection-start-column="17" selection-end-line="402" selection-end-column="16" />
+        <state vertical-scroll-proportion="-12.538462" vertical-offset="11472" max-vertical-offset="12053">
+          <caret line="694" column="46" selection-start-line="694" selection-start-column="46" selection-end-line="694" selection-end-column="46" />
           <folding>
-            <element signature="n#style#0;n#div#0;n#div#0;n#a#0;n#li#0;n#ul#0;n#li#1;n#ul#0;n#li#2;n#ul#0;n#div#0;n#nav#0;n#header#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#a#0;n#li#1;n#ul#0;n#li#1;n#ul#0;n#li#2;n#ul#0;n#div#0;n#nav#0;n#header#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#a#0;n#li#2;n#ul#0;n#li#1;n#ul#0;n#li#2;n#ul#0;n#div#0;n#nav#0;n#header#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#a#0;n#li#3;n#ul#0;n#li#1;n#ul#0;n#li#2;n#ul#0;n#div#0;n#nav#0;n#header#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <marker date="1459514563740" expanded="true" signature="1229:23676" placeholder="..." />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/styles/js/maps/usa.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="4352">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
