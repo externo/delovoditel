@@ -25,11 +25,12 @@
           </div>
         </div>
         <div class="col-md-1">
-          <select class="form-control">
-            <option>Инстанция</option>
-            <option>Първа</option>
-            <option>Възивна</option>
-            <option>Касационна</option>
+          <select class="form-control"
+                  ng-model="Admin.newcase.info.instance">
+            <option value="" disabled selected>Инстанция</option>
+            <option value="Първа">Първа</option>
+            <option value="Възивна">Възивна</option>
+            <option value="Касационна">Касационна</option>
           </select>
         </div>
         <div class="col-md-2">
@@ -74,8 +75,7 @@
       </tr>
       </thead>
       <tbody>
-      <tr ng-repeat="case in Admin.cases"
-          ng-click="Admin.getCase(case._id)">
+      <tr ng-repeat="case in Admin.cases">
         <td>{{case.info.type}}</td>
         <td>{{case.info.number}}</td>
         <td>{{case.info.court}}</td>
@@ -84,10 +84,10 @@
         <td>{{case.info.note}}</td>
         <td>{{case.info.datetime | date: "dd.MM.yyyy - HH:mm"}}</td>
         <!--<td><span class="label label-success">Active</span></td>-->
-        <!--<td class="text-right">-->
-          <!--<a class="btn btn-default btn-xs" ng-click="Admin.getCase(case._id)"><i class="icon-pencil"></i> edit</a>-->
-          <!--<a class="btn btn-danger btn-xs" ng-click="Admin.removeCase(case._id)"><i class="icon-remove"></i></a>-->
-        <!--</td>-->
+        <td class="text-right">
+          <a class="btn btn-default btn-xs" ng-click="Admin.getCase(case._id)"><i class="icon-pencil"></i> edit</a>
+          <a class="btn btn-danger btn-xs" ng-click="Admin.removeCase(case._id)"><i class="icon-remove"></i></a>
+        </td>
       </tr>
 
       </tbody>

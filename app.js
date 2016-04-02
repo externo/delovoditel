@@ -47,7 +47,6 @@ app.post('/admin/case', function (req, res) {
 
 app.get('/admin/case/:id', function (req, res) {
   var caseId = new mongo.ObjectID(req.params.id);
-  console.log(req.params.id);
   db.collection('cases').findOne({_id: caseId}, function (err, doc) {
     res.json(doc);
   });
@@ -55,6 +54,7 @@ app.get('/admin/case/:id', function (req, res) {
 
 app.put('/admin/case/:id', function (req, res) {
   var caseId = new mongo.ObjectID(req.params.id);
+  console.log(req.body);
   db.collection('cases').updateOne(
     {"_id": caseId},
     {
@@ -65,8 +65,7 @@ app.put('/admin/case/:id', function (req, res) {
         instance: req.body.instance,
         client: req.body.client,
         note: req.body.note,
-        date: req.body.date,
-        time: req.body.time
+        datetime: req.body.datetime
       },
       files: req.body.files
     },

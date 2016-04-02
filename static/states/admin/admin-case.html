@@ -1,30 +1,56 @@
 <div class="box-body">
-
   <div class="input-group">
-    <span class="input-group-addon"><i class="fa fa-book"></i></span>
-    <input type="text" class="form-control" placeholder="№"
-           ng-model="Admin.currentCase.number"
-           ng-value="Admin.currentCase.number">
-    <span class="input-group-addon"><i class="fa fa-university"></i></span>
-    <input type="text" class="form-control" placeholder="Съд"
-           ng-model="Admin.currentCase.court"
-           ng-value="Admin.currentCase.court">
-    <span class="input-group-addon"><i class="fa fa-graduation-cap"></i></span>
-    <input type="text" class="form-control" placeholder="Инстанция"
-           ng-model="Admin.currentCase.instance"
-           ng-value="Admin.currentCase.instance">
-    <span class="input-group-addon"><i class="fa fa-cogs"></i></span>
-    <input type="text" class="form-control" placeholder="Вид"
-           ng-model="Admin.currentCase.type"
-           ng-value="Admin.currentCase.type">
-    <span class="input-group-addon"><i class="fa fa-user"></i></span>
-    <input type="text" class="form-control" placeholder="Клиент"
-           ng-model="Admin.currentCase.client.name"
-           ng-value="Admin.currentCase.client.name">
-    <span class="input-group-addon"><i class="fa fa-phone"></i></span>
-    <input type="text" class="form-control" placeholder="GSM номер"
-           ng-model="Admin.currentCase.client.phone"
-           ng-value="Admin.currentCase.client.phone">
+    <div class="col-md-1">
+      <div class="form-group">
+        <input type="text" class="form-control" placeholder="Вид"
+               ng-model="Admin.currentCase.info.type">
+      </div>
+    </div>
+    <div class="col-md-1">
+      <div class="form-group">
+        <input type="text" class="form-control" placeholder="№"
+               ng-model="Admin.currentCase.info.number">
+      </div>
+    </div>
+    <div class="col-md-2">
+      <div class="form-group">
+        <input type="text" class="form-control" placeholder="Съд"
+               ng-model="Admin.currentCase.info.court">
+      </div>
+    </div>
+    <div class="col-md-1">
+      <select class="form-control"
+              ng-model="Admin.currentCase.info.instance">
+        <option value="" disabled selected>Инстанция</option>
+        <option value="Първа"
+                ng-selected="'Първа'==Admin.currentCase.info.instance">
+          Първа</option>
+        <option value="Възивна"
+                ng-selected="'Възивна'==Admin.currentCase.info.instance">
+          Възивна</option>
+        <option value="Касационна"
+                ng-selected="'Касационна'==Admin.currentCase.info.instance">
+          Касационна</option>
+      </select>
+    </div>
+    <div class="col-md-2">
+      <div class="form-group">
+        <input type="text" class="form-control" placeholder="Клиент"
+               ng-model="Admin.currentCase.info.client">
+      </div>
+    </div>
+    <div class="col-md-2">
+      <div class="form-group">
+        <input type="text" class="form-control" placeholder="Бележка"
+               ng-model="Admin.currentCase.info.note">
+      </div>
+    </div>
+    <div class="col-md-3">
+      <div class="form-group">
+        <input type="text" class="form-control" placeholder="{{Admin.currentCase.info.datetime | date: 'dd.MM.yyyy - HH:mm'}}"
+               onfocus="(this.type='datetime-local')">
+      </div>
+    </div>
   </div>
 
   <!-- ADD scanned documents-->
