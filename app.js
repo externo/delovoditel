@@ -58,13 +58,15 @@ app.put('/admin/case/:id', function (req, res) {
   db.collection('cases').updateOne(
     {"_id": caseId},
     {
-      number: req.body.number,
-      court: req.body.court,
-      instance: req.body.instance,
-      type: req.body.type,
-      client: {
-        name: req.body.client.name,
-        phone: req.body.client.phone
+      info: {
+        type: req.body.type,
+        number: req.body.number,
+        court: req.body.court,
+        instance: req.body.instance,
+        client: req.body.client,
+        note: req.body.note,
+        date: req.body.date,
+        time: req.body.time
       },
       files: req.body.files
     },

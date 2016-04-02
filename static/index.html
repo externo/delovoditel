@@ -43,7 +43,7 @@
   <div class="side-bar-wrapper collapse navbar-collapse navbar-ex1-collapse">
     <a href="http://kataraga.com" class="logo hidden-sm hidden-xs">
       <i class="icon-cloud-download"></i>
-      <span>Delovoditel <strong>1</strong></span>
+      <span>Delovoditel 1</span>
     </a>
 
     <div class="relative-w">
@@ -150,13 +150,11 @@
 </div>
 <div class="col-md-10">
   <div class="content-wrapper">
-    <div class="row">
-      <div class="col-md-12">
+    <div class="row col-md-12">
         <ul class="nav nav-tabs">
-          <li class="active"><a href="#tab_pie_chart" data-toggle="tab"><i class="icon-bar-chart"></i> Висящи дела</a>
-          </li>
-          <li><a href="#tab_bar_chart" data-toggle="tab"><i class="icon-bar-chart"></i> Бланки</a></li>
-          <li class="hidden-md hidden-xs"><a href="#tab_table" data-toggle="tab"><i class="icon-table"></i> Архив</a>
+          <li class="active"><a data-toggle="tab"><i class="icon-bar-chart"></i> Висящи дела</a></li>
+          <li><a data-toggle="tab"><i class="icon-bar-chart"></i> Бланки</a></li>
+          <li class="hidden-md hidden-xs"><a data-toggle="tab"><i class="icon-table"></i> Архив</a>
           </li>
         </ul>
         <div class="tab-content bottom-margin">
@@ -165,18 +163,7 @@
               <div ng-view></div>
             </div>
           </div>
-          <div class="tab-pane" id="tab_bar_chart">
-            <div class="shadowed-bottom">
-              <div ng-view></div>
-            </div>
-          </div>
-          <div class="tab-pane" id="tab_table">
-            <div class="shadowed-bottom">
-              <div ng-view></div>
-            </div>
-          </div>
         </div>
-      </div>
     </div>
   </div>
 
@@ -187,7 +174,6 @@
 <!--Theme color settings-->
 <div class="color_settings_box hidden-xs">
   <h3>Background</h3>
-
   <div class="color-settings-w" data-replace-element="body" data-leave-class="">
     <div class="color-box color-box-dark-blue color-tooltip" data-toggle="tooltip" data-placement="top"
          title="Solid Dark Blue" data-replace-with="body-dark-blue"></div>
@@ -200,8 +186,8 @@
     <div class="color-box color-box-linen-light color-tooltip" data-toggle="tooltip" data-placement="top"
          title="Light Linen" data-replace-with="body-light-linen"></div>
   </div>
-  <h3>Header</h3>
 
+  <h3>Header</h3>
   <div class="color-settings-w" data-replace-element=".page-header" data-leave-class="page-header">
     <div class="color-box color-box-dark-blue color-tooltip" data-toggle="tooltip" data-placement="top"
          title="Dark Blue" data-replace-with="page-header-dark-blue"></div>
@@ -216,8 +202,8 @@
     <div class="color-box color-box-blue color-tooltip" data-toggle="tooltip" data-placement="top" title="Blue"
          data-replace-with="page-header-blue"></div>
   </div>
-  <h3>Active Menu</h3>
 
+  <h3>Active Menu</h3>
   <div class="color-settings-w" data-replace-element=".side-menu" data-leave-class="side-menu">
     <div class="color-box color-box-dark-blue color-tooltip" data-toggle="tooltip" data-placement="top"
          title="Dark Blue" data-replace-with="side-menu-dark-blue"></div>
@@ -232,8 +218,8 @@
     <div class="color-box color-box-blue color-tooltip" data-toggle="tooltip" data-placement="top" title="Blue"
          data-replace-with="side-menu-blue"></div>
   </div>
-  <h3>Content</h3>
 
+  <h3>Content</h3>
   <div class="color-settings-w" data-replace-element=".content-inner" data-leave-class="content-inner">
     <div class="color-box color-box-white color-tooltip" data-toggle="tooltip" data-placement="top" title="White"
          data-replace-with="content-inner-white"></div>
@@ -244,7 +230,7 @@
   </div>
   <div class="toggle-color-settings">
     <i class="icon-cog"></i>
-    <span>hide</span>
+    <span>теми</span>
   </div>
 </div>
 
