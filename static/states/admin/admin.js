@@ -22,23 +22,21 @@ function AdminController($http, $scope, CaseService, FileService) {
     );
   };
 
-  Admin.editCase = function () {
-    console.log('id: ' + Admin.currentCase._id);
-    console.log('cc: ' + JSON.stringify(Admin.currentCase));
-    $http.put('/admin/case/' + Admin.currentCase._id, Admin.currentCase)
-      .then(function (res) {
-        Admin.cases = res.data;
-        Admin.click = false;
-        Admin.currentCase=null;
-      }
-    );
-  };
-
   Admin.getCase = function (id) {
     $http.get('/admin/case/' + id)
       .then(function (res) {
         Admin.currentCase = res.data;
         Admin.click = true;
+      }
+    );
+  };
+
+  Admin.editCase = function () {
+    $http.put('/admin/case/' + Admin.currentCase._id, Admin.currentCase)
+      .then(function (res) {
+        Admin.cases = res.data;
+        Admin.click = false;
+        Admin.currentCase=null;
       }
     );
   };

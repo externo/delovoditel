@@ -1,698 +1,257 @@
 <!DOCTYPE html>
-<!--[if IE 9 ]><html class="ie9"><![endif]-->
+<html>
+
 <head>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0"/>
-  <meta name="format-detection" content="telephone=no">
-  <meta charset="UTF-8">
 
-  <meta name="description" content="Violate Responsive Admin Template">
-  <meta name="keywords" content="Super Admin, Admin, Template, Bootstrap">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>Document manipulating system</title>
 
-  <!-- CSS -->
-  <link href="styles/css/bootstrap.min.css" rel="stylesheet">
-  <link href="styles/css/animate.min.css" rel="stylesheet">
-  <link href="styles/css/font-awesome.min.css" rel="stylesheet">
-  <link href="styles/css/form.css" rel="stylesheet">
-  <link href="styles/css/calendar.css" rel="stylesheet">
-  <link href="styles/css/style.css" rel="stylesheet">
-  <link href="styles/css/icons.css" rel="stylesheet">
-  <link href="styles/css/generics.css" rel="stylesheet">
+  <link rel='stylesheet' href='styles/css.css'>
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+  <link href='http://fonts.googleapis.com/css?family=Oswald:300,400,700|Open+Sans:400,700,300' rel='stylesheet'
+        type='text/css'>
+
+  <link href="assets/favicon.ico" rel="shortcut icon">
+  <link href="assets/apple-touch-icon.png" rel="apple-touch-icon">
+  <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!--[if lt IE 9]>
+  @javascript html5shiv respond.min
+  <![endif]-->
+
+  <title>Деловодна система - DELOVODITEL 1</title>
 
   <!--<script src="https://code.jquery.com/jquery-2.2.1.js"></script>-->
   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.0/angular.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.0/angular-route.js"></script>
 </head>
-<body id="skin-blur-violate" ng-app="app">
 
-<header id="header" class="media">
-  <a href="" id="menu-toggle"></a>
-  <a class="logo pull-left" href="index.html">Delovoditel 1.0</a>
-
-  <div class="media-body">
-    <div class="media" id="top-menu">
-      <div class="pull-left tm-icon">
-        <a data-drawer="messages" class="drawer-toggle" href="">
-          <i class="sa-top-message"></i>
-          <i class="n-count animated">5</i>
-          <span>Messages</span>
-        </a>
-      </div>
-      <div class="pull-left tm-icon">
-        <a data-drawer="notifications" class="drawer-toggle" href="">
-          <i class="sa-top-updates"></i>
-          <i class="n-count animated">9</i>
-          <span>Updates</span>
-        </a>
-      </div>
-
-      <div id="time" class="pull-right">
-        <span id="hours"></span>
-        :
-        <span id="min"></span>
-        :
-        <span id="sec"></span>
-      </div>
-
-      <div class="media-body">
-        <input type="text" class="main-search">
-      </div>
-    </div>
+<body ng-app="app">
+<div class="all-wrapper">
+<div class="row">
+<div class="col-md-2">
+  <div class="text-center">
+    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+      <span class="sr-only">Toggle navigation</span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+    </button>
   </div>
-</header>
+  <div class="side-bar-wrapper collapse navbar-collapse navbar-ex1-collapse">
+    <a href="http://kataraga.com" class="logo hidden-sm hidden-xs">
+      <i class="icon-cloud-download"></i>
+      <span>Delovoditel <strong>1</strong></span>
+    </a>
 
-<div class="clearfix"></div>
-
-<section id="main" class="p-relative" role="main">
-
-<!-- Sidebar -->
-<aside id="sidebar">
-
-  <!-- Sidbar Widgets -->
-  <div class="side-widgets overflow">
-    <!-- Profile Menu -->
-    <div class="text-center s-widget m-b-25 dropdown" id="profile-menu">
-      <a href="" data-toggle="dropdown">
-        <img class="profile-pic animated" src="styles/img/profile-pic.jpg" alt="">
-      </a>
-      <ul class="dropdown-menu profile-menu">
-        <li><a href="">My Profile</a> <i class="icon left">&#61903;</i><i class="icon right">&#61815;</i></li>
-        <li><a href="">Messages</a> <i class="icon left">&#61903;</i><i class="icon right">&#61815;</i></li>
-        <li><a href="">Settings</a> <i class="icon left">&#61903;</i><i class="icon right">&#61815;</i></li>
-        <li><a href="">Sign Out</a> <i class="icon left">&#61903;</i><i class="icon right">&#61815;</i></li>
+    <div class="relative-w">
+      <ul class="side-menu">
+        <li>
+          <a href="index.html">
+            <span class="badge pull-right">17</span>
+            <i class="icon-dashboard"></i> Дела
+          </a>
+        </li>
+        <li>
+          <a href="charts.html" class="is-dropdown-menu">
+            <span class="badge pull-right"></span>
+            <i class="icon-bar-chart"></i> Бланки
+          </a>
+          <ul>
+            <li>
+              <a href="charts.html#area_chart_anchor">
+                <i class="icon-random"></i>
+                Area Chart
+              </a>
+            </li>
+            <li>
+              <a href="charts.html#circle_chart_anchor">
+                <i class="icon-bullseye"></i>
+                Circular Chart
+              </a>
+            </li>
+            <li>
+              <a href="charts.html#bar_chart_anchor">
+                <i class="icon-signal"></i>
+                Bar Chart
+              </a>
+            </li>
+            <li>
+              <a href="charts.html#line_chart_anchor">
+                <i class="icon-bar-chart"></i>
+                Line Chart
+              </a>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <a href="forms.html">
+            <span class="badge pull-right">12</span>
+            <i class="icon-terminal"></i> Файлове
+          </a>
+        </li>
+        <li>
+          <a href="elements.html" class="is-dropdown-menu">
+            <span class="badge pull-right"></span>
+            <i class="icon-code-fork"></i> Архив
+          </a>
+          <ul>
+            <li>
+              <a href="elements.html">
+                <i class="icon-beaker"></i>
+                Elements
+              </a>
+            </li>
+            <li>
+              <a href="icons.html">
+                <i class="icon-picture"></i>
+                Icons
+              </a>
+            </li>
+          </ul>
+        </li>
+        <li class='current'>
+          <a href="datatable.html" class="current is-dropdown-menu">
+            <span class="badge pull-right">24</span>
+            <i class="icon-th"></i> Файлове
+          </a>
+          <ul>
+            <li class='current'>
+              <a class='current' href="datatable.html">
+                <i class="icon-list-alt"></i>
+                Data Tables
+              </a>
+            </li>
+            <li>
+              <a href="table.html">
+                <i class="icon-table"></i>
+                Regular Tables
+              </a>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <a href="calendar.html">
+            <span class="badge pull-right">11</span>
+            <i class="icon-calendar"></i> Съдилища
+          </a>
+        </li>
+        <li>
+          <a href="login.html">
+            <span class="badge pull-right"></span>
+            <i class="icon-signin"></i> Календар
+          </a>
+        </li>
       </ul>
-      <h4 class="m-0">Iliya Iliev</h4>
-      @iliata
-    </div>
-
-    <!-- Calendar -->
-    <div class="s-widget m-b-25">
-      <div id="sidebar-calendar"></div>
-    </div>
-
-    <!-- Feeds -->
-    <div class="s-widget m-b-25">
-      <h2 class="tile-title">
-        News Feeds
-      </h2>
-
-      <div class="s-widget-body">
-        <div id="news-feed"></div>
-      </div>
-    </div>
-
-    <!-- Projects -->
-    <div class="s-widget m-b-25">
-      <h2 class="tile-title">
-        Projects on going
-      </h2>
-
-      <div class="s-widget-body">
-        <div class="side-border">
-          <small>Joomla Website</small>
-          <div class="progress progress-small">
-            <a href="#" data-toggle="tooltip" title="" class="progress-bar tooltips progress-bar-danger"
-               style="width: 60%;" data-original-title="60%">
-              <span class="sr-only">60% Complete</span>
-            </a>
-          </div>
-        </div>
-        <div class="side-border">
-          <small>Opencart E-Commerce Website</small>
-          <div class="progress progress-small">
-            <a href="#" data-toggle="tooltip" title="" class="tooltips progress-bar progress-bar-info"
-               style="width: 43%;" data-original-title="43%">
-              <span class="sr-only">43% Complete</span>
-            </a>
-          </div>
-        </div>
-        <div class="side-border">
-          <small>Social Media API</small>
-          <div class="progress progress-small">
-            <a href="#" data-toggle="tooltip" title="" class="tooltips progress-bar progress-bar-warning"
-               style="width: 81%;" data-original-title="81%">
-              <span class="sr-only">81% Complete</span>
-            </a>
-          </div>
-        </div>
-        <div class="side-border">
-          <small>VB.Net Software Package</small>
-          <div class="progress progress-small">
-            <a href="#" data-toggle="tooltip" title="" class="tooltips progress-bar progress-bar-success"
-               style="width: 10%;" data-original-title="10%">
-              <span class="sr-only">10% Complete</span>
-            </a>
-          </div>
-        </div>
-        <div class="side-border">
-          <small>Chrome Extension</small>
-          <div class="progress progress-small">
-            <a href="#" data-toggle="tooltip" title="" class="tooltips progress-bar progress-bar-success"
-               style="width: 95%;" data-original-title="95%">
-              <span class="sr-only">95% Complete</span>
-            </a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- Side Menu -->
-  <ul class="list-unstyled side-menu">
-    <li class="active">
-      <a class="sa-side-home" href="index.html">
-        <span class="menu-item">Dashboard</span>
-      </a>
-    </li>
-    <li>
-      <a class="sa-side-typography" href="typography.html">
-        <span class="menu-item">Typography</span>
-      </a>
-    </li>
-    <li>
-      <a class="sa-side-widget" href="content-widgets.html">
-        <span class="menu-item">Widgets</span>
-      </a>
-    </li>
-    <li>
-      <a class="sa-side-table" href="tables.html">
-        <span class="menu-item">Tables</span>
-      </a>
-    </li>
-    <li class="dropdown">
-      <a class="sa-side-form" href="">
-        <span class="menu-item">Form</span>
-      </a>
-      <ul class="list-unstyled menu-item">
-        <li><a href="form-elements.html">Basic Form Elements</a></li>
-        <li><a href="form-components.html">Form Components</a></li>
-        <li><a href="form-examples.html">Form Examples</a></li>
-        <li><a href="form-validation.html">Form Validation</a></li>
-      </ul>
-    </li>
-    <li class="dropdown">
-      <a class="sa-side-ui" href="">
-        <span class="menu-item">User Interface</span>
-      </a>
-      <ul class="list-unstyled menu-item">
-        <li><a href="buttons.html">Buttons</a></li>
-        <li><a href="labels.html">Labels</a></li>
-        <li><a href="images-icons.html">Images &amp; Icons</a></li>
-        <li><a href="alerts.html">Alerts</a></li>
-        <li><a href="media.html">Media</a></li>
-        <li><a href="components.html">Components</a></li>
-        <li><a href="other-components.html">Others</a></li>
-      </ul>
-    </li>
-    <li class="dropdown">
-      <a class="sa-side-photos" href="">
-        <span class="menu-item">PHOTO GALLERY</span>
-      </a>
-      <ul class="list-unstyled menu-item">
-
-        <li><a href="photo-gallery-alt.html">Photo Gallery</a></li>
-      </ul>
-    </li>
-    <li>
-      <a class="sa-side-chart" href="charts.html">
-        <span class="menu-item">Charts</span>
-      </a>
-    </li>
-    <li>
-      <a class="sa-side-folder" href="file-manager.html">
-        <span class="menu-item">File Manager</span>
-      </a>
-    </li>
-    <li>
-      <a class="sa-side-calendar" href="calendar.html">
-        <span class="menu-item">Calendar</span>
-      </a>
-    </li>
-    <li class="dropdown">
-      <a class="sa-side-page" href="">
-        <span class="menu-item">Pages</span>
-      </a>
-      <ul class="list-unstyled menu-item">
-        <li><a href="list-view.html">List View</a></li>
-        <li><a href="profile-page.html">Profile Page</a></li>
-        <li><a href="messages.html">Messages</a></li>
-        <li><a href="login.html">Login</a></li>
-        <li><a href="404.html">404 Error</a></li>
-      </ul>
-    </li>
-  </ul>
-
-</aside>
-
-<!-- Content -->
-<section id="content" class="container">
-
-<!-- Messages Drawer -->
-<div id="messages" class="tile drawer animated">
-  <div class="listview narrow">
-    <div class="media">
-      <a href="">Send a New Message</a>
-      <span class="drawer-close">&times;</span>
-
-    </div>
-    <div class="overflow" style="height: 254px">
-      <div class="media">
-        <div class="pull-left">
-          <img width="40" src="styles/img/profile-pics/1.jpg" alt="">
-        </div>
-        <div class="media-body">
-          <small class="text-muted">Nadin Jackson - 2 Hours ago</small>
-          <br>
-          <a class="t-overflow" href="">Mauris consectetur urna nec tempor adipiscing. Proin sit amet nisi ligula. Sed
-            eu adipiscing lectus</a>
-        </div>
-      </div>
-      <div class="media">
-        <div class="pull-left">
-          <img width="40" src="styles/img/profile-pics/2.jpg" alt="">
-        </div>
-        <div class="media-body">
-          <small class="text-muted">David Villa - 5 Hours ago</small>
-          <br>
-          <a class="t-overflow" href="">Suspendisse in purus ut nibh placerat Cras pulvinar euismod nunc quis gravida.
-            Suspendisse pharetra</a>
-        </div>
-      </div>
-      <div class="media">
-        <div class="pull-left">
-          <img width="40" src="styles/img/profile-pics/3.jpg" alt="">
-        </div>
-        <div class="media-body">
-          <small class="text-muted">Harris worgon - On 15/12/2013</small>
-          <br>
-          <a class="t-overflow" href="">Maecenas venenatis enim condimentum ultrices fringilla. Nulla eget libero
-            rhoncus, bibendum diam eleifend, vulputate mi. Fusce non nibh pulvinar, ornare turpis id</a>
-        </div>
-      </div>
-      <div class="media">
-        <div class="pull-left">
-          <img width="40" src="styles/img/profile-pics/4.jpg" alt="">
-        </div>
-        <div class="media-body">
-          <small class="text-muted">Mitch Bradberry - On 14/12/2013</small>
-          <br>
-          <a class="t-overflow" href="">Phasellus interdum felis enim, eu bibendum ipsum tristique vitae. Phasellus
-            feugiat massa orci, sed viverra felis aliquet quis. Curabitur vel blandit odio. Vestibulum sagittis quis sem
-            sit amet tristique.</a>
-        </div>
-      </div>
-      <div class="media">
-        <div class="pull-left">
-          <img width="40" src="styles/img/profile-pics/1.jpg" alt="">
-        </div>
-        <div class="media-body">
-          <small class="text-muted">Nadin Jackson - On 15/12/2013</small>
-          <br>
-          <a class="t-overflow" href="">Ipsum wintoo consectetur urna nec tempor adipiscing. Proin sit amet nisi ligula.
-            Sed eu adipiscing lectus</a>
-        </div>
-      </div>
-      <div class="media">
-        <div class="pull-left">
-          <img width="40" src="styles/img/profile-pics/2.jpg" alt="">
-        </div>
-        <div class="media-body">
-          <small class="text-muted">David Villa - On 16/12/2013</small>
-          <br>
-          <a class="t-overflow" href="">Suspendisse in purus ut nibh placerat Cras pulvinar euismod nunc quis gravida.
-            Suspendisse pharetra</a>
-        </div>
-      </div>
-      <div class="media">
-        <div class="pull-left">
-          <img width="40" src="styles/img/profile-pics/3.jpg" alt="">
-        </div>
-        <div class="media-body">
-          <small class="text-muted">Harris worgon - On 17/12/2013</small>
-          <br>
-          <a class="t-overflow" href="">Maecenas venenatis enim condimentum ultrices fringilla. Nulla eget libero
-            rhoncus, bibendum diam eleifend, vulputate mi. Fusce non nibh pulvinar, ornare turpis id</a>
-        </div>
-      </div>
-      <div class="media">
-        <div class="pull-left">
-          <img width="40" src="styles/img/profile-pics/4.jpg" alt="">
-        </div>
-        <div class="media-body">
-          <small class="text-muted">Mitch Bradberry - On 18/12/2013</small>
-          <br>
-          <a class="t-overflow" href="">Phasellus interdum felis enim, eu bibendum ipsum tristique vitae. Phasellus
-            feugiat massa orci, sed viverra felis aliquet quis. Curabitur vel blandit odio. Vestibulum sagittis quis sem
-            sit amet tristique.</a>
-        </div>
-      </div>
-      <div class="media">
-        <div class="pull-left">
-          <img width="40" src="styles/img/profile-pics/5.jpg" alt="">
-        </div>
-        <div class="media-body">
-          <small class="text-muted">Wendy Mitchell - On 19/12/2013</small>
-          <br>
-          <a class="t-overflow" href="">Integer a eros dapibus, vehicula quam accumsan, tincidunt purus</a>
-        </div>
-      </div>
-    </div>
-    <div class="media text-center whiter l-100">
-      <a href="">
-        <small>VIEW ALL</small>
-      </a>
     </div>
   </div>
 </div>
-
-<!-- Notification Drawer -->
-<div id="notifications" class="tile drawer animated">
-  <div class="listview narrow">
-    <div class="media">
-      <a href="">Notification Settings</a>
-      <span class="drawer-close">&times;</span>
-    </div>
-    <div class="overflow" style="height: 254px">
-      <div class="media">
-        <div class="pull-left">
-          <img width="40" src="styles/img/profile-pics/1.jpg" alt="">
-        </div>
-        <div class="media-body">
-          <small class="text-muted">Nadin Jackson - 2 Hours ago</small>
-          <br>
-          <a class="t-overflow" href="">Mauris consectetur urna nec tempor adipiscing. Proin sit amet nisi ligula. Sed
-            eu adipiscing lectus</a>
-        </div>
-      </div>
-      <div class="media">
-        <div class="pull-left">
-          <img width="40" src="styles/img/profile-pics/2.jpg" alt="">
-        </div>
-        <div class="media-body">
-          <small class="text-muted">David Villa - 5 Hours ago</small>
-          <br>
-          <a class="t-overflow" href="">Suspendisse in purus ut nibh placerat Cras pulvinar euismod nunc quis gravida.
-            Suspendisse pharetra</a>
+<div class="col-md-10">
+  <div class="content-wrapper">
+    <div class="row">
+      <div class="col-md-12">
+        <ul class="nav nav-tabs">
+          <li class="active"><a href="#tab_pie_chart" data-toggle="tab"><i class="icon-bar-chart"></i> Висящи дела</a>
+          </li>
+          <li><a href="#tab_bar_chart" data-toggle="tab"><i class="icon-bar-chart"></i> Бланки</a></li>
+          <li class="hidden-md hidden-xs"><a href="#tab_table" data-toggle="tab"><i class="icon-table"></i> Архив</a>
+          </li>
+        </ul>
+        <div class="tab-content bottom-margin">
+          <div class="tab-pane active" id="tab_pie_chart">
+            <div class="shadowed-bottom">
+              <div ng-view></div>
+            </div>
+          </div>
+          <div class="tab-pane" id="tab_bar_chart">
+            <div class="shadowed-bottom">
+              <div ng-view></div>
+            </div>
+          </div>
+          <div class="tab-pane" id="tab_table">
+            <div class="shadowed-bottom">
+              <div ng-view></div>
+            </div>
+          </div>
         </div>
       </div>
-      <div class="media">
-        <div class="pull-left">
-          <img width="40" src="styles/img/profile-pics/3.jpg" alt="">
-        </div>
-        <div class="media-body">
-          <small class="text-muted">Harris worgon - On 15/12/2013</small>
-          <br>
-          <a class="t-overflow" href="">Maecenas venenatis enim condimentum ultrices fringilla. Nulla eget libero
-            rhoncus, bibendum diam eleifend, vulputate mi. Fusce non nibh pulvinar, ornare turpis id</a>
-        </div>
-      </div>
-      <div class="media">
-        <div class="pull-left">
-          <img width="40" src="styles/img/profile-pics/4.jpg" alt="">
-        </div>
-        <div class="media-body">
-          <small class="text-muted">Mitch Bradberry - On 14/12/2013</small>
-          <br>
-          <a class="t-overflow" href="">Phasellus interdum felis enim, eu bibendum ipsum tristique vitae. Phasellus
-            feugiat massa orci, sed viverra felis aliquet quis. Curabitur vel blandit odio. Vestibulum sagittis quis sem
-            sit amet tristique.</a>
-        </div>
-      </div>
-      <div class="media">
-        <div class="pull-left">
-          <img width="40" src="styles/img/profile-pics/1.jpg" alt="">
-        </div>
-        <div class="media-body">
-          <small class="text-muted">Nadin Jackson - On 15/12/2013</small>
-          <br>
-          <a class="t-overflow" href="">Ipsum wintoo consectetur urna nec tempor adipiscing. Proin sit amet nisi ligula.
-            Sed eu adipiscing lectus</a>
-        </div>
-      </div>
-      <div class="media">
-        <div class="pull-left">
-          <img width="40" src="styles/img/profile-pics/2.jpg" alt="">
-        </div>
-        <div class="media-body">
-          <small class="text-muted">David Villa - On 16/12/2013</small>
-          <br>
-          <a class="t-overflow" href="">Suspendisse in purus ut nibh placerat Cras pulvinar euismod nunc quis gravida.
-            Suspendisse pharetra</a>
-        </div>
-      </div>
-    </div>
-    <div class="media text-center whiter l-100">
-      <a href="">
-        <small>VIEW ALL</small>
-      </a>
-    </div>
-  </div>
-</div>
-
-<!-- Breadcrumb -->
-<!--<ol class="breadcrumb hidden-xs">-->
-<!--<li><a href="#">Home</a></li>-->
-<!--<li><a href="#">Library</a></li>-->
-<!--<li class="active">Data</li>-->
-<!--</ol>-->
-
-<!--<h4 class="page-title">DASHBOARD</h4>-->
-
-<!-- Shortcuts -->
-<div class="block-area shortcut-area">
-  <a class="shortcut tile" href="">
-    <img src="styles/img/shortcuts/money.png" alt="">
-    <small class="t-overflow">Purchases</small>
-  </a>
-  <a class="shortcut tile" href="">
-    <img src="styles/img/shortcuts/twitter.png" alt="">
-    <small class="t-overflow">Tweets</small>
-  </a>
-  <a class="shortcut tile" href="">
-    <img src="styles/img/shortcuts/calendar.png" alt="">
-    <small class="t-overflow">Calendar</small>
-  </a>
-  <a class="shortcut tile" href="">
-    <img src="styles/img/shortcuts/stats.png" alt="">
-    <small class="t-overflow">Statistics</small>
-  </a>
-  <a class="shortcut tile" href="">
-    <img src="styles/img/shortcuts/connections.png" alt="">
-    <small class="t-overflow">Connection</small>
-  </a>
-  <a class="shortcut tile" href="">
-    <img src="styles/img/shortcuts/reports.png" alt="">
-    <small class="t-overflow">Reports</small>
-  </a>
-</div>
-
-<hr class="whiter"/>
-
-<div ng-view></div>
-<!-- Table Hover -->
-<div class="block-area" id="tableHover">
-  <h3 class="block-title">Висящи дела</h3>
-
-  <div class="table-responsive overflow">
-    <table class="table table-bordered table-hover tile">
-      <thead>
-      <tr>
-        <th>No.</th>
-        <th>First Name</th>
-        <th>Last Name</th>
-        <th>Username</th>
-      </tr>
-      </thead>
-      <tbody>
-      <tr>
-        <td>1</td>
-        <td>Jhon</td>
-        <td>Makinton</td>
-        <td>@makinton</td>
-      </tr>
-      <tr>
-        <td>2</td>
-        <td>Malinda</td>
-        <td>Hollaway</td>
-        <td>@hollway</td>
-      </tr>
-      <tr>
-        <td>3</td>
-        <td>Wayn</td>
-        <td>Parnel</td>
-        <td>@wayne123</td>
-      </tr>
-      </tbody>
-    </table>
-  </div>
-</div>
-
-<!-- Chat -->
-<div class="chat">
-
-  <!-- Chat List -->
-  <div class="pull-left chat-list">
-    <div class="listview narrow">
-      <div class="media">
-        <img class="pull-left" src="styles/img/profile-pics/1.jpg" width="30" alt="">
-
-        <div class="media-body p-t-5">
-          Alex Bendit
-        </div>
-      </div>
-      <div class="media">
-        <img class="pull-left" src="styles/img/profile-pics/2.jpg" width="30" alt="">
-
-        <div class="media-body">
-          <span class="t-overflow p-t-5">David Volla Watkinson</span>
-        </div>
-      </div>
-      <div class="media">
-        <img class="pull-left" src="styles/img/profile-pics/3.jpg" width="30" alt="">
-
-        <div class="media-body">
-          <span class="t-overflow p-t-5">Mitchell Christein</span>
-        </div>
-      </div>
-      <div class="media">
-        <img class="pull-left" src="styles/img/profile-pics/4.jpg" width="30" alt="">
-
-        <div class="media-body">
-          <span class="t-overflow p-t-5">Wayne Parnell</span>
-        </div>
-      </div>
-      <div class="media">
-        <img class="pull-left" src="styles/img/profile-pics/5.jpg" width="30" alt="">
-
-        <div class="media-body">
-          <span class="t-overflow p-t-5">Melina April</span>
-        </div>
-      </div>
-      <div class="media">
-        <img class="pull-left" src="styles/img/profile-pics/6.jpg" width="30" alt="">
-
-        <div class="media-body">
-          <span class="t-overflow p-t-5">Ford Harnson</span>
-        </div>
-      </div>
-
     </div>
   </div>
 
-  <!-- Chat Area -->
-  <div class="media-body">
-    <div class="chat-header">
-      <a class="btn btn-sm" href="">
-        <i class="fa fa-circle-o status m-r-5"></i> Chat with Friends
-      </a>
-    </div>
+</div>
+</div>
+</div>
 
-    <div class="chat-body">
-      <div class="media">
-        <img class="pull-right" src="styles/img/profile-pics/1.jpg" width="30" alt=""/>
+<!--Theme color settings-->
+<div class="color_settings_box hidden-xs">
+  <h3>Background</h3>
 
-        <div class="media-body pull-right">
-          Hiiii<br/>
-          How you doing bro?
-          <small>Me - 10 Mins ago</small>
-        </div>
-      </div>
+  <div class="color-settings-w" data-replace-element="body" data-leave-class="">
+    <div class="color-box color-box-dark-blue color-tooltip" data-toggle="tooltip" data-placement="top"
+         title="Solid Dark Blue" data-replace-with="body-dark-blue"></div>
+    <div class="color-box color-box-light-blue color-tooltip" data-toggle="tooltip" data-placement="top"
+         title="Solid Light Blue" data-replace-with="body-blue"></div>
+    <div class="color-box color-box-grey color-tooltip" data-toggle="tooltip" data-placement="top" title="Solid Grey"
+         data-replace-with="body-grey"></div>
+    <div class="color-box color-box-linen-dark color-tooltip active" data-toggle="tooltip" data-placement="top"
+         title="Dark Linen" data-replace-with="body-dark-linen"></div>
+    <div class="color-box color-box-linen-light color-tooltip" data-toggle="tooltip" data-placement="top"
+         title="Light Linen" data-replace-with="body-light-linen"></div>
+  </div>
+  <h3>Header</h3>
 
-      <div class="media pull-left">
-        <img class="pull-left" src="styles/img/profile-pics/2.jpg" width="30" alt=""/>
+  <div class="color-settings-w" data-replace-element=".page-header" data-leave-class="page-header">
+    <div class="color-box color-box-dark-blue color-tooltip" data-toggle="tooltip" data-placement="top"
+         title="Dark Blue" data-replace-with="page-header-dark-blue"></div>
+    <div class="color-box color-box-red active color-tooltip" data-toggle="tooltip" data-placement="top" title="Red"
+         data-replace-with="page-header-red"></div>
+    <div class="color-box color-box-green color-tooltip" data-toggle="tooltip" data-placement="top" title="Green"
+         data-replace-with="page-header-green"></div>
+    <div class="color-box color-box-green-sea color-tooltip" data-toggle="tooltip" data-placement="top"
+         title="Green Sea" data-replace-with="page-header-green-sea"></div>
+    <div class="color-box color-box-orange color-tooltip" data-toggle="tooltip" data-placement="top" title="Emerald"
+         data-replace-with="page-header-orange"></div>
+    <div class="color-box color-box-blue color-tooltip" data-toggle="tooltip" data-placement="top" title="Blue"
+         data-replace-with="page-header-blue"></div>
+  </div>
+  <h3>Active Menu</h3>
 
-        <div class="media-body">
-          I'm doing well buddy. <br/>How do you do?
-          <small>David - 9 Mins ago</small>
-        </div>
-      </div>
+  <div class="color-settings-w" data-replace-element=".side-menu" data-leave-class="side-menu">
+    <div class="color-box color-box-dark-blue color-tooltip" data-toggle="tooltip" data-placement="top"
+         title="Dark Blue" data-replace-with="side-menu-dark-blue"></div>
+    <div class="color-box color-box-red active color-tooltip" data-toggle="tooltip" data-placement="top"
+         title="Red (Default)" data-replace-with="side-menu-red"></div>
+    <div class="color-box color-box-green color-tooltip" data-toggle="tooltip" data-placement="top" title="Green"
+         data-replace-with="side-menu-green"></div>
+    <div class="color-box color-box-green-sea color-tooltip" data-toggle="tooltip" data-placement="top"
+         title="Green Sea" data-replace-with="side-menu-green-sea"></div>
+    <div class="color-box color-box-orange color-tooltip" data-toggle="tooltip" data-placement="top" title="Orange"
+         data-replace-with="side-menu-orange"></div>
+    <div class="color-box color-box-blue color-tooltip" data-toggle="tooltip" data-placement="top" title="Blue"
+         data-replace-with="side-menu-blue"></div>
+  </div>
+  <h3>Content</h3>
 
-      <div class="media pull-right">
-        <img class="pull-right" src="styles/img/profile-pics/2.jpg" width="30" alt=""/>
-
-        <div class="media-body">
-          I'm Fine bro <br/>Thank you for asking
-          <small>Me - 8 Mins ago</small>
-        </div>
-      </div>
-
-      <div class="media pull-right">
-        <img class="pull-right" src="styles/img/profile-pics/2.jpg" width="30" alt=""/>
-
-        <div class="media-body">
-          Any idea for a hangout?
-          <small>Me - 8 Mins ago</small>
-        </div>
-      </div>
-
-    </div>
-
-    <div class="chat-footer media">
-      <i class="chat-list-toggle pull-left fa fa-bars"></i>
-      <i class="pull-right fa fa-picture-o"></i>
-
-      <div class="media-body">
-        <textarea class="form-control" placeholder="Type something..."></textarea>
-      </div>
-    </div>
+  <div class="color-settings-w" data-replace-element=".content-inner" data-leave-class="content-inner">
+    <div class="color-box color-box-white color-tooltip" data-toggle="tooltip" data-placement="top" title="White"
+         data-replace-with="content-inner-white"></div>
+    <div class="color-box color-box-grey color-tooltip" data-toggle="tooltip" data-placement="top" title="Grey"
+         data-replace-with="content-inner-grey"></div>
+    <div class="color-box color-box-beige active color-tooltip" data-toggle="tooltip" data-placement="top" title="Beige"
+         data-replace-with="content-inner-beige"></div>
+  </div>
+  <div class="toggle-color-settings">
+    <i class="icon-cog"></i>
+    <span>hide</span>
   </div>
 </div>
-</section>
-</section>
 
-<!-- Javascript Libraries -->
-<!-- jQuery -->
-<script src="styles/js/jquery.min.js"></script>
-<!-- jQuery Library -->
-<script src="styles/js/jquery-ui.min.js"></script>
-<!-- jQuery UI -->
-<script src="styles/js/jquery.easing.1.3.js"></script>
-<!-- jQuery Easing - Requirred for Lightbox + Pie Charts-->
-
-<!-- Bootstrap -->
-<script src="styles/js/bootstrap.min.js"></script>
-
-<!-- Charts -->
-<script src="styles/js/charts/jquery.flot.js"></script>
-<!-- Flot Main -->
-<script src="styles/js/charts/jquery.flot.time.js"></script>
-<!-- Flot sub -->
-<script src="styles/js/charts/jquery.flot.animator.min.js"></script>
-<!-- Flot sub -->
-<script src="styles/js/charts/jquery.flot.resize.min.js"></script>
-<!-- Flot sub - for repaint when resizing the screen -->
-
-<script src="styles/js/sparkline.min.js"></script>
-<!-- Sparkline - Tiny charts -->
-<script src="styles/js/easypiechart.js"></script>
-<!-- EasyPieChart - Animated Pie Charts -->
-<script src="styles/js/charts.js"></script>
-<!-- All the above chart related functions -->
-
-<!-- Map -->
-<script src="styles/js/maps/jvectormap.min.js"></script>
-<!-- jVectorMap main library -->
-<script src="styles/js/maps/usa.js"></script>
-<!-- USA Map for jVectorMap -->
-
-<!--  Form Related -->
-<script src="styles/js/icheck.js"></script>
-<!-- Custom Checkbox + Radio -->
-
-<!-- UX -->
-<script src="styles/js/scroll.min.js"></script>
-<!-- Custom Scrollbar -->
-
-<!-- Other -->
-<script src="styles/js/calendar.min.js"></script>
-<!-- Calendar -->
-<script src="styles/js/feeds.min.js"></script>
-<!-- News Feeds -->
-
-
-<!-- All JS functions -->
-<script src="styles/js/functions.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
+<script src='styles/script1.js'></script>
+<script src='styles/script2.js'></script>
 
 <!-- AngularJS APP scripts -->
 <script src="js/app.js"></script>
@@ -700,4 +259,5 @@
 <script src="js/upload.js"></script>
 <script src="states/admin/admin.js"></script>
 </body>
+
 </html>

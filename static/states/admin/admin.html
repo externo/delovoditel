@@ -1,54 +1,77 @@
-<div ng-controller="AdminController as Admin">
-  <div class="box box-default col-lg-10" ng-hide="Admin.click">
-    <div class="box-header with-border">
-      <h3 class="box-title">Дело</h3>
-    </div>
-    <div class="box-body">
-      <div class="input-group">
-        <span class="input-group-addon"><i class="fa fa-book"></i></span>
-        <input type="text" class="form-control col-md-1" placeholder="№"
-               ng-model="Admin.newcase.number">
-        <span class="input-group-addon"><i class="fa fa-university"></i></span>
-        <input type="text" class="form-control" placeholder="Съд"
-               ng-model="Admin.newcase.court">
-        <span class="input-group-addon"><i class="fa fa-graduation-cap"></i></span>
-        <input type="text" class="form-control" placeholder="Инстанция"
-               ng-model="Admin.newcase.instance">
-        <span class="input-group-addon"><i class="fa fa-cogs"></i></span>
-        <input type="text" class="form-control" placeholder="Вид"
-               ng-model="Admin.newcase.type">
-        <span class="input-group-addon"><i class="fa fa-user"></i></span>
-        <input type="text" class="form-control" placeholder="Клиент"
-               ng-model="Admin.newcase.client.name">
-        <span class="input-group-addon"><i class="fa fa-phone"></i></span>
-        <input type="text" class="form-control" placeholder="GSM номер"
-               ng-model="Admin.newcase.client.phone">
+<div class="row" ng-controller="AdminController as Admin">
+  <div class="padded">
+    <form action="" role="form">
+      <div class="widget-controls pull-right">
+        <a href="#" class="widget-link-remove"><i class="icon-remove-sign"></i></a>
       </div>
-      <div class="form-group col-lg-2 pull-right">
-        <button class="btn btn-block btn-success" ng-click="Admin.addCase(Admin.newcase)">Добави</button>
+      <h3 class="form-title form-title-first"><i class="icon-terminal"></i> Добави дело</h3>
+      <div class="row">
+        <div class="col-md-2">
+          <div class="form-group">
+            <input type="text" class="form-control" placeholder="Вид"
+                   ng-model="Admin.newcase.type">
+          </div>
+        </div>
+        <div class="col-md-1">
+          <div class="form-group">
+            <input type="text" class="form-control" placeholder="№ дело"
+                   ng-model="Admin.newcase.number">
+          </div>
+        </div>
+        <div class="col-md-2">
+          <div class="form-group">
+            <input type="text" class="form-control" placeholder="Съд"
+                   ng-model="Admin.newcase.court">
+          </div>
+        </div>
+        <div class="col-md-2">
+          <select class="form-control">
+            <option>Инстанция</option>
+            <option>Първа</option>
+            <option>Възивна</option>
+            <option>Касационна</option>
+          </select>
+        </div>
       </div>
-    </div>
-    <!-- /.box-body -->
-    <table class="table table-striped">
+      <button class="btn btn-primary" ng-click="Admin.addCase(Admin.newcase)">Добави</button>
+      <button class="btn btn-default">Отмени</button>
+    </form>
+
+    <table class="table table-striped table-bordered table-hover datatable"
+           ng-hide="Admin.click">
       <thead>
       <tr>
-        <th>Дела</th>
+        <th>
+          <div class="checkbox"><input type="checkbox"></div>
+        </th>
+        <th>ID</th>
+        <th>Customer Name</th>
+        <th>Country</th>
+        <th>Balance</th>
+        <th>Status</th>
+        <th></th>
       </tr>
       </thead>
       <tbody>
       <tr ng-repeat="case in Admin.cases">
-        <td>{{case.number}}</td><td>{{case.court}}</td><td>{{case.client.name}}</td><td>{{case.client.number}}</td>
-        <td class="pull-right">
-          <button class="btn btn-warning" ng-click="Admin.getCase(case._id); click=true">
-            <span class="glyphicon glyphicon-pencil"></span>
-          </button>
-          <button class="btn btn-danger" ng-click="Admin.removeCase(case._id)">
-            <span class="glyphicon glyphicon-remove"></span>
-          </button>
+        <!--<td>-->
+        <!--<div class="checkbox"><input type="checkbox"></div>-->
+        <!--</td>-->
+        <!--<td>1</td>-->
+        <td>{{case.number}}</td>
+        <td>{{case.court}}</td>
+        <td>{{case.client.name}}</td>
+        <td>{{case.client.number}}</td>
+        <td class="text-right">$25.94</td>
+        <td><span class="label label-success">Active</span></td>
+        <td class="text-right">
+          <a class="btn btn-default btn-xs" ng-click="Admin.getCase(case._id)"><i class="icon-pencil"></i> edit</a>
+          <a class="btn btn-danger btn-xs" ng-click="Admin.removeCase(case._id)"><i class="icon-remove"></i></a>
         </td>
       </tr>
+
       </tbody>
     </table>
+    <div ng-include="'states/admin/admin-case.html'" ng-show="Admin.click"></div>
   </div>
-  <div ng-include="'states/admin/admin-case.html'" ng-show="Admin.click"></div>
 </div>

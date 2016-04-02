@@ -2,80 +2,48 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="049e9152-c971-46cc-ac3f-2f62a80821dc" name="Default" comment="">
-      <change type="DELETED" beforePath="E:\ilia\AngularProjects\nodejs\static\bootstrap\css\bootstrap.css" afterPath="" />
-      <change type="DELETED" beforePath="E:\ilia\AngularProjects\nodejs\static\bootstrap\css\bootstrap.css.map" afterPath="" />
-      <change type="DELETED" beforePath="E:\ilia\AngularProjects\nodejs\static\bootstrap\css\bootstrap.min.css" afterPath="" />
-      <change type="DELETED" beforePath="E:\ilia\AngularProjects\nodejs\static\bootstrap\fonts\glyphicons-halflings-regular.eot" afterPath="" />
-      <change type="DELETED" beforePath="E:\ilia\AngularProjects\nodejs\static\bootstrap\fonts\glyphicons-halflings-regular.svg" afterPath="" />
-      <change type="DELETED" beforePath="E:\ilia\AngularProjects\nodejs\static\bootstrap\fonts\glyphicons-halflings-regular.ttf" afterPath="" />
-      <change type="DELETED" beforePath="E:\ilia\AngularProjects\nodejs\static\bootstrap\fonts\glyphicons-halflings-regular.woff" afterPath="" />
-      <change type="DELETED" beforePath="E:\ilia\AngularProjects\nodejs\static\bootstrap\fonts\glyphicons-halflings-regular.woff2" afterPath="" />
-      <change type="DELETED" beforePath="E:\ilia\AngularProjects\nodejs\static\bootstrap\js\bootstrap.js" afterPath="" />
-      <change type="DELETED" beforePath="E:\ilia\AngularProjects\nodejs\static\bootstrap\js\bootstrap.min.js" afterPath="" />
-      <change type="DELETED" beforePath="E:\ilia\AngularProjects\nodejs\static\bootstrap\js\npm.js" afterPath="" />
-      <change type="DELETED" beforePath="E:\ilia\AngularProjects\nodejs\static\dist\css\AdminLTE.css" afterPath="" />
-      <change type="DELETED" beforePath="E:\ilia\AngularProjects\nodejs\static\dist\css\AdminLTE.min.css" afterPath="" />
-      <change type="DELETED" beforePath="E:\ilia\AngularProjects\nodejs\static\dist\css\skins\_all-skins.css" afterPath="" />
-      <change type="DELETED" beforePath="E:\ilia\AngularProjects\nodejs\static\dist\css\skins\_all-skins.min.css" afterPath="" />
-      <change type="DELETED" beforePath="E:\ilia\AngularProjects\nodejs\static\dist\css\skins\skin-black-light.css" afterPath="" />
-      <change type="DELETED" beforePath="E:\ilia\AngularProjects\nodejs\static\dist\css\skins\skin-black-light.min.css" afterPath="" />
-      <change type="DELETED" beforePath="E:\ilia\AngularProjects\nodejs\static\dist\css\skins\skin-black.css" afterPath="" />
-      <change type="DELETED" beforePath="E:\ilia\AngularProjects\nodejs\static\dist\css\skins\skin-black.min.css" afterPath="" />
-      <change type="DELETED" beforePath="E:\ilia\AngularProjects\nodejs\static\dist\css\skins\skin-blue-light.css" afterPath="" />
-      <change type="DELETED" beforePath="E:\ilia\AngularProjects\nodejs\static\dist\css\skins\skin-blue-light.min.css" afterPath="" />
-      <change type="DELETED" beforePath="E:\ilia\AngularProjects\nodejs\static\dist\css\skins\skin-blue.css" afterPath="" />
-      <change type="DELETED" beforePath="E:\ilia\AngularProjects\nodejs\static\dist\css\skins\skin-blue.min.css" afterPath="" />
-      <change type="DELETED" beforePath="E:\ilia\AngularProjects\nodejs\static\dist\css\skins\skin-green-light.css" afterPath="" />
-      <change type="DELETED" beforePath="E:\ilia\AngularProjects\nodejs\static\dist\css\skins\skin-green-light.min.css" afterPath="" />
-      <change type="DELETED" beforePath="E:\ilia\AngularProjects\nodejs\static\dist\css\skins\skin-green.css" afterPath="" />
-      <change type="DELETED" beforePath="E:\ilia\AngularProjects\nodejs\static\dist\css\skins\skin-green.min.css" afterPath="" />
-      <change type="DELETED" beforePath="E:\ilia\AngularProjects\nodejs\static\dist\css\skins\skin-purple-light.css" afterPath="" />
-      <change type="DELETED" beforePath="E:\ilia\AngularProjects\nodejs\static\dist\css\skins\skin-purple-light.min.css" afterPath="" />
-      <change type="DELETED" beforePath="E:\ilia\AngularProjects\nodejs\static\dist\css\skins\skin-purple.css" afterPath="" />
-      <change type="DELETED" beforePath="E:\ilia\AngularProjects\nodejs\static\dist\css\skins\skin-purple.min.css" afterPath="" />
-      <change type="DELETED" beforePath="E:\ilia\AngularProjects\nodejs\static\dist\css\skins\skin-red-light.css" afterPath="" />
-      <change type="DELETED" beforePath="E:\ilia\AngularProjects\nodejs\static\dist\css\skins\skin-red-light.min.css" afterPath="" />
-      <change type="DELETED" beforePath="E:\ilia\AngularProjects\nodejs\static\dist\css\skins\skin-red.css" afterPath="" />
-      <change type="DELETED" beforePath="E:\ilia\AngularProjects\nodejs\static\dist\css\skins\skin-red.min.css" afterPath="" />
-      <change type="DELETED" beforePath="E:\ilia\AngularProjects\nodejs\static\dist\css\skins\skin-yellow-light.css" afterPath="" />
-      <change type="DELETED" beforePath="E:\ilia\AngularProjects\nodejs\static\dist\css\skins\skin-yellow-light.min.css" afterPath="" />
-      <change type="DELETED" beforePath="E:\ilia\AngularProjects\nodejs\static\dist\css\skins\skin-yellow.css" afterPath="" />
-      <change type="DELETED" beforePath="E:\ilia\AngularProjects\nodejs\static\dist\css\skins\skin-yellow.min.css" afterPath="" />
-      <change type="DELETED" beforePath="E:\ilia\AngularProjects\nodejs\static\dist\img\avatar.png" afterPath="" />
-      <change type="DELETED" beforePath="E:\ilia\AngularProjects\nodejs\static\dist\img\avatar04.png" afterPath="" />
-      <change type="DELETED" beforePath="E:\ilia\AngularProjects\nodejs\static\dist\img\avatar2.png" afterPath="" />
-      <change type="DELETED" beforePath="E:\ilia\AngularProjects\nodejs\static\dist\img\avatar3.png" afterPath="" />
-      <change type="DELETED" beforePath="E:\ilia\AngularProjects\nodejs\static\dist\img\avatar5.png" afterPath="" />
-      <change type="DELETED" beforePath="E:\ilia\AngularProjects\nodejs\static\dist\img\boxed-bg.jpg" afterPath="" />
-      <change type="DELETED" beforePath="E:\ilia\AngularProjects\nodejs\static\dist\img\boxed-bg.png" afterPath="" />
-      <change type="DELETED" beforePath="E:\ilia\AngularProjects\nodejs\static\dist\img\credit\american-express.png" afterPath="" />
-      <change type="DELETED" beforePath="E:\ilia\AngularProjects\nodejs\static\dist\img\credit\cirrus.png" afterPath="" />
-      <change type="DELETED" beforePath="E:\ilia\AngularProjects\nodejs\static\dist\img\credit\mastercard.png" afterPath="" />
-      <change type="DELETED" beforePath="E:\ilia\AngularProjects\nodejs\static\dist\img\credit\mestro.png" afterPath="" />
-      <change type="DELETED" beforePath="E:\ilia\AngularProjects\nodejs\static\dist\img\credit\paypal.png" afterPath="" />
-      <change type="DELETED" beforePath="E:\ilia\AngularProjects\nodejs\static\dist\img\credit\paypal2.png" afterPath="" />
-      <change type="DELETED" beforePath="E:\ilia\AngularProjects\nodejs\static\dist\img\credit\visa.png" afterPath="" />
-      <change type="DELETED" beforePath="E:\ilia\AngularProjects\nodejs\static\dist\img\default-50x50.gif" afterPath="" />
-      <change type="DELETED" beforePath="E:\ilia\AngularProjects\nodejs\static\dist\img\icons.png" afterPath="" />
-      <change type="DELETED" beforePath="E:\ilia\AngularProjects\nodejs\static\dist\img\photo1.png" afterPath="" />
-      <change type="DELETED" beforePath="E:\ilia\AngularProjects\nodejs\static\dist\img\photo2.png" afterPath="" />
-      <change type="DELETED" beforePath="E:\ilia\AngularProjects\nodejs\static\dist\img\photo3.jpg" afterPath="" />
-      <change type="DELETED" beforePath="E:\ilia\AngularProjects\nodejs\static\dist\img\photo4.jpg" afterPath="" />
-      <change type="DELETED" beforePath="E:\ilia\AngularProjects\nodejs\static\dist\img\user1-128x128.jpg" afterPath="" />
-      <change type="DELETED" beforePath="E:\ilia\AngularProjects\nodejs\static\dist\img\user2-160x160.jpg" afterPath="" />
-      <change type="DELETED" beforePath="E:\ilia\AngularProjects\nodejs\static\dist\img\user3-128x128.jpg" afterPath="" />
-      <change type="DELETED" beforePath="E:\ilia\AngularProjects\nodejs\static\dist\img\user4-128x128.jpg" afterPath="" />
-      <change type="DELETED" beforePath="E:\ilia\AngularProjects\nodejs\static\dist\img\user5-128x128.jpg" afterPath="" />
-      <change type="DELETED" beforePath="E:\ilia\AngularProjects\nodejs\static\dist\img\user6-128x128.jpg" afterPath="" />
-      <change type="DELETED" beforePath="E:\ilia\AngularProjects\nodejs\static\dist\img\user7-128x128.jpg" afterPath="" />
-      <change type="DELETED" beforePath="E:\ilia\AngularProjects\nodejs\static\dist\img\user8-128x128.jpg" afterPath="" />
-      <change type="DELETED" beforePath="E:\ilia\AngularProjects\nodejs\static\dist\js\app.js" afterPath="" />
-      <change type="DELETED" beforePath="E:\ilia\AngularProjects\nodejs\static\dist\js\app.min.js" afterPath="" />
-      <change type="DELETED" beforePath="E:\ilia\AngularProjects\nodejs\static\dist\js\demo.js" afterPath="" />
-      <change type="DELETED" beforePath="E:\ilia\AngularProjects\nodejs\static\dist\js\pages\dashboard.js" afterPath="" />
-      <change type="DELETED" beforePath="E:\ilia\AngularProjects\nodejs\static\dist\js\pages\dashboard2.js" afterPath="" />
+      <change type="DELETED" beforePath="E:\ilia\AngularProjects\nodejs\static\styles\css\animate.min.css" afterPath="" />
+      <change type="DELETED" beforePath="E:\ilia\AngularProjects\nodejs\static\styles\css\bootstrap.min.css" afterPath="" />
+      <change type="DELETED" beforePath="E:\ilia\AngularProjects\nodejs\static\styles\css\calendar.css" afterPath="" />
+      <change type="DELETED" beforePath="E:\ilia\AngularProjects\nodejs\static\styles\css\font-awesome.min.css" afterPath="" />
+      <change type="DELETED" beforePath="E:\ilia\AngularProjects\nodejs\static\styles\css\form.css" afterPath="" />
+      <change type="DELETED" beforePath="E:\ilia\AngularProjects\nodejs\static\styles\css\generics.css" afterPath="" />
+      <change type="DELETED" beforePath="E:\ilia\AngularProjects\nodejs\static\styles\css\icons.css" afterPath="" />
+      <change type="DELETED" beforePath="E:\ilia\AngularProjects\nodejs\static\styles\css\style.css" afterPath="" />
+      <change type="DELETED" beforePath="E:\ilia\AngularProjects\nodejs\static\styles\img\body\violate.jpg" afterPath="" />
+      <change type="DELETED" beforePath="E:\ilia\AngularProjects\nodejs\static\styles\img\icon\home.png" afterPath="" />
+      <change type="DELETED" beforePath="E:\ilia\AngularProjects\nodejs\static\styles\img\icon\menu.png" afterPath="" />
+      <change type="DELETED" beforePath="E:\ilia\AngularProjects\nodejs\static\styles\img\icon\widgets.png" afterPath="" />
+      <change type="DELETED" beforePath="E:\ilia\AngularProjects\nodejs\static\styles\img\profile-pic.jpg" afterPath="" />
+      <change type="DELETED" beforePath="E:\ilia\AngularProjects\nodejs\static\styles\img\profile-pics\1.jpg" afterPath="" />
+      <change type="DELETED" beforePath="E:\ilia\AngularProjects\nodejs\static\styles\img\profile-pics\2.jpg" afterPath="" />
+      <change type="DELETED" beforePath="E:\ilia\AngularProjects\nodejs\static\styles\img\profile-pics\3.jpg" afterPath="" />
+      <change type="DELETED" beforePath="E:\ilia\AngularProjects\nodejs\static\styles\img\shortcuts\calendar.png" afterPath="" />
+      <change type="DELETED" beforePath="E:\ilia\AngularProjects\nodejs\static\styles\img\shortcuts\connections.png" afterPath="" />
+      <change type="DELETED" beforePath="E:\ilia\AngularProjects\nodejs\static\styles\img\shortcuts\money.png" afterPath="" />
+      <change type="DELETED" beforePath="E:\ilia\AngularProjects\nodejs\static\styles\img\shortcuts\reports.png" afterPath="" />
+      <change type="DELETED" beforePath="E:\ilia\AngularProjects\nodejs\static\styles\js\bootstrap.min.js" afterPath="" />
+      <change type="DELETED" beforePath="E:\ilia\AngularProjects\nodejs\static\styles\js\calendar.min.js" afterPath="" />
+      <change type="DELETED" beforePath="E:\ilia\AngularProjects\nodejs\static\styles\js\charts.js" afterPath="" />
+      <change type="DELETED" beforePath="E:\ilia\AngularProjects\nodejs\static\styles\js\charts\jquery.flot.animator.min.js" afterPath="" />
+      <change type="DELETED" beforePath="E:\ilia\AngularProjects\nodejs\static\styles\js\charts\jquery.flot.js" afterPath="" />
+      <change type="DELETED" beforePath="E:\ilia\AngularProjects\nodejs\static\styles\js\charts\jquery.flot.resize.min.js" afterPath="" />
+      <change type="DELETED" beforePath="E:\ilia\AngularProjects\nodejs\static\styles\js\charts\jquery.flot.time.js" afterPath="" />
+      <change type="DELETED" beforePath="E:\ilia\AngularProjects\nodejs\static\styles\js\easypiechart.js" afterPath="" />
+      <change type="DELETED" beforePath="E:\ilia\AngularProjects\nodejs\static\styles\js\feeds.min.js" afterPath="" />
+      <change type="DELETED" beforePath="E:\ilia\AngularProjects\nodejs\static\styles\js\functions.js" afterPath="" />
+      <change type="DELETED" beforePath="E:\ilia\AngularProjects\nodejs\static\styles\js\icheck.js" afterPath="" />
+      <change type="DELETED" beforePath="E:\ilia\AngularProjects\nodejs\static\styles\js\jquery-ui.min.js" afterPath="" />
+      <change type="DELETED" beforePath="E:\ilia\AngularProjects\nodejs\static\styles\js\jquery.easing.1.3.js" afterPath="" />
+      <change type="DELETED" beforePath="E:\ilia\AngularProjects\nodejs\static\styles\js\jquery.min.js" afterPath="" />
+      <change type="DELETED" beforePath="E:\ilia\AngularProjects\nodejs\static\styles\js\maps\jvectormap.min.js" afterPath="" />
+      <change type="DELETED" beforePath="E:\ilia\AngularProjects\nodejs\static\styles\js\maps\usa.js" afterPath="" />
+      <change type="DELETED" beforePath="E:\ilia\AngularProjects\nodejs\static\styles\js\scroll.min.js" afterPath="" />
+      <change type="DELETED" beforePath="E:\ilia\AngularProjects\nodejs\static\styles\js\sparkline.min.js" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/states/admin/admin.html" afterPath="$PROJECT_DIR$/static/states/admin/admin.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/states/admin/admin.js" afterPath="$PROJECT_DIR$/static/states/admin/admin.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/index-colory.html" afterPath="$PROJECT_DIR$/static/index-colory.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/index.html" afterPath="$PROJECT_DIR$/static/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="nodejs.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -100,23 +68,24 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/static/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-12.538462" vertical-offset="11472" max-vertical-offset="12053">
-              <caret line="694" column="46" selection-start-line="694" selection-start-column="46" selection-end-line="694" selection-end-column="46" />
+            <state vertical-scroll-proportion="0.5851979" vertical-offset="969" max-vertical-offset="1870">
+              <caret line="174" column="33" selection-start-line="174" selection-start-column="33" selection-end-line="174" selection-end-column="33" />
               <folding>
-                <marker date="1459514563740" expanded="true" signature="1229:23676" placeholder="..." />
+                <element signature="tag#ul#0;tag#div#0;tag#div#1;tag#div#0;tag#div#0;tag#div#0;tag#body#0;tag#html#0" expanded="false" />
+                <element signature="tag#div#1;tag#body#0;tag#html#0" expanded="false" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="usa.js" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/static/styles/js/maps/usa.js">
+      <file leaf-file-name="css.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/static/styles/css.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="4352">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state vertical-scroll-proportion="-22.5" vertical-offset="169489" max-vertical-offset="196503">
+              <caret line="10007" column="12" selection-start-line="10007" selection-start-column="12" selection-end-line="10007" selection-end-column="12" />
               <folding />
             </state>
           </provider>
@@ -125,8 +94,8 @@
       <file leaf-file-name="index-colory.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/static/index-colory.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="10421">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state vertical-scroll-proportion="-15.307693" vertical-offset="8731" max-vertical-offset="10387">
+              <caret line="537" column="8" selection-start-line="537" selection-start-column="8" selection-end-line="537" selection-end-column="27" />
               <folding />
             </state>
           </provider>
@@ -170,17 +139,17 @@
       <file leaf-file-name="admin.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/static/states/admin/admin.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="193" max-vertical-offset="1139">
-              <caret line="26" column="58" selection-start-line="26" selection-start-column="58" selection-end-line="26" selection-end-column="58" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="193" max-vertical-offset="1105">
+              <caret line="33" column="32" selection-start-line="33" selection-start-column="32" selection-end-line="33" selection-end-column="32" />
               <folding>
                 <element signature="e#319#463#0" expanded="false" />
                 <element signature="e#411#452#0" expanded="false" />
-                <element signature="e#1045#1164#0" expanded="false" />
-                <element signature="e#1112#1153#0" expanded="false" />
-                <element signature="e#1560#1768#0" expanded="false" />
-                <element signature="e#1621#1762#0" expanded="false" />
-                <element signature="e#1813#1846#0" expanded="false" />
-                <element signature="e#1889#1922#0" expanded="false" />
+                <element signature="e#935#1054#0" expanded="false" />
+                <element signature="e#1002#1043#0" expanded="false" />
+                <element signature="e#1450#1658#0" expanded="false" />
+                <element signature="e#1511#1652#0" expanded="false" />
+                <element signature="e#1703#1736#0" expanded="false" />
+                <element signature="e#1779#1812#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -189,7 +158,7 @@
       <file leaf-file-name="admin-case.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/static/states/admin/admin-case.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="459" max-vertical-offset="1088">
+            <state vertical-scroll-proportion="-35.96154" vertical-offset="0" max-vertical-offset="1088">
               <caret line="55" column="74" selection-start-line="55" selection-start-column="74" selection-end-line="55" selection-end-column="96" />
               <folding />
             </state>
@@ -199,18 +168,8 @@
       <file leaf-file-name="admin.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/static/states/admin/admin.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="527" max-vertical-offset="1003">
-              <caret line="31" column="37" selection-start-line="31" selection-start-column="35" selection-end-line="31" selection-end-column="37" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="app.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/static/js/app.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="102" max-vertical-offset="306">
-              <caret line="6" column="21" selection-start-line="6" selection-start-column="21" selection-end-line="6" selection-end-column="21" />
+            <state vertical-scroll-proportion="-49.692307" vertical-offset="0" max-vertical-offset="1394">
+              <caret line="76" column="6" selection-start-line="76" selection-start-column="6" selection-end-line="76" selection-end-column="6" />
               <folding />
             </state>
           </provider>
@@ -234,8 +193,11 @@
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/server.js" />
         <option value="$PROJECT_DIR$/static/states/admin/admin-case.html" />
-        <option value="$PROJECT_DIR$/static/states/admin/admin.js" />
         <option value="$PROJECT_DIR$/app.js" />
+        <option value="$PROJECT_DIR$/static/index-colory.html" />
+        <option value="$PROJECT_DIR$/static/states/admin/admin.js" />
+        <option value="$PROJECT_DIR$/static/styles/css.css" />
+        <option value="$PROJECT_DIR$/static/states/admin/admin.html" />
         <option value="$PROJECT_DIR$/static/index.html" />
       </list>
     </option>
@@ -306,6 +268,46 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="nodejs" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="nodejs" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="static" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="styles" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="nodejs" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="nodejs" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="static" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="states" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="admin" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
     </panes>
@@ -368,8 +370,8 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
-    <editor active="false" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -377,7 +379,7 @@
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.13762811" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.13762811" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -420,7 +422,8 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="10421">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <marker date="1459514563740" expanded="true" signature="1229:23676" placeholder="..." />
+            <element signature="tag#ul#0;tag#div#0;tag#div#1;tag#div#0;tag#div#0;tag#div#0;tag#body#0;tag#html#0" expanded="false" />
+            <element signature="tag#div#1;tag#body#0;tag#html#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -465,12 +468,12 @@
           <folding>
             <element signature="e#319#463#0" expanded="false" />
             <element signature="e#411#452#0" expanded="false" />
-            <element signature="e#1045#1164#0" expanded="false" />
-            <element signature="e#1112#1153#0" expanded="false" />
-            <element signature="e#1560#1768#0" expanded="false" />
-            <element signature="e#1621#1762#0" expanded="false" />
-            <element signature="e#1813#1846#0" expanded="false" />
-            <element signature="e#1889#1922#0" expanded="false" />
+            <element signature="e#935#1054#0" expanded="false" />
+            <element signature="e#1002#1043#0" expanded="false" />
+            <element signature="e#1450#1658#0" expanded="false" />
+            <element signature="e#1511#1652#0" expanded="false" />
+            <element signature="e#1703#1736#0" expanded="false" />
+            <element signature="e#1779#1812#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -504,7 +507,8 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="10421">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <marker date="1459514563740" expanded="true" signature="1229:23676" placeholder="..." />
+            <element signature="tag#ul#0;tag#div#0;tag#div#1;tag#div#0;tag#div#0;tag#div#0;tag#body#0;tag#html#0" expanded="false" />
+            <element signature="tag#div#1;tag#body#0;tag#html#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -549,12 +553,12 @@
           <folding>
             <element signature="e#319#463#0" expanded="false" />
             <element signature="e#411#452#0" expanded="false" />
-            <element signature="e#1045#1164#0" expanded="false" />
-            <element signature="e#1112#1153#0" expanded="false" />
-            <element signature="e#1560#1768#0" expanded="false" />
-            <element signature="e#1621#1762#0" expanded="false" />
-            <element signature="e#1813#1846#0" expanded="false" />
-            <element signature="e#1889#1922#0" expanded="false" />
+            <element signature="e#935#1054#0" expanded="false" />
+            <element signature="e#1002#1043#0" expanded="false" />
+            <element signature="e#1450#1658#0" expanded="false" />
+            <element signature="e#1511#1652#0" expanded="false" />
+            <element signature="e#1703#1736#0" expanded="false" />
+            <element signature="e#1779#1812#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -588,7 +592,8 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="952">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <marker date="1459514563740" expanded="true" signature="1229:23676" placeholder="..." />
+            <element signature="tag#ul#0;tag#div#0;tag#div#1;tag#div#0;tag#div#0;tag#div#0;tag#body#0;tag#html#0" expanded="false" />
+            <element signature="tag#div#1;tag#body#0;tag#html#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -633,12 +638,12 @@
           <folding>
             <element signature="e#319#463#0" expanded="false" />
             <element signature="e#411#452#0" expanded="false" />
-            <element signature="e#1045#1164#0" expanded="false" />
-            <element signature="e#1112#1153#0" expanded="false" />
-            <element signature="e#1560#1768#0" expanded="false" />
-            <element signature="e#1621#1762#0" expanded="false" />
-            <element signature="e#1813#1846#0" expanded="false" />
-            <element signature="e#1889#1922#0" expanded="false" />
+            <element signature="e#935#1054#0" expanded="false" />
+            <element signature="e#1002#1043#0" expanded="false" />
+            <element signature="e#1450#1658#0" expanded="false" />
+            <element signature="e#1511#1652#0" expanded="false" />
+            <element signature="e#1703#1736#0" expanded="false" />
+            <element signature="e#1779#1812#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -672,7 +677,8 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="31" max-vertical-offset="612">
           <caret line="4" column="17" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
           <folding>
-            <marker date="1459514563740" expanded="true" signature="1229:23676" placeholder="..." />
+            <element signature="tag#ul#0;tag#div#0;tag#div#1;tag#div#0;tag#div#0;tag#div#0;tag#body#0;tag#html#0" expanded="false" />
+            <element signature="tag#div#1;tag#body#0;tag#html#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -717,12 +723,12 @@
           <folding>
             <element signature="e#319#463#0" expanded="false" />
             <element signature="e#411#452#0" expanded="false" />
-            <element signature="e#1045#1164#0" expanded="false" />
-            <element signature="e#1112#1153#0" expanded="false" />
-            <element signature="e#1560#1768#0" expanded="false" />
-            <element signature="e#1621#1762#0" expanded="false" />
-            <element signature="e#1813#1846#0" expanded="false" />
-            <element signature="e#1889#1922#0" expanded="false" />
+            <element signature="e#935#1054#0" expanded="false" />
+            <element signature="e#1002#1043#0" expanded="false" />
+            <element signature="e#1450#1658#0" expanded="false" />
+            <element signature="e#1511#1652#0" expanded="false" />
+            <element signature="e#1703#1736#0" expanded="false" />
+            <element signature="e#1779#1812#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -756,7 +762,8 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="31" max-vertical-offset="612">
           <caret line="4" column="17" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
           <folding>
-            <marker date="1459514563740" expanded="true" signature="1229:23676" placeholder="..." />
+            <element signature="tag#ul#0;tag#div#0;tag#div#1;tag#div#0;tag#div#0;tag#div#0;tag#body#0;tag#html#0" expanded="false" />
+            <element signature="tag#div#1;tag#body#0;tag#html#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -801,12 +808,12 @@
           <folding>
             <element signature="e#319#463#0" expanded="false" />
             <element signature="e#411#452#0" expanded="false" />
-            <element signature="e#1045#1164#0" expanded="false" />
-            <element signature="e#1112#1153#0" expanded="false" />
-            <element signature="e#1560#1768#0" expanded="false" />
-            <element signature="e#1621#1762#0" expanded="false" />
-            <element signature="e#1813#1846#0" expanded="false" />
-            <element signature="e#1889#1922#0" expanded="false" />
+            <element signature="e#935#1054#0" expanded="false" />
+            <element signature="e#1002#1043#0" expanded="false" />
+            <element signature="e#1450#1658#0" expanded="false" />
+            <element signature="e#1511#1652#0" expanded="false" />
+            <element signature="e#1703#1736#0" expanded="false" />
+            <element signature="e#1779#1812#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -840,7 +847,8 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="646">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <marker date="1459514563740" expanded="true" signature="1229:23676" placeholder="..." />
+            <element signature="tag#ul#0;tag#div#0;tag#div#1;tag#div#0;tag#div#0;tag#div#0;tag#body#0;tag#html#0" expanded="false" />
+            <element signature="tag#div#1;tag#body#0;tag#html#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -864,7 +872,8 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="357" max-vertical-offset="646">
           <caret line="21" column="17" selection-start-line="21" selection-start-column="17" selection-end-line="21" selection-end-column="17" />
           <folding>
-            <marker date="1459514563740" expanded="true" signature="1229:23676" placeholder="..." />
+            <element signature="tag#ul#0;tag#div#0;tag#div#1;tag#div#0;tag#div#0;tag#div#0;tag#body#0;tag#html#0" expanded="false" />
+            <element signature="tag#div#1;tag#body#0;tag#html#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -945,39 +954,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/static/states/admin/admin-case.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="459" max-vertical-offset="1088">
-          <caret line="55" column="74" selection-start-line="55" selection-start-column="74" selection-end-line="55" selection-end-column="96" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/states/admin/admin.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="193" max-vertical-offset="1139">
-          <caret line="26" column="58" selection-start-line="26" selection-start-column="58" selection-end-line="26" selection-end-column="58" />
-          <folding>
-            <element signature="e#319#463#0" expanded="false" />
-            <element signature="e#411#452#0" expanded="false" />
-            <element signature="e#1045#1164#0" expanded="false" />
-            <element signature="e#1112#1153#0" expanded="false" />
-            <element signature="e#1560#1768#0" expanded="false" />
-            <element signature="e#1621#1762#0" expanded="false" />
-            <element signature="e#1813#1846#0" expanded="false" />
-            <element signature="e#1889#1922#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/states/admin/admin.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="527" max-vertical-offset="1003">
-          <caret line="31" column="37" selection-start-line="31" selection-start-column="35" selection-end-line="31" selection-end-column="37" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="260" max-vertical-offset="867">
@@ -1013,27 +989,61 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/static/index-colory.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="10421">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state vertical-scroll-proportion="-15.307693" vertical-offset="8731" max-vertical-offset="10387">
+          <caret line="537" column="8" selection-start-line="537" selection-start-column="8" selection-end-line="537" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/states/admin/admin.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="193" max-vertical-offset="1105">
+          <caret line="33" column="32" selection-start-line="33" selection-start-column="32" selection-end-line="33" selection-end-column="32" />
+          <folding>
+            <element signature="e#319#463#0" expanded="false" />
+            <element signature="e#411#452#0" expanded="false" />
+            <element signature="e#935#1054#0" expanded="false" />
+            <element signature="e#1002#1043#0" expanded="false" />
+            <element signature="e#1450#1658#0" expanded="false" />
+            <element signature="e#1511#1652#0" expanded="false" />
+            <element signature="e#1703#1736#0" expanded="false" />
+            <element signature="e#1779#1812#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/styles/css.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-22.5" vertical-offset="169489" max-vertical-offset="196503">
+          <caret line="10007" column="12" selection-start-line="10007" selection-start-column="12" selection-end-line="10007" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/states/admin/admin-case.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-35.96154" vertical-offset="0" max-vertical-offset="1088">
+          <caret line="55" column="74" selection-start-line="55" selection-start-column="74" selection-end-line="55" selection-end-column="96" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/states/admin/admin.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-49.692307" vertical-offset="0" max-vertical-offset="1394">
+          <caret line="76" column="6" selection-start-line="76" selection-start-column="6" selection-end-line="76" selection-end-column="6" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/static/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-12.538462" vertical-offset="11472" max-vertical-offset="12053">
-          <caret line="694" column="46" selection-start-line="694" selection-start-column="46" selection-end-line="694" selection-end-column="46" />
+        <state vertical-scroll-proportion="0.5851979" vertical-offset="969" max-vertical-offset="1870">
+          <caret line="174" column="33" selection-start-line="174" selection-start-column="33" selection-end-line="174" selection-end-column="33" />
           <folding>
-            <marker date="1459514563740" expanded="true" signature="1229:23676" placeholder="..." />
+            <element signature="tag#ul#0;tag#div#0;tag#div#1;tag#div#0;tag#div#0;tag#div#0;tag#body#0;tag#html#0" expanded="false" />
+            <element signature="tag#div#1;tag#body#0;tag#html#0" expanded="false" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/styles/js/maps/usa.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="4352">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
