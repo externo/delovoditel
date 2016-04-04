@@ -34,8 +34,10 @@ app.get('/admin/case', function (req, res) {
 });
 
 app.post('/admin/case', function (req, res) {
+  var newCase = req.body;
+  newCase.info.datetime = new Date(req.body.info.datetime);
   db.collection('cases').insertOne(
-    req.body,
+    newCase,
     function (err, result) {
       db.collection('cases').find()
         .toArray(function (err, cases) {
@@ -54,18 +56,19 @@ app.get('/admin/case/:id', function (req, res) {
 
 app.put('/admin/case/:id', function (req, res) {
   var caseId = new mongo.ObjectID(req.params.id);
-  console.log(req.body);
+  console.log(typeof req.body.info.datetime);
+  console.log(req.body.info.datetime);
   db.collection('cases').updateOne(
     {"_id": caseId},
     {
       info: {
-        type: req.body.type,
-        number: req.body.number,
-        court: req.body.court,
-        instance: req.body.instance,
-        client: req.body.client,
-        note: req.body.note,
-        datetime: req.body.datetime
+        type: req.body.info.type,
+        number: req.body.info.number,
+        court: req.body.info.court,
+        instance: req.body.info.instance,
+        client: req.body.info.client,
+        note: req.body.info.note,
+        datetime: new Date(req.body.info.datetime)
       },
       files: req.body.files
     },
