@@ -9,6 +9,7 @@ function CaseService($http) {
   return {
     create: create,
     findAll: findAll,
+    findArchive: findArchive,
     update: update,
     remove: remove
   };
@@ -20,6 +21,11 @@ function CaseService($http) {
 
   function findAll(callback) {
     $http.get('/admin/case')
+      .success(callback);
+  }
+
+  function findArchive(callback) {
+    $http.get('/admin/archive/case')
       .success(callback);
   }
 

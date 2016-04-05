@@ -26,11 +26,19 @@ MongoClient.connect(connectionUrl, function(err, database) {
 });
 
 app.get('/admin/case', function (req, res) {
-  db.collection('cases').find()
+  db.collection('cases').find({status: 'pending'})
     .toArray(function (err, cases) {
       res.json(cases);
     }
-  )
+  );
+});
+
+app.get('/admin/archive/case', function (req, res) {
+  db.collection('cases').find({status: 'won'})
+    .toArray(function (err, cases) {
+      res.json(cases);
+    }
+  );
 });
 
 app.post('/admin/case', function (req, res) {
@@ -39,7 +47,7 @@ app.post('/admin/case', function (req, res) {
   db.collection('cases').insertOne(
     newCase,
     function (err, result) {
-      db.collection('cases').find()
+      db.collection('cases').find({status: 'pending'})
         .toArray(function (err, cases) {
           res.json(cases);
         }
@@ -56,8 +64,8 @@ app.get('/admin/case/:id', function (req, res) {
 
 app.put('/admin/case/:id', function (req, res) {
   var caseId = new mongo.ObjectID(req.params.id);
-  console.log(typeof req.body.info.datetime);
-  console.log(req.body.info.datetime);
+  //console.log(typeof req.body.info.datetime);
+  //console.log(req.body.info.datetime);
   db.collection('cases').updateOne(
     {"_id": caseId},
     {
@@ -73,7 +81,27 @@ app.put('/admin/case/:id', function (req, res) {
       files: req.body.files
     },
     function (err, results) {
-      db.collection('cases').find()
+      db.collection('cases').find({status: 'pending'})
+        .toArray(function (err, cases) {
+          res.json(cases);
+        }
+      );
+    });
+});
+
+app.put('/admin/case/:id/archive', function (req, res) {
+  var caseId = new mongo.ObjectID(req.params.id);
+  //console.log(typeof req.body.info.datetime);
+  //console.log(req.body.info.datetime);
+  db.collection('cases').updateOne(
+    {"_id": caseId},
+    {
+      $set: {
+        status: 'won'
+      }
+    },
+    function (err, results) {
+      db.collection('cases').find({status: 'pending'})
         .toArray(function (err, cases) {
           res.json(cases);
         }
@@ -86,7 +114,7 @@ app.delete('/admin/case/:id', function (req, res) {
   db.collection('cases').deleteOne(
     {_id: caseId},
     function (err, results) {
-      db.collection('cases').find()
+      db.collection('cases').find({status: 'pending'})
         .toArray(function (err, cases) {
           res.json(cases);
         }

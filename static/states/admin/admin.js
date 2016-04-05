@@ -9,15 +9,23 @@ function AdminController($http, $scope, CaseService, FileService) {
   var Admin = this;
 
   Admin.currentCase = null;
-  Admin.newcase = null;
-  Admin.click = false;
+  Admin.newCase = null;
+  Admin.openForm = false;
+  Admin.openCase = false;
   Admin.newfile = null;
 
-  Admin.addCase = function (newcase) {
-    newcase.files = [];
-    $http.post('/admin/case', newcase)
+  Admin.toggleForm = function () {
+    Admin.openForm = !Admin.openForm;
+    Admin.openCase = false;
+  };
+
+  Admin.addCase = function () {
+    Admin.newCase.status = 'pending';
+    Admin.newCase.files = [];
+    $http.post('/admin/case', Admin.newCase)
       .then(function (res) {
         Admin.cases = res.data;
+        Admin.openForm = false;
       }
     );
   };
@@ -26,27 +34,48 @@ function AdminController($http, $scope, CaseService, FileService) {
     $http.get('/admin/case/' + id)
       .then(function (res) {
         Admin.currentCase = res.data;
-        Admin.click = true;
+        Admin.openForm = false;
+        Admin.openCase = true;
       }
     );
   };
 
   Admin.editCase = function () {
+    if (Admin.newDatetime){
+      Admin.currentCase.info.datetime = Admin.newDatetime;
+    }
     $http.put('/admin/case/' + Admin.currentCase._id, Admin.currentCase)
       .then(function (res) {
         Admin.cases = res.data;
-        Admin.click = false;
+        Admin.openCase = false;
         Admin.currentCase=null;
       }
     );
   };
 
-  Admin.removeCase = function (id) {
-    $http.delete('/admin/case/' + id)
+  Admin.archiveCase = function () {
+    $http.put('/admin/case/' + Admin.currentCase._id + '/archive')
       .then(function (res) {
         Admin.cases = res.data;
+        Admin.openCase = false;
+        Admin.currentCase=null;
       }
     );
+  };
+
+  Admin.removeCase = function () {
+    $http.delete('/admin/case/' + Admin.currentCase._id)
+      .then(function (res) {
+        Admin.cases = res.data;
+        Admin.openCase = false;
+        Admin.currentCase=null;
+      }
+    );
+  };
+
+  Admin.cancelCase = function () {
+    Admin.openCase = false;
+    Admin.currentCase=null
   };
 
   Admin.uploadFile = function (file) {
