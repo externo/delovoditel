@@ -1,0 +1,27 @@
+
+<div class="row" ng-controller="FileTypesController as File">
+  <table class="table table-striped">
+    <thead>
+    <tr class="widget pull-left">
+      <th>
+        <input type="text" class="form-control" placeholder="Искова молба" ng-model="File.type.name">
+      </th>
+      <th>
+        <button type="button" class="btn btn-success" ng-click="File.addType()">
+          Добави файлов тип
+        </button>
+      </th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr ng-repeat="type in File.types | orderBy: 'name'">
+      <td id="{{type._id}}">{{type.name}}</td>
+      <td>
+        <button class="btn btn-danger" ng-click="File.removeType(type._id)">
+          <span class="icon-remove"></span>
+        </button>
+      </td>
+    </tr>
+    </tbody>
+  </table>
+</div>

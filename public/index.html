@@ -24,157 +24,98 @@
   <title>Деловодна система - DELOVODITEL 1</title>
 
   <!--<script src="https://code.jquery.com/jquery-2.2.1.js"></script>-->
-  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.0/angular.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.0/angular-route.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.3/angular.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.3/angular-route.js"></script>
 </head>
 
 <body ng-app="app">
-<div class="all-wrapper">
-<div class="row">
-<div class="col-md-2">
-  <div class="text-center">
-    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
-      <span class="sr-only">Toggle navigation</span>
-      <span class="icon-bar"></span>
-      <span class="icon-bar"></span>
-      <span class="icon-bar"></span>
-    </button>
-  </div>
-  <div class="side-bar-wrapper collapse navbar-collapse navbar-ex1-collapse">
-    <a href="http://kataraga.com" class="logo hidden-sm hidden-xs">
-      <i class="icon-cloud-download"></i>
-      <span>Delovoditel 1</span>
-    </a>
+<div class="all-wrapper" ng-controller="AdminController as Admin">
+  <div class="row">
+    <div class="col-md-2">
+      <div class="text-center">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+      </div>
+      <div class="side-bar-wrapper collapse navbar-collapse navbar-ex1-collapse">
+        <a href="http://kataraga.com" class="logo hidden-sm hidden-xs">
+          <i class="icon-cloud-download"></i>
+          <span>Delovoditel 1</span>
+        </a>
 
-    <div class="relative-w">
-      <ul class="side-menu">
-        <li>
-          <a href="#admin/case">
-            <span class="badge pull-right">17</span>
-            <i class="icon-dashboard"></i> Дела
-          </a>
-        </li>
-        <li>
-          <a href="charts.html" class="is-dropdown-menu">
-            <span class="badge pull-right"></span>
-            <i class="icon-bar-chart"></i> Бланки
-          </a>
-          <ul>
+        <div class="relative-w">
+          <ul class="side-menu">
             <li>
-              <a href="charts.html#area_chart_anchor">
-                <i class="icon-random"></i>
-                Area Chart
+              <a href="#admin/case">
+                <span class="badge pull-right">17</span>
+                <i class="icon-dashboard"></i> Дела
               </a>
             </li>
             <li>
-              <a href="charts.html#circle_chart_anchor">
-                <i class="icon-bullseye"></i>
-                Circular Chart
+              <a href="#file/type" class="current is-dropdown-menu">
+                <span class="badge pull-right">24</span>
+                <i class="icon-th"></i> Файлове
+              </a>
+              <ul>
+                <li class='current'>
+                  <a class='current' href="datatable.html">
+                    <i class="icon-list-alt"></i>
+                    Типове
+                  </a>
+                </li>
+                <li>
+                  <a href="table.html">
+                    <i class="icon-table"></i>
+                    Всички
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a href="calendar.html">
+                <span class="badge pull-right">11</span>
+                <i class="icon-calendar"></i> Съдилища
               </a>
             </li>
             <li>
-              <a href="charts.html#bar_chart_anchor">
-                <i class="icon-signal"></i>
-                Bar Chart
-              </a>
-            </li>
-            <li>
-              <a href="charts.html#line_chart_anchor">
-                <i class="icon-bar-chart"></i>
-                Line Chart
+              <a href="login.html">
+                <span class="badge pull-right"></span>
+                <i class="icon-signin"></i> Календар
               </a>
             </li>
           </ul>
-        </li>
-        <li>
-          <a href="forms.html">
-            <span class="badge pull-right">12</span>
-            <i class="icon-terminal"></i> Файлове
-          </a>
-        </li>
-        <li>
-          <a href="#/admin/archive/case" class="is-dropdown-menu">
-            <span class="badge pull-right"></span>
-            <i class="icon-code-fork"></i> Архив
-          </a>
-          <ul>
-            <li>
-              <a href="elements.html">
-                <i class="icon-beaker"></i>
-                Elements
-              </a>
-            </li>
-            <li>
-              <a href="icons.html">
-                <i class="icon-picture"></i>
-                Icons
-              </a>
-            </li>
-          </ul>
-        </li>
-        <li class='current'>
-          <a href="datatable.html" class="current is-dropdown-menu">
-            <span class="badge pull-right">24</span>
-            <i class="icon-th"></i> Файлове
-          </a>
-          <ul>
-            <li class='current'>
-              <a class='current' href="datatable.html">
-                <i class="icon-list-alt"></i>
-                Data Tables
-              </a>
-            </li>
-            <li>
-              <a href="table.html">
-                <i class="icon-table"></i>
-                Regular Tables
-              </a>
-            </li>
-          </ul>
-        </li>
-        <li>
-          <a href="calendar.html">
-            <span class="badge pull-right">11</span>
-            <i class="icon-calendar"></i> Съдилища
-          </a>
-        </li>
-        <li>
-          <a href="login.html">
-            <span class="badge pull-right"></span>
-            <i class="icon-signin"></i> Календар
-          </a>
-        </li>
-      </ul>
+        </div>
+      </div>
     </div>
-  </div>
-</div>
-<div class="col-md-10">
-  <div class="content-wrapper">
-    <div class="row col-md-12">
-        <ul class="nav nav-tabs">
-          <li class="active"><a href="#/admin/case"><i class="icon-bar-chart"></i> Висящи дела</a></li>
-          <li><a data-toggle="tab"><i class="icon-bar-chart"></i> Бланки</a></li>
-          <li class="hidden-md hidden-xs"><a href="#/admin/archive/case"><i class="icon-table"></i> Архив</a>
-          </li>
-          <a href="#/admin/archive/case">arhiv</a>
-        </ul>
-        <div class="tab-content bottom-margin">
-          <div class="tab-pane active" id="tab_pie_chart">
-            <div class="shadowed-bottom">
-              <div ng-view></div>
+    <div class="col-md-10">
+      <div class="content-wrapper">
+        <div class="row col-md-12">
+          <ul class="nav nav-tabs">
+            <li class="active"><a data-toggle="tab" ng-click="Admin.goCases()"><i class="icon-bar-chart"></i> Висящи дела</a></li>
+            <li><a data-toggle="tab"><i class="icon-bar-chart"></i> Бланки</a></li>
+            <li class="hidden-md hidden-xs"><a data-toggle="tab" ng-click="Admin.goArchive()"><i class="icon-table"></i> Архив</a></li>
+          </ul>
+          <div class="tab-content bottom-margin">
+            <div class="tab-pane active" id="tab_pie_chart">
+              <div class="shadowed-bottom">
+                <div ng-view></div>
+              </div>
             </div>
           </div>
         </div>
+      </div>
+
     </div>
   </div>
-
-</div>
-</div>
 </div>
 
 <!--Theme color settings-->
 <div class="color_settings_box hidden-xs">
   <h3>Background</h3>
+
   <div class="color-settings-w" data-replace-element="body" data-leave-class="">
     <div class="color-box color-box-dark-blue color-tooltip" data-toggle="tooltip" data-placement="top"
          title="Solid Dark Blue" data-replace-with="body-dark-blue"></div>
@@ -189,6 +130,7 @@
   </div>
 
   <h3>Header</h3>
+
   <div class="color-settings-w" data-replace-element=".page-header" data-leave-class="page-header">
     <div class="color-box color-box-dark-blue color-tooltip" data-toggle="tooltip" data-placement="top"
          title="Dark Blue" data-replace-with="page-header-dark-blue"></div>
@@ -205,6 +147,7 @@
   </div>
 
   <h3>Active Menu</h3>
+
   <div class="color-settings-w" data-replace-element=".side-menu" data-leave-class="side-menu">
     <div class="color-box color-box-dark-blue color-tooltip" data-toggle="tooltip" data-placement="top"
          title="Dark Blue" data-replace-with="side-menu-dark-blue"></div>
@@ -221,6 +164,7 @@
   </div>
 
   <h3>Content</h3>
+
   <div class="color-settings-w" data-replace-element=".content-inner" data-leave-class="content-inner">
     <div class="color-box color-box-white color-tooltip" data-toggle="tooltip" data-placement="top" title="White"
          data-replace-with="content-inner-white"></div>
@@ -242,18 +186,29 @@
 
 <!-- AngularJS APP scripts -->
 <script src="js/app.js"></script>
-<script src="js/services/case.js"></script>
-<script src="js/upload.js"></script>
 <script src="states/admin/admin.js"></script>
-<script src="states/admin/archive/admin-archive.js"></script>
+<script src="js/services/case.js"></script>
+<script src="js/services/fileType.js"></script>
+<script src="js/upload.js"></script>
+<script src="states/admin/cases/cases.js"></script>
+<script src="states/admin/archive/archive.js"></script>
+<script src="states/admin/files/files.js"></script>
 
 <!-- Histats.com  START (hidden counter)-->
-<script type="text/javascript">document.write(unescape("%3Cscript src=%27http://s10.histats.com/js15.js%27 type=%27text/javascript%27%3E%3C/script%3E"));</script>
-<a href="http://www.histats.com" target="_blank" title="" ><script  type="text/javascript" >
-  try {Histats.start(1,3407093,4,0,0,0,"");
-    Histats.track_hits();} catch(err){};
-</script></a>
-<noscript><a href="http://www.histats.com" target="_blank"><img  src="http://sstatic1.histats.com/0.gif?3407093&101" alt="" border="0"></a></noscript>
+<script
+  type="text/javascript">document.write(unescape("%3Cscript src=%27http://s10.histats.com/js15.js%27 type=%27text/javascript%27%3E%3C/script%3E"));</script>
+<a href="http://www.histats.com" target="_blank" title="">
+  <script type="text/javascript">
+    try {
+      Histats.start(1, 3407093, 4, 0, 0, 0, "");
+      Histats.track_hits();
+    } catch (err) {
+    }
+    ;
+  </script>
+</a>
+<noscript><a href="http://www.histats.com" target="_blank"><img src="http://sstatic1.histats.com/0.gif?3407093&101"
+                                                                alt="" border="0"></a></noscript>
 <!-- Histats.com  END  -->
 </body>
 

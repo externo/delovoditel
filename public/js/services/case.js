@@ -8,8 +8,8 @@ function CaseService($http) {
 
   return {
     create: create,
-    findAll: findAll,
-    findArchive: findArchive,
+    findAllPending: findAllPending,
+    findAllArchive: findAllArchive,
     update: update,
     remove: remove
   };
@@ -19,12 +19,12 @@ function CaseService($http) {
       .success(callback);
   }
 
-  function findAll(callback) {
+  function findAllPending(callback) {
     $http.get('/admin/case')
       .success(callback);
   }
 
-  function findArchive(callback) {
+  function findAllArchive(callback) {
     $http.get('/admin/archive/case')
       .success(callback);
   }

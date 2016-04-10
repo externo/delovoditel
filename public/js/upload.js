@@ -71,27 +71,27 @@ function FileService($http) {
   return {
     create: create,
     find: find,
-    update: update,
+    findAll: findAll,
     remove: remove
   };
 
   function create(site, callback) {
-    $http.post('/api/website', site)
+    $http.post('/file', site)
       .success(callback);
   }
 
-  function find(callback) {
-    $http.get('/admin/case/:id/file')
+  function find(id, callback) {
+    $http.get('/file/' + id)
       .success(callback);
   }
 
-  function update(id, site, callback) {
-    $http.put('/api/website/' + id, site)
+  function findAll(callback) {
+    $http.get('/file')
       .success(callback);
   }
 
   function remove(id, callback) {
-    $http.delete('/api/website/' + id)
+    $http.delete('/file/' + id)
       .success(callback);
   }
 }

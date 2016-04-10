@@ -1,0 +1,77 @@
+<div class="box-body">
+  <div class="input-group">
+    <div class="col-md-1">
+      <div class="form-group">
+        <input type="text" class="form-control" placeholder="Вид"
+               ng-model="Archive.currentCase.info.type" disabled>
+      </div>
+    </div>
+    <div class="col-md-1">
+      <div class="form-group">
+        <input type="text" class="form-control" placeholder="№"
+               ng-model="Archive.currentCase.info.number" disabled>
+      </div>
+    </div>
+    <div class="col-md-2">
+      <div class="form-group">
+        <input type="text" class="form-control" placeholder="Съд"
+               ng-model="Archive.currentCase.info.court" disabled>
+      </div>
+    </div>
+    <div class="col-md-1">
+      <select class="form-control"
+              ng-model="Archive.currentCase.info.instance" disabled>
+        <option value="" disabled selected>Инстанция</option>
+        <option value="Първа"
+                ng-selected="'Първа'==Archive.currentCase.info.instance">
+          Първа
+        </option>
+        <option value="Възивна"
+                ng-selected="'Възивна'==Archive.currentCase.info.instance">
+          Възивна
+        </option>
+        <option value="Касационна"
+                ng-selected="'Касационна'==Archive.currentCase.info.instance">
+          Касационна
+        </option>
+      </select>
+    </div>
+    <div class="col-md-2">
+      <div class="form-group">
+        <input type="text" class="form-control" placeholder="Клиент"
+               ng-model="Archive.currentCase.info.client" disabled>
+      </div>
+    </div>
+    <div class="col-md-2">
+      <div class="form-group">
+        <input type="text" class="form-control" placeholder="Бележка"
+               ng-model="Archive.currentCase.info.note" disabled>
+      </div>
+    </div>
+    <div class="col-md-3">
+      <div class="form-group">
+        {{Archive.currentCase.info.datetime | date: "dd.MM.yyyy - HH:mm"}}
+      </div>
+    </div>
+  </div>
+
+  <!-- ADD scanned documents-->
+  <table class="table table-striped">
+    <thead>
+    <tr class="widget pull-left">
+    </tr>
+    </thead>
+    <tbody>
+    <tr ng-repeat="file in Archive.currentCase.files | orderBy: 'name'">
+      <td id="{{file.id}}"><a href="/file/{{file.id}}">{{file.name}}</a></td>
+      <td>{{file.type}}</td>
+    </tr>
+    </tbody>
+  </table>
+
+  <div class="widget pull-right">
+    <button type="button" class="btn btn-default" ng-click="Archive.cancelCase()">Отмени</button>
+    <button type="button" class="btn btn-danger" ng-click="Archive.removeCase()">Изтрий</button>
+    <button type="button" class="btn btn-primary" ng-click="Archive.extractCase()">Раз-Архивирай</button>
+  </div>
+</div>
