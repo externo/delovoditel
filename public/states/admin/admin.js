@@ -15,4 +15,8 @@ function AdminController($location) {
   Admin.goArchive = function () {
     $location.path("/admin/archive");
   };
+
+  Admin.goFiles = function () {
+    $location.path("/file/type");
+  };
 }
