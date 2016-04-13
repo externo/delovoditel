@@ -1,5 +1,4 @@
-<table class="table table-striped table-bordered table-hover"
-       ng-hide="Case.openCase">
+<table class="table table-striped table-bordered table-hover">
   <thead>
   <tr>
     <th>Вид</th>
@@ -17,7 +16,6 @@
                   filter:Case.search.type |
                   filter:Case.search.court |
                   filter:Case.search.instance"
-      ng-if="case.datetime > Case.search.from"
       ng-click="Case.getCase(case._id)">
     <td>{{case.info.type}}</td>
     <td>{{case.info.number}}</td>

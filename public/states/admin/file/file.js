@@ -2,24 +2,15 @@
 
 angular
   .module('app')
-  .controller('FileTypeController', FileTypeController);
+  .controller('FileController', FileController);
 
-function FileTypeController(FileTypeService) {
+function FileController(FileService, FileTypeService) {
 
   var File = this;
-  File.type = null;
 
-  File.addType = function () {
-    FileTypeService.create(File.type, function(response){
-      File.types = response;
-    });
-  };
-
-  File.removeType = function (id) {
-    FileTypeService.remove(id, function(response){
-      File.types = response;
-    });
-  };
+  FileService.findAll(function (response) {
+    File.files = response;
+  });
 
   FileTypeService.findAll(function (response) {
     File.types = response;

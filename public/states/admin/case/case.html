@@ -9,9 +9,9 @@
       <div class="tab-pane active" id="tab_pie_chart">
         <div class="shadowed-bottom">
           <div class="padded">
-            <div ng-include="'states/admin/case/case-new.html'"></div>
-            <hr/>
-            <div ng-include="'states/admin/case/case-list.html'"></div>
+            <div ng-include="'states/admin/case/case-new.html'" ng-hide="Case.openCase"></div>
+            <div ng-include="'states/admin/case/case-search.html'" ng-hide="Case.openForm || Case.openCase"></div>
+            <div ng-include="'states/admin/case/case-list.html'" ng-hide="Case.openCase"></div>
             <div ng-include="'states/admin/case/case-current.html'" ng-show="Case.openCase"></div>
           </div>
         </div>

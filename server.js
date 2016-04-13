@@ -179,7 +179,7 @@ app.delete('/admin/court/:id', function (req, res) {
 });
 
 // File types
-app.get('/file/type', function (req, res) {
+app.get('/admin/file/type', function (req, res) {
   db.collection('filetypes').find()
     .toArray(function (err, types) {
       res.json(types);
@@ -187,7 +187,7 @@ app.get('/file/type', function (req, res) {
   );
 });
 
-app.post('/file/type', function (req, res) {
+app.post('/admin/file/type', function (req, res) {
   console.log(req.body);
   db.collection('filetypes').insertOne(
     req.body,
@@ -200,7 +200,7 @@ app.post('/file/type', function (req, res) {
     });
 });
 
-app.delete('/file/type/:id', function (req, res) {
+app.delete('/admin/file/type/:id', function (req, res) {
   var typeId = new mongo.ObjectID(req.params.id);
   db.collection('filetypes').deleteOne(
     {_id: typeId},
@@ -215,21 +215,14 @@ app.delete('/file/type/:id', function (req, res) {
 });
 
 // File
-app.get('/file', function (req, res) {
+app.get('/admin/file', function (req, res) {
   gfs.files.find()
-    .map(function (doc) {
-      return {
-        id: doc._id,
-        name: doc.filename,
-        type: doc.metadata.type
-      };
-    })
     .toArray(function (err, files) {
       res.send(files);
     });
 });
 
-app.get('/file/:id', function (req, res) {
+app.get('/admin/file/:id', function (req, res) {
   gfs.findOne({_id: req.params.id}, function (err, file) {
     if (err) return res.status(400).send(err);
     if (!file) return res.status(404).send('');
@@ -250,7 +243,7 @@ app.get('/file/:id', function (req, res) {
   });
 });
 
-app.post('/file', function (req, res) {
+app.post('/admin/file', function (req, res) {
   var filename = req.headers.filename;
   var writeStream = gfs.createWriteStream({
     filename: filename,
@@ -264,7 +257,7 @@ app.post('/file', function (req, res) {
   req.pipe(writeStream);
 });
 
-app.delete('/file/:id', function (req, res) {
+app.delete('/admin/file/:id', function (req, res) {
   gfs.remove({_id: req.params.id}, function (err, file) {
     if (err) return res.status(400).send(err);
     if (!file) return res.status(404).send('');

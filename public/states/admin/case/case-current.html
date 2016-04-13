@@ -70,7 +70,7 @@
   <table class="table table-striped">
     <tbody>
     <tr ng-repeat="file in Case.currentCase.files" class=" col-md-12">
-      <td class="col-md-4"><a href="/file/{{file.id}}">{{file.name}}</a></td>
+      <td class="col-md-4"><a href="/admin/file/{{file.id}}">{{file.name}}</a></td>
       <td class="col-md-4">{{file.type}}</td>
       <td class="col-md-4">
         <button class="btn btn-danger" ng-click="Case.removeFile(file.id)">

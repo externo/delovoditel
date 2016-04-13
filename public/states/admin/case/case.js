@@ -8,13 +8,13 @@ function CaseController($http, $location, CaseService, CourtService, FileTypeSer
 
   var Case = this;
 
-  Case.currentCase = null;
-  Case.newCase = null;
-  Case.openForm = false;
-  Case.openCase = false;
-  Case.newFile = null;
-  Case.fileType = null;
-  Case.files = [];
+  Case.header = 'Висящи дела';
+  Case.currentCase = null;      // temp variable for edit selected case
+  Case.newCase = null;          // temp variable for add new case
+  Case.openForm = false;        // help variable for toggle open/close for add-new-case form
+  Case.openCase = false;        // help variable for toggle open/close for edit-current-case form
+  Case.newFile = null;          // temp variable for storing new-file before add to case
+  Case.fileType = null;         // temp variable for storing new-file-type before add to case
 
   Case.toggleForm = function () {
     Case.openForm = !Case.openForm;
@@ -90,7 +90,7 @@ function CaseController($http, $location, CaseService, CourtService, FileTypeSer
     var fd = new FormData();
     fd.append('file', Case.newFile);
 
-    $http.post('/file', fd, {
+    $http.post('/admin/file', fd, {
       transformRequest: angular.identity,
       headers: {
         'Content-Type': undefined,
@@ -116,7 +116,7 @@ function CaseController($http, $location, CaseService, CourtService, FileTypeSer
   };
 
   Case.removeFile = function (id) {
-    $http.delete('/file/' + id)
+    $http.delete('/admin/file/' + id)
       .then(function (res) {
         var files = Case.currentCase.files;
         var file = files.find(x=>x.id == id);

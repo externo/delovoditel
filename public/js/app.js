@@ -15,8 +15,12 @@ angular
       templateUrl: '/states/admin/court/court.html',
       controller: 'CourtController'
     });
-    $routeProvider.when('/file/type', {
+    $routeProvider.when('/admin/file', {
       templateUrl: '/states/admin/file/file.html',
+      controller: 'FileController'
+    });
+    $routeProvider.when('/admin/file/type', {
+      templateUrl: '/states/admin/file/file-type.html',
       controller: 'FileTypeController'
     });
     $routeProvider.otherwise(

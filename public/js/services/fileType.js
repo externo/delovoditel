@@ -13,17 +13,17 @@ function FileTypeService($http) {
   };
 
   function create(fileType, callback) {
-    $http.post('/file/type', fileType)
+    $http.post('/admin/file/type', fileType)
       .success(callback);
   }
 
   function remove(id, callback) {
-    $http.delete('/file/type/' + id)
+    $http.delete('/admin/file/type/' + id)
       .success(callback);
   }
 
   function findAll(callback) {
-    $http.get('/file/type')
+    $http.get('/admin/file/type')
       .success(callback);
   }
 }

@@ -4,7 +4,7 @@ angular
   .module('app')
   .controller('ArchiveController', ArchiveController);
 
-function ArchiveController($http, $scope, CaseService, FileService) {
+function ArchiveController($http, CaseService) {
 
   var Archive = this;
 
@@ -24,7 +24,6 @@ function ArchiveController($http, $scope, CaseService, FileService) {
     var files = Archive.currentCase.files;
     for (var i = 0; i < files.length; i++) {
       $http.delete('/file/' + files[i].id);
-      console.log(files[i].id);
     }
 
     $http.delete('/admin/case/' + Archive.currentCase._id)
@@ -52,6 +51,5 @@ function ArchiveController($http, $scope, CaseService, FileService) {
 
   CaseService.findAllArchive(function (response) {
     Archive.cases = response;
-    console.log('archive');
   });
 }

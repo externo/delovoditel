@@ -1,25 +1,30 @@
-<div class="row" ng-controller="FileTypeController as File">
-  <div class="col-md-8">
-    <div class="col-md-9">
-      <input type="text" class="form-control" placeholder="Искова молба" ng-model="File.type.name">
-    </div>
-    <button type="button" class="btn btn-success col-md-3" ng-click="File.addType()">Добави файлов тип</button>
-    <br/>
-    <br/>
-    <br/>
-    <div class="col-md-12">
-      <table class="table table-striped table-bordered table-hover">
-        <tbody>
-        <tr ng-repeat="type in File.types | orderBy: 'name'">
-          <td id="{{type._id}}">{{type.name}}</td>
-          <td>
-            <button class="btn btn-danger pull-right" ng-click="File.removeType(type._id)">
-              <span class="icon-remove"></span>
-            </button>
-          </td>
-        </tr>
-        </tbody>
-      </table>
-    </div>
+<div class="row" ng-controller="FileController as File">
+  <div class="form-group col-md-6">
+    <input type="text" class="form-control icon" ng-model="File.search.text"
+           placeholder="&#61442; Търси по име на файл...">
+  </div>
+  <div class="form-group col-md-6">
+    <select class="form-control" ng-model="File.search.type">
+      <option value="" selected="selected">*Тип</option>
+      <option ng-repeat="type in File.types | orderBy: 'name'">{{type.name}}</option>
+    </select>
+  </div>
+  <div>
+    <table class="table table-striped table-bordered table-hover">
+      <thead>
+      <tr>
+        <th>Име на файл</th>
+        <th>Тип файл</th>
+      </tr>
+      </thead>
+      <tbody>
+      <tr ng-repeat="file in File.files | orderBy: 'filename' |
+                        filter:File.search.text |
+                        filter:File.search.type">
+        <td><a href="/admin/file/{{file._id}}">{{file.filename}}</a></td>
+        <td>{{file.metadata.type}}</td>
+      </tr>
+      </tbody>
+    </table>
   </div>
 </div>

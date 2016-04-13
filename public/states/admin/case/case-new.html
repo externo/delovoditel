@@ -67,12 +67,10 @@
           ng-click="Case.toggleForm()">
     Ново дело
   </button>
-  <br/>
-  <br/>
-  <div ng-hide="Case.openForm" ng-include="'states/admin/case/case-search.html'"></div>
   <button type="button" class="btn btn-default"
           ng-show="Case.openForm"
           ng-click="Case.toggleForm()">
     Отмени
   </button>
+  <hr/>
 </form>
