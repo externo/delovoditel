@@ -1,0 +1,31 @@
+<table class="table table-striped table-bordered table-hover"
+       ng-hide="Case.openCase">
+  <thead>
+  <tr>
+    <th>Вид</th>
+    <th>№</th>
+    <th>Съд</th>
+    <th>Инстанция</th>
+    <th>Клиент</th>
+    <th>Бележка</th>
+    <th>Насрочено</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr ng-repeat="case in Case.cases |
+                  filter:Case.search.text |
+                  filter:Case.search.type |
+                  filter:Case.search.court |
+                  filter:Case.search.instance"
+      ng-if="case.datetime > Case.search.from"
+      ng-click="Case.getCase(case._id)">
+    <td>{{case.info.type}}</td>
+    <td>{{case.info.number}}</td>
+    <td>{{case.info.court}}</td>
+    <td>{{case.info.instance}}</td>
+    <td>{{case.info.client}}</td>
+    <td>{{case.info.note}}</td>
+    <td>{{case.info.datetime | date: "dd.MM.yyyy - HH:mm"}}</td>
+  </tr>
+  </tbody>
+</table>

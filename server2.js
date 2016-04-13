@@ -17,7 +17,7 @@ app.post('/file', function(req, res) {
   var fileId = new mongo.ObjectId();
 
   busboy.on('file', function(fieldname, file, filename, encoding, mimetype) {
-    console.log('got file', filename, mimetype, encoding);
+    console.log('got file ', filename, mimetype, encoding);
     var writeStream = gfs.createWriteStream({
       _id: fileId,
       filename: filename,

@@ -1,0 +1,21 @@
+<div class="row" ng-controller="CaseController as Case">
+  <div class="col-md-12">
+    <ul class="nav nav-tabs">
+      <li class="active"><a data-toggle="tab" ng-click="Admin.goCases()"><i class="icon-bar-chart"></i> Висящи дела</a></li>
+      <li><a data-toggle="tab"><i class="icon-bar-chart"></i> Бланки</a></li>
+      <li><a data-toggle="tab" ng-click="Admin.goArchive()"><i class="icon-table"></i> Архив</a></li>
+    </ul>
+    <div class="tab-content bottom-margin">
+      <div class="tab-pane active" id="tab_pie_chart">
+        <div class="shadowed-bottom">
+          <div class="padded">
+            <div ng-include="'states/admin/case/case-new.html'"></div>
+            <hr/>
+            <div ng-include="'states/admin/case/case-list.html'"></div>
+            <div ng-include="'states/admin/case/case-current.html'" ng-show="Case.openCase"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

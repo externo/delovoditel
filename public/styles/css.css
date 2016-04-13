@@ -1299,7 +1299,7 @@ div.DTFC_LeftFootWrapper table {
 
 @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-resolution: 144dpi) {
   .chosen-rtl .chosen-search input[type="text"], .chosen-container-single .chosen-single abbr, .chosen-container-single .chosen-single div b, .chosen-container-single .chosen-search input[type="text"], .chosen-container-multi .chosen-choices .search-choice .search-choice-close, .chosen-container .chosen-results-scroll-down span, .chosen-container .chosen-results-scroll-up span {
-    background-image: url(assets/images/chosen/chosen-sprite@2x.png) !important;
+    /*background-image: url(assets/images/chosen/chosen-sprite@2x.png) !important;*/
     background-size: 52px 37px !important;
     background-repeat: no-repeat !important
   }
@@ -1307,8 +1307,8 @@ div.DTFC_LeftFootWrapper table {
 
 @font-face {
   font-family: 'FontAwesome';
-  src: url(assets/fonts/fontawesome-webfont.eot?v=3.2.1);
-  src: url(assets/fonts/fontawesome-webfont.eot?#iefix&v=3.2.1) format("embedded-opentype"), url(assets/fonts/fontawesome-webfont.woff?v=3.2.1) format("woff"), url(assets/fonts/fontawesome-webfont.ttf?v=3.2.1) format("truetype"), url(assets/fonts/fontawesome-webfont.svg#fontawesomeregular?v=3.2.1) format("svg");
+  src: url(fonts/fontawesome-webfont.eot);
+  src: url(fonts/fontawesome-webfont.eot) format("embedded-opentype"), url(fonts/fontawesome-webfont.woff) format("woff"), url(fonts/fontawesome-webfont.ttf) format("truetype"), url(fonts/fontawesome-webfont.svg) format("svg");
   font-weight: normal;
   font-style: normal
 }
@@ -4644,6 +4644,7 @@ input[type="number"]::-webkit-outer-spin-button, input[type="number"]::-webkit-i
 }
 
 .form-control::-moz-placeholder {
+  font-family:'FontAwesome';
   color: #999999
 }
 
@@ -4652,6 +4653,7 @@ input[type="number"]::-webkit-outer-spin-button, input[type="number"]::-webkit-i
 }
 
 .form-control::-webkit-input-placeholder {
+  font-family:'FontAwesome';
   color: #999999
 }
 
@@ -10275,7 +10277,7 @@ th.visible-print, td.visible-print {
 .content-wrapper .page-header {
   background-color: #82403b;
   color: #fff;
-  padding: 15px 20px;
+  padding: 0px 20px;
   border-radius: 4px 4px 0px 0px;
   -webkit-box-shadow: inset 0px 2px 1px rgba(255, 255, 255, 0.1), 0px 2px 3px 0px rgba(0, 0, 0, 0.2);
   box-shadow: inset 0px 2px 1px rgba(255, 255, 255, 0.1), 0px 2px 3px 0px rgba(0, 0, 0, 0.2);
@@ -10306,7 +10308,7 @@ th.visible-print, td.visible-print {
   -webkit-box-shadow: 0px 1px 0px 0px rgba(255, 255, 255, 0.1);
   box-shadow: 0px 1px 0px 0px rgba(255, 255, 255, 0.1);
   padding-bottom: 5px;
-  margin-top: -10px;
+  margin-top: 7px;
   float: right
 }
 

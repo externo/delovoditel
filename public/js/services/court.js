@@ -2,9 +2,9 @@
 
 angular
   .module('app')
-  .factory('FileTypeService', FileTypeService);
+  .factory('CourtService', CourtService);
 
-function FileTypeService($http) {
+function CourtService($http) {
 
   return {
     create: create,
@@ -12,18 +12,18 @@ function FileTypeService($http) {
     findAll: findAll
   };
 
-  function create(fileType, callback) {
-    $http.post('/file/type', fileType)
+  function create(site, callback) {
+    $http.post('/admin/court', site)
       .success(callback);
   }
 
   function remove(id, callback) {
-    $http.delete('/file/type/' + id)
+    $http.delete('/admin/court/' + id)
       .success(callback);
   }
 
   function findAll(callback) {
-    $http.get('/file/type')
+    $http.get('/admin/court')
       .success(callback);
   }
 }

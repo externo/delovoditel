@@ -1,0 +1,25 @@
+<div class="row" ng-controller="CourtController as Court">
+  <div class="col-md-8">
+    <div class="col-md-9">
+      <input type="text" class="form-control" placeholder="Районен съд - Сердика" ng-model="Court.court.name">
+    </div>
+    <button type="button" class="btn btn-success col-md-3" ng-click="Court.addCourt()">Добави съд</button>
+    <br/>
+    <br/>
+    <br/>
+    <div class="col-md-12">
+      <table class="table table-striped table-bordered table-hover">
+        <tbody>
+        <tr ng-repeat="court in Court.courts | orderBy: 'name'">
+          <td id="{{court._id}}">{{court.name}}</td>
+          <td>
+            <button class="btn btn-danger pull-right" ng-click="Court.removeCourt(court._id)">
+              <span class="icon-remove"></span>
+            </button>
+          </td>
+        </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>

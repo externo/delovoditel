@@ -1,0 +1,90 @@
+<div class="box-body">
+  <div class="input-group">
+    <small class="pull-right">{{Case.currentCase.info.datetime | date: "dd.MM.yyyy - HH:mm"}}</small>
+    <br/>
+
+    <div class="col-md-1">
+      <div class="form-group">
+        <select class="form-control" ng-model="Case.currentCase.info.type">
+          <option value="" disabled selected>*Вид</option>
+          <option value="Гражданско" ng-selected="'Гражданско'==Case.currentCase.info.type">Гражданско</option>
+          <option value="Наказателно" ng-selected="'Наказателно'==Case.currentCase.info.type">Наказателно</option>
+          <option value="Административно" ng-selected="'Административно'==Case.currentCase.info.type">Административно</option>
+        </select>
+      </div>
+    </div>
+    <div class="col-md-1">
+      <div class="form-group">
+        <input type="text" class="form-control" placeholder="№" ng-model="Case.currentCase.info.number">
+      </div>
+    </div>
+    <div class="col-md-2">
+      <select class="form-control" ng-model="Case.currentCase.info.court">
+        <option value="" selected="selected" disabled>*Съд</option>
+        <option ng-repeat="court in Case.courts | orderBy: 'name'"
+                ng-selected="court.name==Case.currentCase.info.court">{{court.name}}
+        </option>
+      </select>
+    </div>
+    <div class="col-md-1">
+      <select class="form-control" ng-model="Case.currentCase.info.instance">
+        <option value="" disabled selected>*Инстанция</option>
+        <option value="Първа" ng-selected="'Първа'==Case.currentCase.info.instance">Първа</option>
+        <option value="Възивна" ng-selected="'Възивна'==Case.currentCase.info.instance">Възивна</option>
+        <option value="Касационна" ng-selected="'Касационна'==Case.currentCase.info.instance">Касационна</option>
+      </select>
+    </div>
+    <div class="col-md-2">
+      <div class="form-group">
+        <input type="text" class="form-control" placeholder="Клиент"
+               ng-model="Case.currentCase.info.client">
+      </div>
+    </div>
+    <div class="col-md-2">
+      <div class="form-group">
+        <input type="text" class="form-control" placeholder="Бележка"
+               ng-model="Case.currentCase.info.note">
+      </div>
+    </div>
+    <div class="col-md-3">
+      <div class="form-group">
+        <input type="datetime-local" class="form-control" ng-model="Case.newDatetime">
+      </div>
+    </div>
+  </div>
+
+  <!-- ADD scanned documents-->
+  <div class="col-md-4">
+    <input type="file" file-model="Case.newFile"/>
+  </div>
+  <select class="col-md-3" ng-model="Case.fileType">
+    <option value="" selected="selected" disabled>*Тип файл</option>
+    <option ng-repeat="type in Case.fileTypes | orderBy: 'name'">{{type.name}}</option>
+  </select>
+
+  <div class="col-md-1"></div>
+  <button class="btn btn-success col-md-3" ng-click="Case.uploadFile()">Добави сканиран документ</button>
+  <br/>
+  <br/>
+  <br/>
+  <table class="table table-striped">
+    <tbody>
+    <tr ng-repeat="file in Case.currentCase.files" class=" col-md-12">
+      <td class="col-md-4"><a href="/file/{{file.id}}">{{file.name}}</a></td>
+      <td class="col-md-4">{{file.type}}</td>
+      <td class="col-md-4">
+        <button class="btn btn-danger" ng-click="Case.removeFile(file.id)">
+          <span class="icon-remove"></span>
+        </button>
+      </td>
+    </tr>
+    </tbody>
+  </table>
+
+  <div class="widget pull-right">
+    <button type="button" class="btn btn-success" ng-click="Case.editCase()">Запази</button>
+    <button type="button" class="btn btn-default" ng-click="Case.cancelCase()">Отмени</button>
+    <button type="button" class="btn btn-danger" ng-click="Case.removeCase()">Изтрий</button>
+    <button type="button" class="btn btn-info" ng-click="Case.archiveCase()">Архивирай</button>
+  </div>
+</div>

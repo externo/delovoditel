@@ -2,7 +2,7 @@
 
 angular
   .module('app')
-  .factory('FileService', FileService)
+  //.factory('FileService', FileService)
   .directive('appFilereader', function ($q) {
 
     var slice = Array.prototype.slice;
@@ -66,32 +66,32 @@ angular
     };
   }]);
 
-function FileService($http) {
-
-  return {
-    create: create,
-    find: find,
-    findAll: findAll,
-    remove: remove
-  };
-
-  function create(site, callback) {
-    $http.post('/file', site)
-      .success(callback);
-  }
-
-  function find(id, callback) {
-    $http.get('/file/' + id)
-      .success(callback);
-  }
-
-  function findAll(callback) {
-    $http.get('/file')
-      .success(callback);
-  }
-
-  function remove(id, callback) {
-    $http.delete('/file/' + id)
-      .success(callback);
-  }
-}
+//function FileService($http) {
+//
+//  return {
+//    create: create,
+//    find: find,
+//    findAll: findAll,
+//    remove: remove
+//  };
+//
+//  function create(site, callback) {
+//    $http.post('/file', site)
+//      .success(callback);
+//  }
+//
+//  function find(id, callback) {
+//    $http.get('/file/' + id)
+//      .success(callback);
+//  }
+//
+//  function findAll(callback) {
+//    $http.get('/file')
+//      .success(callback);
+//  }
+//
+//  function remove(id, callback) {
+//    $http.delete('/file/' + id)
+//      .success(callback);
+//  }
+//}
