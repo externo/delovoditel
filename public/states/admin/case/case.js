@@ -8,13 +8,15 @@ function CaseController($http, $location, CaseService, CourtService, FileTypeSer
 
   var Case = this;
 
-  Case.header = 'Висящи дела';
+  Case.count = 55;
   Case.currentCase = null;      // temp variable for edit selected case
   Case.newCase = null;          // temp variable for add new case
   Case.openForm = false;        // help variable for toggle open/close for add-new-case form
   Case.openCase = false;        // help variable for toggle open/close for edit-current-case form
   Case.newFile = null;          // temp variable for storing new-file before add to case
   Case.fileType = null;         // temp variable for storing new-file-type before add to case
+  Case.orderByField = 'number';
+  Case.reverseSort = false;
 
   Case.toggleForm = function () {
     Case.openForm = !Case.openForm;
@@ -70,7 +72,6 @@ function CaseController($http, $location, CaseService, CourtService, FileTypeSer
     var files = Case.currentCase.files;
     for (var i = 0; i < files.length; i++) {
       $http.delete('/file/' + files[i].id);
-      console.log(files[i].id);
     }
 
     $http.delete('/admin/case/' + Case.currentCase._id)
@@ -87,17 +88,19 @@ function CaseController($http, $location, CaseService, CourtService, FileTypeSer
   };
 
   Case.uploadFile = function () {
+    var file = Case.newFile;
+    var uploadUrl = "/admin/file";
     var fd = new FormData();
-    fd.append('file', Case.newFile);
+    fd.append('file', file);
 
-    $http.post('/admin/file', fd, {
+    $http.post(uploadUrl, fd, {
       transformRequest: angular.identity,
       headers: {
         'Content-Type': undefined,
         filename: encodeURIComponent(Case.newFile.name),
-        metadata: JSON.stringify({
-          type: encodeURIComponent(Case.fileType)
-        })
+        metadata: encodeURIComponent(JSON.stringify({
+          type: Case.fileType,
+          court: Case.currentCase.info.court}))
       }
     })
       .then(function (res) {
@@ -106,10 +109,10 @@ function CaseController($http, $location, CaseService, CourtService, FileTypeSer
           name: Case.newFile.name,
           type: Case.fileType
         };
-        Case.newFile = null;
-        $('input[type=file]').val('');
-        Case.fileType = null;
         Case.currentCase.files.push(file);
+        Case.newFile = null;
+        Case.fileType = null;
+        $('input[type=file]').val('');
 
         $http.put('/admin/case/' + Case.currentCase._id, Case.currentCase);
       });

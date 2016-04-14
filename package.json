@@ -13,6 +13,7 @@
     "body-parser": "^1.15.0",
     "busboy": "^0.2.13",
     "express": "^4.13.4",
+    "gridfs-form": "0.0.12",
     "gridfs-stream": "^1.1.1",
     "mongodb": "^2.1.13",
     "mongoose": "^4.4.10"

@@ -7,6 +7,7 @@ angular
 function FileTypeController(FileTypeService) {
 
   var File = this;
+
   File.type = null;
 
   File.addType = function () {

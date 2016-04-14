@@ -7,6 +7,7 @@ angular
 function CourtController(CourtService) {
 
   var Court = this;
+
   Court.court = null;
 
   Court.addCourt = function () {

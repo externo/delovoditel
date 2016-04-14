@@ -19,8 +19,8 @@ var mongoUrl = process.env.OPENSHIFT_MONGODB_DB_URL;
 var connectionUrl = mongoUrl || 'mongodb://localhost/test';
 
 // Initialize connection once
-MongoClient.connect(connectionUrl, function(err, database) {
-  if(err) throw err;
+MongoClient.connect(connectionUrl, function (err, database) {
+  if (err) throw err;
 
   db = database;
   gfs = Grid(db, mongo);
@@ -244,17 +244,24 @@ app.get('/admin/file/:id', function (req, res) {
 });
 
 app.post('/admin/file', function (req, res) {
-  var filename = req.headers.filename;
-  var writeStream = gfs.createWriteStream({
-    filename: filename,
-    metadata: JSON.parse(decodeURIComponent(req.headers.metadata))
-  });
+  var busboy = new Busboy({headers: req.headers});
+  var fileId = new mongo.ObjectId();
 
-  writeStream.on('finish', function () {
-    res.send(writeStream.id);
-  });
-
-  req.pipe(writeStream);
+  busboy.on('file', function (fieldname, file, filename, encoding, mimetype) {
+    var writeStream = gfs.createWriteStream({
+      _id: fileId,
+      filename: decodeURIComponent(filename),
+      mode: 'w',
+      content_type: mimetype,
+      metadata: JSON.parse(decodeURIComponent(req.headers.metadata))
+    });
+    file.pipe(writeStream);
+  })
+    .on('finish', function () {
+      res.writeHead(200, {'content-type': 'text/html'});
+      res.end(fileId.toString());
+    });
+  req.pipe(busboy);
 });
 
 app.delete('/admin/file/:id', function (req, res) {
@@ -266,5 +273,5 @@ app.delete('/admin/file/:id', function (req, res) {
   });
 });
 
- //Server
+//Server
 app.listen(port, ip);

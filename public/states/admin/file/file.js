@@ -4,7 +4,7 @@ angular
   .module('app')
   .controller('FileController', FileController);
 
-function FileController(FileService, FileTypeService) {
+function FileController(FileService, FileTypeService, CourtService) {
 
   var File = this;
 
@@ -14,5 +14,9 @@ function FileController(FileService, FileTypeService) {
 
   FileTypeService.findAll(function (response) {
     File.types = response;
+  });
+
+  CourtService.findAll(function (response) {
+    File.courts = response;
   });
 }

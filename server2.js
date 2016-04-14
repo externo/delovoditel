@@ -12,7 +12,7 @@ db.open(function(err, db) {
   gfs = Grid(db, mongo);
 });
 
-app.post('/file', function(req, res) {
+app.post('/admin/file', function(req, res) {
   var busboy = new Busboy({ headers : req.headers });
   var fileId = new mongo.ObjectId();
 
@@ -28,7 +28,7 @@ app.post('/file', function(req, res) {
   }).on('finish', function() {
     // show a link to the uploaded file
     res.writeHead(200, {'content-type': 'text/html'});
-    res.end('<a href="/file/' + fileId + '">download file</a>');
+    res.end('<a href="/admin/file/' + fileId + '">download file</a>');
   });
 
   req.pipe(busboy);
@@ -38,14 +38,14 @@ app.get('/', function(req, res) {
   // show a file upload form
   res.writeHead(200, {'content-type': 'text/html'});
   res.end(
-    '<form action="/file" enctype="multipart/form-data" method="post">'+
+    '<form action="/admin/file" enctype="multipart/form-data" method="post">'+
     '<input type="file" name="file"><br>'+
     '<input type="submit" value="Upload">'+
     '</form>'
   );
 });
 
-app.get('/file/:id', function(req, res) {
+app.get('/admin/file/:id', function(req, res) {
   gfs.findOne({ _id: req.params.id }, function (err, file) {
     if (err) return res.status(400).send(err);
     if (!file) return res.status(404).send('');
