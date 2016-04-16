@@ -26,6 +26,11 @@ MongoClient.connect(connectionUrl, function (err, database) {
   gfs = Grid(db, mongo);
 });
 
+// Process variables
+app.get('/process', function (req, res) {
+  res.json(process.env);
+});
+
 // Pending cases
 app.get('/admin/case', function (req, res) {
   db.collection('cases').find({status: 'pending'})
