@@ -294,78 +294,16 @@
 <aside class="main-sidebar">
   <!-- sidebar: style can be found in sidebar.less -->
   <section class="sidebar">
-    <!-- Sidebar user panel -->
-    <div class="user-panel">
-      <div class="pull-left image">
-        <img src="css/dist/img/user2-160x160.jpg" class="img-circle" alt="User Image">
-      </div>
-      <div class="pull-left info">
-        <p>Iliya Iliev</p>
-        <a href="#"><i class="fa fa-circle text-success"></i> Online</a>
-      </div>
-    </div>
     <ul class="sidebar-menu">
       <!--<li class="header">MAIN NAVIGATION</li>-->
-      <li class="treeview">
-        <a href="" ng-click="Admin.goCase()">
-          <i class="fa fa-dashboard"></i>
-          <span>Дела</span>
-          <i class="fa fa-angle-left pull-right"></i>
-        </a>
-      </li>
-      <li class="treeview">
-        <a href="" ng-click="Admin.goArchive()">
-          <i class="fa fa-files-o"></i>
-          <span>Архив</span>
-          <span class="label label-primary pull-right">4</span>
-        </a>
-      </li>
-      <li class="treeview">
-        <a href="" ng-click="Admin.goFile()">
-          <i class="fa fa-files-o"></i>
-          <span>Файлове</span>
-          <span class="label label-primary pull-right">4</span>
-        </a>
-        <ul class="treeview-menu">
-          <li><a href="" ng-click="Admin.goFileType()"><i class="fa fa-circle-o"></i> Типове</a></li>
-          <li><a href=""><i class="fa fa-circle-o"></i> Morris</a></li>
-        </ul>
-      </li>
-      <li class="treeview">
-        <a href="" ng-click="Admin.goCourt()">
-          <i class="fa fa-files-o"></i>
-          <span>Съдилища</span>
-          <span class="label label-primary pull-right">4</span>
-        </a>
-      </li>
-      <li class="treeview">
-        <a href="" ng-click="Admin.goCourt()">
-          <i class="fa fa-files-o"></i>
-          <span>Бланки</span>
-          <span class="label label-primary pull-right">4</span>
-        </a>
-      </li>
-      <li class="treeview">
-        <a href="">
-          <i class="fa fa-files-o"></i>
-          <span>Календар</span>
-          <span class="label label-primary pull-right">4</span>
-        </a>
-      </li>
-      <li class="treeview">
-        <a href="">
-          <i class="fa fa-files-o"></i>
-          <span>История</span>
-          <span class="label label-primary pull-right">4</span>
-        </a>
-      </li>
-      <li class="treeview">
-        <a href="">
-          <i class="fa fa-files-o"></i>
-          <span>Профил</span>
-          <span class="label label-primary pull-right">4</span>
-        </a>
-      </li>
+      <li><a href="#admin/case"><i class="fa fa-dashboard"></i><span>Дела</span><i class="fa fa-angle-left pull-right"></i></a></li>
+      <li><a href="#admin/archive"><i class="fa fa-files-o"></i><span>Архив</span><i class="fa fa-angle-left pull-right"></i></a></li>
+      <li><a href="#admin/file"><i class="fa fa-files-o"></i><span>Файлове</span><i class="fa fa-angle-left pull-right"></i></a></li>
+      <li><a href="#admin/file/type"><i class="fa fa-files-o"></i><span>Типове файлове</span><i class="fa fa-angle-left pull-right"></i></a></li>
+      <li><a href="#admin/court"><i class="fa fa-files-o"></i><span>Съдилища</span><i class="fa fa-angle-left pull-right"></i></a></li>
+      <li><a href="#admin/calendar"><i class="fa fa-files-o"></i><span>Календар</span><i class="fa fa-angle-left pull-right"></i></a></li>
+      <li><a href="#admin/history"><i class="fa fa-files-o"></i><span>История</span><i class="fa fa-angle-left pull-right"></i></a></li>
+      <li><a href="#admin/profile"><i class="fa fa-files-o"></i><span>Профил</span><i class="fa fa-angle-left pull-right"></i></a></li>
     </ul>
   </section>
   <!-- /.sidebar -->
@@ -373,17 +311,6 @@
 
 <!-- Content Wrapper. Contains page content -->
 <div class="content-wrapper">
-  <section class="content-header">
-    <h1>
-      <!--{{Admin.header}}-->
-      <small> в процес на работа</small>
-    </h1>
-    <ol class="breadcrumb">
-      <li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>
-      <li><a href="#">Tables</a></li>
-      <li class="active">Data tables</li>
-    </ol>
-  </section>
   <!-- Main content -->
   <section class="content">
     <div class="row">
@@ -396,10 +323,9 @@
 
 <footer class="main-footer">
   <div class="pull-right hidden-xs">
-    <b>Version</b> 2.3.0
+    <b>Version</b> 1.0.3
   </div>
-  <strong>Copyright &copy; 2014-2015 <a href="http://almsaeedstudio.com">Almsaeed Studio</a>.</strong> All rights
-  reserved.
+  <strong>Copyright &copy; 2014-2016 <a href="http://kataraga.com">Kataraga Studio</a>.</strong> All rights reserved.
 </footer>
 
 </div>
