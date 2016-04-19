@@ -1,21 +1,12 @@
-<div class="row" ng-controller="CaseController as Case">
-  <div class="col-md-12">
-    <ul class="nav nav-tabs">
-      <li class="active"><a data-toggle="tab" ng-click="Admin.goCases()"><i class="icon-book"></i> Висящи дела {{Case.cases.length}}</a></li>
-      <li><a data-toggle="tab"><i class="icon-file-text-alt"></i> Бланки</a></li>
-      <li><a data-toggle="tab" ng-click="Admin.goArchive()"><i class="icon-archive"></i> Архив</a></li>
-    </ul>
-    <div class="tab-content bottom-margin">
-      <div class="tab-pane active" id="tab_pie_chart">
-        <div class="shadowed-bottom">
-          <div class="padded">
-            <div ng-include="'states/admin/case/case-new.html'" ng-hide="Case.openCase"></div>
-            <div ng-include="'states/admin/case/case-search.html'" ng-hide="Case.openForm || Case.openCase"></div>
-            <div ng-include="'states/admin/case/case-list.html'" ng-hide="Case.openCase"></div>
-            <div ng-include="'states/admin/case/case-current.html'" ng-show="Case.openCase"></div>
-          </div>
-        </div>
-      </div>
+<div ng-controller="CaseController as Case">
+  <div ng-include="'states/admin/case/case-new.html'" ng-hide="Case.openCase"></div>
+  <div class="box box-primary" ng-hide="Case.openCase">
+    <div class="box-header">
+      <div ng-include="'states/admin/case/case-search.html'" ng-hide="Case.openForm"></div>
     </div>
+
+    <div ng-include="'states/admin/case/case-list.html'"></div>
   </div>
+
+  <div ng-include="'states/admin/case/case-current.html'" ng-show="Case.openCase"></div>
 </div>

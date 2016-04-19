@@ -10,28 +10,23 @@ function AdminController($location) {
 
   Admin.header = 'Висящи дела';
 
-  Admin.goCases = function () {
+  Admin.goCase = function () {
     $location.path("/admin/case");
-    Admin.header = 'Висящи дела';
   };
 
   Admin.goArchive = function () {
     $location.path("/admin/archive");
-    Admin.header = 'Архивирани дела';
   };
 
   Admin.goCourt = function () {
     $location.path("/admin/court");
-    Admin.header = 'Съдилища';
   };
 
-  Admin.goFiles = function () {
+  Admin.goFile = function () {
     $location.path("/admin/file");
-    Admin.header = 'Всички приложени документи';
   };
 
-  Admin.goFileTypes = function () {
+  Admin.goFileType = function () {
     $location.path("/admin/file/type");
-    Admin.header = 'Всички тъпове документи';
   };
 }

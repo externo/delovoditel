@@ -8,6 +8,7 @@ function ArchiveController($http, CaseService) {
 
   var Archive = this;
 
+  Archive.header = 'Архив';
   Archive.currentCase = null;
   Archive.openCase = false;
 

@@ -12,12 +12,9 @@
   "dependencies": {
     "body-parser": "^1.15.0",
     "busboy": "^0.2.13",
-    "docxtemplater": "^2.1.0",
     "express": "^4.13.4",
-    "fs": "0.0.2",
-    "gridfs-form": "0.0.12",
+    "filesaver": "0.0.13",
     "gridfs-stream": "^1.1.1",
-    "mongodb": "^2.1.13",
-    "mongoose": "^4.4.10"
+    "mongodb": "^2.1.13"
   }
 }

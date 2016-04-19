@@ -4,29 +4,53 @@ angular
   .module('app')
   .factory('PatternService', PatternService);
 
-function PatternService(data) {
+function PatternService() {
 
   return {
-    generate: generate
+    generatePattern: generatePattern
   };
 
-  function generate(data) {
-    var fs = require('fs');
-    var Docxtemplater = require('docxtemplater');
+  function generatePattern(patternType, court, currentCase, profile) {
+    var data;
 
-    //Load the docx file as a binary
-    var content = fs.readFileSync(__dirname + "/input.doc", "binary");
+    switch (patternType) {
+      case "zayavlenie410":
+        data = {
+          courtName: court.name || "................................................................................................................................",
+          courtAddress: court.address || "............................................................................................................................",
+          courtTown: court.town || "........................................................ ",
+          courtNumber: court.number || ".......................",
+          clientName: currentCase.client.name || "...........................................................................................................................................................",
+          clientNumber: currentCase.client.number || "............................................................................................",
+          clientAddress: currentCase.client.address || "...........................................................................................",
+          clientPhone: currentCase.client.phone || "........................................................................ ",
+          clientFax: currentCase.client.fax || "......................................................",
+          clientEmail: currentCase.client.email || "...........................................................................................................................",
+          profileName: profile.name || "....................................................................................................................................",
+          profilePhone: profile.phone || "........................................................................ ",
+          profileFax: profile.fax || "......................................................",
+          profileEmail: profile.email || "..........................................................................................................................."
+        };
+        break;
+      case "molbaPredstDoc":
+        data = {
+          courtName: court.name || "................................................................................................................................",
+          caseId: currentCase.info.number || "................/ ...........Г",
+          clientName: currentCase.client.name || "...............................................................................",
+          clientAddress: currentCase.client.address || "....................................................................................................."
+        };
+        break;
+    }
 
-    var doc = new Docxtemplater(content);
+    var patternName = patternType + ".docx"; // output file name
+    var patternUrl = "patterns/" + patternName; // pick the corresponded file
 
-    //set the templateVariables
-    doc.setData(data);
-
-    //apply them (replace all occurences of {first_name} by Hipp, ...)
-    doc.render();
-
-    var buf = doc.getZip().generate({type: "nodebuffer"});
-
-    fs.writeFileSync(__dirname + "/output.doc", buf);
+    JSZipUtils.getBinaryContent(patternUrl, function (err, content) {
+      var doc = new Docxgen(content);
+      doc.setData(data); //set the templateVariables
+      doc.render(); //apply them (replace all occurences...)
+      var out = doc.getZip().generate({type: "blob"}); //Output the document using Data-URI
+      saveAs(out, patternName);
+    });
   }
 }

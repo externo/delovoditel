@@ -1,30 +1,22 @@
-<div class="col-md-5">
-  <div class="form-group">
-    <input type="text" class="form-control icon" ng-model="Case.search.text" placeholder="&#61442; Търси...">
-  </div>
+<div class="col-md-3">
+  <input type="text" class="col-md-5 form-control icon" ng-model="Case.search.text" placeholder="&#61442; Търси...">
 </div>
 <div class="col-md-2">
-  <div class="form-group">
-    <select class="form-control"
-            ng-model="Case.search.type">
-      <option value="" selected>*Вид</option>
-      <option value="Гражданско">Гражданско</option>
-      <option value="Наказателно">Наказателно</option>
-      <option value="Административно">Административно</option>
-    </select>
-  </div>
+  <select class="form-control" ng-model="Case.search.type">
+    <option value="" selected>*Вид</option>
+    <option value="Гражданско">Гражданско</option>
+    <option value="Наказателно">Наказателно</option>
+    <option value="Административно">Административно</option>
+  </select>
 </div>
 <div class="col-md-2">
-  <div class="form-group">
-    <select class="form-control" ng-model="Case.search.court">
-      <option value="" selected="selected">*Съд</option>
-      <option ng-repeat="court in Case.courts | orderBy: 'name'">{{court.name}}</option>
-    </select>
-  </div>
+  <select class="form-control" ng-model="Case.search.court">
+    <option value="" selected="selected">*Съд</option>
+    <option ng-repeat="court in Case.courts | orderBy: 'name'">{{court.name}}</option>
+  </select>
 </div>
 <div class="col-md-2">
-  <select class="form-control"
-          ng-model="Case.search.instance">
+  <select class="form-control" ng-model="Case.search.instance">
     <option value="" selected>*Инстанция</option>
     <option value="Първа">Първа</option>
     <option value="Възивна">Възивна</option>

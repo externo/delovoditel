@@ -1,76 +1,77 @@
-<form action="" role="form">
-  <div class="row" ng-show="Case.openForm">
-    <div class="widget-controls pull-right">
-      <a href="#" class="widget-link-remove"><i class="icon-remove-sign"></i></a>
-    </div>
-    <br/>
-    <div class="col-md-1">
-      <div class="form-group">
+<div class="box-header with-border" ng-hide="Case.openForm">
+  <button type="button" class="btn btn-success"
+          ng-click="Case.toggleForm()">
+    Добави дело
+  </button>
+</div>
+
+<div class="box box-success" ng-show="Case.openForm">
+  <div class="box-header with-border">
+    <h3 class="box-title">Добави ново дело</h3>
+  </div>
+
+  <!-- /.box-header -->
+  <div class="box-body">
+    <div class="col-md-6 separate">
+      <label>Дело</label>
+      <br/>
+      <div class="col-md-4">
         <select class="form-control"
                 ng-model="Case.newCase.info.type">
-          <option value="" disabled selected>*Вид</option>
+          <option value="" disabled selected>ВИД</option>
           <option value="Гражданско">Гражданско</option>
           <option value="Наказателно">Наказателно</option>
           <option value="Административно">Административно</option>
         </select>
       </div>
-    </div>
-    <div class="col-md-1">
-      <div class="form-group">
-        <input type="text" class="form-control" placeholder="№"
-               ng-model="Case.newCase.info.number">
+      <div class="col-md-4">
+        <input type="text" class="form-control" placeholder="№" ng-model="Case.newCase.info.number">
       </div>
-    </div>
-    <div class="col-md-2">
-      <div class="form-group">
-        <select class="form-control" ng-model="Case.newCase.info.court">
-          <option value="" selected="selected" disabled>*Съд</option>
-          <option ng-repeat="court in Case.courts | orderBy: 'name'">{{court.name}}</option>
+      <div class="col-md-4">
+        <select class="form-control" ng-model="Case.newCase.info.instance">
+          <option value="" disabled selected>ИНСТАНЦИЯ</option>
+          <option value="Първа">Първа</option>
+          <option value="Възивна">Възивна</option>
+          <option value="Касационна">Касационна</option>
         </select>
       </div>
-    </div>
-    <div class="col-md-1">
-      <select class="form-control"
-              ng-model="Case.newCase.info.instance">
-        <option value="" disabled selected>*Инстанция</option>
-        <option value="Първа">Първа</option>
-        <option value="Възивна">Възивна</option>
-        <option value="Касационна">Касационна</option>
+      <select class="form-control" ng-model="Case.newCase.info.court">
+        <option value="" selected="selected" disabled>СЪД</option>
+        <option ng-repeat="court in Case.courts | orderBy: 'name'">{{court.name}}</option>
       </select>
+      <input type="text" class="form-control" placeholder="Бележка" ng-model="Case.newCase.info.note">
+      <input type="datetime-local" class="form-control" ng-model="Case.newCase.info.datetime">
     </div>
-    <div class="col-md-2">
-      <div class="form-group">
-        <input type="text" class="form-control" placeholder="Клиент"
-               ng-model="Case.newCase.info.client">
+    <!-- /.col -->
+
+    <div class="col-md-6 separate">
+      <label>Клиент</label>
+      <input type="text" class="form-control" placeholder="Трите имена/ Наименование на дружеството или организацията"
+             ng-model="Case.newCase.client.name">
+
+      <div class="col-md-6">
+        <input type="text" class="form-control" placeholder="ЕГН/ ЛНЧ/ ЕИК/ Код по БУЛСТАТ"
+               ng-model="Case.newCase.client.number">
       </div>
+      <div class="col-md-6">
+        <input type="text" class="form-control" placeholder="client@mail.bg" ng-model="Case.newCase.client.email">
+      </div>
+      <div class="col-md-6">
+        <input type="text" class="form-control" placeholder="Телефон" ng-model="Case.newCase.client.phone">
+      </div>
+      <div class="col-md-6">
+        <input type="text" class="form-control" placeholder="Факс" ng-model="Case.newCase.client.fax">
+      </div>
+      <input type="text" class="form-control" placeholder="Адрес" ng-model="Case.newCase.client.address">
     </div>
-    <div class="col-md-2">
-      <div class="form-group">
-        <input type="text" class="form-control" placeholder="Бележка"
-               ng-model="Case.newCase.info.note">
-      </div>
-    </div>
-    <div class="col-md-3">
-      <div class="form-group">
-        <input type="datetime-local" class="form-control"
-               ng-model="Case.newCase.info.datetime">
-      </div>
+    <!-- /.col -->
+  </div>
+
+  <div class="box-footer">
+    <div class="btn-group pull-right">
+      <button class="btn btn-success" ng-click="Case.addCase()">Добави</button>
+      <button class="btn btn-default" ng-click="Case.toggleForm()">Отмени</button>
     </div>
   </div>
-  <button class="btn btn-success"
-          ng-show="Case.openForm"
-          ng-click="Case.addCase()">
-    Добави
-  </button>
-  <button type="button" class="btn btn-default"
-          ng-hide="Case.openForm"
-          ng-click="Case.toggleForm()">
-    Ново дело
-  </button>
-  <button type="button" class="btn btn-default"
-          ng-show="Case.openForm"
-          ng-click="Case.toggleForm()">
-    Отмени
-  </button>
-  <hr/>
-</form>
+</div>
+</div>

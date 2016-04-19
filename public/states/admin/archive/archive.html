@@ -1,46 +1,37 @@
-<div class="row" ng-controller="ArchiveController as Archive">
-  <div class="col-md-12">
-    <ul class="nav nav-tabs">
-      <li><a data-toggle="tab" ng-click="Admin.goCases()"><i class="icon-book"></i> Висящи дела</a></li>
-      <li><a data-toggle="tab"><i class="icon-bar-chart"></i> Бланки</a></li>
-      <li class="active"><a data-toggle="tab" ng-click="Admin.goArchive()"><i class="icon-archive"></i> Архив {{Archive.cases.length}}</a></li>
-    </ul>
-    <div class="tab-content bottom-margin">
-      <div class="tab-pane active" id="tab_pie_chart">
-        <div class="shadowed-bottom">
-          <div class="padded">
-            <hr/>
-            <table class="table table-striped table-bordered table-hover datatable"
-                   ng-hide="Archive.openCase">
-              <thead>
-              <tr>
-                <th ng-click="orderByField='info.type'; reverseSort = !reverseSort">Вид <i class="icon-sort"></i></th>
-                <th ng-click="orderByField='info.type'; reverseSort = !reverseSort">№ <i class="icon-sort"></i></th>
-                <th ng-click="orderByField='info.type'; reverseSort = !reverseSort">Съд <i class="icon-sort"></i></th>
-                <th ng-click="orderByField='info.type'; reverseSort = !reverseSort">Инстанция <i class="icon-sort"></i></th>
-                <th ng-click="orderByField='info.type'; reverseSort = !reverseSort">Клиент <i class="icon-sort"></i></th>
-                <th ng-click="orderByField='info.type'; reverseSort = !reverseSort">Бележка <i class="icon-sort"></i></th>
-                <th>Насрочено</th>
-              </tr>
-              </thead>
-              <tbody>
-              <tr ng-repeat="case in Archive.cases | orderBy:orderByField:reverseSort"
-                  ng-click="Archive.getCase(case._id)">
-                <td>{{case.info.type}}</td>
-                <td>{{case.info.number}}</td>
-                <td>{{case.info.court}}</td>
-                <td>{{case.info.instance}}</td>
-                <td>{{case.info.client}}</td>
-                <td>{{case.info.note}}</td>
-                <td>{{case.info.datetime | date: "dd.MM.yyyy - HH:mm"}}</td>
-              </tr>
+<div ng-controller="ArchiveController as Archive">
+  <div class="box box-primary" ng-hide="Archive.openCase">
+    <div class="box-header">
+      <!--search-->
+    </div>
+    <div class="box-body">
+      <table class="table table-striped table-bordered table-hover"
+             ng-hide="Archive.openCase">
+        <thead>
+        <tr>
+          <th ng-click="orderByField='info.type'; reverseSort = !reverseSort">Вид <i class="icon-sort"></i></th>
+          <th ng-click="orderByField='info.type'; reverseSort = !reverseSort">№ <i class="icon-sort"></i></th>
+          <th ng-click="orderByField='info.type'; reverseSort = !reverseSort">Съд <i class="icon-sort"></i></th>
+          <th ng-click="orderByField='info.type'; reverseSort = !reverseSort">Инстанция <i class="icon-sort"></i></th>
+          <th ng-click="orderByField='info.type'; reverseSort = !reverseSort">Клиент <i class="icon-sort"></i></th>
+          <th ng-click="orderByField='info.type'; reverseSort = !reverseSort">Бележка <i class="icon-sort"></i></th>
+          <th>Насрочено</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr ng-repeat="case in Archive.cases | orderBy:orderByField:reverseSort"
+            ng-click="Archive.getCase(case._id)">
+          <td>{{case.info.type}}</td>
+          <td>{{case.info.number}}</td>
+          <td>{{case.info.court}}</td>
+          <td>{{case.info.instance}}</td>
+          <td>{{case.info.client}}</td>
+          <td>{{case.info.note}}</td>
+          <td>{{case.info.datetime | date: "dd.MM.yyyy - HH:mm"}}</td>
+        </tr>
 
-              </tbody>
-            </table>
-            <div ng-include="'states/admin/archive/archive-current.html'" ng-show="Archive.openCase"></div>
-          </div>
-        </div>
-      </div>
+        </tbody>
+      </table>
     </div>
   </div>
+  <div ng-include="'states/admin/archive/archive-current.html'" ng-show="Archive.openCase"></div>
 </div>

@@ -1,90 +1,106 @@
-<div class="box-body">
-  <div class="input-group">
-    <small class="pull-right">{{Case.currentCase.info.datetime | date: "dd.MM.yyyy - HH:mm"}}</small>
-    <br/>
+<div class="box box-warning">
+  <div class="box-header">
+    <h3 class="box-title">Редактирай дело № {{Case.currentCase.info.number}}</h3>
+  </div>
 
-    <div class="col-md-1">
-      <div class="form-group">
-        <select class="form-control" ng-model="Case.currentCase.info.type">
-          <option value="" disabled selected>*Вид</option>
-          <option value="Гражданско" ng-selected="'Гражданско'==Case.currentCase.info.type">Гражданско</option>
-          <option value="Наказателно" ng-selected="'Наказателно'==Case.currentCase.info.type">Наказателно</option>
-          <option value="Административно" ng-selected="'Административно'==Case.currentCase.info.type">Административно</option>
+  <!-- /.box-header -->
+  <div class="box-body">
+    <div class="col-md-12">
+      <div class="col-md-6">
+        <label>Дело</label>
+        <select class="form-control"
+                ng-model="Case.currentCase.info.type">
+          <option value="" disabled selected>ВИД</option>
+          <option value="Гражданско">Гражданско</option>
+          <option value="Наказателно">Наказателно</option>
+          <option value="Административно">Административно</option>
         </select>
-      </div>
-    </div>
-    <div class="col-md-1">
-      <div class="form-group">
         <input type="text" class="form-control" placeholder="№" ng-model="Case.currentCase.info.number">
+        <select class="form-control" ng-model="Case.currentCase.info.court">
+          <option value="" selected="selected" disabled>СЪД</option>
+          <option ng-repeat="court in Case.courts | orderBy: 'name'">{{court.name}}</option>
+        </select>
+        <select class="form-control" ng-model="Case.currentCase.info.instance">
+          <option value="" disabled selected>ИНСТАНЦИЯ</option>
+          <option value="Първа">Първа</option>
+          <option value="Възивна">Възивна</option>
+          <option value="Касационна">Касационна</option>
+        </select>
+        <input type="text" class="form-control" placeholder="Бележка" ng-model="Case.currentCase.info.note">
+        <input type="datetime-local" class="form-control" ng-model="Case.currentCase.info.datetime">
       </div>
-    </div>
-    <div class="col-md-2">
-      <select class="form-control" ng-model="Case.currentCase.info.court">
-        <option value="" selected="selected" disabled>*Съд</option>
-        <option ng-repeat="court in Case.courts | orderBy: 'name'"
-                ng-selected="court.name==Case.currentCase.info.court">{{court.name}}
-        </option>
-      </select>
-    </div>
-    <div class="col-md-1">
-      <select class="form-control" ng-model="Case.currentCase.info.instance">
-        <option value="" disabled selected>*Инстанция</option>
-        <option value="Първа" ng-selected="'Първа'==Case.currentCase.info.instance">Първа</option>
-        <option value="Възивна" ng-selected="'Възивна'==Case.currentCase.info.instance">Възивна</option>
-        <option value="Касационна" ng-selected="'Касационна'==Case.currentCase.info.instance">Касационна</option>
-      </select>
-    </div>
-    <div class="col-md-2">
-      <div class="form-group">
-        <input type="text" class="form-control" placeholder="Клиент"
-               ng-model="Case.currentCase.info.client">
+      <!-- /.col -->
+      <div class="col-md-6">
+        <label>Клиент</label>
+        <input type="text" class="form-control" placeholder="Име" ng-model="Case.currentCase.client.name">
+        <input type="text" class="form-control" placeholder="Телефон" ng-model="Case.currentCase.client.phone">
+        <input type="text" class="form-control" placeholder="Адрес" ng-model="Case.currentCase.client.address">
+        <input type="text" class="form-control" placeholder="client@mail.bg" ng-model="Case.currentCase.client.email">
       </div>
+      <!-- /.col -->
     </div>
-    <div class="col-md-2">
-      <div class="form-group">
-        <input type="text" class="form-control" placeholder="Бележка"
-               ng-model="Case.currentCase.info.note">
-      </div>
-    </div>
-    <div class="col-md-3">
-      <div class="form-group">
-        <input type="datetime-local" class="form-control" ng-model="Case.newDatetime">
+
+    <div>
+      <div class="btn-group pull-right">
+        <button type="button" class="btn btn-warning" ng-click="Case.editCase()">Запази</button>
+        <button type="button" class="btn btn-default" ng-click="Case.cancelCase()">Отмени</button>
+        <button type="button" class="btn btn-danger" ng-click="Case.removeCase()">Изтрий</button>
+        <button type="button" class="btn btn-info" ng-click="Case.archiveCase()">Архивирай</button>
       </div>
     </div>
   </div>
 
-  <!-- ADD scanned documents-->
-  <div class="col-md-4">
-    <input type="file" file-model="Case.newFile"/>
+  <div class="box-footer">
+    <!-- ADD scanned documents-->
+    <label>Създаване на бланки</label>
+
+    <div class="input-group">
+      <select class="form-control" ng-model="Case.patternType">
+        <option value="" selected="selected" disabled>ТИП БЛАНКА</option>
+        <option value="zayavlenie410">Заявление за издаване на заповед за изпълнение по чл. 410 от ГПК</option>
+        <option value="molbaPredstDoc">Молба за представяне на документ по дело</option>
+      </select>
+
+      <div class="input-group-btn">
+        <button class="btn btn-success" ng-click="Case.generatePattern()">Създай</button>
+      </div>
+    </div>
   </div>
-  <select class="col-md-3" ng-model="Case.fileType">
-    <option value="" selected="selected" disabled>*Тип файл</option>
-    <option ng-repeat="type in Case.fileTypes | orderBy: 'name'">{{type.name}}</option>
-  </select>
+  <div class="box-footer">
+    <!-- ADD scanned documents-->
+    <label>Добавяне на документи към делото</label>
 
-  <div class="col-md-1"></div>
-  <button class="btn btn-success col-md-3" ng-click="Case.uploadFile()">Добави сканиран документ</button>
-  <br/>
-  <br/>
-  <br/>
-  <table class="table table-striped">
-    <tbody>
-    <tr ng-repeat="file in Case.currentCase.files" class=" col-md-12">
-      <td class="col-md-4"><a href="/admin/file/{{file.id}}">{{file.name}}</a></td>
-      <td class="col-md-4">{{file.type}}</td>
-      <td class="col-md-4">
-        <button class="btn btn-danger" ng-click="Case.removeFile(file.id)">
-          <span class="icon-remove"></span>
-        </button>
-      </td>
-    </tr>
-    </tbody>
-  </table>
+    <div class="">
+      <div class="col-md-6">
+        <div class="form-control">
+          <input type="file" file-model="Case.newFile"/>
+        </div>
+      </div>
+      <div class="col-md-6 input-group">
+        <select class="form-control" ng-model="Case.fileType">
+          <option value="" selected="selected" disabled>ТИП ФАЙЛ</option>
+          <option ng-repeat="type in Case.fileTypes | orderBy: 'name'">{{type.name}}</option>
+        </select>
 
-  <div class="widget pull-right">
-    <button type="button" class="btn btn-success" ng-click="Case.editCase()">Запази</button>
-    <button type="button" class="btn btn-default" ng-click="Case.cancelCase()">Отмени</button>
-    <button type="button" class="btn btn-danger" ng-click="Case.removeCase()">Изтрий</button>
-    <button type="button" class="btn btn-info" ng-click="Case.archiveCase()">Архивирай</button>
+        <div class="input-group-btn">
+          <button class="btn btn-success" ng-click="Case.uploadFile()">Добави</button>
+        </div>
+      </div>
+    </div>
+    <br/>
+    <table class="table table-hover">
+      <tbody>
+      <tr ng-repeat="file in Case.currentCase.files">
+        <td><a href="/admin/file/{{file.id}}">{{file.name}}</a></td>
+        <td>{{file.type}}</td>
+        <td>
+          <button class="btn btn-danger pull-right" ng-click="Case.removeFile(file.id)">
+            <span class="fa fa-remove"></span>
+          </button>
+        </td>
+      </tr>
+      </tbody>
+    </table>
+
   </div>
 </div>

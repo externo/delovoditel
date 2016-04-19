@@ -4,17 +4,18 @@ angular
   .module('app')
   .controller('CaseController', CaseController);
 
-function CaseController($http, $location, CaseService, CourtService, FileTypeService) {
+function CaseController($http, $location, CaseService, CourtService, FileTypeService, PatternService) {
 
   var Case = this;
 
-  Case.count = 55;
+  Case.header = 'Висящи дела';
   Case.currentCase = null;      // temp variable for edit selected case
   Case.newCase = null;          // temp variable for add new case
   Case.openForm = false;        // help variable for toggle open/close for add-new-case form
   Case.openCase = false;        // help variable for toggle open/close for edit-current-case form
   Case.newFile = null;          // temp variable for storing new-file before add to case
   Case.fileType = null;         // temp variable for storing new-file-type before add to case
+  Case.patternType = null;      // temp variable for storing pattern-type before generating it
   Case.orderByField = 'number';
   Case.reverseSort = false;
 
@@ -122,12 +123,18 @@ function CaseController($http, $location, CaseService, CourtService, FileTypeSer
     $http.delete('/admin/file/' + id)
       .then(function (res) {
         var files = Case.currentCase.files;
-        var file = files.find(x=>x.id == id);
+        var file = Case.currentCase.files.find(x=>x.id == id);
         var fileIndex = files.indexOf(file);
         files.splice(fileIndex, 1);
 
         $http.put('/admin/case/' + Case.currentCase._id, Case.currentCase);
       });
+  };
+
+  Case.generatePattern = function(){
+    var courts = Case.courts;
+    var court = courts.find(x=> x.name == Case.currentCase.info.court);
+    PatternService.generatePattern(Case.patternType, court, Case.currentCase, Case.profile);
   };
 
   CaseService.findAllPending(function (response) {
@@ -141,4 +148,9 @@ function CaseController($http, $location, CaseService, CourtService, FileTypeSer
   FileTypeService.findAll(function (response) {
     Case.fileTypes = response;
   });
+
+  Case.profile = {
+    name: "ebre debre",
+    email: "udri@koce.com"
+  }
 }
