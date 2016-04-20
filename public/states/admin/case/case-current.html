@@ -11,9 +11,9 @@
         <select class="form-control"
                 ng-model="Case.currentCase.info.type">
           <option value="" disabled selected>ВИД</option>
-          <option value="Гражданско">Гражданско</option>
-          <option value="Наказателно">Наказателно</option>
-          <option value="Административно">Административно</option>
+          <option value="гражданско">Гражданско</option>
+          <option value="наказателно">Наказателно</option>
+          <option value="административно">Административно</option>
         </select>
         <input type="text" class="form-control" placeholder="№" ng-model="Case.currentCase.info.number">
         <select class="form-control" ng-model="Case.currentCase.info.court">
@@ -22,9 +22,9 @@
         </select>
         <select class="form-control" ng-model="Case.currentCase.info.instance">
           <option value="" disabled selected>ИНСТАНЦИЯ</option>
-          <option value="Първа">Първа</option>
-          <option value="Възивна">Възивна</option>
-          <option value="Касационна">Касационна</option>
+          <option value="първа">Първа</option>
+          <option value="възивна">Възивна</option>
+          <option value="касационна">Касационна</option>
         </select>
         <input type="text" class="form-control" placeholder="Бележка" ng-model="Case.currentCase.info.note">
         <input type="datetime-local" class="form-control" ng-model="Case.currentCase.info.datetime">
@@ -34,6 +34,7 @@
         <label>Клиент</label>
         <input type="text" class="form-control" placeholder="Име" ng-model="Case.currentCase.client.name">
         <input type="text" class="form-control" placeholder="Телефон" ng-model="Case.currentCase.client.phone">
+        <input type="text" class="form-control" placeholder="ЕГН" ng-model="Case.currentCase.client.number">
         <input type="text" class="form-control" placeholder="Адрес" ng-model="Case.currentCase.client.address">
         <input type="text" class="form-control" placeholder="client@mail.bg" ng-model="Case.currentCase.client.email">
       </div>
@@ -59,6 +60,14 @@
         <option value="" selected="selected" disabled>ТИП БЛАНКА</option>
         <option value="zayavlenie410">Заявление за издаване на заповед за изпълнение по чл. 410 от ГПК</option>
         <option value="molbaPredstDoc">Молба за представяне на документ по дело</option>
+        <option value="molbaIzdSydUdost">Молба за издаване на съдебно удостоверение</option>
+        <option value="molbaZavPrepisIL">Молба за издаване на заверен препис от влязло в сила съдебно решение и изпълнителен лист</option>
+        <option value="molbaOFG">Молба за поправяне на очевидна фактическа грешка</option>
+        <option value="molbaReabilitacia">Молба за реабилитация</option>
+        <option value="molbaIzmProcesPrinuda">Молба за изменение на процесуална принуда</option>
+        <option value="svidetelstvoSydimost">Заявление за издаване на свидетелство за съдимост</option>
+        <option value="molbaObrIzpDelo">Молба за образуване на изпълнително дело</option>
+        <option value="naddavatelnoPredlojenie">Наддавателно предложение за участие в публична продан - физическо лице</option>
       </select>
 
       <div class="input-group-btn">

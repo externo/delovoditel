@@ -151,6 +151,8 @@ function CaseController($http, $location, CaseService, CourtService, FileTypeSer
 
   Case.profile = {
     name: "ebre debre",
+    phone: '123123',
+    fax: '#!@$!#@',
     email: "udri@koce.com"
   }
 }

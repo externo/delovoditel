@@ -70,11 +70,18 @@ app.put('/admin/case/:id', function (req, res) {
         info: {
           type: req.body.info.type,
           number: req.body.info.number,
-          court: req.body.info.court,
           instance: req.body.info.instance,
-          client: req.body.info.client,
+          court: req.body.info.court,
           note: req.body.info.note,
           datetime: new Date(req.body.info.datetime)
+        },
+        client: {
+          name: req.body.client.name,
+          number: req.body.client.number,
+          email: req.body.client.email,
+          phone: req.body.client.phone,
+          fax: req.body.client.fax,
+          address: req.body.client.address
         },
         files: req.body.files
       }

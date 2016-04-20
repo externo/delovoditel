@@ -40,6 +40,86 @@ function PatternService() {
           clientAddress: currentCase.client.address || "....................................................................................................."
         };
         break;
+      case "molbaIzdSydUdost":
+        data = {
+          courtName: court.name || "................................................................................................................................",
+          caseId: currentCase.info.number || "................/ ...........Г",
+          clientName: currentCase.client.name || "...............................................................................",
+          clientAddress: currentCase.client.address || "....................................................................................................."
+        };
+        break;
+      case "molbaZavPrepisIL":
+        data = {
+          courtName: court.name || "................................................................................................................................",
+          caseId: currentCase.info.number || "................/ ...........Г",
+          clientName: currentCase.client.name || "...............................................................................",
+          clientAddress: currentCase.client.address || ".....................................................................................................",
+          clientPhone: currentCase.client.phone || "........................................................................ ",
+          clientEmail: currentCase.client.email || "..........................................................................................................................."
+        };
+        break;
+      case "molbaOFG":
+        data = {
+          courtName: court.name || "................................................................................................................................",
+          caseId: currentCase.info.number || "................/ ...........Г",
+          clientName: currentCase.client.name || "...............................................................................",
+          clientAddress: currentCase.client.address || ".....................................................................................................",
+          clientPhone: currentCase.client.phone || "........................................................................ ",
+          clientEmail: currentCase.client.email || "..........................................................................................................................."
+        };
+        break;
+      case "molbaReabilitacia":
+        data = {
+          courtName: court.name || "................................................................................................................................",
+          caseId: currentCase.info.number || "................/ ...........Г",
+          clientName: currentCase.client.name || "...............................................................................",
+          clientNumber: currentCase.client.number || ".......................",
+          clientAddress: currentCase.client.address || ".....................................................................................................",
+          clientPhone: currentCase.client.phone || "........................................................................ ",
+          clientEmail: currentCase.client.email || "..........................................................................................................................."
+        };
+        break;
+      case "molbaIzmProcesPrinuda":
+        data = {
+          courtName: court.name || "................................................................................................................................",
+          caseId: currentCase.info.number || "................/ ...........Г",
+          clientName: currentCase.client.name || "...............................................................................",
+          clientNumber: currentCase.client.number || ".......................",
+          clientAddress: currentCase.client.address || ".....................................................................................................",
+          clientPhone: currentCase.client.phone || "........................................................................ ",
+          clientEmail: currentCase.client.email || "..........................................."
+        };
+        break;
+      case "svidetelstvoSydimost":
+        data = {
+          courtTown: court.town || "...............",
+          clientName: currentCase.client.name || "..........................................................................................................................",
+          clientNumber: currentCase.client.number || ".......................",
+          clientAddress: currentCase.client.address || "........................................................................................................"
+        };
+        break;
+      case "molbaObrIzpDelo":
+        data = {
+          caseId: currentCase.info.number || "................/ ...........Г",
+          caseType: currentCase.info.type || '...................',
+          courtName: court.name || "...........................",
+          clientName: currentCase.client.name || "....................................................",
+          clientNumber: currentCase.client.number || "..................................",
+          clientAddress: currentCase.client.address || "..............................................................",
+          clientPhone: currentCase.client.phone || ".............................."
+        };
+        break;
+      case "naddavatelnoPredlojenie":
+        data = {
+          courtName: court.name || "................................................................................................................................",
+          caseId: currentCase.info.number || "................/ ...........Г",
+          clientName: currentCase.client.name || "..............................................................",
+          clientNumber: currentCase.client.number || "..........................................",
+          clientAddress: currentCase.client.address || ".........................................................................................................",
+          clientPhone: currentCase.client.phone || ".........................................................................",
+          profileName: profile.name || "............................................................................................."
+        };
+        break;
     }
 
     var patternName = patternType + ".docx"; // output file name
