@@ -1,115 +1,134 @@
-<div class="box box-warning">
-  <div class="box-header">
-    <h3 class="box-title">Редактирай дело № {{Case.currentCase.info.number}}</h3>
-  </div>
+<div class="box-header with-border">
+  <h3 class="box-title"><strong>Редактиране дело № {{Case.currentCase.info.number}}</strong></h3>
+</div>
 
-  <!-- /.box-header -->
-  <div class="box-body">
-    <div class="col-md-12">
-      <div class="col-md-6">
-        <label>Дело</label>
-        <select class="form-control"
-                ng-model="Case.currentCase.info.type">
-          <option value="" disabled selected>ВИД</option>
-          <option value="гражданско">Гражданско</option>
-          <option value="наказателно">Наказателно</option>
-          <option value="административно">Административно</option>
-        </select>
-        <input type="text" class="form-control" placeholder="№" ng-model="Case.currentCase.info.number">
-        <select class="form-control" ng-model="Case.currentCase.info.court">
-          <option value="" selected="selected" disabled>СЪД</option>
-          <option ng-repeat="court in Case.courts | orderBy: 'name'">{{court.name}}</option>
-        </select>
-        <select class="form-control" ng-model="Case.currentCase.info.instance">
-          <option value="" disabled selected>ИНСТАНЦИЯ</option>
-          <option value="първа">Първа</option>
-          <option value="възивна">Възивна</option>
-          <option value="касационна">Касационна</option>
-        </select>
-        <input type="text" class="form-control" placeholder="Бележка" ng-model="Case.currentCase.info.note">
-        <input type="datetime-local" class="form-control" ng-model="Case.currentCase.info.datetime">
-      </div>
-      <!-- /.col -->
-      <div class="col-md-6">
-        <label>Клиент</label>
-        <input type="text" class="form-control" placeholder="Име" ng-model="Case.currentCase.client.name">
-        <input type="text" class="form-control" placeholder="Телефон" ng-model="Case.currentCase.client.phone">
-        <input type="text" class="form-control" placeholder="ЕГН" ng-model="Case.currentCase.client.number">
-        <input type="text" class="form-control" placeholder="Адрес" ng-model="Case.currentCase.client.address">
-        <input type="text" class="form-control" placeholder="client@mail.bg" ng-model="Case.currentCase.client.email">
-      </div>
-      <!-- /.col -->
+<div class="box-body">
+  <div class="col-md-6 separate">
+    <label>Дело</label>
+    <br/>
+    <div class="col-md-4">
+      <input type="text" class="form-control" placeholder="№" ng-model="Case.currentCase.info.number">
     </div>
+    <div class="col-md-4">
+      <select class="form-control"
+              ng-model="Case.currentCase.info.type">
+        <option value="" disabled selected>&#xf19c; ВИД</option>
+        <option value="гражданско">Гражданско</option>
+        <option value="наказателно">Наказателно</option>
+        <option value="административно">Административно</option>
+      </select>
+    </div>
+    <div class="col-md-4">
+      <select class="form-control" ng-model="Case.currentCase.info.instance">
+        <option value="" disabled selected>&#xf0e3; ИНСТАНЦИЯ</option>
+        <option value="първа">Първа</option>
+        <option value="възивна">Възивна</option>
+        <option value="касационна">Касационна</option>
+      </select>
+    </div>
+    <select class="form-control" ng-model="Case.currentCase.info.court">
+      <option value="" selected="selected" disabled>&#xf24e; СЪД</option>
+      <option ng-repeat="court in Case.courts | orderBy: 'name'">{{court.name}}</option>
+    </select>
+    <input type="text" class="form-control" placeholder="Бележка" ng-model="Case.currentCase.info.note">
+    <input type="datetime-local" class="form-control" ng-model="Case.currentCase.info.datetime">
+  </div>
+  <!-- /.col -->
+  <div class="col-md-6 separate">
+    <label>Клиент</label>
+    <input type="text" class="form-control" placeholder="Трите имена/ Наименование на дружеството или организацията"
+           ng-model="Case.currentCase.client.name">
 
-    <div>
-      <div class="btn-group pull-right">
-        <button type="button" class="btn btn-warning" ng-click="Case.editCase()">Запази</button>
-        <button type="button" class="btn btn-default" ng-click="Case.cancelCase()">Отмени</button>
-        <button type="button" class="btn btn-danger" ng-click="Case.removeCase()">Изтрий</button>
-        <button type="button" class="btn btn-info" ng-click="Case.archiveCase()">Архивирай</button>
-      </div>
+    <div class="col-md-6">
+      <input type="text" class="form-control" placeholder="ЕГН/ ЛНЧ/ ЕИК/ Код по БУЛСТАТ"
+             ng-model="Case.currentCase.client.number">
+    </div>
+    <div class="col-md-6">
+      <input type="text" class="form-control" placeholder="client@mail.bg" ng-model="Case.currentCase.client.email">
+    </div>
+    <div class="col-md-6">
+      <input type="text" class="form-control" placeholder="Телефон" ng-model="Case.currentCase.client.phone">
+    </div>
+    <div class="col-md-6">
+      <input type="text" class="form-control" placeholder="Факс" ng-model="Case.currentCase.client.fax">
+    </div>
+    <input type="text" class="form-control" placeholder="Адрес" ng-model="Case.currentCase.client.address">
+  </div>
+  <!-- /.col -->
+
+  <div>
+    <div class="btn-group pull-right">
+      <button type="button" class="btn btn-warning" ng-click="Case.editCase()">Запази</button>
+      <button type="button" class="btn btn-default" ng-click="Case.cancelCase()">Отмени</button>
+      <button type="button" class="btn btn-danger" ng-click="Case.removeCase()">Изтрий</button>
+      <button type="button" class="btn btn-info" ng-click="Case.archiveCase()">Архивирай</button>
     </div>
   </div>
+</div>
 
-  <div class="box-footer">
-    <!-- ADD scanned documents-->
-    <label>Създаване на бланки</label>
+<div class="box-footer">
+  <!-- ADD scanned documents-->
+  <label>Създаване на бланки</label>
 
-    <div class="input-group">
-      <select class="form-control" ng-model="Case.patternType">
-        <option value="" selected="selected" disabled>ТИП БЛАНКА</option>
-        <option value="zayavlenie410">Заявление за издаване на заповед за изпълнение по чл. 410 от ГПК</option>
-        <option value="molbaPredstDoc">Молба за представяне на документ по дело</option>
-        <option value="molbaIzdSydUdost">Молба за издаване на съдебно удостоверение</option>
-        <option value="molbaZavPrepisIL">Молба за издаване на заверен препис от влязло в сила съдебно решение и изпълнителен лист</option>
-        <option value="molbaOFG">Молба за поправяне на очевидна фактическа грешка</option>
-        <option value="molbaReabilitacia">Молба за реабилитация</option>
-        <option value="molbaIzmProcesPrinuda">Молба за изменение на процесуална принуда</option>
-        <option value="svidetelstvoSydimost">Заявление за издаване на свидетелство за съдимост</option>
-        <option value="molbaObrIzpDelo">Молба за образуване на изпълнително дело</option>
-        <option value="naddavatelnoPredlojenie">Наддавателно предложение за участие в публична продан - физическо лице</option>
+  <div class="input-group">
+    <select class="form-control" ng-model="Case.patternType">
+      <option value="" selected="selected" disabled>&#xf1c2; ТИП БЛАНКА</option>
+      <option value="zayavlenie410">Заявление за издаване на заповед за изпълнение по чл. 410 от ГПК</option>
+      <option value="molbaPredstDoc">Молба за представяне на документ по дело</option>
+      <option value="molbaIzdSydUdost">Молба за издаване на съдебно удостоверение</option>
+      <option value="molbaZavPrepisIL">Молба за издаване на заверен препис от влязло в сила съдебно решение и изпълнителен лист</option>
+      <option value="molbaOFG">Молба за поправяне на очевидна фактическа грешка</option>
+      <option value="molbaReabilitacia">Молба за реабилитация</option>
+      <option value="molbaIzmProcesPrinuda">Молба за изменение на процесуална принуда</option>
+      <option value="svidetelstvoSydimost">Заявление за издаване на свидетелство за съдимост</option>
+      <option value="molbaObrIzpDelo">Молба за образуване на изпълнително дело</option>
+      <option value="naddavatelnoPredlojenie">Наддавателно предложение за участие в публична продан - физическо лице</option>
+    </select>
+
+    <div class="input-group-btn">
+      <button class="btn btn-success" ng-click="Case.generatePattern()">Създай</button>
+    </div>
+  </div>
+</div>
+
+<div class="box-footer">
+  <!-- ADD scanned documents-->
+  <label>Добавяне на документи към делото</label>
+
+  <div class="">
+    <div class="col-md-6">
+      <div class="form-control">
+        <input type="file" file-model="Case.newFile"/>
+      </div>
+    </div>
+    <div class="col-md-6 input-group">
+      <select class="form-control" ng-model="Case.fileType">
+        <option value="" selected="selected" disabled>&#xf1c2; ТИП ФАЙЛ</option>
+        <option ng-repeat="type in Case.fileTypes | orderBy: 'name'">{{type.name}}</option>
       </select>
 
       <div class="input-group-btn">
-        <button class="btn btn-success" ng-click="Case.generatePattern()">Създай</button>
+        <button class="btn btn-success" ng-click="Case.uploadFile()">Добави</button>
       </div>
     </div>
   </div>
-  <div class="box-footer">
-    <!-- ADD scanned documents-->
-    <label>Добавяне на документи към делото</label>
+  <br/>
+  <table class="table table-hover">
+    <label ng-if="Case.currentCase.files.length>0">Сканирани документи към делото</label>
+    <tbody>
+    <tr ng-repeat="file in Case.currentCase.files">
+      <td><a href="/admin/file/{{file.id}}">{{file.name}}</a></td>
+      <td>{{file.type}}</td>
+      <td>
+        <button class="btn btn-danger pull-right" ng-click="Case.removeFile(file.id)">
+          <span class="fa fa-remove"></span>
+        </button>
+      </td>
+    </tr>
+    </tbody>
+  </table>
+  <label class="headline text-red" ng-if="Case.currentCase.files.length==0">
+    <i class="fa fa-warning"></i> Няма сканирани документи към делото
+  </label>
 
-    <div class="">
-      <div class="col-md-6">
-        <div class="form-control">
-          <input type="file" file-model="Case.newFile"/>
-        </div>
-      </div>
-      <div class="col-md-6 input-group">
-        <select class="form-control" ng-model="Case.fileType">
-          <option value="" selected="selected" disabled>ТИП ФАЙЛ</option>
-          <option ng-repeat="type in Case.fileTypes | orderBy: 'name'">{{type.name}}</option>
-        </select>
-
-        <div class="input-group-btn">
-          <button class="btn btn-success" ng-click="Case.uploadFile()">Добави</button>
-        </div>
-      </div>
-    </div>
-    <br/>
-    <table class="table table-hover">
-      <tbody>
-      <tr ng-repeat="file in Case.currentCase.files">
-        <td><a href="/admin/file/{{file.id}}">{{file.name}}</a></td>
-        <td>{{file.type}}</td>
-        <td>
-          <button class="btn btn-danger pull-right" ng-click="Case.removeFile(file.id)">
-            <span class="fa fa-remove"></span>
-          </button>
-        </td>
-      </tr>
-      </tbody>
-    </table>
-
-  </div>
 </div>

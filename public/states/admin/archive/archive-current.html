@@ -1,82 +1,77 @@
-<div class="box box-primary">
-  <div class="box-header">
-  </div>
-  <div class="box-body">
-    <div class="col-md-1">
-      <div class="form-group">
-        <input type="text" class="form-control" placeholder="Вид"
-               ng-model="Archive.currentCase.info.type" disabled>
-      </div>
-    </div>
-    <div class="col-md-1">
-      <div class="form-group">
-        <input type="text" class="form-control" placeholder="№"
-               ng-model="Archive.currentCase.info.number" disabled>
-      </div>
-    </div>
-    <div class="col-md-2">
-      <div class="form-group">
-        <input type="text" class="form-control" placeholder="Съд"
-               ng-model="Archive.currentCase.info.court" disabled>
-      </div>
-    </div>
-    <div class="col-md-1">
+<div class="box-header with-border">
+  <h3 class="box-title"><strong>Архивно дело № {{Archive.currentCase.info.number}}</strong></h3>
+</div>
+<div class="box-body">
+  <div class="col-md-6 separate">
+    <label>Дело</label>
+    <br/>
+    <div class="col-md-4">
       <select class="form-control"
-              ng-model="Archive.currentCase.info.instance" disabled>
-        <option value="" disabled selected>Инстанция</option>
-        <option value="Първа"
-                ng-selected="'Първа'==Archive.currentCase.info.instance">
-          Първа
-        </option>
-        <option value="Възивна"
-                ng-selected="'Възивна'==Archive.currentCase.info.instance">
-          Възивна
-        </option>
-        <option value="Касационна"
-                ng-selected="'Касационна'==Archive.currentCase.info.instance">
-          Касационна
-        </option>
+              ng-model="Archive.currentArchive.info.type" disabled>
+        <option value="" disabled selected>ВИД</option>
+        <option value="гражданско">Гражданско</option>
+        <option value="наказателно">Наказателно</option>
+        <option value="административно">Административно</option>
       </select>
     </div>
-    <div class="col-md-2">
-      <div class="form-group">
-        <input type="text" class="form-control" placeholder="Клиент"
-               ng-model="Archive.currentCase.info.client" disabled>
-      </div>
+    <div class="col-md-4">
+      <input type="text" class="form-control" placeholder="№" ng-model="Archive.currentArchive.info.number" disabled>
     </div>
-    <div class="col-md-2">
-      <div class="form-group">
-        <input type="text" class="form-control" placeholder="Бележка"
-               ng-model="Archive.currentCase.info.note" disabled>
-      </div>
+    <div class="col-md-4">
+      <select class="form-control" ng-model="Archive.currentArchive.info.instance" disabled>
+        <option value="" disabled selected>ИНСТАНЦИЯ</option>
+        <option value="първа">Първа</option>
+        <option value="възивна">Възивна</option>
+        <option value="касационна">Касационна</option>
+      </select>
     </div>
-    <div class="col-md-3">
-      <div class="form-group">
-        {{Archive.currentCase.info.datetime | date: "dd.MM.yyyy - HH:mm"}}
-      </div>
-    </div>
+    <select class="form-control" ng-model="Archive.currentArchive.info.court" disabled>
+      <option value="" selected="selected" disabled>СЪД</option>
+      <option ng-repeat="court in Archive.courts | orderBy: 'name'">{{court.name}}</option>
+    </select>
+    <input type="text" class="form-control" placeholder="Бележка" ng-model="Archive.currentArchive.info.note" disabled>
+    <input type="datetime-local" class="form-control" ng-model="Archive.currentArchive.info.datetime" disabled>
+  </div>
+  <!-- /.col -->
+  <div class="col-md-6 separate">
+    <label>Клиент</label>
+    <input type="text" class="form-control" placeholder="Трите имена/ Наименование на дружеството или организацията"
+           ng-model="Archive.currentArchive.client.name" disabled>
 
-    <div>
-      <div class="btn-group pull-right">
-        <button type="button" class="btn btn-default" ng-click="Archive.cancelCase()">Отмени</button>
-        <button type="button" class="btn btn-danger" ng-click="Archive.removeCase()">Изтрий</button>
-        <button type="button" class="btn btn-primary" ng-click="Archive.extractCase()">Раз-Архивирай</button>
-      </div>
+    <div class="col-md-6">
+      <input type="text" class="form-control" placeholder="ЕГН/ ЛНЧ/ ЕИК/ Код по БУЛСТАТ"
+             ng-model="Archive.currentArchive.client.number" disabled>
+    </div>
+    <div class="col-md-6">
+      <input type="text" class="form-control" placeholder="client@mail.bg" ng-model="Archive.currentArchive.client.email" disabled>
+    </div>
+    <div class="col-md-6">
+      <input type="text" class="form-control" placeholder="Телефон" ng-model="Archive.currentArchive.client.phone" disabled>
+    </div>
+    <div class="col-md-6">
+      <input type="text" class="form-control" placeholder="Факс" ng-model="Archive.currentArchive.client.fax" disabled>
+    </div>
+    <input type="text" class="form-control" placeholder="Адрес" ng-model="Archive.currentArchive.client.address" disabled>
+  </div>
+  <!-- /.col -->
+
+  <div>
+    <div class="btn-group pull-right">
+      <button type="button" class="btn btn-default" ng-click="Archive.cancelCase()">Отмени</button>
+      <button type="button" class="btn btn-danger" ng-click="Archive.removeCase()">Изтрий</button>
+      <button type="button" class="btn btn-primary" ng-click="Archive.extractCase()">Раз-Архивирай</button>
     </div>
   </div>
-  <div class="box-footer">
-    <!-- ADD scanned documents-->
-    <table class="table table-striped">
-      <thead>
-      <tr class="widget pull-left">
-      </tr>
-      </thead>
-      <tbody>
-      <tr ng-repeat="file in Archive.currentCase.files | orderBy: 'name'">
-        <td id="{{file.id}}"><a href="/file/{{file.id}}">{{file.name}}</a></td>
-        <td>{{file.type}}</td>
-      </tr>
-      </tbody>
-    </table>
-  </div>
+</div>
+<div class="box-footer">
+  <table class="table table-hover">
+    <label ng-if="Archive.currentCase.files.length>0">Сканирани документи към делото</label>
+    <tbody>
+    <tr ng-repeat="file in Archive.currentCase.files">
+      <td><a href="/admin/file/{{file.id}}">{{file.name}}</a></td>
+      <td>{{file.type}}</td>
+    </tr>
+    </tbody>
+  </table>
+  <label ng-if="Archive.currentCase.files.length==0">Няма добавени сканирани документи към делото</label>
 </div>

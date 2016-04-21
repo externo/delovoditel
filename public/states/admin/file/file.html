@@ -1,23 +1,24 @@
 <div ng-controller="FileController as File">
   <div class="box box-primary">
+    <div class="box-header with-border">
+      <h3 class="box-title"><strong>Търсене на файлове по име, тип или съд</strong></h3>
+    </div>
+
     <div class="box-header">
-      <label>Търсене на файлове по име, тип или съд</label>
-      <div class="">
-        <div class="col-md-5">
-          <input type="text" class="form-control icon" ng-model="File.search.text" placeholder="&#61442; Търси по име на файл...">
-        </div>
-        <div class="col-md-3">
-          <select class="form-control" ng-model="File.search.type">
-            <option value="" selected="selected">*Тип</option>
-            <option ng-repeat="type in File.types | orderBy: 'name'">{{type.name}}</option>
-          </select>
-        </div>
-        <div class="col-md-4">
-          <select class="form-control" ng-model="File.search.court">
-            <option value="" selected="selected">*Съд</option>
-            <option ng-repeat="court in File.courts | orderBy: 'name'">{{court.name}}</option>
-          </select>
-        </div>
+      <div class="col-md-5">
+        <input type="text" class="form-control icon" ng-model="File.search.text" placeholder="&#61442; Търси по име на файл...">
+      </div>
+      <div class="col-md-3">
+        <select class="form-control" ng-model="File.search.type">
+          <option value="" selected="selected">ТИП</option>
+          <option ng-repeat="type in File.types | orderBy: 'name'">{{type.name}}</option>
+        </select>
+      </div>
+      <div class="col-md-4">
+        <select class="form-control" ng-model="File.search.court">
+          <option value="" selected="selected">СЪД</option>
+          <option ng-repeat="court in File.courts | orderBy: 'name'">{{court.name}}</option>
+        </select>
       </div>
     </div>
 

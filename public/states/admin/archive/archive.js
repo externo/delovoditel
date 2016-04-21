@@ -8,7 +8,7 @@ function ArchiveController($http, CaseService) {
 
   var Archive = this;
 
-  Archive.header = 'Архив';
+  Archive.header = 'Архивни дела - може да се редактират след като се раз-архивират';
   Archive.currentCase = null;
   Archive.openCase = false;
 

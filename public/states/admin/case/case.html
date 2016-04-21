@@ -1,12 +1,22 @@
 <div ng-controller="CaseController as Case">
-  <div ng-include="'states/admin/case/case-new.html'" ng-hide="Case.openCase"></div>
+  <div class="box box-success" ng-include="'states/admin/case/case-new.html'" ng-show="Case.openForm"></div>
+
   <div class="box box-primary" ng-hide="Case.openCase">
-    <div class="box-header">
-      <div ng-include="'states/admin/case/case-search.html'" ng-hide="Case.openForm"></div>
+    <div class="box-header with-border">
+      <h3 class="box-title"><strong>{{Case.header}}</strong></h3>
+      <div class="pull-right" ng-hide="Case.openForm">
+        <button type="button" class="btn btn-success"
+                ng-click="Case.toggleForm()">
+          Добави дело
+        </button>
+      </div>
+      <br/>
     </div>
 
-    <div ng-include="'states/admin/case/case-list.html'"></div>
+    <div class="box-header" ng-include="'states/admin/case/case-search.html'"></div>
+
+    <div class="box-body" ng-include="'states/admin/case/case-list.html'"></div>
   </div>
 
-  <div ng-include="'states/admin/case/case-current.html'" ng-show="Case.openCase"></div>
+  <div class="box box-warning" ng-include="'states/admin/case/case-current.html'" ng-show="Case.openCase"></div>
 </div>
