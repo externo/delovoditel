@@ -31,7 +31,7 @@
       <option ng-repeat="court in Case.courts | orderBy: 'name'">{{court.name}}</option>
     </select>
     <input type="text" class="form-control" placeholder="Бележка" ng-model="Case.currentCase.info.note">
-    <input type="datetime-local" class="form-control" ng-model="Case.currentCase.info.datetime">
+    <input datetime-picker type="text" class="form-control" ng-model="Case.currentCase.info.datetime">
   </div>
   <!-- /.col -->
   <div class="col-md-6 separate">

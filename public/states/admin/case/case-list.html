@@ -1,13 +1,13 @@
 <table class="table table-striped table-bordered table-hover">
   <thead>
   <tr>
-    <th ng-click="orderByField='info.number'; reverseSort = !reverseSort">№ <i class="icon-sort"></i></th>
-    <th ng-click="orderByField='info.type'; reverseSort = !reverseSort">Вид <i class="icon-sort"></i></th>
-    <th ng-click="orderByField='info.court'; reverseSort = !reverseSort">Съд <i class="icon-sort"></i></th>
-    <th ng-click="orderByField='info.instance'; reverseSort = !reverseSort">Инстанция <i class="icon-sort"></i></th>
-    <th ng-click="orderByField='info.client'; reverseSort = !reverseSort">Клиент <i class="icon-sort"></i></th>
-    <th ng-click="orderByField='info.note'; reverseSort = !reverseSort">Бележка <i class="icon-sort"></i></th>
-    <th>Насрочено</th>
+    <th ng-click="orderByField='info.number'; reverseSort = !reverseSort">№ <i class="fa fa-sort"></i></th>
+    <th ng-click="orderByField='info.type'; reverseSort = !reverseSort">Вид <i class="fa fa-sort"></i></th>
+    <th ng-click="orderByField='info.court'; reverseSort = !reverseSort">Съд <i class="fa fa-sort"></i></th>
+    <th ng-click="orderByField='info.instance'; reverseSort = !reverseSort">Инстанция <i class="fa fa-sort"></i></th>
+    <th ng-click="orderByField='info.client'; reverseSort = !reverseSort">Клиент <i class="fa fa-sort"></i></th>
+    <th ng-click="orderByField='info.note'; reverseSort = !reverseSort">Бележка <i class="fa fa-sort"></i></th>
+    <th ng-click="orderByField='info.datetime'; reverseSort = !reverseSort">Насрочено <i class="fa fa-sort"></i></th>
   </tr>
   </thead>
   <tbody>
@@ -17,14 +17,15 @@
                   filter: Case.search.court |
                   filter: Case.search.instance |
                   orderBy:orderByField:reverseSort"
-      ng-click="Case.getCase(case._id)">
+      ng-click="Case.getCase(case._id)"
+      ng-if="Case.ifInRange(case.info.datetime)">
     <td>{{case.info.number}}</td>
     <td>{{case.info.type}}</td>
     <td>{{case.info.court}}</td>
     <td>{{case.info.instance}}</td>
     <td>{{case.client.name}}</td>
     <td>{{case.info.note}}</td>
-    <td>{{case.info.datetime | date: "dd.MM.yyyy - HH:mm"}}</td>
+    <td>{{case.info.datetime | date: "dd.MM.yyyy / HH:mm"}}</td>
   </tr>
   </tbody>
 </table>

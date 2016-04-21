@@ -42,7 +42,7 @@ app.get('/admin/case', function (req, res) {
 
 app.post('/admin/case', function (req, res) {
   var newCase = req.body;
-  newCase.info.datetime = new Date(req.body.info.datetime);
+  //newCase.info.datetime = new Date(req.body.info.datetime);
   db.collection('cases').insertOne(
     newCase,
     function (err, result) {
@@ -73,7 +73,7 @@ app.put('/admin/case/:id', function (req, res) {
           instance: req.body.info.instance,
           court: req.body.info.court,
           note: req.body.info.note,
-          datetime: new Date(req.body.info.datetime)
+          datetime: req.body.info.datetime
         },
         client: {
           name: req.body.client.name,

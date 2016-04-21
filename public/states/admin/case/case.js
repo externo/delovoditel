@@ -4,7 +4,7 @@ angular
   .module('app')
   .controller('CaseController', CaseController);
 
-function CaseController($http, $location, CaseService, CourtService, FileTypeService, PatternService) {
+function CaseController($http, CaseService, CourtService, FileTypeService, PatternService) {
 
   var Case = this;
 
@@ -19,12 +19,26 @@ function CaseController($http, $location, CaseService, CourtService, FileTypeSer
   Case.orderByField = 'number';
   Case.reverseSort = false;
 
+  Case.ifInRange = function (caseDatetime) {
+    var caseDatetimeObj = new Date(caseDatetime);
+    var dateString = Case.search.datetime;
+    var reggie = /(\w.{17}) - (\w.{17})/;
+    var dateArray = reggie.exec(dateString);
+    var startDate = new Date(formatDate(dateArray[1]));
+    var endDate = new Date(formatDate(dateArray[2]));
+
+    return (startDate < caseDatetimeObj) && (caseDatetimeObj < endDate);
+  };
+
   Case.toggleForm = function () {
     Case.openForm = !Case.openForm;
     Case.openCase = false;
   };
 
   Case.addCase = function () {
+    if (Case.newCase.info.datetime) {
+      Case.newCase.info.datetime = formatDate(Case.newCase.info.datetime);
+    }
     Case.newCase.status = 'pending';
     Case.newCase.files = [];
     $http.post('/admin/case', Case.newCase)
@@ -40,6 +54,12 @@ function CaseController($http, $location, CaseService, CourtService, FileTypeSer
     $http.get('/admin/case/' + id)
       .then(function (res) {
         Case.currentCase = res.data;
+
+        if (Case.currentCase.info.datetime) {
+          console.log(typeof new Date(Case.currentCase.info.datetime));
+          Case.currentCase.info.datetime = moment(Case.currentCase.info.datetime).format('DD.MM.YYYY HH:mm');
+        }
+
         Case.openForm = false;
         Case.openCase = true;
       }
@@ -47,8 +67,8 @@ function CaseController($http, $location, CaseService, CourtService, FileTypeSer
   };
 
   Case.editCase = function () {
-    if (Case.newDatetime) {
-      Case.currentCase.info.datetime = Case.newDatetime;
+    if (Case.currentCase.info.datetime) {
+      Case.currentCase.info.datetime = formatDate(Case.currentCase.info.datetime);
     }
     $http.put('/admin/case/' + Case.currentCase._id, Case.currentCase)
       .then(function (res) {
@@ -101,7 +121,8 @@ function CaseController($http, $location, CaseService, CourtService, FileTypeSer
         filename: encodeURIComponent(Case.newFile.name),
         metadata: encodeURIComponent(JSON.stringify({
           type: Case.fileType,
-          court: Case.currentCase.info.court}))
+          court: Case.currentCase.info.court
+        }))
       }
     })
       .then(function (res) {
@@ -131,7 +152,7 @@ function CaseController($http, $location, CaseService, CourtService, FileTypeSer
       });
   };
 
-  Case.generatePattern = function(){
+  Case.generatePattern = function () {
     var courts = Case.courts;
     var court = courts.find(x=> x.name == Case.currentCase.info.court);
     PatternService.generatePattern(Case.patternType, court, Case.currentCase, Case.profile);
@@ -150,9 +171,23 @@ function CaseController($http, $location, CaseService, CourtService, FileTypeSer
   });
 
   Case.profile = {
-    name: "ebre debre",
-    phone: '123123',
+    name: "Pitagor Pontiiski",
+    phone: '345345',
     fax: '#!@$!#@',
-    email: "udri@koce.com"
+    email: "drevna@greece.eu"
   }
+}
+
+function formatDate(date) {
+  var dateString = date;
+  var reggie = /(\d{2}).(\d{2}).(\d{4}) \/ (\d{2}):(\d{2})/;
+  var dateArray = reggie.exec(dateString);
+  var dateObject = new Date(
+    (+dateArray[3]),
+    (+dateArray[2]) - 1, // Careful, month starts at 0!
+    (+dateArray[1]),
+    (+dateArray[4]),
+    (+dateArray[5])
+  );
+  return dateObject;
 }

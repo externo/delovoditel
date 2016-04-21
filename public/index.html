@@ -13,8 +13,6 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
   <!-- Ionicons -->
   <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
-  <!-- DataTables -->
-  <link rel="stylesheet" href="css/plugins/datatables/dataTables.bootstrap.css">
   <!-- Theme style -->
   <link rel="stylesheet" href="css/dist/css/AdminLTE.min.css">
   <!-- AdminLTE Skins. Choose a skin from the css/skins
@@ -26,6 +24,12 @@
   <script src="https://code.jquery.com/jquery-2.2.3.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.3/angular.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.3/angular-route.js"></script>
+
+  <!-- Include moment.js -->
+  <script type="text/javascript" src="css/plugins/moment.min.js"></script>
+  <!-- Include Date Range Picker -->
+  <script type="text/javascript" src="css/plugins/daterangepicker.js"></script>
+  <link rel="stylesheet" type="text/css" href="css/plugins/daterangepicker.css" />
 </head>
 <body class="hold-transition skin-blue sidebar-mini" ng-app="app">
 <div class="wrapper" ng-controller="AdminController as Admin">
@@ -357,6 +361,8 @@
 <script src="js/services/pattern.js"></script>
 
 <script src="js/directives/upload.js"></script>
+<script src="js/directives/datetime-range.js"></script>
+<script src="js/directives/datetime-picker.js"></script>
 
 <script src="states/admin/case/case.js"></script>
 <script src="states/admin/court/court.js"></script>

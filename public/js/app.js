@@ -5,7 +5,8 @@ angular
   .config(function ($routeProvider) {
     $routeProvider.when('/admin/case', {
       templateUrl: '/states/admin/case/case.html',
-      controller: 'CaseController'
+      controller: 'CaseController',
+      controllerAs: 'Case'
     });
     $routeProvider.when('/admin/archive', {
       templateUrl: '/states/admin/archive/archive.html',

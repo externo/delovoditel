@@ -2,215 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="049e9152-c971-46cc-ac3f-2f62a80821dc" name="Default" comment="">
-      <change type="DELETED" beforePath="E:\ilia\AngularProjects\nodejs\public\css\plugins\datatables\dataTables.bootstrap.css" afterPath="" />
-      <change type="DELETED" beforePath="E:\ilia\AngularProjects\nodejs\public\css\plugins\datatables\dataTables.bootstrap.js" afterPath="" />
-      <change type="DELETED" beforePath="E:\ilia\AngularProjects\nodejs\public\css\plugins\datatables\dataTables.bootstrap.min.js" afterPath="" />
-      <change type="DELETED" beforePath="E:\ilia\AngularProjects\nodejs\public\css\plugins\datatables\extensions\AutoFill\Readme.txt" afterPath="" />
-      <change type="DELETED" beforePath="E:\ilia\AngularProjects\nodejs\public\css\plugins\datatables\extensions\AutoFill\css\dataTables.autoFill.css" afterPath="" />
-      <change type="DELETED" beforePath="E:\ilia\AngularProjects\nodejs\public\css\plugins\datatables\extensions\AutoFill\css\dataTables.autoFill.min.css" afterPath="" />
-      <change type="DELETED" beforePath="E:\ilia\AngularProjects\nodejs\public\css\plugins\datatables\extensions\AutoFill\examples\columns.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\ilia\AngularProjects\nodejs\public\css\plugins\datatables\extensions\AutoFill\examples\complete-callback.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\ilia\AngularProjects\nodejs\public\css\plugins\datatables\extensions\AutoFill\examples\fill-both.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\ilia\AngularProjects\nodejs\public\css\plugins\datatables\extensions\AutoFill\examples\fill-horizontal.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\ilia\AngularProjects\nodejs\public\css\plugins\datatables\extensions\AutoFill\examples\index.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\ilia\AngularProjects\nodejs\public\css\plugins\datatables\extensions\AutoFill\examples\scrolling.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\ilia\AngularProjects\nodejs\public\css\plugins\datatables\extensions\AutoFill\examples\simple.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\ilia\AngularProjects\nodejs\public\css\plugins\datatables\extensions\AutoFill\examples\step-callback.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\ilia\AngularProjects\nodejs\public\css\plugins\datatables\extensions\AutoFill\images\filler.png" afterPath="" />
-      <change type="DELETED" beforePath="E:\ilia\AngularProjects\nodejs\public\css\plugins\datatables\extensions\AutoFill\js\dataTables.autoFill.js" afterPath="" />
-      <change type="DELETED" beforePath="E:\ilia\AngularProjects\nodejs\public\css\plugins\datatables\extensions\AutoFill\js\dataTables.autoFill.min.js" afterPath="" />
-      <change type="DELETED" beforePath="E:\ilia\AngularProjects\nodejs\public\css\plugins\datatables\extensions\ColReorder\License.txt" afterPath="" />
-      <change type="DELETED" beforePath="E:\ilia\AngularProjects\nodejs\public\css\plugins\datatables\extensions\ColReorder\Readme.md" afterPath="" />
-      <change type="DELETED" beforePath="E:\ilia\AngularProjects\nodejs\public\css\plugins\datatables\extensions\ColReorder\css\dataTables.colReorder.css" afterPath="" />
-      <change type="DELETED" beforePath="E:\ilia\AngularProjects\nodejs\public\css\plugins\datatables\extensions\ColReorder\css\dataTables.colReorder.min.css" afterPath="" />
-      <change type="DELETED" beforePath="E:\ilia\AngularProjects\nodejs\public\css\plugins\datatables\extensions\ColReorder\examples\alt_insert.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\ilia\AngularProjects\nodejs\public\css\plugins\datatables\extensions\ColReorder\examples\col_filter.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\ilia\AngularProjects\nodejs\public\css\plugins\datatables\extensions\ColReorder\examples\colvis.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\ilia\AngularProjects\nodejs\public\css\plugins\datatables\extensions\ColReorder\examples\fixedcolumns.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\ilia\AngularProjects\nodejs\public\css\plugins\datatables\extensions\ColReorder\examples\fixedheader.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\ilia\AngularProjects\nodejs\public\css\plugins\datatables\extensions\ColReorder\examples\index.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\ilia\AngularProjects\nodejs\public\css\plugins\datatables\extensions\ColReorder\examples\jqueryui.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\ilia\AngularProjects\nodejs\public\css\plugins\datatables\extensions\ColReorder\examples\new_init.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\ilia\AngularProjects\nodejs\public\css\plugins\datatables\extensions\ColReorder\examples\predefined.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\ilia\AngularProjects\nodejs\public\css\plugins\datatables\extensions\ColReorder\examples\realtime.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\ilia\AngularProjects\nodejs\public\css\plugins\datatables\extensions\ColReorder\examples\reset.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\ilia\AngularProjects\nodejs\public\css\plugins\datatables\extensions\ColReorder\examples\scrolling.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\ilia\AngularProjects\nodejs\public\css\plugins\datatables\extensions\ColReorder\examples\server_side.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\ilia\AngularProjects\nodejs\public\css\plugins\datatables\extensions\ColReorder\examples\simple.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\ilia\AngularProjects\nodejs\public\css\plugins\datatables\extensions\ColReorder\examples\state_save.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\ilia\AngularProjects\nodejs\public\css\plugins\datatables\extensions\ColReorder\images\insert.png" afterPath="" />
-      <change type="DELETED" beforePath="E:\ilia\AngularProjects\nodejs\public\css\plugins\datatables\extensions\ColReorder\js\dataTables.colReorder.js" afterPath="" />
-      <change type="DELETED" beforePath="E:\ilia\AngularProjects\nodejs\public\css\plugins\datatables\extensions\ColReorder\js\dataTables.colReorder.min.js" afterPath="" />
-      <change type="DELETED" beforePath="E:\ilia\AngularProjects\nodejs\public\css\plugins\datatables\extensions\ColVis\License.txt" afterPath="" />
-      <change type="DELETED" beforePath="E:\ilia\AngularProjects\nodejs\public\css\plugins\datatables\extensions\ColVis\Readme.md" afterPath="" />
-      <change type="DELETED" beforePath="E:\ilia\AngularProjects\nodejs\public\css\plugins\datatables\extensions\ColVis\css\dataTables.colVis.css" afterPath="" />
-      <change type="DELETED" beforePath="E:\ilia\AngularProjects\nodejs\public\css\plugins\datatables\extensions\ColVis\css\dataTables.colVis.min.css" afterPath="" />
-      <change type="DELETED" beforePath="E:\ilia\AngularProjects\nodejs\public\css\plugins\datatables\extensions\ColVis\css\dataTables.colvis.jqueryui.css" afterPath="" />
-      <change type="DELETED" beforePath="E:\ilia\AngularProjects\nodejs\public\css\plugins\datatables\extensions\ColVis\examples\button_order.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\ilia\AngularProjects\nodejs\public\css\plugins\datatables\extensions\ColVis\examples\exclude_columns.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\ilia\AngularProjects\nodejs\public\css\plugins\datatables\extensions\ColVis\examples\group_columns.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\ilia\AngularProjects\nodejs\public\css\plugins\datatables\extensions\ColVis\examples\index.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\ilia\AngularProjects\nodejs\public\css\plugins\datatables\extensions\ColVis\examples\jqueryui.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\ilia\AngularProjects\nodejs\public\css\plugins\datatables\extensions\ColVis\examples\mouseover.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\ilia\AngularProjects\nodejs\public\css\plugins\datatables\extensions\ColVis\examples\new_init.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\ilia\AngularProjects\nodejs\public\css\plugins\datatables\extensions\ColVis\examples\restore.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\ilia\AngularProjects\nodejs\public\css\plugins\datatables\extensions\ColVis\examples\simple.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\ilia\AngularProjects\nodejs\public\css\plugins\datatables\extensions\ColVis\examples\text.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\ilia\AngularProjects\nodejs\public\css\plugins\datatables\extensions\ColVis\examples\title_callback.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\ilia\AngularProjects\nodejs\public\css\plugins\datatables\extensions\ColVis\examples\two_tables.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\ilia\AngularProjects\nodejs\public\css\plugins\datatables\extensions\ColVis\examples\two_tables_identical.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\ilia\AngularProjects\nodejs\public\css\plugins\datatables\extensions\ColVis\js\dataTables.colVis.js" afterPath="" />
-      <change type="DELETED" beforePath="E:\ilia\AngularProjects\nodejs\public\css\plugins\datatables\extensions\ColVis\js\dataTables.colVis.min.js" afterPath="" />
-      <change type="DELETED" beforePath="E:\ilia\AngularProjects\nodejs\public\css\plugins\datatables\extensions\FixedColumns\License.txt" afterPath="" />
-      <change type="DELETED" beforePath="E:\ilia\AngularProjects\nodejs\public\css\plugins\datatables\extensions\FixedColumns\Readme.md" afterPath="" />
-      <change type="DELETED" beforePath="E:\ilia\AngularProjects\nodejs\public\css\plugins\datatables\extensions\FixedColumns\css\dataTables.fixedColumns.css" afterPath="" />
-      <change type="DELETED" beforePath="E:\ilia\AngularProjects\nodejs\public\css\plugins\datatables\extensions\FixedColumns\css\dataTables.fixedColumns.min.css" afterPath="" />
-      <change type="DELETED" beforePath="E:\ilia\AngularProjects\nodejs\public\css\plugins\datatables\extensions\FixedColumns\examples\bootstrap.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\ilia\AngularProjects\nodejs\public\css\plugins\datatables\extensions\FixedColumns\examples\col_filter.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\ilia\AngularProjects\nodejs\public\css\plugins\datatables\extensions\FixedColumns\examples\colvis.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\ilia\AngularProjects\nodejs\public\css\plugins\datatables\extensions\FixedColumns\examples\css_size.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\ilia\AngularProjects\nodejs\public\css\plugins\datatables\extensions\FixedColumns\examples\index.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\ilia\AngularProjects\nodejs\public\css\plugins\datatables\extensions\FixedColumns\examples\index_column.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\ilia\AngularProjects\nodejs\public\css\plugins\datatables\extensions\FixedColumns\examples\left_right_columns.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\ilia\AngularProjects\nodejs\public\css\plugins\datatables\extensions\FixedColumns\examples\right_column.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\ilia\AngularProjects\nodejs\public\css\plugins\datatables\extensions\FixedColumns\examples\rowspan.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\ilia\AngularProjects\nodejs\public\css\plugins\datatables\extensions\FixedColumns\examples\server-side-processing.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\ilia\AngularProjects\nodejs\public\css\plugins\datatables\extensions\FixedColumns\examples\simple.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\ilia\AngularProjects\nodejs\public\css\plugins\datatables\extensions\FixedColumns\examples\size_fixed.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\ilia\AngularProjects\nodejs\public\css\plugins\datatables\extensions\FixedColumns\examples\size_fluid.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\ilia\AngularProjects\nodejs\public\css\plugins\datatables\extensions\FixedColumns\examples\two_columns.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\ilia\AngularProjects\nodejs\public\css\plugins\datatables\extensions\FixedColumns\js\dataTables.fixedColumns.js" afterPath="" />
-      <change type="DELETED" beforePath="E:\ilia\AngularProjects\nodejs\public\css\plugins\datatables\extensions\FixedColumns\js\dataTables.fixedColumns.min.js" afterPath="" />
-      <change type="DELETED" beforePath="E:\ilia\AngularProjects\nodejs\public\css\plugins\datatables\extensions\FixedHeader\Readme.txt" afterPath="" />
-      <change type="DELETED" beforePath="E:\ilia\AngularProjects\nodejs\public\css\plugins\datatables\extensions\FixedHeader\css\dataTables.fixedHeader.css" afterPath="" />
-      <change type="DELETED" beforePath="E:\ilia\AngularProjects\nodejs\public\css\plugins\datatables\extensions\FixedHeader\css\dataTables.fixedHeader.min.css" afterPath="" />
-      <change type="DELETED" beforePath="E:\ilia\AngularProjects\nodejs\public\css\plugins\datatables\extensions\FixedHeader\examples\header_footer.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\ilia\AngularProjects\nodejs\public\css\plugins\datatables\extensions\FixedHeader\examples\index.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\ilia\AngularProjects\nodejs\public\css\plugins\datatables\extensions\FixedHeader\examples\simple.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\ilia\AngularProjects\nodejs\public\css\plugins\datatables\extensions\FixedHeader\examples\top_left_right.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\ilia\AngularProjects\nodejs\public\css\plugins\datatables\extensions\FixedHeader\examples\two_tables.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\ilia\AngularProjects\nodejs\public\css\plugins\datatables\extensions\FixedHeader\examples\zIndexes.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\ilia\AngularProjects\nodejs\public\css\plugins\datatables\extensions\FixedHeader\js\dataTables.fixedHeader.js" afterPath="" />
-      <change type="DELETED" beforePath="E:\ilia\AngularProjects\nodejs\public\css\plugins\datatables\extensions\FixedHeader\js\dataTables.fixedHeader.min.js" afterPath="" />
-      <change type="DELETED" beforePath="E:\ilia\AngularProjects\nodejs\public\css\plugins\datatables\extensions\KeyTable\Readme.txt" afterPath="" />
-      <change type="DELETED" beforePath="E:\ilia\AngularProjects\nodejs\public\css\plugins\datatables\extensions\KeyTable\css\dataTables.keyTable.css" afterPath="" />
-      <change type="DELETED" beforePath="E:\ilia\AngularProjects\nodejs\public\css\plugins\datatables\extensions\KeyTable\css\dataTables.keyTable.min.css" afterPath="" />
-      <change type="DELETED" beforePath="E:\ilia\AngularProjects\nodejs\public\css\plugins\datatables\extensions\KeyTable\examples\events.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\ilia\AngularProjects\nodejs\public\css\plugins\datatables\extensions\KeyTable\examples\html.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\ilia\AngularProjects\nodejs\public\css\plugins\datatables\extensions\KeyTable\examples\index.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\ilia\AngularProjects\nodejs\public\css\plugins\datatables\extensions\KeyTable\examples\scrolling.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\ilia\AngularProjects\nodejs\public\css\plugins\datatables\extensions\KeyTable\examples\simple.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\ilia\AngularProjects\nodejs\public\css\plugins\datatables\extensions\KeyTable\js\dataTables.keyTable.js" afterPath="" />
-      <change type="DELETED" beforePath="E:\ilia\AngularProjects\nodejs\public\css\plugins\datatables\extensions\KeyTable\js\dataTables.keyTable.min.js" afterPath="" />
-      <change type="DELETED" beforePath="E:\ilia\AngularProjects\nodejs\public\css\plugins\datatables\extensions\Responsive\License.txt" afterPath="" />
-      <change type="DELETED" beforePath="E:\ilia\AngularProjects\nodejs\public\css\plugins\datatables\extensions\Responsive\Readme.md" afterPath="" />
-      <change type="DELETED" beforePath="E:\ilia\AngularProjects\nodejs\public\css\plugins\datatables\extensions\Responsive\css\dataTables.responsive.css" afterPath="" />
-      <change type="DELETED" beforePath="E:\ilia\AngularProjects\nodejs\public\css\plugins\datatables\extensions\Responsive\css\dataTables.responsive.scss" afterPath="" />
-      <change type="DELETED" beforePath="E:\ilia\AngularProjects\nodejs\public\css\plugins\datatables\extensions\Responsive\examples\child-rows\column-control.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\ilia\AngularProjects\nodejs\public\css\plugins\datatables\extensions\Responsive\examples\child-rows\custom-renderer.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\ilia\AngularProjects\nodejs\public\css\plugins\datatables\extensions\Responsive\examples\child-rows\disable-child-rows.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\ilia\AngularProjects\nodejs\public\css\plugins\datatables\extensions\Responsive\examples\child-rows\index.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\ilia\AngularProjects\nodejs\public\css\plugins\datatables\extensions\Responsive\examples\child-rows\right-column.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\ilia\AngularProjects\nodejs\public\css\plugins\datatables\extensions\Responsive\examples\child-rows\whole-row-control.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\ilia\AngularProjects\nodejs\public\css\plugins\datatables\extensions\Responsive\examples\display-control\auto.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\ilia\AngularProjects\nodejs\public\css\plugins\datatables\extensions\Responsive\examples\display-control\classes.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\ilia\AngularProjects\nodejs\public\css\plugins\datatables\extensions\Responsive\examples\display-control\complexHeader.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\ilia\AngularProjects\nodejs\public\css\plugins\datatables\extensions\Responsive\examples\display-control\fixedHeader.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\ilia\AngularProjects\nodejs\public\css\plugins\datatables\extensions\Responsive\examples\display-control\index.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\ilia\AngularProjects\nodejs\public\css\plugins\datatables\extensions\Responsive\examples\display-control\init-classes.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\ilia\AngularProjects\nodejs\public\css\plugins\datatables\extensions\Responsive\examples\index.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\ilia\AngularProjects\nodejs\public\css\plugins\datatables\extensions\Responsive\examples\initialisation\ajax.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\ilia\AngularProjects\nodejs\public\css\plugins\datatables\extensions\Responsive\examples\initialisation\className.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\ilia\AngularProjects\nodejs\public\css\plugins\datatables\extensions\Responsive\examples\initialisation\default.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\ilia\AngularProjects\nodejs\public\css\plugins\datatables\extensions\Responsive\examples\initialisation\index.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\ilia\AngularProjects\nodejs\public\css\plugins\datatables\extensions\Responsive\examples\initialisation\new.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\ilia\AngularProjects\nodejs\public\css\plugins\datatables\extensions\Responsive\examples\initialisation\option.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\ilia\AngularProjects\nodejs\public\css\plugins\datatables\extensions\Responsive\examples\styling\bootstrap.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\ilia\AngularProjects\nodejs\public\css\plugins\datatables\extensions\Responsive\examples\styling\compact.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\ilia\AngularProjects\nodejs\public\css\plugins\datatables\extensions\Responsive\examples\styling\foundation.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\ilia\AngularProjects\nodejs\public\css\plugins\datatables\extensions\Responsive\examples\styling\index.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\ilia\AngularProjects\nodejs\public\css\plugins\datatables\extensions\Responsive\examples\styling\scrolling.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\ilia\AngularProjects\nodejs\public\css\plugins\datatables\extensions\Responsive\js\dataTables.responsive.js" afterPath="" />
-      <change type="DELETED" beforePath="E:\ilia\AngularProjects\nodejs\public\css\plugins\datatables\extensions\Responsive\js\dataTables.responsive.min.js" afterPath="" />
-      <change type="DELETED" beforePath="E:\ilia\AngularProjects\nodejs\public\css\plugins\datatables\extensions\Scroller\Readme.txt" afterPath="" />
-      <change type="DELETED" beforePath="E:\ilia\AngularProjects\nodejs\public\css\plugins\datatables\extensions\Scroller\css\dataTables.scroller.css" afterPath="" />
-      <change type="DELETED" beforePath="E:\ilia\AngularProjects\nodejs\public\css\plugins\datatables\extensions\Scroller\css\dataTables.scroller.min.css" afterPath="" />
-      <change type="DELETED" beforePath="E:\ilia\AngularProjects\nodejs\public\css\plugins\datatables\extensions\Scroller\examples\api_scrolling.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\ilia\AngularProjects\nodejs\public\css\plugins\datatables\extensions\Scroller\examples\data\2500.txt" afterPath="" />
-      <change type="DELETED" beforePath="E:\ilia\AngularProjects\nodejs\public\css\plugins\datatables\extensions\Scroller\examples\data\ssp.php" afterPath="" />
-      <change type="DELETED" beforePath="E:\ilia\AngularProjects\nodejs\public\css\plugins\datatables\extensions\Scroller\examples\index.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\ilia\AngularProjects\nodejs\public\css\plugins\datatables\extensions\Scroller\examples\large_js_source.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\ilia\AngularProjects\nodejs\public\css\plugins\datatables\extensions\Scroller\examples\server-side_processing.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\ilia\AngularProjects\nodejs\public\css\plugins\datatables\extensions\Scroller\examples\simple.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\ilia\AngularProjects\nodejs\public\css\plugins\datatables\extensions\Scroller\examples\state_saving.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\ilia\AngularProjects\nodejs\public\css\plugins\datatables\extensions\Scroller\images\loading-background.png" afterPath="" />
-      <change type="DELETED" beforePath="E:\ilia\AngularProjects\nodejs\public\css\plugins\datatables\extensions\Scroller\js\dataTables.scroller.js" afterPath="" />
-      <change type="DELETED" beforePath="E:\ilia\AngularProjects\nodejs\public\css\plugins\datatables\extensions\Scroller\js\dataTables.scroller.min.js" afterPath="" />
-      <change type="DELETED" beforePath="E:\ilia\AngularProjects\nodejs\public\css\plugins\datatables\extensions\TableTools\Readme.md" afterPath="" />
-      <change type="DELETED" beforePath="E:\ilia\AngularProjects\nodejs\public\css\plugins\datatables\extensions\TableTools\css\dataTables.tableTools.css" afterPath="" />
-      <change type="DELETED" beforePath="E:\ilia\AngularProjects\nodejs\public\css\plugins\datatables\extensions\TableTools\css\dataTables.tableTools.min.css" afterPath="" />
-      <change type="DELETED" beforePath="E:\ilia\AngularProjects\nodejs\public\css\plugins\datatables\extensions\TableTools\examples\ajax.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\ilia\AngularProjects\nodejs\public\css\plugins\datatables\extensions\TableTools\examples\alter_buttons.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\ilia\AngularProjects\nodejs\public\css\plugins\datatables\extensions\TableTools\examples\bootstrap.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\ilia\AngularProjects\nodejs\public\css\plugins\datatables\extensions\TableTools\examples\button_text.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\ilia\AngularProjects\nodejs\public\css\plugins\datatables\extensions\TableTools\examples\collection.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\ilia\AngularProjects\nodejs\public\css\plugins\datatables\extensions\TableTools\examples\defaults.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\ilia\AngularProjects\nodejs\public\css\plugins\datatables\extensions\TableTools\examples\index.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\ilia\AngularProjects\nodejs\public\css\plugins\datatables\extensions\TableTools\examples\jqueryui.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\ilia\AngularProjects\nodejs\public\css\plugins\datatables\extensions\TableTools\examples\multi_instance.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\ilia\AngularProjects\nodejs\public\css\plugins\datatables\extensions\TableTools\examples\multiple_tables.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\ilia\AngularProjects\nodejs\public\css\plugins\datatables\extensions\TableTools\examples\new_init.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\ilia\AngularProjects\nodejs\public\css\plugins\datatables\extensions\TableTools\examples\pdf_message.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\ilia\AngularProjects\nodejs\public\css\plugins\datatables\extensions\TableTools\examples\plug-in.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\ilia\AngularProjects\nodejs\public\css\plugins\datatables\extensions\TableTools\examples\select_column.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\ilia\AngularProjects\nodejs\public\css\plugins\datatables\extensions\TableTools\examples\select_multi.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\ilia\AngularProjects\nodejs\public\css\plugins\datatables\extensions\TableTools\examples\select_os.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\ilia\AngularProjects\nodejs\public\css\plugins\datatables\extensions\TableTools\examples\select_single.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\ilia\AngularProjects\nodejs\public\css\plugins\datatables\extensions\TableTools\examples\simple.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\ilia\AngularProjects\nodejs\public\css\plugins\datatables\extensions\TableTools\examples\swf_path.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\ilia\AngularProjects\nodejs\public\css\plugins\datatables\extensions\TableTools\images\collection.png" afterPath="" />
-      <change type="DELETED" beforePath="E:\ilia\AngularProjects\nodejs\public\css\plugins\datatables\extensions\TableTools\images\collection_hover.png" afterPath="" />
-      <change type="DELETED" beforePath="E:\ilia\AngularProjects\nodejs\public\css\plugins\datatables\extensions\TableTools\images\copy.png" afterPath="" />
-      <change type="DELETED" beforePath="E:\ilia\AngularProjects\nodejs\public\css\plugins\datatables\extensions\TableTools\images\copy_hover.png" afterPath="" />
-      <change type="DELETED" beforePath="E:\ilia\AngularProjects\nodejs\public\css\plugins\datatables\extensions\TableTools\images\csv.png" afterPath="" />
-      <change type="DELETED" beforePath="E:\ilia\AngularProjects\nodejs\public\css\plugins\datatables\extensions\TableTools\images\csv_hover.png" afterPath="" />
-      <change type="DELETED" beforePath="E:\ilia\AngularProjects\nodejs\public\css\plugins\datatables\extensions\TableTools\images\pdf.png" afterPath="" />
-      <change type="DELETED" beforePath="E:\ilia\AngularProjects\nodejs\public\css\plugins\datatables\extensions\TableTools\images\pdf_hover.png" afterPath="" />
-      <change type="DELETED" beforePath="E:\ilia\AngularProjects\nodejs\public\css\plugins\datatables\extensions\TableTools\images\print.png" afterPath="" />
-      <change type="DELETED" beforePath="E:\ilia\AngularProjects\nodejs\public\css\plugins\datatables\extensions\TableTools\images\print_hover.png" afterPath="" />
-      <change type="DELETED" beforePath="E:\ilia\AngularProjects\nodejs\public\css\plugins\datatables\extensions\TableTools\images\psd\collection.psd" afterPath="" />
-      <change type="DELETED" beforePath="E:\ilia\AngularProjects\nodejs\public\css\plugins\datatables\extensions\TableTools\images\psd\copy document.psd" afterPath="" />
-      <change type="DELETED" beforePath="E:\ilia\AngularProjects\nodejs\public\css\plugins\datatables\extensions\TableTools\images\psd\file_types.psd" afterPath="" />
-      <change type="DELETED" beforePath="E:\ilia\AngularProjects\nodejs\public\css\plugins\datatables\extensions\TableTools\images\psd\printer.psd" afterPath="" />
-      <change type="DELETED" beforePath="E:\ilia\AngularProjects\nodejs\public\css\plugins\datatables\extensions\TableTools\images\xls.png" afterPath="" />
-      <change type="DELETED" beforePath="E:\ilia\AngularProjects\nodejs\public\css\plugins\datatables\extensions\TableTools\images\xls_hover.png" afterPath="" />
-      <change type="DELETED" beforePath="E:\ilia\AngularProjects\nodejs\public\css\plugins\datatables\extensions\TableTools\js\dataTables.tableTools.js" afterPath="" />
-      <change type="DELETED" beforePath="E:\ilia\AngularProjects\nodejs\public\css\plugins\datatables\extensions\TableTools\js\dataTables.tableTools.min.js" afterPath="" />
-      <change type="DELETED" beforePath="E:\ilia\AngularProjects\nodejs\public\css\plugins\datatables\extensions\TableTools\swf\copy_csv_xls.swf" afterPath="" />
-      <change type="DELETED" beforePath="E:\ilia\AngularProjects\nodejs\public\css\plugins\datatables\extensions\TableTools\swf\copy_csv_xls_pdf.swf" afterPath="" />
-      <change type="DELETED" beforePath="E:\ilia\AngularProjects\nodejs\public\css\plugins\datatables\images\sort_asc.png" afterPath="" />
-      <change type="DELETED" beforePath="E:\ilia\AngularProjects\nodejs\public\css\plugins\datatables\images\sort_asc_disabled.png" afterPath="" />
-      <change type="DELETED" beforePath="E:\ilia\AngularProjects\nodejs\public\css\plugins\datatables\images\sort_both.png" afterPath="" />
-      <change type="DELETED" beforePath="E:\ilia\AngularProjects\nodejs\public\css\plugins\datatables\images\sort_desc.png" afterPath="" />
-      <change type="DELETED" beforePath="E:\ilia\AngularProjects\nodejs\public\css\plugins\datatables\images\sort_desc_disabled.png" afterPath="" />
-      <change type="DELETED" beforePath="E:\ilia\AngularProjects\nodejs\public\css\plugins\datatables\jquery.dataTables.css" afterPath="" />
-      <change type="DELETED" beforePath="E:\ilia\AngularProjects\nodejs\public\css\plugins\datatables\jquery.dataTables.js" afterPath="" />
-      <change type="DELETED" beforePath="E:\ilia\AngularProjects\nodejs\public\css\plugins\datatables\jquery.dataTables.min.css" afterPath="" />
-      <change type="DELETED" beforePath="E:\ilia\AngularProjects\nodejs\public\css\plugins\datatables\jquery.dataTables.min.js" afterPath="" />
-      <change type="DELETED" beforePath="E:\ilia\AngularProjects\nodejs\public\css\plugins\datatables\jquery.dataTables_themeroller.css" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/states/admin/archive/archive-current.html" afterPath="$PROJECT_DIR$/public/states/admin/archive/archive-current.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/states/admin/archive/archive.html" afterPath="$PROJECT_DIR$/public/states/admin/archive/archive.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/states/admin/archive/archive.js" afterPath="$PROJECT_DIR$/public/states/admin/archive/archive.js" />
+      <change type="DELETED" beforePath="E:\ilia\AngularProjects\nodejs\public\css\plugins\daterangepicker-bs3.css" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/app.js" afterPath="$PROJECT_DIR$/public/js/app.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/states/admin/case/case-current.html" afterPath="$PROJECT_DIR$/public/states/admin/case/case-current.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/states/admin/case/case-list.html" afterPath="$PROJECT_DIR$/public/states/admin/case/case-list.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/states/admin/case/case-new.html" afterPath="$PROJECT_DIR$/public/states/admin/case/case-new.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/states/admin/case/case-search.html" afterPath="$PROJECT_DIR$/public/states/admin/case/case-search.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/states/admin/case/case.html" afterPath="$PROJECT_DIR$/public/states/admin/case/case.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/states/admin/court/court.html" afterPath="$PROJECT_DIR$/public/states/admin/court/court.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/states/admin/file/file-type.html" afterPath="$PROJECT_DIR$/public/states/admin/file/file-type.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/states/admin/file/file.html" afterPath="$PROJECT_DIR$/public/states/admin/file/file.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/states/admin/case/case.js" afterPath="$PROJECT_DIR$/public/states/admin/case/case.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/index.html" afterPath="$PROJECT_DIR$/public/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/css/style.css" afterPath="$PROJECT_DIR$/public/css/style.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server.js" afterPath="$PROJECT_DIR$/server.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/directives/upload.js" afterPath="$PROJECT_DIR$/public/js/directives/upload.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="nodejs.iws" />
@@ -239,8 +41,8 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/public/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-13.730769" vertical-offset="2244" max-vertical-offset="4114">
-              <caret line="306" column="33" selection-start-line="306" selection-start-column="33" selection-end-line="306" selection-end-column="68" />
+            <state vertical-scroll-proportion="-2.4629629" vertical-offset="326" max-vertical-offset="4216">
+              <caret line="27" column="24" selection-start-line="27" selection-start-column="24" selection-end-line="27" selection-end-column="24" />
               <folding>
                 <element signature="tag#li#1;tag#ul#0;tag#div#0;tag#nav#0;tag#header#0;tag#div#0;tag#body#0;tag#html#0" expanded="false" />
                 <element signature="tag#li#2;tag#ul#0;tag#div#0;tag#nav#0;tag#header#0;tag#div#0;tag#body#0;tag#html#0" expanded="false" />
@@ -250,22 +52,62 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="case-search.html" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/public/states/admin/case/case-search.html">
+      <file leaf-file-name="server.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/server.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.56110156" vertical-offset="99" max-vertical-offset="765">
-              <caret line="25" column="2" selection-start-line="25" selection-start-column="2" selection-end-line="25" selection-end-column="2" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="style.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/css/style.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="357">
-              <caret line="13" column="23" selection-start-line="13" selection-start-column="23" selection-end-line="13" selection-end-column="23" />
-              <folding />
+            <state vertical-scroll-proportion="1.0515463" vertical-offset="0" max-vertical-offset="1394">
+              <caret line="42" column="44" selection-start-line="42" selection-start-column="44" selection-end-line="42" selection-end-column="44" />
+              <folding>
+                <element signature="e#920#1045#0" expanded="false" />
+                <element signature="e#1093#1412#0" expanded="false" />
+                <element signature="e#1463#1611#0" expanded="false" />
+                <element signature="e#1662#2549#0" expanded="false" />
+                <element signature="e#2396#2545#0" expanded="false" />
+                <element signature="e#2492#2530#0" expanded="false" />
+                <element signature="e#2603#2894#0" expanded="false" />
+                <element signature="e#2738#2887#0" expanded="false" />
+                <element signature="e#2834#2872#0" expanded="false" />
+                <element signature="e#2953#3300#0" expanded="false" />
+                <element signature="e#3066#3117#0" expanded="false" />
+                <element signature="e#3080#3111#0" expanded="false" />
+                <element signature="e#3147#3296#0" expanded="false" />
+                <element signature="e#3243#3281#0" expanded="false" />
+                <element signature="e#3372#3493#0" expanded="false" />
+                <element signature="e#3456#3486#0" expanded="false" />
+                <element signature="e#3552#3899#0" expanded="false" />
+                <element signature="e#3665#3720#0" expanded="false" />
+                <element signature="e#3679#3714#0" expanded="false" />
+                <element signature="e#3750#3895#0" expanded="false" />
+                <element signature="e#3842#3880#0" expanded="false" />
+                <element signature="e#3957#4064#0" expanded="false" />
+                <element signature="e#4027#4057#0" expanded="false" />
+                <element signature="e#4113#4353#0" expanded="false" />
+                <element signature="e#4218#4349#0" expanded="false" />
+                <element signature="e#4296#4334#0" expanded="false" />
+                <element signature="e#4408#4682#0" expanded="false" />
+                <element signature="e#4544#4675#0" expanded="false" />
+                <element signature="e#4622#4660#0" expanded="false" />
+                <element signature="e#4748#4858#0" expanded="false" />
+                <element signature="e#4821#4851#0" expanded="false" />
+                <element signature="e#4911#5157#0" expanded="false" />
+                <element signature="e#5019#5153#0" expanded="false" />
+                <element signature="e#5100#5138#0" expanded="false" />
+                <element signature="e#5216#5496#0" expanded="false" />
+                <element signature="e#5355#5489#0" expanded="false" />
+                <element signature="e#5436#5474#0" expanded="false" />
+                <element signature="e#5551#5641#0" expanded="false" />
+                <element signature="e#5607#5637#0" expanded="false" />
+                <element signature="e#5692#6228#0" expanded="false" />
+                <element signature="e#5751#6224#0" expanded="false" />
+                <element signature="e#6023#6050#0" expanded="false" />
+                <element signature="e#6096#6191#0" expanded="false" />
+                <element signature="e#6276#6866#0" expanded="false" />
+                <element signature="e#6444#6712#0" expanded="false" />
+                <element signature="e#6490#6678#0" expanded="false" />
+                <element signature="e#6744#6842#0" expanded="false" />
+                <element signature="e#6920#7112#0" expanded="false" />
+                <element signature="e#6978#7108#0" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -283,11 +125,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/static/js/upload.js" />
-        <option value="$PROJECT_DIR$/static/styles/css.css" />
-        <option value="$PROJECT_DIR$/static/states/admin/admin-files/admin-files.html" />
-        <option value="$PROJECT_DIR$/static/states/admin/archive/admin-archive.js" />
-        <option value="$PROJECT_DIR$/static/states/admin/admin-case.html" />
         <option value="$PROJECT_DIR$/app.js" />
         <option value="$PROJECT_DIR$/static/js/services/case.js" />
         <option value="$PROJECT_DIR$/static/states/admin/admin.js" />
@@ -307,8 +144,6 @@
         <option value="$PROJECT_DIR$/public/js/upload.js" />
         <option value="$PROJECT_DIR$/public/js/services/fileType.js" />
         <option value="$PROJECT_DIR$/public/js/services/file.js" />
-        <option value="$PROJECT_DIR$/public/js/app.js" />
-        <option value="$PROJECT_DIR$/public/js/directives/upload.js" />
         <option value="$PROJECT_DIR$/public/states/admin/court/court.js" />
         <option value="$PROJECT_DIR$/public/states/admin/file/file.js" />
         <option value="$PROJECT_DIR$/public/states/admin/file/file-type.js" />
@@ -318,22 +153,29 @@
         <option value="$PROJECT_DIR$/server2.js" />
         <option value="$PROJECT_DIR$/public/states/admin/pattern/pattern.js" />
         <option value="$PROJECT_DIR$/.gitignore" />
-        <option value="$PROJECT_DIR$/public/states/admin/case/case.js" />
-        <option value="$PROJECT_DIR$/server.js" />
         <option value="$PROJECT_DIR$/public/js/services/pattern.js" />
-        <option value="$PROJECT_DIR$/public/index.html" />
         <option value="$PROJECT_DIR$/public/states/admin/archive/archive.js" />
-        <option value="$PROJECT_DIR$/public/states/admin/case/case-list.html" />
         <option value="$PROJECT_DIR$/public/states/admin/court/court.html" />
         <option value="$PROJECT_DIR$/public/states/admin/file/file.html" />
         <option value="$PROJECT_DIR$/public/states/admin/file/file-type.html" />
-        <option value="$PROJECT_DIR$/public/states/admin/case/case.html" />
         <option value="$PROJECT_DIR$/public/states/admin/archive/archive.html" />
         <option value="$PROJECT_DIR$/public/states/admin/archive/archive-current.html" />
         <option value="$PROJECT_DIR$/public/css/style.css" />
-        <option value="$PROJECT_DIR$/public/states/admin/case/case-current.html" />
+        <option value="$PROJECT_DIR$/public/js/directives/upload.js" />
         <option value="$PROJECT_DIR$/public/states/admin/case/case-new.html" />
+        <option value="$PROJECT_DIR$/public/states/admin/case/case-current.html" />
+        <option value="$PROJECT_DIR$/public/js/directives/datetime-picker.js" />
+        <option value="$PROJECT_DIR$/public/css/plugins/daterangepicker.css" />
+        <option value="$PROJECT_DIR$/server.js" />
+        <option value="$PROJECT_DIR$/public/css/plugins/moment.min.js" />
+        <option value="$PROJECT_DIR$/public/index.html" />
+        <option value="$PROJECT_DIR$/public/js/app.js" />
+        <option value="$PROJECT_DIR$/public/states/admin/case/case.html" />
+        <option value="$PROJECT_DIR$/public/css/plugins/daterangepicker.js" />
         <option value="$PROJECT_DIR$/public/states/admin/case/case-search.html" />
+        <option value="$PROJECT_DIR$/public/js/directives/datetime-range.js" />
+        <option value="$PROJECT_DIR$/public/states/admin/case/case.js" />
+        <option value="$PROJECT_DIR$/public/states/admin/case/case-list.html" />
       </list>
     </option>
   </component>
@@ -419,8 +261,22 @@
               <option name="myItemId" value="states" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+          </PATH>
+          <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="admin" />
+              <option name="myItemId" value="nodejs" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="nodejs" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="public" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="js" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -438,85 +294,11 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="states" />
+              <option name="myItemId" value="js" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="admin" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="file" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="nodejs" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="nodejs" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="public" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="states" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="admin" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="court" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="nodejs" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="nodejs" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="public" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="states" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="admin" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="case" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="nodejs" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="nodejs" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="public" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="css" />
+              <option name="myItemId" value="directives" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -539,11 +321,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\ilia\AngularProjects\nodejs\public\js\directives" />
       <recent name="E:\ilia\AngularProjects\nodejs\public\states\admin\pattern" />
       <recent name="E:\ilia\AngularProjects\nodejs\public\js\services" />
       <recent name="E:\ilia\AngularProjects\nodejs\public\states\admin\file" />
       <recent name="E:\ilia\AngularProjects\nodejs\public\states\admin\courts" />
-      <recent name="E:\ilia\AngularProjects\nodejs\public\states\admin\archive" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="E:\ilia\AngularProjects\nodejs\public\styles" />
@@ -596,7 +378,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -643,105 +425,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/start.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="85" max-vertical-offset="782">
-          <caret line="5" column="30" selection-start-line="5" selection-start-column="19" selection-end-line="5" selection-end-column="30" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="476" max-vertical-offset="1394">
-          <caret line="28" column="19" selection-start-line="28" selection-start-column="19" selection-end-line="28" selection-end-column="19" />
-          <folding>
-            <element signature="e#920#1045#0" expanded="false" />
-            <element signature="e#1093#1410#0" expanded="false" />
-            <element signature="e#1257#1406#0" expanded="false" />
-            <element signature="e#1353#1391#0" expanded="false" />
-            <element signature="e#1461#1609#0" expanded="false" />
-            <element signature="e#1581#1605#0" expanded="false" />
-            <element signature="e#1660#2557#0" expanded="false" />
-            <element signature="e#1773#2374#0" expanded="false" />
-            <element signature="e#1787#2368#0" expanded="false" />
-            <element signature="e#2079#2329#0" expanded="false" />
-            <element signature="e#2404#2553#0" expanded="false" />
-            <element signature="e#2500#2538#0" expanded="false" />
-            <element signature="e#2611#2902#0" expanded="false" />
-            <element signature="e#2746#2895#0" expanded="false" />
-            <element signature="e#2842#2880#0" expanded="false" />
-            <element signature="e#2961#3308#0" expanded="false" />
-            <element signature="e#3074#3125#0" expanded="false" />
-            <element signature="e#3088#3119#0" expanded="false" />
-            <element signature="e#3155#3304#0" expanded="false" />
-            <element signature="e#3251#3289#0" expanded="false" />
-            <element signature="e#3380#3501#0" expanded="false" />
-            <element signature="e#3464#3494#0" expanded="false" />
-            <element signature="e#3560#3907#0" expanded="false" />
-            <element signature="e#3673#3728#0" expanded="false" />
-            <element signature="e#3687#3722#0" expanded="false" />
-            <element signature="e#3758#3903#0" expanded="false" />
-            <element signature="e#3850#3888#0" expanded="false" />
-            <element signature="e#3965#4072#0" expanded="false" />
-            <element signature="e#4035#4065#0" expanded="false" />
-            <element signature="e#4121#4361#0" expanded="false" />
-            <element signature="e#4226#4357#0" expanded="false" />
-            <element signature="e#4304#4342#0" expanded="false" />
-            <element signature="e#4416#4690#0" expanded="false" />
-            <element signature="e#4552#4683#0" expanded="false" />
-            <element signature="e#4630#4668#0" expanded="false" />
-            <element signature="e#4756#4866#0" expanded="false" />
-            <element signature="e#4829#4859#0" expanded="false" />
-            <element signature="e#4919#5165#0" expanded="false" />
-            <element signature="e#5027#5161#0" expanded="false" />
-            <element signature="e#5108#5146#0" expanded="false" />
-            <element signature="e#5224#5504#0" expanded="false" />
-            <element signature="e#5363#5497#0" expanded="false" />
-            <element signature="e#5444#5482#0" expanded="false" />
-            <element signature="e#5559#5649#0" expanded="false" />
-            <element signature="e#5615#5645#0" expanded="false" />
-            <element signature="e#5700#6236#0" expanded="false" />
-            <element signature="e#5759#6232#0" expanded="false" />
-            <element signature="e#6031#6058#0" expanded="false" />
-            <element signature="e#6104#6199#0" expanded="false" />
-            <element signature="e#6284#6874#0" expanded="false" />
-            <element signature="e#6452#6720#0" expanded="false" />
-            <element signature="e#6498#6686#0" expanded="false" />
-            <element signature="e#6752#6850#0" expanded="false" />
-            <element signature="e#6928#7120#0" expanded="false" />
-            <element signature="e#6986#7116#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/states/admin/case/case.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="2057" max-vertical-offset="2737">
-          <caret line="136" column="40" selection-start-line="136" selection-start-column="40" selection-end-line="136" selection-end-column="40" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="4114">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="tag#li#1;tag#ul#0;tag#div#0;tag#nav#0;tag#header#0;tag#div#0;tag#body#0;tag#html#0" expanded="false" />
-            <element signature="tag#li#2;tag#ul#0;tag#div#0;tag#nav#0;tag#header#0;tag#div#0;tag#body#0;tag#html#0" expanded="false" />
-            <element signature="tag#li#3;tag#ul#0;tag#div#0;tag#nav#0;tag#header#0;tag#div#0;tag#body#0;tag#html#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/js/services/pattern.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="68" max-vertical-offset="629">
-          <caret line="4" column="45" selection-start-line="4" selection-start-column="45" selection-end-line="4" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="1272" max-vertical-offset="2023">
@@ -767,60 +450,60 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="e#920#1045#0" expanded="false" />
-            <element signature="e#1093#1410#0" expanded="false" />
-            <element signature="e#1257#1406#0" expanded="false" />
-            <element signature="e#1353#1391#0" expanded="false" />
-            <element signature="e#1461#1609#0" expanded="false" />
-            <element signature="e#1581#1605#0" expanded="false" />
-            <element signature="e#1660#2557#0" expanded="false" />
-            <element signature="e#1773#2374#0" expanded="false" />
-            <element signature="e#1787#2368#0" expanded="false" />
-            <element signature="e#2079#2329#0" expanded="false" />
-            <element signature="e#2404#2553#0" expanded="false" />
-            <element signature="e#2500#2538#0" expanded="false" />
-            <element signature="e#2611#2902#0" expanded="false" />
-            <element signature="e#2746#2895#0" expanded="false" />
-            <element signature="e#2842#2880#0" expanded="false" />
-            <element signature="e#2961#3308#0" expanded="false" />
-            <element signature="e#3074#3125#0" expanded="false" />
-            <element signature="e#3088#3119#0" expanded="false" />
-            <element signature="e#3155#3304#0" expanded="false" />
-            <element signature="e#3251#3289#0" expanded="false" />
-            <element signature="e#3380#3501#0" expanded="false" />
-            <element signature="e#3464#3494#0" expanded="false" />
-            <element signature="e#3560#3907#0" expanded="false" />
-            <element signature="e#3673#3728#0" expanded="false" />
-            <element signature="e#3687#3722#0" expanded="false" />
-            <element signature="e#3758#3903#0" expanded="false" />
-            <element signature="e#3850#3888#0" expanded="false" />
-            <element signature="e#3965#4072#0" expanded="false" />
-            <element signature="e#4035#4065#0" expanded="false" />
-            <element signature="e#4121#4361#0" expanded="false" />
-            <element signature="e#4226#4357#0" expanded="false" />
-            <element signature="e#4304#4342#0" expanded="false" />
-            <element signature="e#4416#4690#0" expanded="false" />
-            <element signature="e#4552#4683#0" expanded="false" />
-            <element signature="e#4630#4668#0" expanded="false" />
-            <element signature="e#4756#4866#0" expanded="false" />
-            <element signature="e#4829#4859#0" expanded="false" />
-            <element signature="e#4919#5165#0" expanded="false" />
-            <element signature="e#5027#5161#0" expanded="false" />
-            <element signature="e#5108#5146#0" expanded="false" />
-            <element signature="e#5224#5504#0" expanded="false" />
-            <element signature="e#5363#5497#0" expanded="false" />
-            <element signature="e#5444#5482#0" expanded="false" />
-            <element signature="e#5559#5649#0" expanded="false" />
-            <element signature="e#5615#5645#0" expanded="false" />
-            <element signature="e#5700#6236#0" expanded="false" />
-            <element signature="e#5759#6232#0" expanded="false" />
-            <element signature="e#6031#6058#0" expanded="false" />
-            <element signature="e#6104#6199#0" expanded="false" />
-            <element signature="e#6284#6874#0" expanded="false" />
-            <element signature="e#6452#6720#0" expanded="false" />
-            <element signature="e#6498#6686#0" expanded="false" />
-            <element signature="e#6752#6850#0" expanded="false" />
-            <element signature="e#6928#7120#0" expanded="false" />
-            <element signature="e#6986#7116#0" expanded="false" />
+            <element signature="e#1093#1412#0" expanded="false" />
+            <element signature="e#1259#1408#0" expanded="false" />
+            <element signature="e#1355#1393#0" expanded="false" />
+            <element signature="e#1463#1611#0" expanded="false" />
+            <element signature="e#1583#1607#0" expanded="false" />
+            <element signature="e#1662#2549#0" expanded="false" />
+            <element signature="e#1775#2366#0" expanded="false" />
+            <element signature="e#1789#2360#0" expanded="false" />
+            <element signature="e#2071#2321#0" expanded="false" />
+            <element signature="e#2396#2545#0" expanded="false" />
+            <element signature="e#2492#2530#0" expanded="false" />
+            <element signature="e#2603#2894#0" expanded="false" />
+            <element signature="e#2738#2887#0" expanded="false" />
+            <element signature="e#2834#2872#0" expanded="false" />
+            <element signature="e#2953#3300#0" expanded="false" />
+            <element signature="e#3066#3117#0" expanded="false" />
+            <element signature="e#3080#3111#0" expanded="false" />
+            <element signature="e#3147#3296#0" expanded="false" />
+            <element signature="e#3243#3281#0" expanded="false" />
+            <element signature="e#3372#3493#0" expanded="false" />
+            <element signature="e#3456#3486#0" expanded="false" />
+            <element signature="e#3552#3899#0" expanded="false" />
+            <element signature="e#3665#3720#0" expanded="false" />
+            <element signature="e#3679#3714#0" expanded="false" />
+            <element signature="e#3750#3895#0" expanded="false" />
+            <element signature="e#3842#3880#0" expanded="false" />
+            <element signature="e#3957#4064#0" expanded="false" />
+            <element signature="e#4027#4057#0" expanded="false" />
+            <element signature="e#4113#4353#0" expanded="false" />
+            <element signature="e#4218#4349#0" expanded="false" />
+            <element signature="e#4296#4334#0" expanded="false" />
+            <element signature="e#4408#4682#0" expanded="false" />
+            <element signature="e#4544#4675#0" expanded="false" />
+            <element signature="e#4622#4660#0" expanded="false" />
+            <element signature="e#4748#4858#0" expanded="false" />
+            <element signature="e#4821#4851#0" expanded="false" />
+            <element signature="e#4911#5157#0" expanded="false" />
+            <element signature="e#5019#5153#0" expanded="false" />
+            <element signature="e#5100#5138#0" expanded="false" />
+            <element signature="e#5216#5496#0" expanded="false" />
+            <element signature="e#5355#5489#0" expanded="false" />
+            <element signature="e#5436#5474#0" expanded="false" />
+            <element signature="e#5551#5641#0" expanded="false" />
+            <element signature="e#5607#5637#0" expanded="false" />
+            <element signature="e#5692#6228#0" expanded="false" />
+            <element signature="e#5751#6224#0" expanded="false" />
+            <element signature="e#6023#6050#0" expanded="false" />
+            <element signature="e#6096#6191#0" expanded="false" />
+            <element signature="e#6276#6866#0" expanded="false" />
+            <element signature="e#6444#6712#0" expanded="false" />
+            <element signature="e#6490#6678#0" expanded="false" />
+            <element signature="e#6744#6842#0" expanded="false" />
+            <element signature="e#6920#7112#0" expanded="false" />
+            <element signature="e#6978#7108#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -940,20 +623,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/js/app.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.8178694" vertical-offset="0" max-vertical-offset="582">
-          <caret line="28" column="5" selection-start-line="28" selection-start-column="5" selection-end-line="28" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/js/directives/upload.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.41580757" vertical-offset="642" max-vertical-offset="1224">
-          <caret line="52" column="2" selection-start-line="52" selection-start-column="2" selection-end-line="66" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/states/admin/file/file.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-6.12" vertical-offset="0" max-vertical-offset="459">
@@ -972,13 +641,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.29209623" vertical-offset="0" max-vertical-offset="582">
           <caret line="10" column="21" selection-start-line="10" selection-start-column="21" selection-end-line="10" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/states/admin/admin.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.116838485" vertical-offset="0" max-vertical-offset="714">
-          <caret line="4" column="6" selection-start-line="4" selection-start-column="6" selection-end-line="4" selection-end-column="6" />
         </state>
       </provider>
     </entry>
@@ -1025,64 +687,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/server.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.23883161" vertical-offset="541" max-vertical-offset="1394">
-          <caret line="63" column="47" selection-start-line="63" selection-start-column="47" selection-end-line="63" selection-end-column="47" />
-          <folding>
-            <element signature="e#920#1045#0" expanded="false" />
-            <element signature="e#1093#1410#0" expanded="false" />
-            <element signature="e#1461#1609#0" expanded="false" />
-            <element signature="e#1660#2557#0" expanded="false" />
-            <element signature="e#2404#2553#0" expanded="false" />
-            <element signature="e#2500#2538#0" expanded="false" />
-            <element signature="e#2611#2902#0" expanded="false" />
-            <element signature="e#2746#2895#0" expanded="false" />
-            <element signature="e#2842#2880#0" expanded="false" />
-            <element signature="e#2961#3308#0" expanded="false" />
-            <element signature="e#3074#3125#0" expanded="false" />
-            <element signature="e#3088#3119#0" expanded="false" />
-            <element signature="e#3155#3304#0" expanded="false" />
-            <element signature="e#3251#3289#0" expanded="false" />
-            <element signature="e#3380#3501#0" expanded="false" />
-            <element signature="e#3464#3494#0" expanded="false" />
-            <element signature="e#3560#3907#0" expanded="false" />
-            <element signature="e#3673#3728#0" expanded="false" />
-            <element signature="e#3687#3722#0" expanded="false" />
-            <element signature="e#3758#3903#0" expanded="false" />
-            <element signature="e#3850#3888#0" expanded="false" />
-            <element signature="e#3965#4072#0" expanded="false" />
-            <element signature="e#4035#4065#0" expanded="false" />
-            <element signature="e#4121#4361#0" expanded="false" />
-            <element signature="e#4226#4357#0" expanded="false" />
-            <element signature="e#4304#4342#0" expanded="false" />
-            <element signature="e#4416#4690#0" expanded="false" />
-            <element signature="e#4552#4683#0" expanded="false" />
-            <element signature="e#4630#4668#0" expanded="false" />
-            <element signature="e#4756#4866#0" expanded="false" />
-            <element signature="e#4829#4859#0" expanded="false" />
-            <element signature="e#4919#5165#0" expanded="false" />
-            <element signature="e#5027#5161#0" expanded="false" />
-            <element signature="e#5108#5146#0" expanded="false" />
-            <element signature="e#5224#5504#0" expanded="false" />
-            <element signature="e#5363#5497#0" expanded="false" />
-            <element signature="e#5444#5482#0" expanded="false" />
-            <element signature="e#5559#5649#0" expanded="false" />
-            <element signature="e#5615#5645#0" expanded="false" />
-            <element signature="e#5700#6236#0" expanded="false" />
-            <element signature="e#5759#6232#0" expanded="false" />
-            <element signature="e#6031#6058#0" expanded="false" />
-            <element signature="e#6104#6199#0" expanded="false" />
-            <element signature="e#6284#6874#0" expanded="false" />
-            <element signature="e#6452#6720#0" expanded="false" />
-            <element signature="e#6498#6686#0" expanded="false" />
-            <element signature="e#6752#6850#0" expanded="false" />
-            <element signature="e#6928#7120#0" expanded="false" />
-            <element signature="e#6986#7116#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/js/services/pattern.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-9.56" vertical-offset="475" max-vertical-offset="1241">
@@ -1101,52 +705,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/states/admin/case/case.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-19.6" vertical-offset="54" max-vertical-offset="1037">
-          <caret line="53" column="10" selection-start-line="53" selection-start-column="10" selection-end-line="53" selection-end-column="10" />
-          <folding>
-            <element signature="e#946#1014#0" expanded="false" />
-            <element signature="e#1046#1296#0" expanded="false" />
-            <element signature="e#1185#1285#0" expanded="false" />
-            <element signature="e#1330#1512#0" expanded="false" />
-            <element signature="e#1394#1501#0" expanded="false" />
-            <element signature="e#1736#1840#0" expanded="false" />
-            <element signature="e#1887#2097#0" expanded="false" />
-            <element signature="e#1982#2086#0" expanded="false" />
-            <element signature="e#2132#2463#0" expanded="false" />
-            <element signature="e#2217#2268#0" expanded="false" />
-            <element signature="e#2353#2457#0" expanded="false" />
-            <element signature="e#2498#2558#0" expanded="false" />
-            <element signature="e#2593#3430#0" expanded="false" />
-            <element signature="e#2748#3047#0" expanded="false" />
-            <element signature="e#2807#3041#0" expanded="false" />
-            <element signature="e#2953#3031#0" expanded="false" />
-            <element signature="e#3076#3424#0" expanded="false" />
-            <element signature="e#3097#3197#0" expanded="false" />
-            <element signature="e#3467#3814#0" expanded="false" />
-            <element signature="e#3534#3808#0" expanded="false" />
-            <element signature="e#3852#4052#0" expanded="false" />
-            <element signature="e#4104#4136#0" expanded="false" />
-            <element signature="e#4183#4216#0" expanded="false" />
-            <element signature="e#4266#4302#0" expanded="false" />
-            <element signature="e#4323#4420#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/states/admin/archive/archive.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-1.36" vertical-offset="136" max-vertical-offset="1037">
           <caret line="10" column="83" selection-start-line="10" selection-start-column="83" selection-end-line="10" selection-end-column="83" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/states/admin/case/case-list.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.05851979" vertical-offset="0" max-vertical-offset="595">
-          <caret line="2" column="6" selection-start-line="2" selection-start-column="6" selection-end-line="3" selection-end-column="106" />
           <folding />
         </state>
       </provider>
@@ -1175,14 +737,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/states/admin/case/case.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-3.2692308" vertical-offset="0" max-vertical-offset="459">
-          <caret line="5" column="36" selection-start-line="5" selection-start-column="36" selection-end-line="5" selection-end-column="51" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/states/admin/archive/archive-current.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.029259896" vertical-offset="0" max-vertical-offset="1394">
@@ -1199,10 +753,52 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/public/js/directives/upload.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-2.04" vertical-offset="0" max-vertical-offset="408">
+          <caret line="3" column="16" selection-start-line="3" selection-start-column="16" selection-end-line="3" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/css/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.37205386" vertical-offset="0" max-vertical-offset="594">
+          <caret line="13" column="23" selection-start-line="13" selection-start-column="23" selection-end-line="13" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/states/admin/case/case-new.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-14.846154" vertical-offset="192" max-vertical-offset="1207">
+          <caret line="34" column="96" selection-start-line="34" selection-start-column="70" selection-end-line="34" selection-end-column="96" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/css/plugins/daterangepicker.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.94398683" vertical-offset="3354" max-vertical-offset="4029">
+          <caret line="231" column="0" selection-start-line="231" selection-start-column="0" selection-end-line="231" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/css/plugins/moment.min.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.17171717" vertical-offset="0" max-vertical-offset="594">
+          <caret line="6" column="9640" selection-start-line="6" selection-start-column="9640" selection-end-line="6" selection-end-column="9640" />
+          <folding>
+            <element signature="n#!!doc" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/public/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-13.730769" vertical-offset="2244" max-vertical-offset="4114">
-          <caret line="306" column="33" selection-start-line="306" selection-start-column="33" selection-end-line="306" selection-end-column="68" />
+        <state vertical-scroll-proportion="-2.4629629" vertical-offset="326" max-vertical-offset="4216">
+          <caret line="27" column="24" selection-start-line="27" selection-start-column="24" selection-end-line="27" selection-end-column="24" />
           <folding>
             <element signature="tag#li#1;tag#ul#0;tag#div#0;tag#nav#0;tag#header#0;tag#div#0;tag#body#0;tag#html#0" expanded="false" />
             <element signature="tag#li#2;tag#ul#0;tag#div#0;tag#nav#0;tag#header#0;tag#div#0;tag#body#0;tag#html#0" expanded="false" />
@@ -1211,35 +807,166 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/css/style.css">
+    <entry file="file://$PROJECT_DIR$/public/states/admin/admin.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="357">
-          <caret line="13" column="23" selection-start-line="13" selection-start-column="23" selection-end-line="13" selection-end-column="23" />
+        <state vertical-scroll-proportion="0.116838485" vertical-offset="0" max-vertical-offset="629">
+          <caret line="4" column="6" selection-start-line="4" selection-start-column="6" selection-end-line="4" selection-end-column="6" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/states/admin/case/case-current.html">
+    <entry file="file://$PROJECT_DIR$/public/js/app.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.20481928" vertical-offset="612" max-vertical-offset="2363">
-          <caret line="29" column="61" selection-start-line="29" selection-start-column="61" selection-end-line="29" selection-end-column="61" />
+        <state vertical-scroll-proportion="-5.44" vertical-offset="0" max-vertical-offset="595">
+          <caret line="8" column="25" selection-start-line="8" selection-start-column="25" selection-end-line="8" selection-end-column="25" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/states/admin/case/case-new.html">
+    <entry file="file://$PROJECT_DIR$/public/js/directives/datetime-picker.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.59855336" vertical-offset="654" max-vertical-offset="1207">
-          <caret line="19" column="62" selection-start-line="19" selection-start-column="62" selection-end-line="19" selection-end-column="62" />
+        <state vertical-scroll-proportion="0.26288658" vertical-offset="0" max-vertical-offset="582">
+          <caret line="9" column="27" selection-start-line="9" selection-start-column="27" selection-end-line="10" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/css/plugins/daterangepicker.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.5254833" vertical-offset="993" max-vertical-offset="26299">
+          <caret line="76" column="21" selection-start-line="76" selection-start-column="21" selection-end-line="76" selection-end-column="21" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/public/states/admin/case/case-search.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.56110156" vertical-offset="99" max-vertical-offset="765">
-          <caret line="25" column="2" selection-start-line="25" selection-start-column="2" selection-end-line="25" selection-end-column="2" />
+        <state vertical-scroll-proportion="0.55593807" vertical-offset="0" max-vertical-offset="581">
+          <caret line="26" column="89" selection-start-line="26" selection-start-column="89" selection-end-line="26" selection-end-column="89" />
+          <folding>
+            <element signature="tag#div#1" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/states/admin/case/case.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="581">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/states/admin/case/case-current.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-9.807693" vertical-offset="306" max-vertical-offset="2363">
+          <caret line="33" column="11" selection-start-line="33" selection-start-column="11" selection-end-line="33" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/js/directives/datetime-range.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-10.88" vertical-offset="0" max-vertical-offset="442">
+          <caret line="16" column="33" selection-start-line="16" selection-start-column="33" selection-end-line="16" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/states/admin/case/case.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-12.28" vertical-offset="101" max-vertical-offset="1428">
+          <caret line="24" column="37" selection-start-line="24" selection-start-column="37" selection-end-line="24" selection-end-column="37" />
+          <folding>
+            <element signature="e#1350#1418#0" expanded="false" />
+            <element signature="e#1450#1819#0" expanded="false" />
+            <element signature="e#1853#2275#0" expanded="false" />
+            <element signature="e#2308#2654#0" expanded="false" />
+            <element signature="e#2690#2900#0" expanded="false" />
+            <element signature="e#2785#2889#0" expanded="false" />
+            <element signature="e#2935#3266#0" expanded="false" />
+            <element signature="e#3020#3071#0" expanded="false" />
+            <element signature="e#3156#3260#0" expanded="false" />
+            <element signature="e#3301#3361#0" expanded="false" />
+            <element signature="e#3396#4242#0" expanded="false" />
+            <element signature="e#3551#3859#0" expanded="false" />
+            <element signature="e#3610#3853#0" expanded="false" />
+            <element signature="e#3756#3843#0" expanded="false" />
+            <element signature="e#3888#4236#0" expanded="false" />
+            <element signature="e#3909#4009#0" expanded="false" />
+            <element signature="e#4279#4626#0" expanded="false" />
+            <element signature="e#4346#4620#0" expanded="false" />
+            <element signature="e#4666#4866#0" expanded="false" />
+            <element signature="e#4918#4950#0" expanded="false" />
+            <element signature="e#4997#5030#0" expanded="false" />
+            <element signature="e#5080#5116#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/states/admin/case/case-list.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.7900172" vertical-offset="0" max-vertical-offset="612">
+          <caret line="27" column="50" selection-start-line="27" selection-start-column="50" selection-end-line="27" selection-end-column="50" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="1.0515463" vertical-offset="0" max-vertical-offset="1394">
+          <caret line="42" column="44" selection-start-line="42" selection-start-column="44" selection-end-line="42" selection-end-column="44" />
+          <folding>
+            <element signature="e#920#1045#0" expanded="false" />
+            <element signature="e#1093#1412#0" expanded="false" />
+            <element signature="e#1463#1611#0" expanded="false" />
+            <element signature="e#1662#2549#0" expanded="false" />
+            <element signature="e#2396#2545#0" expanded="false" />
+            <element signature="e#2492#2530#0" expanded="false" />
+            <element signature="e#2603#2894#0" expanded="false" />
+            <element signature="e#2738#2887#0" expanded="false" />
+            <element signature="e#2834#2872#0" expanded="false" />
+            <element signature="e#2953#3300#0" expanded="false" />
+            <element signature="e#3066#3117#0" expanded="false" />
+            <element signature="e#3080#3111#0" expanded="false" />
+            <element signature="e#3147#3296#0" expanded="false" />
+            <element signature="e#3243#3281#0" expanded="false" />
+            <element signature="e#3372#3493#0" expanded="false" />
+            <element signature="e#3456#3486#0" expanded="false" />
+            <element signature="e#3552#3899#0" expanded="false" />
+            <element signature="e#3665#3720#0" expanded="false" />
+            <element signature="e#3679#3714#0" expanded="false" />
+            <element signature="e#3750#3895#0" expanded="false" />
+            <element signature="e#3842#3880#0" expanded="false" />
+            <element signature="e#3957#4064#0" expanded="false" />
+            <element signature="e#4027#4057#0" expanded="false" />
+            <element signature="e#4113#4353#0" expanded="false" />
+            <element signature="e#4218#4349#0" expanded="false" />
+            <element signature="e#4296#4334#0" expanded="false" />
+            <element signature="e#4408#4682#0" expanded="false" />
+            <element signature="e#4544#4675#0" expanded="false" />
+            <element signature="e#4622#4660#0" expanded="false" />
+            <element signature="e#4748#4858#0" expanded="false" />
+            <element signature="e#4821#4851#0" expanded="false" />
+            <element signature="e#4911#5157#0" expanded="false" />
+            <element signature="e#5019#5153#0" expanded="false" />
+            <element signature="e#5100#5138#0" expanded="false" />
+            <element signature="e#5216#5496#0" expanded="false" />
+            <element signature="e#5355#5489#0" expanded="false" />
+            <element signature="e#5436#5474#0" expanded="false" />
+            <element signature="e#5551#5641#0" expanded="false" />
+            <element signature="e#5607#5637#0" expanded="false" />
+            <element signature="e#5692#6228#0" expanded="false" />
+            <element signature="e#5751#6224#0" expanded="false" />
+            <element signature="e#6023#6050#0" expanded="false" />
+            <element signature="e#6096#6191#0" expanded="false" />
+            <element signature="e#6276#6866#0" expanded="false" />
+            <element signature="e#6444#6712#0" expanded="false" />
+            <element signature="e#6490#6678#0" expanded="false" />
+            <element signature="e#6744#6842#0" expanded="false" />
+            <element signature="e#6920#7112#0" expanded="false" />
+            <element signature="e#6978#7108#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
