@@ -96,6 +96,28 @@ app.put('/admin/case/:id', function (req, res) {
     });
 });
 
+app.put('/admin/case/:id/datetime', function (req, res) {
+  //console.log('id: ' + req.params.id);
+  console.log('req: ' + req.d);
+  var caseId = new mongo.ObjectID(req.params.id);
+  db.collection('cases').updateOne(
+    {"_id": caseId},
+    {
+      $set: {
+        info: {
+          datetime: req.body.datetime
+        }
+      }
+    },
+    function (err, results) {
+      db.collection('cases').find({status: 'pending'})
+        .toArray(function (err, cases) {
+          res.json(cases);
+        }
+      );
+    });
+});
+
 app.delete('/admin/case/:id', function (req, res) {
   var caseId = new mongo.ObjectID(req.params.id);
   db.collection('cases').deleteOne(
