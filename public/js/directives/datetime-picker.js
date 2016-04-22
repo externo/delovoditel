@@ -11,10 +11,10 @@ angular
           timePicker24Hour: true,
           timePickerIncrement: 10,
           locale: {
-            format: 'DD.MM.YYYY HH:mm'
+            format: 'DD.MM.YYYY / HH:mm'
           },
           singleDatePicker: true,
-          showDropdowns: true
+          showDropdowns: true,
         });
       }
     }

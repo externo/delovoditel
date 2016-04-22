@@ -12,7 +12,7 @@
   <!-- Font Awesome -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
   <!-- Ionicons -->
-  <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+  <!--<link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">-->
   <!-- Theme style -->
   <link rel="stylesheet" href="css/dist/css/AdminLTE.min.css">
   <!-- AdminLTE Skins. Choose a skin from the css/skins
@@ -25,14 +25,13 @@
   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.3/angular.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.3/angular-route.js"></script>
 
-  <!-- Include moment.js -->
+  <!-- Load date range plugins moment, daterangepicker, !!! EDITED - don't replace with CDN !!! -->
   <script type="text/javascript" src="css/plugins/moment.min.js"></script>
-  <!-- Include Date Range Picker -->
   <script type="text/javascript" src="css/plugins/daterangepicker.js"></script>
   <link rel="stylesheet" type="text/css" href="css/plugins/daterangepicker.css" />
 </head>
 <body class="hold-transition skin-blue sidebar-mini" ng-app="app">
-<div class="wrapper" ng-controller="AdminController as Admin">
+<div class="wrapper">
 <header class="main-header">
 <!-- Logo -->
 <a class="logo">
@@ -342,7 +341,6 @@
 
 </div>
 
-
 <!-- jQuery UI 1.11.4 -->
 <script src="https://code.jquery.com/ui/1.11.4/jquery-ui.min.js"></script>
 <!-- Bootstrap 3.3.5 -->
@@ -352,7 +350,6 @@
 
 <!-- AngularJS APP scripts -->
 <script src="js/app.js"></script>
-<script src="states/admin/admin.js"></script>
 
 <script src="js/services/case.js"></script>
 <script src="js/services/court.js"></script>

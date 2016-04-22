@@ -7,6 +7,7 @@ angular
       restrict: "A",
       link: function(scope, elem, attrs) {
         elem.daterangepicker({
+          linkedCalendars: false,
           timePicker: true,
           timePicker24Hour: true,
           timePickerIncrement: 10,

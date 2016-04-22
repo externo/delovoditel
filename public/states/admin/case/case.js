@@ -19,7 +19,7 @@ function CaseController($http, CaseService, CourtService, FileTypeService, Patte
   Case.orderByField = 'number';
   Case.reverseSort = false;
 
-  Case.ifInRange = function (caseDatetime) {
+  Case.inRange = function (caseDatetime) {
     var caseDatetimeObj = new Date(caseDatetime);
     var dateString = Case.search.datetime;
     var reggie = /(\w.{17}) - (\w.{17})/;
@@ -56,8 +56,7 @@ function CaseController($http, CaseService, CourtService, FileTypeService, Patte
         Case.currentCase = res.data;
 
         if (Case.currentCase.info.datetime) {
-          console.log(typeof new Date(Case.currentCase.info.datetime));
-          Case.currentCase.info.datetime = moment(Case.currentCase.info.datetime).format('DD.MM.YYYY HH:mm');
+          Case.currentCase.info.datetime = moment(Case.currentCase.info.datetime).format('DD.MM.YYYY / HH:mm');
         }
 
         Case.openForm = false;
@@ -68,6 +67,7 @@ function CaseController($http, CaseService, CourtService, FileTypeService, Patte
 
   Case.editCase = function () {
     if (Case.currentCase.info.datetime) {
+      console.log((Case.currentCase.info.datetime));
       Case.currentCase.info.datetime = formatDate(Case.currentCase.info.datetime);
     }
     $http.put('/admin/case/' + Case.currentCase._id, Case.currentCase)
