@@ -26,7 +26,7 @@ angular
     $routeProvider.when('/admin/file/type', {
       templateUrl: '/states/admin/file/file-type.html',
       controller: 'FileTypeController',
-      controllerAs: 'FileType'
+      controllerAs: 'File'
     });
     $routeProvider.when('/admin/calendar', {
       templateUrl: '/states/admin/calendar/calendar.html',
@@ -39,9 +39,10 @@ angular
   });
 
 function formatDate(date) {
-  var dateString = date;
+
   var reggie = /(\d{2}).(\d{2}).(\d{4}) \/ (\d{1,2}):(\d{2})/;
-  var dateArray = reggie.exec(dateString);
+  var dateArray = reggie.exec(date);
+
   var dateObject = new Date(
     (dateArray[3]),
     (dateArray[2]) - 1, // Careful, month starts at 0!
@@ -49,5 +50,31 @@ function formatDate(date) {
     (dateArray[4]),
     (dateArray[5])
   );
+
   return dateObject;
+}
+
+function inRange(caseDatetime, dateRange) {
+
+  var caseDateObj = formatDate(moment(caseDatetime).format('DD.MM.YYYY / HH:mm'));
+
+  var reggie = /(\d{2}).(\d{2}).(\d{4}) \/ (\d{1,2}):(\d{2}) - (\d{2}).(\d{2}).(\d{4}) \/ (\d{1,2}):(\d{2})/;
+  var dateArray = reggie.exec(dateRange);
+
+  var startDate = new Date(
+    (dateArray[3]),
+    (dateArray[2]) - 1, // Careful, month starts at 0!
+    (dateArray[1]),
+    (dateArray[4]),
+    (dateArray[5])
+  );
+  var endDate = new Date(
+    (dateArray[8]),
+    (dateArray[7]) - 1, // Careful, month starts at 0!
+    (dateArray[6]),
+    (dateArray[9]),
+    (dateArray[10])
+  );
+
+  return startDate < caseDateObj && caseDateObj < endDate ;
 }

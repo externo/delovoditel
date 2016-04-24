@@ -25,7 +25,7 @@ function CaseService($http) {
   }
 
   function findAllArchive(callback) {
-    $http.get('/admin/archive/case')
+    $http.get('/admin/archive')
       .success(callback);
   }
 

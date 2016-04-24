@@ -4,11 +4,10 @@ angular
   .module('app')
   .controller('CaseController', CaseController);
 
-function CaseController($http, CaseService, CourtService, FileTypeService, PatternService) {
+function CaseController($http, CaseService, CourtService, FileTypeService, PatternService, NotyService) {
 
   var Case = this;
 
-  Case.header = 'Висящи дела';
   Case.currentCase = null;      // temp variable for edit selected case
   Case.newCase = null;          // temp variable for add new case
   Case.openForm = false;        // help variable for toggle open/close for add-new-case form
@@ -16,18 +15,11 @@ function CaseController($http, CaseService, CourtService, FileTypeService, Patte
   Case.newFile = null;          // temp variable for storing new-file before add to case
   Case.fileType = null;         // temp variable for storing new-file-type before add to case
   Case.patternType = null;      // temp variable for storing pattern-type before generating it
-  Case.orderByField = 'number';
   Case.reverseSort = false;
 
-  Case.printRange = function () {
-    console.log(Case.search.datetime);
-  };
+  Case.inRange = function (caseDatetime, dateRange) {
 
-  Case.ifInRange = function (caseDatetime) {
-
-    var startDate = 0;
-    var endDate = 1;
-    return (startDate < caseDatetime) || (caseDatetime < endDate) ;
+    return inRange(caseDatetime, dateRange);
   };
 
   Case.toggleForm = function () {
@@ -43,6 +35,7 @@ function CaseController($http, CaseService, CourtService, FileTypeService, Patte
     Case.newCase.files = [];
     $http.post('/admin/case', Case.newCase)
       .then(function (res) {
+        NotyService.success('Добавихте дело № ' + Case.newCase.info.number);
         Case.cases = res.data;
         Case.openForm = false;
         Case.newCase = null;
@@ -71,31 +64,36 @@ function CaseController($http, CaseService, CourtService, FileTypeService, Patte
     }
     $http.put('/admin/case/' + Case.currentCase._id, Case.currentCase)
       .then(function (res) {
+        NotyService.warning('Дело № ' + Case.currentCase.info.number + ' е редактирано');
         Case.cases = res.data;
         Case.openCase = false;
         Case.currentCase = null;
-      }
-    );
+      });
   };
 
   Case.archiveCase = function () {
-    $http.put('/admin/case/' + Case.currentCase._id + '/archive')
+    if(Case.currentCase.info.datetime){
+      Case.currentCase.info.datetime = formatDate(Case.currentCase.info.datetime);
+    }
+    Case.currentCase.status = 'won';
+    $http.put('/admin/case/' + Case.currentCase._id, Case.currentCase)
       .then(function (res) {
+        NotyService.warning('Дело № ' + Case.currentCase.info.number + ' е архивирано');
         Case.cases = res.data;
         Case.openCase = false;
         Case.currentCase = null;
-      }
-    );
+      });
   };
 
   Case.removeCase = function () {
     var files = Case.currentCase.files;
     for (var i = 0; i < files.length; i++) {
-      $http.delete('/file/' + files[i].id);
+      $http.delete('/admin/file/' + files[i].id);
     }
 
     $http.delete('/admin/case/' + Case.currentCase._id)
       .then(function (res) {
+        NotyService.error('Изтрихте дело № ' + Case.currentCase.info.number);
         Case.cases = res.data;
         Case.openCase = false;
         Case.currentCase = null;
@@ -125,6 +123,7 @@ function CaseController($http, CaseService, CourtService, FileTypeService, Patte
       }
     })
       .then(function (res) {
+        NotyService.success('Добавихте ' + Case.fileType + ' - ' + Case.newFile.name);
         var file = {
           id: res.data,
           name: Case.newFile.name,
@@ -135,29 +134,36 @@ function CaseController($http, CaseService, CourtService, FileTypeService, Patte
         Case.fileType = null;
         $('input[type=file]').val('');
 
-        $http.put('/admin/case/' + Case.currentCase._id, Case.currentCase);
+        $http.put('/admin/case/' + Case.currentCase._id + '/files', Case.currentCase.files);
       });
   };
 
-  Case.removeFile = function (id) {
-    $http.delete('/admin/file/' + id)
+  Case.removeFile = function (file) {
+    NotyService.error('Изтрихте ' + file.type + ' - ' + file.name);
+    $http.delete('/admin/file/' + file.id)
       .then(function (res) {
-        var files = Case.currentCase.files;
-        var file = Case.currentCase.files.find(x=>x.id == id);
-        var fileIndex = files.indexOf(file);
-        files.splice(fileIndex, 1);
+        var fileIndex = Case.currentCase.files.indexOf(file);
+        Case.currentCase.files.splice(fileIndex, 1);
 
-        $http.put('/admin/case/' + Case.currentCase._id, Case.currentCase);
+        $http.put('/admin/case/' + Case.currentCase._id + '/files', Case.currentCase.files);
       });
   };
 
   Case.generatePattern = function () {
+    NotyService.success('Генерирахте ' + Case.patternType);
     var courts = Case.courts;
     var court = courts.find(x=> x.name == Case.currentCase.info.court);
     PatternService.generatePattern(Case.patternType, court, Case.currentCase, Case.profile);
   };
 
   CaseService.findAllPending(function (response) {
+    var casesLength = response.length;
+    if(casesLength){
+      casesLength > 1 ? NotyService.info('Заредени са ' + response.length + ' висящи дела') : NotyService.info('Заредено е 1 висящо дело');
+    }else{
+      NotyService.info('Няма висящи дела');
+      NotyService.success('Добавете дело чрез бутона [Добави дело]');
+    }
     Case.cases = response;
   });
 
@@ -175,4 +181,5 @@ function CaseController($http, CaseService, CourtService, FileTypeService, Patte
     fax: '#!@$!#@',
     email: "drevna@greece.eu"
   };
+
 }

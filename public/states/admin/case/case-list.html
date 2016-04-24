@@ -17,8 +17,8 @@
                   filter: Case.search.court |
                   filter: Case.search.instance |
                   orderBy:orderByField:reverseSort"
-      ng-click="Case.getCase(case._id)">
-      <!--ng-if="Case.inRange(case.info.datetime)">-->
+      ng-click="Case.getCase(case._id)"
+      ng-if="Case.inRange(case.info.datetime, Case.search.datetime)">
     <td>{{case.info.number}}</td>
     <td>{{case.info.type}}</td>
     <td>{{case.info.court}}</td>

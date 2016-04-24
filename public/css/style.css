@@ -11,6 +11,25 @@
   padding: 10px;
 }
 
+.input-group {
+  width: 100%;
+}
+
+.input-group > .input-group-addon{
+  padding: 0;
+  width: 40px !important;
+  text-align: center;
+}
+
+/*make sense when class="input-group" is removed*/
+/*.input-group-addon {*/
+  /*border-radius: 0;*/
+/*}*/
+
 textarea, input, select {
   font-family: FontAwesome, "Open Sans", Verdana, sans-serif;
+}
+
+select.ng-invalid, input.ng-invalid {
+  border-color: red;
 }

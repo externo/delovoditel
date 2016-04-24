@@ -9329,9 +9329,9 @@ Calendar.defaults = {
 		prevYear: "prev year",
 		nextYear: "next year",
 		year: 'year', // TODO: locale files need to specify this
-		today: 'today',
-		month: 'month',
-		week: 'week',
+		today: 'днес',
+		month: 'месец',
+		week: 'седмица',
 		day: 'day'
 	},
 
@@ -11875,7 +11875,7 @@ fcViews.agenda = {
 	'class': AgendaView,
 	defaults: {
 		allDaySlot: true,
-		allDayText: 'all-day',
+		allDayText: 'за деня',
 		slotDuration: '00:30:00',
 		minTime: '00:00:00',
 		maxTime: '24:00:00',

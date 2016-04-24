@@ -68,6 +68,7 @@ app.put('/admin/case/:id', function (req, res) {
     {"_id": caseId},
     {
       $set: {
+        status: req.body.status,
         info: {
           type: req.body.info.type,
           number: req.body.info.number,
@@ -97,16 +98,30 @@ app.put('/admin/case/:id', function (req, res) {
 });
 
 app.put('/admin/case/:id/datetime', function (req, res) {
-  //console.log('id: ' + req.params.id);
-  console.log('req: ' + req.d);
   var caseId = new mongo.ObjectID(req.params.id);
   db.collection('cases').updateOne(
     {"_id": caseId},
     {
       $set: {
-        info: {
-          datetime: req.body.datetime
+        "info.datetime": req.body.datetime
+      }
+    },
+    function (err, results) {
+      db.collection('cases').find({status: 'pending'})
+        .toArray(function (err, cases) {
+          res.json(cases);
         }
+      );
+    });
+});
+
+app.put('/admin/case/:id/files', function (req, res) {
+  var caseId = new mongo.ObjectID(req.params.id);
+  db.collection('cases').updateOne(
+    {"_id": caseId},
+    {
+      $set: {
+        "files": req.body
       }
     },
     function (err, results) {
@@ -132,26 +147,8 @@ app.delete('/admin/case/:id', function (req, res) {
   );
 });
 
-app.put('/admin/case/:id/archive', function (req, res) {
-  var caseId = new mongo.ObjectID(req.params.id);
-  db.collection('cases').updateOne(
-    {"_id": caseId},
-    {
-      $set: {
-        status: 'won'
-      }
-    },
-    function (err, results) {
-      db.collection('cases').find({status: 'pending'})
-        .toArray(function (err, cases) {
-          res.json(cases);
-        }
-      );
-    });
-});
-
 // Archive cases
-app.get('/admin/archive/case', function (req, res) {
+app.get('/admin/archive', function (req, res) {
   db.collection('cases').find({status: 'won'})
     .toArray(function (err, cases) {
       res.json(cases);
@@ -159,7 +156,7 @@ app.get('/admin/archive/case', function (req, res) {
   );
 });
 
-app.put('/admin/case/:id/extract', function (req, res) {
+app.put('/admin/archive/:id/extract', function (req, res) {
   var caseId = new mongo.ObjectID(req.params.id);
   db.collection('cases').updateOne(
     {"_id": caseId},
@@ -175,6 +172,20 @@ app.put('/admin/case/:id/extract', function (req, res) {
         }
       );
     });
+});
+
+app.delete('/admin/archive/:id', function (req, res) {
+  var caseId = new mongo.ObjectID(req.params.id);
+  db.collection('cases').deleteOne(
+    {_id: caseId},
+    function (err, results) {
+      db.collection('cases').find({status: 'won'})
+        .toArray(function (err, cases) {
+          res.json(cases);
+        }
+      );
+    }
+  );
 });
 
 // Courts

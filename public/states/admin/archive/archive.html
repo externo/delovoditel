@@ -1,7 +1,7 @@
 <div class="box box-primary" ng-hide="Archive.openCase">
 
   <div class="box-header with-border">
-    <h3 class="box-title"><strong>{{Archive.header}}</strong></h3>
+    <h3 class="box-title"><strong>Архивни дела - може да се редактират след като се раз-архивират</strong></h3>
   </div>
 
   <div class="box-body">
@@ -21,13 +21,13 @@
       <tbody>
       <tr ng-repeat="case in Archive.cases | orderBy:orderByField:reverseSort"
           ng-click="Archive.getCase(case._id)">
-        <td>{{case.info.type}}</td>
         <td>{{case.info.number}}</td>
+        <td>{{case.info.type}}</td>
         <td>{{case.info.court}}</td>
         <td>{{case.info.instance}}</td>
-        <td>{{case.info.client}}</td>
+        <td>{{case.client.name}}</td>
         <td>{{case.info.note}}</td>
-        <td>{{case.info.datetime | date: "dd.MM.yyyy - HH:mm"}}</td>
+        <td>{{case.info.datetime | date: "dd.MM.yyyy / HH:mm"}}</td>
       </tr>
 
       </tbody>
