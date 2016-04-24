@@ -10,13 +10,13 @@
     </div>
     <div class="col-md-3">
       <select class="form-control" ng-model="File.search.type">
-        <option value="" selected="selected">ТИП</option>
+        <option value="" selected="selected">&#xf0c5; ТИП</option>
         <option ng-repeat="type in File.types | orderBy: 'name'">{{type.name}}</option>
       </select>
     </div>
     <div class="col-md-4">
       <select class="form-control" ng-model="File.search.court">
-        <option value="" selected="selected">СЪД</option>
+        <option value="" selected="selected">&#xf24e; СЪД</option>
         <option ng-repeat="court in File.courts | orderBy: 'name'">{{court.name}}</option>
       </select>
     </div>

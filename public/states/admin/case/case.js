@@ -150,7 +150,6 @@ function CaseController($http, CaseService, CourtService, FileTypeService, Patte
   };
 
   Case.generatePattern = function () {
-    NotyService.success('Генерирахте ' + Case.patternType);
     var courts = Case.courts;
     var court = courts.find(x=> x.name == Case.currentCase.info.court);
     PatternService.generatePattern(Case.patternType, court, Case.currentCase, Case.profile);

@@ -1,16 +1,21 @@
 <div class="box box-primary">
 
   <div class="box-header with-border">
-    <h3 class="box-title"><strong>Търсене на файлове по име, тип или съд</strong></h3>
+    <h3 class="box-title"><strong>Файлови типове</strong></h3>
+    <label class="text-red pull-right" ng-show="formAddFileTypes.type.$error.required">
+      <i class="fa fa-warning"></i> Не е написан файлов тип
+    </label>
   </div>
 
   <div class="box-header">
-    <div class="input-group">
-      <input type="text" class="form-control" placeholder="Искова молба" ng-model="File.type.name">
+    <form class="input-group" name="formAddFileTypes">
+      <input type="text" class="form-control" placeholder="&#xf0c5; Искова молба" ng-model="File.type.name" name="type" required>
       <div class="input-group-btn">
-        <button class="btn btn-success" ng-click="File.addType()">Добави файлов тип</button>
+        <button class="btn btn-success" ng-click="File.addType()"
+                ng-disabled="formAddFileTypes.type.$error.required">
+          Добави</button>
       </div>
-    </div>
+    </form>
   </div>
 
   <div class="box-body">
@@ -20,7 +25,7 @@
         <tr ng-repeat="type in File.types | orderBy: 'name'">
           <td>{{type.name}}</td>
           <td>
-            <button class="btn btn-danger pull-right" ng-click="File.removeType(type._id)">
+            <button class="btn btn-danger pull-right" ng-click="File.removeType(type)">
               <span class="fa fa-remove"></span>
             </button>
           </td>

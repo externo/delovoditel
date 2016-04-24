@@ -234,7 +234,6 @@ app.get('/admin/file/type', function (req, res) {
 });
 
 app.post('/admin/file/type', function (req, res) {
-  console.log(req.body);
   db.collection('filetypes').insertOne(
     req.body,
     function (err, result) {
