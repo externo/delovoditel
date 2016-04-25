@@ -38,6 +38,9 @@ function CaseController($http, CaseService, CourtService, FileTypeService, Patte
   };
 
   Case.addCase = function () {
+    if (Case.newCase.info.datetime) {
+      Case.newCase.info.datetime = formatDate(Case.newCase.info.datetime);
+    }
     Case.newCase.status = 'pending';
     Case.newCase.files = [];
     $http.post('/admin/case', Case.newCase)
