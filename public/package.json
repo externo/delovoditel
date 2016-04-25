@@ -13,6 +13,7 @@
     "angular-route": "^1.5.5",
     "docxtemplater": "^2.1.0",
     "font-awesome": "^4.6.1",
+    "ion-sound": "^3.0.7",
     "noty": "^2.3.8"
   }
 }

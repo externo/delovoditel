@@ -43,7 +43,6 @@ app.get('/admin/case', function (req, res) {
 
 app.post('/admin/case', function (req, res) {
   var newCase = req.body;
-  //newCase.info.datetime = new Date(req.body.info.datetime);
   db.collection('cases').insertOne(
     newCase,
     function (err, result) {
@@ -316,6 +315,26 @@ app.delete('/admin/file/:id', function (req, res) {
 
     res.send(req.params.id);
   });
+});
+
+// History
+app.get('/admin/history', function (req, res) {
+  db.collection('history').find().sort({datetime:-1}).skip(20).forEach(x=>db.collection('history').deleteOne({_id: x._id}));
+  db.collection('history').find()
+    .toArray(function (err, actions) {
+      res.json(actions);
+    }
+  );
+});
+
+app.post('/admin/history', function (req, res) {
+  req.body.datetime = new Date(req.body.datetime);
+  db.collection('history').insertOne(req.body);
+});
+
+app.delete('/admin/history', function (req, res) {
+  var id = new mongo.ObjectID(req.params.id);
+  db.collection('history').deleteOne({_id: id});
 });
 
 //Server

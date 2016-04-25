@@ -1,0 +1,34 @@
+
+<table class="table table-striped table-bordered table-hover"
+       ng-hide="Archive.openCase">
+  <thead>
+  <tr>
+    <th ng-click="orderByField='info.type'; reverseSort = !reverseSort">Вид <i class="icon-sort"></i></th>
+    <th ng-click="orderByField='info.type'; reverseSort = !reverseSort">№ <i class="icon-sort"></i></th>
+    <th ng-click="orderByField='info.type'; reverseSort = !reverseSort">Съд <i class="icon-sort"></i></th>
+    <th ng-click="orderByField='info.type'; reverseSort = !reverseSort">Инстанция <i class="icon-sort"></i></th>
+    <th ng-click="orderByField='info.type'; reverseSort = !reverseSort">Клиент <i class="icon-sort"></i></th>
+    <th ng-click="orderByField='info.type'; reverseSort = !reverseSort">Бележка <i class="icon-sort"></i></th>
+    <th ng-click="orderByField='info.datetime'; reverseSort = !reverseSort">Насрочено</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr ng-repeat="case in Archive.cases |
+                    filter: Archive.search.text |
+                    filter: Archive.search.type |
+                    filter: Archive.search.court |
+                    filter: Archive.search.instance |
+                    orderBy:orderByField:reverseSort"
+      ng-click="Archive.getCase(case._id)"
+      ng-if="Archive.inRange(case.info.datetime, Archive.search.datetime)">
+    <td>{{case.info.number}}</td>
+    <td>{{case.info.type}}</td>
+    <td>{{case.info.court}}</td>
+    <td>{{case.info.instance}}</td>
+    <td>{{case.client.name}}</td>
+    <td>{{case.info.note}}</td>
+    <td>{{case.info.datetime | date: "dd.MM.yyyy / HH:mm"}}</td>
+  </tr>
+
+  </tbody>
+</table>

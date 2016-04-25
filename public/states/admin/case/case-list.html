@@ -12,11 +12,11 @@
   </thead>
   <tbody>
   <tr ng-repeat="case in Case.cases |
-                  filter: Case.search.text |
-                  filter: Case.search.type |
-                  filter: Case.search.court |
-                  filter: Case.search.instance |
-                  orderBy:orderByField:reverseSort"
+                filter: Case.search.text |
+                filter: Case.search.type |
+                filter: Case.search.court |
+                filter: Case.search.instance |
+                orderBy:orderByField:reverseSort"
       ng-click="Case.getCase(case._id)"
       ng-if="Case.inRange(case.info.datetime, Case.search.datetime)">
     <td>{{case.info.number}}</td>

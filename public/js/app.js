@@ -33,6 +33,16 @@ angular
       controller: 'CalendarController',
       controllerAs: 'Calendar'
     });
+    $routeProvider.when('/admin/profile', {
+      templateUrl: '/states/admin/profile/profile.html',
+      //controller: 'ProfileController',
+      //controllerAs: 'Profile'
+    });
+    $routeProvider.when('/admin/history', {
+      templateUrl: '/states/admin/history/history.html',
+      controller: 'HistoryController',
+      controllerAs: 'History'
+    });
     $routeProvider.otherwise(
       {redirectTo: '/admin/case'}
     );

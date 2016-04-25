@@ -4,7 +4,7 @@ angular
   .module('app')
   .controller('CalendarController', CalendarController);
 
-function CalendarController($http, CaseService) {
+function CalendarController($http, CaseService, HistoryService) {
   var Calendar = this;
 
   Calendar.current = null;
@@ -42,12 +42,15 @@ function CalendarController($http, CaseService) {
         if (!confirm("Искате ли да преместите делото на " + newDate + "?")) {
           revertFunc();
         } else {
+          var msg = 'Преместихте на ' + newDate + ' дело на клиент ' + calEvent.title;
+
           $('input').val(calEvent.title + ' - ' + newDate);
           var event = {
             datetime: formatDate(newDate)
           };
-          // ajax PUT request for edit case datetime
           $http.put('/admin/case/' + calEvent._id + '/datetime', event);
+
+          HistoryService.create(msg, 'warning');
         }
       }
     });
