@@ -160,8 +160,8 @@ function CaseController(CaseService, CourtService, FileTypeService, FileService,
       };
       Case.newFile = null;
       Case.fileType = null;
-      $('input[type="file"]').val('');
       Case.currentCase.files.push(fileToCase);
+      //$('input[type="file"]').val('');
 
       CaseService.updateFiles(Case.currentCase, function (res) {
         NotyService.success(msg);
