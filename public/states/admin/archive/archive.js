@@ -4,7 +4,7 @@ angular
   .module('app')
   .controller('ArchiveController', ArchiveController);
 
-function ArchiveController($http, CaseService, CourtService, NotyService, SoundService, HistoryService) {
+function ArchiveController($http, ArchiveService, CourtService, NotyService, SoundService, HistoryService) {
 
   var Archive = this;
 
@@ -17,12 +17,26 @@ function ArchiveController($http, CaseService, CourtService, NotyService, SoundS
   };
 
   Archive.getCase = function (id) {
-    $http.get('/admin/case/' + id)
-      .then(function (res) {
-        Archive.currentCase = res.data;
-        Archive.openCase = true;
-      }
-    );
+    ArchiveService.find(id, function (res) {
+      Archive.currentCase = res;
+      Archive.openCase = true;
+    });
+  };
+
+  Archive.extractCase = function () {
+    var msg = 'Раз-архивирано е ' + Archive.currentCase.info.type + ' дело № ' + Archive.currentCase.info.number + ' в ' + Archive.currentCase.info.court
+      + ' на ' + Archive.currentCase.client.name;
+
+    ArchiveService.update(Archive.currentCase, function (res) {
+      Archive.cases = res;
+      Archive.openCase = false;
+      Archive.currentCase = null;
+
+      SoundService.extract();
+      NotyService.info(msg);
+      HistoryService.create(msg, 'info');
+    });
+
   };
 
   Archive.removeCase = function () {
@@ -30,19 +44,20 @@ function ArchiveController($http, CaseService, CourtService, NotyService, SoundS
     for (var i = 0; i < files.length; i++) {
       $http.delete('/admin/file/' + files[i].id);
     }
-    $http.delete('/admin/archive/' + Archive.currentCase._id)
-      .then(function (res) {
-        var msg = 'Изтрито е ' + Archive.currentCase.info.type + ' дело № ' + Archive.currentCase.info.number + ' в ' + Archive.currentCase.info.court
-        + ' на ' + Archive.currentCase.client.name;
 
-        Archive.cases = res.data;
-        Archive.openCase = false;
-        Archive.currentCase = null;
+    var msg = 'Изтрито е ' + Archive.currentCase.info.type + ' дело № ' + Archive.currentCase.info.number + ' в ' + Archive.currentCase.info.court
+      + ' на ' + Archive.currentCase.client.name;
 
-        SoundService.deleteCase();
-        NotyService.error(msg);
-        HistoryService.create(msg, 'danger');
-      });
+    ArchiveService.remove(Archive.currentCase._id, function (res) {
+
+      Archive.cases = res;
+      Archive.openCase = false;
+      Archive.currentCase = null;
+
+      SoundService.deleteCase();
+      NotyService.error(msg);
+      HistoryService.create(msg, 'danger');
+    });
   };
 
   Archive.cancelCase = function () {
@@ -50,36 +65,19 @@ function ArchiveController($http, CaseService, CourtService, NotyService, SoundS
     Archive.currentCase = null
   };
 
-  Archive.extractCase = function () {
-    $http.put('/admin/archive/' + Archive.currentCase._id + '/extract')
-      .then(function (res) {
-        var msg = 'Раз-архивирано е ' + Archive.currentCase.info.type + ' дело № ' + Archive.currentCase.info.number + ' в ' + Archive.currentCase.info.court
-        + ' на ' + Archive.currentCase.client.name;
-
-        Archive.cases = res.data;
-        Archive.openCase = false;
-        Archive.currentCase = null;
-
-        SoundService.extract();
-        NotyService.info(msg);
-        HistoryService.create(msg, 'info');
-      }
-    );
-  };
-
-  CaseService.findAllArchive(function (response) {
-    var casesLength = response.length;
+  ArchiveService.findAll(function (res) {
+    var casesLength = res.length;
     if(casesLength){
-      casesLength > 1 ? NotyService.info('Заредени са ' + response.length + ' архивирани дела') : NotyService.info('Заредено е 1 архивирано дело');
+      casesLength > 1 ? NotyService.info('Заредени са ' + res.length + ' архивирани дела') : NotyService.info('Заредено е 1 архивирано дело');
     }else{
       NotyService.info('Няма архивирани дела');
       NotyService.success('Архивирайте дело чрез бутона [Архивирай] в секция <i class="fa fa-book"> Дела</i>');
     }
-    Archive.cases = response;
+    Archive.cases = res;
   });
 
-  CourtService.findAll(function (response) {
-    Archive.courts = response;
+  CourtService.findAll(function (res) {
+    Archive.courts = res;
   });
 
 }

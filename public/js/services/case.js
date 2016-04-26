@@ -7,30 +7,36 @@ angular
 function CaseService($http, baseUrl) {
 
   return {
+    findAll: findAll,
+    find: find,
     create: create,
-    findAllPending: findAllPending,
-    findAllArchive: findAllArchive,
     update: update,
+    updateFiles: updateFiles,
     remove: remove
   };
 
-  function create(site, callback) {
-    $http.post(baseUrl + '/admin/case', site)
-      .success(callback);
-  }
-
-  function findAllPending(callback) {
+  function findAll(callback) {
     $http.get(baseUrl + '/admin/case')
       .success(callback);
   }
 
-  function findAllArchive(callback) {
-    $http.get(baseUrl + '/admin/archive')
+  function find(id, callback) {
+    $http.get(baseUrl + '/admin/case/' + id)
       .success(callback);
   }
 
-  function update(id, newcase, callback) {
-    $http.put(baseUrl + '/admin/case/' + id, newcase)
+  function create(newCase, callback) {
+    $http.post(baseUrl + '/admin/case', newCase)
+      .success(callback);
+  }
+
+  function update(currentCase, callback) {
+    $http.put(baseUrl + '/admin/case/' + currentCase._id, currentCase)
+      .success(callback);
+  }
+
+  function updateFiles(currentCase, callback) {
+    $http.put(baseUrl + '/admin/case/' + currentCase._id + '/files', currentCase.files)
       .success(callback);
   }
 
@@ -38,4 +44,5 @@ function CaseService($http, baseUrl) {
     $http.delete(baseUrl + '/admin/case/' + id)
       .success(callback);
   }
+
 }

@@ -20,7 +20,7 @@ function FileTypeController(FileTypeService, NotyService) {
   File.removeType = function (type) {
     FileTypeService.remove(type._id, function(response){
       File.types = response;
-      NotyService.error('Файлове тип ' + type.name + ' е премахнат');
+      NotyService.error('Файлов тип ' + type.name + ' е премахнат');
     });
   };
 

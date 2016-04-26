@@ -90,14 +90,8 @@ module.exports = function (app, mongo, db) {
         $set: {
           "files": req.body
         }
-      },
-      function (err, results) {
-        db.collection('cases').find({status: 'pending'})
-          .toArray(function (err, cases) {
-            res.json(cases);
-          }
-        );
-      });
+      }
+    );
   });
 
   app.delete('/admin/case/:id', function (req, res) {
