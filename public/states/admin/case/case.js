@@ -16,9 +16,6 @@ function CaseController($http, CaseService, CourtService, FileTypeService, Patte
   Case.fileType = null;         // temp variable for storing new-file-type before add to case
   Case.patternType = null;      // temp variable for storing pattern-type before generating it
 
-  Case.stopSounds = function () {
-    SoundService.stop();
-  };
   Case.profile = {
     name: "Pitagor Pontiiski",
     phone: '345345',

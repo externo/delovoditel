@@ -2,6 +2,7 @@
 
 angular
   .module('app', ['ngRoute'])
+  .constant('baseUrl', 'http://nodejs-kataraga.rhcloud.com')
   .config(function ($routeProvider) {
     $routeProvider.when('/admin/case', {
       templateUrl: '/states/admin/case/case.html',
@@ -47,6 +48,8 @@ angular
       {redirectTo: '/admin/case'}
     );
   });
+
+
 
 function formatDate(date) {
 

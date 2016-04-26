@@ -6,6 +6,8 @@ angular
 
 function NotyService() {
 
+  var time = 4000;
+
   return {
     info: info,
     success: success,
@@ -23,7 +25,7 @@ function NotyService() {
         open: 'animated fadeInDown',
         close: 'animated fadeOutUpBig'
       }
-    }).setTimeout(2000);
+    }).setTimeout(time);
   }
 
   function success(msg) {
@@ -36,7 +38,7 @@ function NotyService() {
         open: 'animated fadeInDown',
         close: 'animated fadeOutUpBig'
       }
-    }).setTimeout(2000);
+    }).setTimeout(time);
   }
 
   function warning(msg) {
@@ -49,7 +51,7 @@ function NotyService() {
         open: 'animated fadeInDown',
         close: 'animated fadeOutUpBig'
       }
-    }).setTimeout(2000);
+    }).setTimeout(time);
   }
 
   function error(msg) {
@@ -62,6 +64,6 @@ function NotyService() {
         open: 'animated fadeInDown',
         close: 'animated fadeOutUpBig'
       }
-    }).setTimeout(2000);
+    }).setTimeout(time);
   }
 }

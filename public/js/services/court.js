@@ -4,7 +4,7 @@ angular
   .module('app')
   .factory('CourtService', CourtService);
 
-function CourtService($http) {
+function CourtService($http, baseUrl) {
 
   return {
     create: create,
@@ -13,17 +13,17 @@ function CourtService($http) {
   };
 
   function create(site, callback) {
-    $http.post('/admin/court', site)
+    $http.post(baseUrl + '/admin/court', site)
       .success(callback);
   }
 
   function remove(id, callback) {
-    $http.delete('/admin/court/' + id)
+    $http.delete(baseUrl + '/admin/court/' + id)
       .success(callback);
   }
 
   function findAll(callback) {
-    $http.get('/admin/court')
+    $http.get(baseUrl + '/admin/court')
       .success(callback);
   }
 }

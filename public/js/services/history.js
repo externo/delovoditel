@@ -4,7 +4,7 @@ angular
   .module('app')
   .factory('HistoryService', HistoryService);
 
-function HistoryService($http) {
+function HistoryService($http, baseUrl) {
 
   return {
     create: create,
@@ -18,15 +18,15 @@ function HistoryService($http) {
       type: type,
       datetime: new Date()
     };
-    $http.post('/admin/history', action);
+    $http.post(baseUrl + '/admin/history', action);
   }
 
   function remove(id) {
-    $http.delete('/admin/history/' + id);
+    $http.delete(baseUrl + '/admin/history/' + id);
   }
 
   function findAll(callback) {
-    $http.get('/admin/history')
+    $http.get(baseUrl + '/admin/history')
       .success(callback);
   }
 }

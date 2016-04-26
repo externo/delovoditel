@@ -13,20 +13,26 @@ function SoundService() {
     {name: "water_droplet_3"}
   ];
 
-  ion.sound({
-    sounds: sounds,
-    path: "node_modules/ion-sound/sounds/",
-    preload: true,
-    volume: 1.0
-  });
+  start();
 
   return {
+    start: start,
     stop: stop,
     archive: archive,
     deleteCase: deleteCase,
     deleteFile: deleteFile,
     extract: extract
   };
+
+
+  function start() {
+    ion.sound({
+      sounds: sounds,
+      path: "node_modules/ion-sound/sounds/",
+      preload: true,
+      volume: 1.0
+    });
+  }
 
   function stop() {
     sounds.forEach(sound=>ion.sound.destroy(sound.name));

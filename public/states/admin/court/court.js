@@ -20,7 +20,7 @@ function CourtController(CourtService, NotyService) {
   Court.removeCourt = function (id) {
     CourtService.remove(id, function(response){
       Court.courts = response;
-      NotyService.success(Court.court.name + ' е премахнат');
+      NotyService.error(Court.court.name + ' е премахнат');
     });
   };
 

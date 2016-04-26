@@ -4,7 +4,7 @@ angular
   .module('app')
   .factory('CaseService', CaseService);
 
-function CaseService($http) {
+function CaseService($http, baseUrl) {
 
   return {
     create: create,
@@ -15,27 +15,27 @@ function CaseService($http) {
   };
 
   function create(site, callback) {
-    $http.post('/admin/case', site)
+    $http.post(baseUrl + '/admin/case', site)
       .success(callback);
   }
 
   function findAllPending(callback) {
-    $http.get('/admin/case')
+    $http.get(baseUrl + '/admin/case')
       .success(callback);
   }
 
   function findAllArchive(callback) {
-    $http.get('/admin/archive')
+    $http.get(baseUrl + '/admin/archive')
       .success(callback);
   }
 
   function update(id, newcase, callback) {
-    $http.put('/admin/case/' + id, newcase)
+    $http.put(baseUrl + '/admin/case/' + id, newcase)
       .success(callback);
   }
 
   function remove(id, callback) {
-    $http.delete('/admin/case/' + id)
+    $http.delete(baseUrl + '/admin/case/' + id)
       .success(callback);
   }
 }
