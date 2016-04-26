@@ -20,8 +20,8 @@ var httpServer = http.createServer(app);
 //var httpsServer = https.createServer(credentials, app);
 
 //app.use(express.static(__dirname + '/public'));
-app.use(bodyParser.json());
-app.use(bodyParser.urlencoded({extended: true}));
+//app.use(bodyParser.json());
+//app.use(bodyParser.urlencoded({extended: true}));
 
 var mongoUrl = process.env.OPENSHIFT_MONGODB_DB_URL;
 var connectionUrl = mongoUrl || 'mongodb://localhost/test';
