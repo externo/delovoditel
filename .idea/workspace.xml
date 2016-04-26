@@ -2,23 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="049e9152-c971-46cc-ac3f-2f62a80821dc" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/app.js" afterPath="$PROJECT_DIR$/public/js/app.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/states/admin/case/case.html" afterPath="$PROJECT_DIR$/public/states/admin/case/case.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/services/case.js" afterPath="$PROJECT_DIR$/public/js/services/case.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/states/admin/case/case.js" afterPath="$PROJECT_DIR$/public/states/admin/case/case.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/services/court.js" afterPath="$PROJECT_DIR$/public/js/services/court.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/states/admin/court/court.js" afterPath="$PROJECT_DIR$/public/states/admin/court/court.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/states/admin/file/file-type.js" afterPath="$PROJECT_DIR$/public/states/admin/file/file-type.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/services/file.js" afterPath="$PROJECT_DIR$/public/js/services/file.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/services/fileType.js" afterPath="$PROJECT_DIR$/public/js/services/fileType.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/services/history.js" afterPath="$PROJECT_DIR$/public/js/services/history.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/index.html" afterPath="$PROJECT_DIR$/public/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/services/noty.js" afterPath="$PROJECT_DIR$/public/js/services/noty.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/package.json" afterPath="$PROJECT_DIR$/package.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/states/admin/profile/profile.html" afterPath="$PROJECT_DIR$/public/states/admin/profile/profile.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server.js" afterPath="$PROJECT_DIR$/server.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/services/sound.js" afterPath="$PROJECT_DIR$/public/js/services/sound.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="nodejs.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -63,12 +47,24 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="archive.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="archive.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/public/states/admin/archive/archive.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.33271718" vertical-offset="143" max-vertical-offset="1530">
+            <state vertical-scroll-proportion="-3.3962264" vertical-offset="143" max-vertical-offset="1530">
               <caret line="19" column="21" selection-start-line="19" selection-start-column="16" selection-end-line="19" selection-end-column="21" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="server.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/server.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.6426117" vertical-offset="0" max-vertical-offset="765">
+              <caret line="22" column="27" selection-start-line="22" selection-start-column="27" selection-end-line="22" selection-end-column="27" />
+              <folding>
+                <element signature="e#1057#1425#0" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -119,7 +115,6 @@
         <option value="$PROJECT_DIR$/routes/court.js" />
         <option value="$PROJECT_DIR$/routes/fileType.js" />
         <option value="$PROJECT_DIR$/routes/file.js" />
-        <option value="$PROJECT_DIR$/server.js" />
         <option value="$PROJECT_DIR$/routes/case.js" />
         <option value="$PROJECT_DIR$/routes/history.js" />
         <option value="$PROJECT_DIR$/public/js/services/noty.js" />
@@ -137,6 +132,7 @@
         <option value="$PROJECT_DIR$/public/js/services/file.js" />
         <option value="$PROJECT_DIR$/public/js/services/fileType.js" />
         <option value="$PROJECT_DIR$/public/js/services/history.js" />
+        <option value="$PROJECT_DIR$/server.js" />
       </list>
     </option>
   </component>
@@ -696,16 +692,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/server.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-6.4150944" vertical-offset="153" max-vertical-offset="765">
-          <caret line="29" column="60" selection-start-line="29" selection-start-column="60" selection-end-line="29" selection-end-column="60" />
-          <folding>
-            <element signature="e#1055#1423#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/states/admin/case/case.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="581">
@@ -833,9 +819,19 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/public/states/admin/archive/archive.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.33271718" vertical-offset="143" max-vertical-offset="1530">
+        <state vertical-scroll-proportion="-3.3962264" vertical-offset="143" max-vertical-offset="1530">
           <caret line="19" column="21" selection-start-line="19" selection-start-column="16" selection-end-line="19" selection-end-column="21" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.6426117" vertical-offset="0" max-vertical-offset="765">
+          <caret line="22" column="27" selection-start-line="22" selection-start-column="27" selection-end-line="22" selection-end-column="27" />
+          <folding>
+            <element signature="e#1057#1425#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>

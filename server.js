@@ -19,7 +19,7 @@ var http = require('http');
 var httpServer = http.createServer(app);
 //var httpsServer = https.createServer(credentials, app);
 
-app.use(express.static(__dirname + '/public'));
+//app.use(express.static(__dirname + '/public'));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended: true}));
 
