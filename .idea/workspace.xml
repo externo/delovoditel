@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="049e9152-c971-46cc-ac3f-2f62a80821dc" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server.js" afterPath="$PROJECT_DIR$/server.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="nodejs.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -30,10 +31,43 @@
       <file leaf-file-name="server.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/server.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.32130584" vertical-offset="255" max-vertical-offset="850">
-              <caret line="26" column="80" selection-start-line="26" selection-start-column="80" selection-end-line="26" selection-end-column="80" />
+            <state vertical-scroll-proportion="0.23367697" vertical-offset="255" max-vertical-offset="850">
+              <caret line="23" column="10" selection-start-line="23" selection-start-column="10" selection-end-line="23" selection-end-column="10" />
               <folding>
-                <element signature="e#1378#1746#0" expanded="false" />
+                <element signature="e#1447#1815#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="case.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/states/admin/case/case.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-54.32" vertical-offset="104" max-vertical-offset="2108">
+              <caret line="165" column="64" selection-start-line="165" selection-start-column="64" selection-end-line="166" selection-end-column="33" />
+              <folding>
+                <element signature="e#878#985#0" expanded="false" />
+                <element signature="e#1103#1154#0" expanded="false" />
+                <element signature="e#1189#1257#0" expanded="false" />
+                <element signature="e#1700#1865#0" expanded="false" />
+                <element signature="e#1905#2211#0" expanded="false" />
+                <element signature="e#1947#2205#0" expanded="false" />
+                <element signature="e#2022#2141#0" expanded="false" />
+                <element signature="e#2244#2799#0" expanded="false" />
+                <element signature="e#2286#2376#0" expanded="false" />
+                <element signature="e#2624#2793#0" expanded="false" />
+                <element signature="e#2835#3450#0" expanded="false" />
+                <element signature="e#2877#2967#0" expanded="false" />
+                <element signature="e#3251#3444#0" expanded="false" />
+                <element signature="e#3888#4088#0" expanded="false" />
+                <element signature="e#4129#4189#0" expanded="false" />
+                <element signature="e#4946#5033#0" expanded="false" />
+                <element signature="e#5979#6478#0" expanded="false" />
+                <element signature="e#6523#6890#0" expanded="false" />
+                <element signature="e#6585#6732#0" expanded="false" />
+                <element signature="e#6738#6859#0" expanded="false" />
+                <element signature="e#6937#6970#0" expanded="false" />
+                <element signature="e#7020#7056#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -209,6 +243,54 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="public" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="nodejs" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="nodejs" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="public" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="states" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="admin" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="nodejs" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="nodejs" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="public" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="states" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="admin" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="case" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -670,39 +752,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/states/admin/case/case.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.61340207" vertical-offset="918" max-vertical-offset="1921">
-          <caret line="165" column="64" selection-start-line="165" selection-start-column="64" selection-end-line="166" selection-end-column="33" />
-          <folding>
-            <element signature="e#878#985#0" expanded="false" />
-            <element signature="e#1103#1154#0" expanded="false" />
-            <element signature="e#1189#1257#0" expanded="false" />
-            <element signature="e#1289#1871#0" expanded="false" />
-            <element signature="e#1327#1409#0" expanded="false" />
-            <element signature="e#1700#1865#0" expanded="false" />
-            <element signature="e#1905#2211#0" expanded="false" />
-            <element signature="e#1947#2205#0" expanded="false" />
-            <element signature="e#2022#2141#0" expanded="false" />
-            <element signature="e#2244#2799#0" expanded="false" />
-            <element signature="e#2286#2376#0" expanded="false" />
-            <element signature="e#2624#2793#0" expanded="false" />
-            <element signature="e#2835#3450#0" expanded="false" />
-            <element signature="e#2877#2967#0" expanded="false" />
-            <element signature="e#3251#3444#0" expanded="false" />
-            <element signature="e#3888#4088#0" expanded="false" />
-            <element signature="e#4129#4189#0" expanded="false" />
-            <element signature="e#4946#5033#0" expanded="false" />
-            <element signature="e#5979#6478#0" expanded="false" />
-            <element signature="e#6523#6890#0" expanded="false" />
-            <element signature="e#6585#6732#0" expanded="false" />
-            <element signature="e#6738#6859#0" expanded="false" />
-            <element signature="e#6937#6970#0" expanded="false" />
-            <element signature="e#7020#7056#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/states/admin/case/case-current.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-0.0" vertical-offset="765" max-vertical-offset="1513">
@@ -857,12 +906,43 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/public/states/admin/case/case.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-54.32" vertical-offset="104" max-vertical-offset="2108">
+          <caret line="165" column="64" selection-start-line="165" selection-start-column="64" selection-end-line="166" selection-end-column="33" />
+          <folding>
+            <element signature="e#878#985#0" expanded="false" />
+            <element signature="e#1103#1154#0" expanded="false" />
+            <element signature="e#1189#1257#0" expanded="false" />
+            <element signature="e#1700#1865#0" expanded="false" />
+            <element signature="e#1905#2211#0" expanded="false" />
+            <element signature="e#1947#2205#0" expanded="false" />
+            <element signature="e#2022#2141#0" expanded="false" />
+            <element signature="e#2244#2799#0" expanded="false" />
+            <element signature="e#2286#2376#0" expanded="false" />
+            <element signature="e#2624#2793#0" expanded="false" />
+            <element signature="e#2835#3450#0" expanded="false" />
+            <element signature="e#2877#2967#0" expanded="false" />
+            <element signature="e#3251#3444#0" expanded="false" />
+            <element signature="e#3888#4088#0" expanded="false" />
+            <element signature="e#4129#4189#0" expanded="false" />
+            <element signature="e#4946#5033#0" expanded="false" />
+            <element signature="e#5979#6478#0" expanded="false" />
+            <element signature="e#6523#6890#0" expanded="false" />
+            <element signature="e#6585#6732#0" expanded="false" />
+            <element signature="e#6738#6859#0" expanded="false" />
+            <element signature="e#6937#6970#0" expanded="false" />
+            <element signature="e#7020#7056#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/server.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.32130584" vertical-offset="255" max-vertical-offset="850">
-          <caret line="26" column="80" selection-start-line="26" selection-start-column="80" selection-end-line="26" selection-end-column="80" />
+        <state vertical-scroll-proportion="0.23367697" vertical-offset="255" max-vertical-offset="850">
+          <caret line="23" column="10" selection-start-line="23" selection-start-column="10" selection-end-line="23" selection-end-column="10" />
           <folding>
-            <element signature="e#1378#1746#0" expanded="false" />
+            <element signature="e#1447#1815#0" expanded="false" />
           </folding>
         </state>
       </provider>
