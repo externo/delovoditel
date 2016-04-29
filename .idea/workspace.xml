@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="049e9152-c971-46cc-ac3f-2f62a80821dc" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/states/admin/history/history.html" afterPath="$PROJECT_DIR$/public/states/admin/history/history.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/services/noty.js" afterPath="$PROJECT_DIR$/public/js/services/noty.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server.js" afterPath="$PROJECT_DIR$/server.js" />
     </list>
@@ -29,11 +28,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="server.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="server.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/server.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.7010309" vertical-offset="0" max-vertical-offset="1428">
-              <caret line="24" column="128" selection-start-line="24" selection-start-column="128" selection-end-line="24" selection-end-column="128" />
+            <state vertical-scroll-proportion="-40.12" vertical-offset="0" max-vertical-offset="1139">
+              <caret line="59" column="8" selection-start-line="59" selection-start-column="8" selection-end-line="59" selection-end-column="8" />
               <folding />
             </state>
           </provider>
@@ -87,17 +86,16 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="noty.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="noty.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/public/js/services/noty.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-18.36" vertical-offset="0" max-vertical-offset="578">
-              <caret line="97" column="0" selection-start-line="97" selection-start-column="0" selection-end-line="97" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.8178694" vertical-offset="0" max-vertical-offset="1020">
+              <caret line="72" column="26" selection-start-line="72" selection-start-column="26" selection-end-line="72" selection-end-column="26" />
               <folding>
                 <element signature="n#!!block;n#info#0;n#!!block;n#NotyService#0" expanded="false" />
                 <element signature="n#!!block;n#success#0;n#!!block;n#NotyService#0" expanded="false" />
                 <element signature="n#!!block;n#warning#0;n#!!block;n#NotyService#0" expanded="false" />
                 <element signature="n#!!block;n#error#0;n#!!block;n#NotyService#0" expanded="false" />
-                <element signature="n#!!block;n#changeDate#0;n#!!block;n#NotyService#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -106,7 +104,7 @@
       <file leaf-file-name="calendar.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/public/states/admin/calendar/calendar.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-3.471698" vertical-offset="428" max-vertical-offset="1020">
+            <state vertical-scroll-proportion="-10.207547" vertical-offset="71" max-vertical-offset="1020">
               <caret line="36" column="12" selection-start-line="36" selection-start-column="6" selection-end-line="36" selection-end-column="12" />
               <folding />
             </state>
@@ -194,9 +192,9 @@
         <option value="$PROJECT_DIR$/routes/fileType.js" />
         <option value="$PROJECT_DIR$/public/states/admin/file/file-type.js" />
         <option value="$PROJECT_DIR$/public/js/app.js" />
-        <option value="$PROJECT_DIR$/public/js/services/noty.js" />
         <option value="$PROJECT_DIR$/public/states/admin/history/history.html" />
         <option value="$PROJECT_DIR$/server.js" />
+        <option value="$PROJECT_DIR$/public/js/services/noty.js" />
       </list>
     </option>
   </component>
@@ -958,33 +956,32 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/js/services/noty.js">
+    <entry file="file://$PROJECT_DIR$/server.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-18.36" vertical-offset="0" max-vertical-offset="578">
-          <caret line="97" column="0" selection-start-line="97" selection-start-column="0" selection-end-line="97" selection-end-column="0" />
-          <folding>
-            <element signature="n#!!block;n#info#0;n#!!block;n#NotyService#0" expanded="false" />
-            <element signature="n#!!block;n#success#0;n#!!block;n#NotyService#0" expanded="false" />
-            <element signature="n#!!block;n#warning#0;n#!!block;n#NotyService#0" expanded="false" />
-            <element signature="n#!!block;n#error#0;n#!!block;n#NotyService#0" expanded="false" />
-            <element signature="n#!!block;n#changeDate#0;n#!!block;n#NotyService#0" expanded="false" />
-          </folding>
+        <state vertical-scroll-proportion="-40.12" vertical-offset="0" max-vertical-offset="1139">
+          <caret line="59" column="8" selection-start-line="59" selection-start-column="8" selection-end-line="59" selection-end-column="8" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/public/states/admin/calendar/calendar.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-3.471698" vertical-offset="428" max-vertical-offset="1020">
+        <state vertical-scroll-proportion="-10.207547" vertical-offset="71" max-vertical-offset="1020">
           <caret line="36" column="12" selection-start-line="36" selection-start-column="6" selection-end-line="36" selection-end-column="12" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/server.js">
+    <entry file="file://$PROJECT_DIR$/public/js/services/noty.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.7010309" vertical-offset="0" max-vertical-offset="1428">
-          <caret line="24" column="128" selection-start-line="24" selection-start-column="128" selection-end-line="24" selection-end-column="128" />
-          <folding />
+        <state vertical-scroll-proportion="0.8178694" vertical-offset="0" max-vertical-offset="1020">
+          <caret line="72" column="26" selection-start-line="72" selection-start-column="26" selection-end-line="72" selection-end-column="26" />
+          <folding>
+            <element signature="n#!!block;n#info#0;n#!!block;n#NotyService#0" expanded="false" />
+            <element signature="n#!!block;n#success#0;n#!!block;n#NotyService#0" expanded="false" />
+            <element signature="n#!!block;n#warning#0;n#!!block;n#NotyService#0" expanded="false" />
+            <element signature="n#!!block;n#error#0;n#!!block;n#NotyService#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>

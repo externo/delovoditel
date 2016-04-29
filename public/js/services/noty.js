@@ -70,7 +70,7 @@ function NotyService(CaseService, HistoryService) {
 
   function changeDate(msg, event, revertFunc) {
     noty({
-      text: '<i class="fa fa-fa-arrows-h"></i> ' + msg,
+      text: '<i class="fa fa-arrows-h"></i> ' + msg,
       type: 'warning',
       layout: 'topRight',
       theme: 'relax',
