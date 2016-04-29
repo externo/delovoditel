@@ -29,6 +29,16 @@ app.use(function(req, res, next) {
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended: true}));
 
+function redirectSec(req, res, next) {
+  if (req.headers['x-forwarded-proto'] == 'http') {
+    res.redirect('https://' + req.headers.host + req.path);
+  } else {
+    return next();
+  }
+}
+
+app.get(redirectSec);
+
 var mongoUrl = process.env.OPENSHIFT_MONGODB_DB_URL;
 var connectionUrl = mongoUrl || 'mongodb://localhost/test';
 
