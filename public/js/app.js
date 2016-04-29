@@ -2,7 +2,7 @@
 
 angular
   .module('app', ['ngRoute'])
-  .constant('baseUrl', 'http://nodejs-kataraga.rhcloud.com')
+  .constant('baseUrl', 'https://nodejs-kataraga.rhcloud.com')
   //.constant('baseUrl', '')
   .config(function ($routeProvider) {
     $routeProvider.when('/admin/case', {
