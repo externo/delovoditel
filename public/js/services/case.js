@@ -12,6 +12,7 @@ function CaseService($http, baseUrl) {
     create: create,
     update: update,
     updateFiles: updateFiles,
+    updateDate: updateDate,
     remove: remove
   };
 
@@ -38,6 +39,10 @@ function CaseService($http, baseUrl) {
   function updateFiles(currentCase, callback) {
     $http.put(baseUrl + '/admin/case/' + currentCase._id + '/files', currentCase.files)
       .success(callback);
+  }
+
+  function updateDate(event) {
+    $http.put(baseUrl + '/admin/case/' + event.id + '/datetime', event);
   }
 
   function remove(id, callback) {

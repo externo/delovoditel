@@ -64,24 +64,6 @@ module.exports = function (app, mongo, db) {
       });
   });
 
-  app.put('/admin/case/:id/datetime', function (req, res) {
-    var caseId = new mongo.ObjectID(req.params.id);
-    db.collection('cases').updateOne(
-      {"_id": caseId},
-      {
-        $set: {
-          "info.datetime": req.body.datetime
-        }
-      },
-      function (err, results) {
-        db.collection('cases').find({status: 'pending'})
-          .toArray(function (err, cases) {
-            res.json(cases);
-          }
-        );
-      });
-  });
-
   app.put('/admin/case/:id/files', function (req, res) {
     var caseId = new mongo.ObjectID(req.params.id);
     db.collection('cases').updateOne(
@@ -89,6 +71,18 @@ module.exports = function (app, mongo, db) {
       {
         $set: {
           "files": req.body
+        }
+      }
+    );
+  });
+
+  app.put('/admin/case/:id/datetime', function (req, res) {
+    var caseId = new mongo.ObjectID(req.params.id);
+    db.collection('cases').updateOne(
+      {"_id": caseId},
+      {
+        $set: {
+          "info.datetime": req.body.datetime
         }
       }
     );

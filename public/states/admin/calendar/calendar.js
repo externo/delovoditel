@@ -4,13 +4,13 @@ angular
   .module('app')
   .controller('CalendarController', CalendarController);
 
-function CalendarController($http, CaseService, HistoryService) {
+function CalendarController($http, CaseService, NotyService, HistoryService) {
   var Calendar = this;
 
   Calendar.current = null;
   Calendar.events = [];
 
-  CaseService.findAllPending(function (response) {
+  CaseService.findAll(function (response) {
     response.forEach(c=>(Calendar.events.push({
       editable: true,
       startEditable: true,
@@ -37,21 +37,16 @@ function CalendarController($http, CaseService, HistoryService) {
       header: {center: 'month,agendaWeek'}, // buttons for switching between views
       events: Calendar.events,
       editable: true,
-      eventDrop: function (calEvent) {
+      eventDrop: function (calEvent, delta, revertFunc) {
         var newDate = moment(calEvent.start._d).format('DD.MM.YYYY / HH:mm');
-        if (!confirm("Искате ли да преместите делото на " + newDate + "?")) {
-          revertFunc();
-        } else {
-          var msg = 'Преместихте на ' + newDate + ' дело на клиент ' + calEvent.title;
+        var msg = 'Преместване на ' + newDate + ' дело на клиент ' + calEvent.title;
+        //$('input').val(calEvent.title + ' - ' + newDate);
+        var event = {
+          id: calEvent._id,
+          datetime: formatDate(newDate)
+        };
 
-          $('input').val(calEvent.title + ' - ' + newDate);
-          var event = {
-            datetime: formatDate(newDate)
-          };
-          $http.put('/admin/case/' + calEvent._id + '/datetime', event);
-
-          HistoryService.create(msg, 'warning');
-        }
+        NotyService.changeDate(msg, event, revertFunc);
       }
     });
   });

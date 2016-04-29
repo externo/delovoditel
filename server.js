@@ -19,7 +19,7 @@ var http = require('http');
 var httpServer = http.createServer(app);
 //var httpsServer = https.createServer(credentials, app);
 
-app.use(express.static(__dirname + '/public'));
+//app.use(express.static(__dirname + '/public'));
 app.use(function(req, res, next) {
   res.header("Access-Control-Allow-Origin", "*");
   res.header("Access-Control-Allow-Headers", "'X-Requested-With,content-type'");
