@@ -18,7 +18,7 @@ function NotyService(CaseService, HistoryService) {
 
   function info(msg) {
     noty({
-      text: '<i class="fa fa-check"></i> ' + msg,
+      text: '<i class="fa fa-exclamation"></i> ' + msg,
       type: 'information',
       layout: 'topRight',
       theme: 'relax',
@@ -44,7 +44,7 @@ function NotyService(CaseService, HistoryService) {
 
   function warning(msg) {
     noty({
-      text: '<i class="fa fa-check"></i> ' + msg,
+      text: '<i class="fa fa-pencil"></i> ' + msg,
       type: 'warning',
       layout: 'topRight',
       theme: 'relax',
@@ -57,7 +57,7 @@ function NotyService(CaseService, HistoryService) {
 
   function error(msg) {
     noty({
-      text: '<i class="fa fa-check"></i> ' + msg,
+      text: '<i class="fa fa-times"></i> ' + msg,
       type: 'error',
       layout: 'topRight',
       theme: 'relax',
@@ -70,7 +70,7 @@ function NotyService(CaseService, HistoryService) {
 
   function changeDate(msg, event, revertFunc) {
     noty({
-      text: '<i class="fa fa-check"></i> ' + msg,
+      text: '<i class="fa fa-fa-arrows-h"></i> ' + msg,
       type: 'warning',
       layout: 'topRight',
       theme: 'relax',
@@ -95,4 +95,5 @@ function NotyService(CaseService, HistoryService) {
       ]
     });
   }
+  
 }
