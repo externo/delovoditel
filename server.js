@@ -19,12 +19,12 @@ var http = require('http');
 var httpServer = http.createServer(app);
 //var httpsServer = https.createServer(credentials, app);
 
-//app.use(express.static(__dirname + '/public'));
-app.use(function(req, res) {
-  res.setHeader("Access-Control-Allow-Origin", "*");
-  //res.header("Access-Control-Allow-Headers", "'X-Requested-With'");
-  res.setHeader("Access-Control-Allow-Headers", "'Content-Type, Access-Control-Allow-Headers, Authorization, X-Requested-With'");
-  res.setHeader("Access-Control-Allow-Methods", "GET, POST, PUT, DELETE, OPTIONS");
+app.use(express.static(__dirname + '/public'));
+app.use(function(req, res, next) {
+  res.header("Access-Control-Allow-Origin", "*");
+  res.header("Access-Control-Allow-Headers", "'X-Requested-With,content-type'");
+  res.header("Access-Control-Allow-Methods", "GET, POST, PUT, DELETE");
+  next();
 });
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended: true}));
@@ -55,14 +55,6 @@ app.get('/process', function (req, res) {
   res.json(process.env);
 });
 
-// Pending cases
-app.get('/admin/case', function (req, res) {
-  db.collection('cases').find({status: 'pending'})
-    .toArray(function (err, cases) {
-      res.json(cases);
-    }
-  );
-});
-
 //Server
+//app.listen(port, ip);
 httpServer.listen(port, ip);
