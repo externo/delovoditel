@@ -31,9 +31,9 @@
         <entry file="file://$PROJECT_DIR$/server.js">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.26288658" vertical-offset="255" max-vertical-offset="867">
-              <caret line="24" column="68" selection-start-line="24" selection-start-column="68" selection-end-line="24" selection-end-column="68" />
+              <caret line="24" column="50" selection-start-line="24" selection-start-column="50" selection-end-line="24" selection-end-column="50" />
               <folding>
-                <element signature="e#1310#1678#0" expanded="false" />
+                <element signature="e#1293#1661#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -957,9 +957,9 @@
     <entry file="file://$PROJECT_DIR$/server.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.26288658" vertical-offset="255" max-vertical-offset="867">
-          <caret line="24" column="68" selection-start-line="24" selection-start-column="68" selection-end-line="24" selection-end-column="68" />
+          <caret line="24" column="50" selection-start-line="24" selection-start-column="50" selection-end-line="24" selection-end-column="50" />
           <folding>
-            <element signature="e#1310#1678#0" expanded="false" />
+            <element signature="e#1293#1661#0" expanded="false" />
           </folding>
         </state>
       </provider>
