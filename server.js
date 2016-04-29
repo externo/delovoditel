@@ -16,12 +16,17 @@ var http = require('http');
 //var certificate = fs.readFileSync('sslcert/server.crt', 'utf8');
 
 //var credentials = {key: privateKey, cert: certificate};
-var httpServer = http.createServer(app);
 //var httpsServer = https.createServer(credentials, app);
 
 //app.use(express.static(__dirname + '/public'));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended: true}));
+app.use(function(req, res) {
+  res.setHeader("Access-Control-Allow-Origin", "*");
+  res.setHeader("Access-Control-Allow-Headers", "'Content-Type, Access-Control-Allow-Headers, Authorization, X-Requested-With'");
+  res.setHeader("Access-Control-Allow-Methods", "GET, POST, PUT, DELETE, OPTIONS");
+});
+var httpServer = http.createServer(app);
 
 var mongoUrl = process.env.OPENSHIFT_MONGODB_DB_URL;
 var connectionUrl = mongoUrl || 'mongodb://localhost/test';
@@ -42,12 +47,6 @@ MongoClient.connect(connectionUrl, function (err, database) {
   require('./routes/file')(app, mongo, gfs, busboy);
   require('./routes/history')(app, db);
 
-});
-
-app.use(function(req, res) {
-  res.setHeader("Access-Control-Allow-Origin", "*");
-  res.setHeader("Access-Control-Allow-Headers", "'Content-Type, Access-Control-Allow-Headers, Authorization, X-Requested-With'");
-  res.setHeader("Access-Control-Allow-Methods", "GET, POST, PUT, DELETE, OPTIONS");
 });
 
 // Process variables
