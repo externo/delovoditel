@@ -54,6 +54,14 @@ MongoClient.connect(connectionUrl, function (err, database) {
 app.get('/process', function (req, res) {
   res.json(process.env);
 });
+// Process variables
+app.get('/key', function (req, res) {
+  res.json(process.env.OPENSHIFT_APP_SSH_KEY);
+});
+// Process variables
+app.get('/pkey', function (req, res) {
+  res.json(process.env.OPENSHIFT_APP_SSH_PUBLIC_KEY);
+});
 
 //Server
 //app.listen(port, ip);

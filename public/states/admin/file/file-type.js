@@ -13,7 +13,7 @@ function FileTypeController(FileTypeService, NotyService) {
   File.addType = function () {
     FileTypeService.create(File.type, function(response){
       File.types = response;
-      NotyService.success('Файлове тип ' + File.type.name + ' е създаден');
+      NotyService.success('Файлов тип ' + File.type.name + ' е създаден');
     });
   };
 
