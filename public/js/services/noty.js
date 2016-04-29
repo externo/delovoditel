@@ -95,5 +95,5 @@ function NotyService(CaseService, HistoryService) {
       ]
     });
   }
-  
+
 }
