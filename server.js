@@ -21,8 +21,8 @@ var httpServer = http.createServer(app);
 
 //app.use(express.static(__dirname + '/public'));
 app.use(function(req, res, next) {
-  res.setHeader("Access-Control-Allow-Origin", "*");
-  res.setHeader("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept, Key, Filename, Metadata");
+  res.setHeader("Access-Control-Allow-Origin", "http://delovoditel.gq");
+  res.setHeader("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept, Key, filename, Metadata");
   res.setHeader("Access-Control-Allow-Methods", "GET, POST, PUT, DELETE, OPTIONS");
   next();
 });
