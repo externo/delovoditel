@@ -37,7 +37,7 @@ function redirectSec(req, res, next) {
   }
 }
 
-app.get(redirectSec);
+//app.get(redirectSec);
 
 var mongoUrl = process.env.OPENSHIFT_MONGODB_DB_URL;
 var connectionUrl = mongoUrl || 'mongodb://localhost/test';
