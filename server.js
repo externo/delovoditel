@@ -20,12 +20,11 @@ var httpServer = http.createServer(app);
 //var httpsServer = https.createServer(credentials, app);
 
 //app.use(express.static(__dirname + '/public'));
-app.use(function(req, res, next) {
+app.use(function(req, res) {
   res.header("Access-Control-Allow-Origin", "http://delovoditel.gq");
   //res.header("Access-Control-Allow-Headers", "'X-Requested-With'");
   res.setHeader("Access-Control-Allow-Headers", "'Content-Type'");
   res.header("Access-Control-Allow-Methods", "GET, POST, PUT, DELETE, OPTIONS");
-  next();
 });
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended: true}));
