@@ -34,4 +34,5 @@ function FileTypeController(FileTypeService, NotyService) {
     }
     File.types = response;
   });
+
 }

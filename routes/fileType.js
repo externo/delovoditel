@@ -1,5 +1,6 @@
 module.exports = function (app, mongo, db) {
-// File types
+
+  // File types
   app.get('/admin/file/type', function (req, res) {
     db.collection('filetypes').find()
       .toArray(function (err, types) {
