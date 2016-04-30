@@ -16,9 +16,4 @@ module.exports = function (app, db) {
     db.collection('history').insertOne(req.body);
   });
 
-  app.delete('/admin/history', function (req, res) {
-    var id = new mongo.ObjectID(req.params.id);
-    db.collection('history').deleteOne({_id: id});
-  });
-
 };

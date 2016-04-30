@@ -8,21 +8,17 @@ function HistoryService($http, baseUrl) {
 
   return {
     create: create,
-    remove: remove,
     findAll: findAll
   };
 
-  function create(msg, type) {
+  function create(msg, type, callback) {
     var action = {
       name: msg,
       type: type,
       datetime: new Date()
     };
-    $http.post(baseUrl + '/admin/history', action);
-  }
-
-  function remove(id) {
-    $http.delete(baseUrl + '/admin/history/' + id);
+    $http.post(baseUrl + '/admin/history', action)
+      .success(callback);
   }
 
   function findAll(callback) {
