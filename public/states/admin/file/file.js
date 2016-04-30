@@ -26,4 +26,5 @@ function FileController(FileService, FileTypeService, CourtService, NotyService)
   CourtService.findAll(function (response) {
     File.courts = response;
   });
+
 }

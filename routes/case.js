@@ -70,7 +70,7 @@ module.exports = function (app, mongo, db) {
       {"_id": caseId},
       {
         $set: {
-          "files": req.body
+          "files": req.body.files
         }
       }
     );

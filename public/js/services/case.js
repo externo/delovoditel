@@ -37,12 +37,13 @@ function CaseService($http, baseUrl) {
   }
 
   function updateFiles(currentCase, callback) {
-    $http.put(baseUrl + '/admin/case/' + currentCase._id + '/files', currentCase.files)
+    $http.put(baseUrl + '/admin/case/' + currentCase._id + '/files', currentCase)
       .success(callback);
   }
 
-  function updateDate(event) {
-    $http.put(baseUrl + '/admin/case/' + event.id + '/datetime', event);
+  function updateDate(event, callback) {
+    $http.put(baseUrl + '/admin/case/' + event.id + '/datetime', event)
+      .success(callback);
   }
 
   function remove(id, callback) {

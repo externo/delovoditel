@@ -160,10 +160,10 @@ function CaseController(CaseService, CourtService, FileTypeService, FileService,
       };
       Case.newFile = null;
       Case.fileType = null;
+      $('input[type="file"]').val('');
       Case.currentCase.files.push(fileToCase);
-      //$('input[type="file"]').val('');
 
-      CaseService.updateFiles(Case.currentCase, function (res) {
+      CaseService.updateFiles(Case.currentCase, function(){
         NotyService.success(msg);
         HistoryService.create(msg, 'success');
       });
@@ -178,7 +178,7 @@ function CaseController(CaseService, CourtService, FileTypeService, FileService,
     FileService.remove(file.id, function () {
       Case.currentCase.files.splice(fileIndex, 1);
 
-      CaseService.updateFiles(Case.currentCase, function (res) {
+      CaseService.updateFiles(Case.currentCase, function(){
         SoundService.deleteFile();
         NotyService.error(msg);
         HistoryService.create(msg, 'danger');
