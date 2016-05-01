@@ -86,6 +86,7 @@ module.exports = function (app, mongo, db) {
         }
       }
     );
+    res.end();
   });
 
   app.delete('/admin/case/:id', function (req, res) {
