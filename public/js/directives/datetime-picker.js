@@ -12,6 +12,7 @@ angular
           timePicker: true,
           timePicker24Hour: true,
           timePickerIncrement: 10,
+          maxDate:new Date('2016-12-01'),
           locale: {
             format: 'DD.MM.YYYY / HH:mm'
           },

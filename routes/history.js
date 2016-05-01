@@ -14,6 +14,7 @@ module.exports = function (app, db) {
   app.post('/admin/history', function (req, res) {
     req.body.datetime = new Date(req.body.datetime);
     db.collection('history').insertOne(req.body);
+    res.end();
   });
 
 };

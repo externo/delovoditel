@@ -37,7 +37,7 @@ var connectionUrl = mongoUrl || 'mongodb://localhost/test';
 // Initialize connection once
 MongoClient.connect(connectionUrl, function (err, database) {
 
-  if (err) throw err;
+  if (err) throw err; // TODO: listen for drop
 
   var db = database;
   var gfs = Grid(db, mongo);

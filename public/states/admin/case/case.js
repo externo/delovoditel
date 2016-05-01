@@ -158,15 +158,16 @@ function CaseController(CaseService, CourtService, FileTypeService, FileService,
         name: Case.newFile.name,
         type: Case.fileType
       };
+
+      Case.currentCase.files.push(fileToCase);
+
+      CaseService.updateFiles(Case.currentCase);
+      NotyService.success(msg);
+      HistoryService.create(msg, 'success');
+
       Case.newFile = null;
       Case.fileType = null;
       $('input[type="file"]').val('');
-      Case.currentCase.files.push(fileToCase);
-
-      CaseService.updateFiles(Case.currentCase, function(){
-        NotyService.success(msg);
-        HistoryService.create(msg, 'success');
-      });
     });
   };
 
@@ -178,11 +179,10 @@ function CaseController(CaseService, CourtService, FileTypeService, FileService,
     FileService.remove(file.id, function () {
       Case.currentCase.files.splice(fileIndex, 1);
 
-      CaseService.updateFiles(Case.currentCase, function(){
-        SoundService.deleteFile();
-        NotyService.error(msg);
-        HistoryService.create(msg, 'danger');
-      });
+      CaseService.updateFiles(Case.currentCase);
+      SoundService.deleteFile();
+      NotyService.error(msg);
+      HistoryService.create(msg, 'danger');
     });
   };
 

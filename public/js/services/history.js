@@ -11,14 +11,13 @@ function HistoryService($http, baseUrl) {
     findAll: findAll
   };
 
-  function create(msg, type, callback) {
+  function create(msg, type) {
     var action = {
       name: msg,
       type: type,
       datetime: new Date()
     };
-    $http.post(baseUrl + '/admin/history', action)
-      .success(callback);
+    $http.post(baseUrl + '/admin/history', action);
   }
 
   function findAll(callback) {
