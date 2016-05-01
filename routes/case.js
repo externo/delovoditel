@@ -74,6 +74,7 @@ module.exports = function (app, mongo, db) {
         }
       }
     );
+    res.end();
   });
 
   app.put('/admin/case/:id/datetime', function (req, res) {
