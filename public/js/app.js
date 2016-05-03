@@ -1,10 +1,23 @@
 'use strict';
 
 angular
-  .module('app', ['ngRoute'])
+  .module('app', ['ngRoute', 'auth0', 'angular-storage', 'angular-jwt'])
   .constant('baseUrl', 'http://nodejs-kataraga.rhcloud.com')
   //.constant('baseUrl', '')
-  .config(function ($routeProvider) {
+  .config(function ($httpProvider, $routeProvider, $provide, authProvider, jwtInterceptorProvider) {
+
+    authProvider.init({
+      domain: 'iliata.eu.auth0.com',
+      clientID: 'wwcIqotTbjHGVVJ0Me1ZtrmB3NCRzII5'
+    });
+    jwtInterceptorProvider.tokenGetter = function (store) {
+      return store.get('id_token');
+    };
+
+    $routeProvider.when('/admin/profile', {
+      templateUrl: '/states/admin/profile/profile.html',
+      controller: 'ProfileController as Profile'
+    });
     $routeProvider.when('/admin/case', {
       templateUrl: '/states/admin/case/case.html',
       controller: 'CaseController',
@@ -35,11 +48,6 @@ angular
       controller: 'CalendarController',
       controllerAs: 'Calendar'
     });
-    $routeProvider.when('/admin/profile', {
-      templateUrl: '/states/admin/profile/profile.html',
-      //controller: 'ProfileController',
-      //controllerAs: 'Profile'
-    });
     $routeProvider.when('/admin/history', {
       templateUrl: '/states/admin/history/history.html',
       controller: 'HistoryController',
@@ -48,8 +56,41 @@ angular
     $routeProvider.otherwise(
       {redirectTo: '/admin/case'}
     );
-  });
 
+    function redirect($q, $injector, auth, store, $location){
+
+      return {
+
+        responseError: function(rejection){
+          if (rejection.status === 401){
+            auth.signout();
+            store.remove('profile');
+            store.remove('id_token');
+            $location.path('/admin/profile');
+          }
+
+          return $q.reject(rejection);
+        }
+      }
+    }
+    $provide.factory('redirect', redirect);
+    $httpProvider.interceptors.push('redirect');
+    $httpProvider.interceptors.push('jwtInterceptor');
+  })
+  .run(function($rootScope, auth, store, jwtHelper, $location){
+    $rootScope.$on('$locationChangeStart', function(){
+      var token = store.get('id_token');
+      if (token){
+        if(!jwtHelper.isTokenExpired(token)){
+          if(!auth.isAuthenticated){
+            auth.authenticate(store.get('profile'), token);
+          }
+        }
+      }else{
+        $location.path('/admin/profile');
+      }
+    })
+  });
 
 
 function formatDate(date) {
@@ -90,5 +131,5 @@ function inRange(caseDatetime, dateRange) {
     (dateArray[10])
   );
 
-  return startDate < caseDateObj && caseDateObj < endDate ;
+  return startDate < caseDateObj && caseDateObj < endDate;
 }
