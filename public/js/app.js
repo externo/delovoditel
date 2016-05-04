@@ -2,8 +2,8 @@
 
 angular
   .module('app', ['ngRoute', 'auth0', 'angular-storage', 'angular-jwt'])
-  .constant('baseUrl', 'http://nodejs-kataraga.rhcloud.com')
-  //.constant('baseUrl', '')
+  //.constant('baseUrl', 'http://nodejs-kataraga.rhcloud.com')
+  .constant('baseUrl', '')
   .config(function ($httpProvider, $routeProvider, $provide, authProvider, jwtInterceptorProvider) {
 
     authProvider.init({
@@ -20,38 +20,31 @@ angular
     });
     $routeProvider.when('/admin/case', {
       templateUrl: '/states/admin/case/case.html',
-      controller: 'CaseController',
-      controllerAs: 'Case'
+      controller: 'CaseController as Case'
     });
     $routeProvider.when('/admin/archive', {
       templateUrl: '/states/admin/archive/archive.html',
-      controller: 'ArchiveController',
-      controllerAs: 'Archive'
+      controller: 'ArchiveController as Archive'
     });
     $routeProvider.when('/admin/court', {
       templateUrl: '/states/admin/court/court.html',
-      controller: 'CourtController',
-      controllerAs: 'Court'
+      controller: 'CourtController as Court'
     });
     $routeProvider.when('/admin/file', {
       templateUrl: '/states/admin/file/file.html',
-      controller: 'FileController',
-      controllerAs: 'File'
+      controller: 'FileController as File'
     });
     $routeProvider.when('/admin/file/type', {
       templateUrl: '/states/admin/file/file-type.html',
-      controller: 'FileTypeController',
-      controllerAs: 'File'
+      controller: 'FileTypeController as File'
     });
     $routeProvider.when('/admin/calendar', {
       templateUrl: '/states/admin/calendar/calendar.html',
-      controller: 'CalendarController',
-      controllerAs: 'Calendar'
+      controller: 'CalendarController as Calendar'
     });
     $routeProvider.when('/admin/history', {
       templateUrl: '/states/admin/history/history.html',
-      controller: 'HistoryController',
-      controllerAs: 'History'
+      controller: 'HistoryController as History'
     });
     $routeProvider.otherwise(
       {redirectTo: '/admin/case'}
@@ -66,6 +59,7 @@ angular
             auth.signout();
             store.remove('profile');
             store.remove('id_token');
+            //Admin.profile = undefined;
             $location.path('/admin/profile');
           }
 
@@ -73,8 +67,8 @@ angular
         }
       }
     }
-    $provide.factory('redirect', redirect);
-    $httpProvider.interceptors.push('redirect');
+    $provide.factory('RedirectService', redirect);
+    $httpProvider.interceptors.push('RedirectService');
     $httpProvider.interceptors.push('jwtInterceptor');
   })
   .run(function($rootScope, auth, store, jwtHelper, $location){
@@ -91,7 +85,6 @@ angular
       }
     })
   });
-
 
 function formatDate(date) {
 

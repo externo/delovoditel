@@ -96,12 +96,12 @@
 
     <div class="btn-group pull-right">
       <button type="button" class="btn btn-warning" ng-click="Case.editCase()"
-              ng-disabled="formEditCase.client.$error.required">
+              ng-disabled="formEditCase.$invalid">
         Запази</button>
       <button type="button" class="btn btn-default" ng-click="Case.cancelCase()">Отмени</button>
       <button type="button" class="btn btn-danger" ng-click="Case.removeCase()">Изтрий</button>
       <button type="button" class="btn btn-info" ng-click="Case.archiveCase()"
-              ng-disabled="formEditCase.client.$error.required">
+              ng-disabled="formEditCase.$invalid">
         Архивирай</button>
     </div>
   </div>
@@ -132,7 +132,7 @@
 
         <div class="input-group-btn">
           <button class="btn btn-success" ng-click="Case.generatePattern()"
-                  ng-disabled="formGenDoc.doc.$error.required">
+                  ng-disabled="formGenDoc.$invalid">
             Създай</button>
         </div>
     </div>
@@ -142,7 +142,7 @@
 <div class="box-footer">
   <!-- ADD scanned documents-->
   <label>Добавяне на файлове към делото</label>
-  <label class="text-red pull-right" ng-show="formAddFiles.file.$error.required || formAddFiles.type.$error.required">
+  <label class="text-red pull-right" ng-show="formAddFiles.$invalid">
     <i class="fa fa-warning"></i> Не е избран файл и тип на файла
   </label>
 
@@ -159,7 +159,7 @@
 
         <div class="input-group-btn">
           <button class="btn btn-success" ng-click="Case.uploadFile()"
-                  ng-disabled="formAddFiles.file.$error.required || formAddFiles.type.$error.required">
+                  ng-disabled="formAddFiles.$invalid">
             Добави</button>
         </div>
       </div>

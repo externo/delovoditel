@@ -18,7 +18,7 @@
   <!-- Personal style -->
   <link rel="stylesheet" href="css/style.css">
   <!-- Libs -->
-  <link rel='stylesheet' href='css/plugins/calendar/fullcalendar.css' />
+  <link rel='stylesheet' href='css/plugins/calendar/fullcalendar.css'/>
   <script src="node_modules/jquery/jquery-2.2.3.min.js"></script>
   <link rel="stylesheet" href="node_modules/noty/demo/animate.css"/>
   <script src="node_modules/angular/angular.js"></script>
@@ -33,332 +33,121 @@
   <!-- angular-jwt and angular-storage -->
   <script src="http://cdn.rawgit.com/auth0/angular-storage/master/dist/angular-storage.js"></script>
   <script src="http://cdn.rawgit.com/auth0/angular-jwt/master/dist/angular-jwt.js"></script>
-  <script src="http://cdn.auth0.com/w2/auth0-angular-4.js"> </script>
+  <script src="http://cdn.auth0.com/w2/auth0-angular-4.js"></script>
 
   <!-- Load date range plugins moment, daterangepicker, !!! EDITED - don't replace with CDN !!! -->
   <script type="text/javascript" src="css/plugins/moment.min.js"></script>
   <script type="text/javascript" src="css/plugins/daterangepicker.js"></script>
-  <link rel="stylesheet" type="text/css" href="css/plugins/daterangepicker.css" />
+  <link rel="stylesheet" type="text/css" href="css/plugins/daterangepicker.css"/>
   <script src='css/plugins/calendar/fullcalendar.js'></script>
 </head>
 <body class="hold-transition skin-blue sidebar-mini" ng-app="app">
 <div class="wrapper" ng-controller="AdminController as Admin">
-<header class="main-header">
-<!-- Logo -->
-<a class="logo">
-  <!-- mini logo for sidebar mini 50x50 pixels -->
-  <span class="logo-mini"><b>D</b>1</span>
-  <!-- logo for regular state and mobile devices -->
-  <span class="logo-lg">Delovoditel v.1</span>
-</a>
-<!-- Header Navbar: style can be found in header.less -->
-<nav class="navbar navbar-static-top" role="navigation">
-<!-- Sidebar toggle button-->
-<a href="#" class="sidebar-toggle" data-toggle="offcanvas" role="button">
-  <span class="sr-only">Toggle navigation</span>
-</a>
+  <header class="main-header">
+    <!-- Logo -->
+    <a class="logo">
+      <!-- mini logo for sidebar mini 50x50 pixels -->
+      <span class="logo-mini"><b>D</b>1</span>
+      <!-- logo for regular state and mobile devices -->
+      <span class="logo-lg">Delovoditel v.1</span>
+    </a>
+    <!-- Header Navbar: style can be found in header.less -->
+    <nav class="navbar" role="navigation">
+      <!-- Sidebar toggle button-->
+      <a href="#" class="sidebar-toggle" data-toggle="offcanvas" role="button">
+        <span class="sr-only">Toggle navigation</span>
+      </a>
 
-<div class="navbar-custom-menu">
-<ul class="nav navbar-nav">
-<!-- Stop/ start sound -->
-<li>
-  <a href="" ng-click="Admin.toggleSound()">
-    <i class="fa fa-volume-up" ng-show="Admin.sound"></i><i class="fa fa-volume-off" ng-hide="Admin.sound"></i>
-  </a>
-</li>
-<!--<!-- Messages: style can be found in dropdown.less-->-->
-<!--<li class="dropdown messages-menu">-->
-  <!--<a href="#" class="dropdown-toggle" data-toggle="dropdown">-->
-    <!--<i class="fa fa-envelope-o"></i>-->
-    <!--<span class="label label-success">4</span>-->
-  <!--</a>-->
-  <!--<ul class="dropdown-menu">-->
-    <!--<li class="header">You have 4 messages</li>-->
-    <!--<li>-->
-      <!--<!-- inner menu: contains the actual data -->-->
-      <!--<ul class="menu">-->
-        <!--<li><!-- start message -->-->
-          <!--<a href="#">-->
-            <!--<div class="pull-left">-->
-              <!--<img src="css/dist/img/user2-160x160.jpg" class="img-circle" alt="User Image">-->
-            <!--</div>-->
-            <!--<h4>-->
-              <!--Support Team-->
-              <!--<small><i class="fa fa-clock-o"></i> 5 mins</small>-->
-            <!--</h4>-->
-            <!--<p>Why not buy a new awesome theme?</p>-->
-          <!--</a>-->
-        <!--</li>-->
-        <!--<!-- end message -->-->
-        <!--<li>-->
-          <!--<a href="#">-->
-            <!--<div class="pull-left">-->
-              <!--<img src="css/dist/img/user3-128x128.jpg" class="img-circle" alt="User Image">-->
-            <!--</div>-->
-            <!--<h4>-->
-              <!--AdminLTE Design Team-->
-              <!--<small><i class="fa fa-clock-o"></i> 2 hours</small>-->
-            <!--</h4>-->
-            <!--<p>Why not buy a new awesome theme?</p>-->
-          <!--</a>-->
-        <!--</li>-->
-        <!--<li>-->
-          <!--<a href="#">-->
-            <!--<div class="pull-left">-->
-              <!--<img src="css/dist/img/user4-128x128.jpg" class="img-circle" alt="User Image">-->
-            <!--</div>-->
-            <!--<h4>-->
-              <!--Developers-->
-              <!--<small><i class="fa fa-clock-o"></i> Today</small>-->
-            <!--</h4>-->
-            <!--<p>Why not buy a new awesome theme?</p>-->
-          <!--</a>-->
-        <!--</li>-->
-        <!--<li>-->
-          <!--<a href="#">-->
-            <!--<div class="pull-left">-->
-              <!--<img src="css/dist/img/user3-128x128.jpg" class="img-circle" alt="User Image">-->
-            <!--</div>-->
-            <!--<h4>-->
-              <!--Sales Department-->
-              <!--<small><i class="fa fa-clock-o"></i> Yesterday</small>-->
-            <!--</h4>-->
-            <!--<p>Why not buy a new awesome theme?</p>-->
-          <!--</a>-->
-        <!--</li>-->
-        <!--<li>-->
-          <!--<a href="#">-->
-            <!--<div class="pull-left">-->
-              <!--<img src="css/dist/img/user4-128x128.jpg" class="img-circle" alt="User Image">-->
-            <!--</div>-->
-            <!--<h4>-->
-              <!--Reviewers-->
-              <!--<small><i class="fa fa-clock-o"></i> 2 days</small>-->
-            <!--</h4>-->
-            <!--<p>Why not buy a new awesome theme?</p>-->
-          <!--</a>-->
-        <!--</li>-->
-      <!--</ul>-->
-    <!--</li>-->
-    <!--<li class="footer"><a href="#">See All Messages</a></li>-->
-  <!--</ul>-->
-<!--</li>-->
-<!--<!-- Notifications: style can be found in dropdown.less -->-->
-<!--<li class="dropdown notifications-menu">-->
-  <!--<a href="#" class="dropdown-toggle" data-toggle="dropdown">-->
-    <!--<i class="fa fa-bell-o"></i>-->
-    <!--<span class="label label-warning">10</span>-->
-  <!--</a>-->
-  <!--<ul class="dropdown-menu">-->
-    <!--<li class="header">You have 10 notifications</li>-->
-    <!--<li>-->
-      <!--<!-- inner menu: contains the actual data -->-->
-      <!--<ul class="menu">-->
-        <!--<li>-->
-          <!--<a href="#">-->
-            <!--<i class="fa fa-users text-aqua"></i> 5 new members joined today-->
-          <!--</a>-->
-        <!--</li>-->
-        <!--<li>-->
-          <!--<a href="#">-->
-            <!--<i class="fa fa-warning text-yellow"></i> Very long description here that may not fit into the page and may-->
-            <!--cause design problems-->
-          <!--</a>-->
-        <!--</li>-->
-        <!--<li>-->
-          <!--<a href="#">-->
-            <!--<i class="fa fa-users text-red"></i> 5 new members joined-->
-          <!--</a>-->
-        <!--</li>-->
-        <!--<li>-->
-          <!--<a href="#">-->
-            <!--<i class="fa fa-shopping-cart text-green"></i> 25 sales made-->
-          <!--</a>-->
-        <!--</li>-->
-        <!--<li>-->
-          <!--<a href="#">-->
-            <!--<i class="fa fa-user text-red"></i> You changed your username-->
-          <!--</a>-->
-        <!--</li>-->
-      <!--</ul>-->
-    <!--</li>-->
-    <!--<li class="footer"><a href="#">View all</a></li>-->
-  <!--</ul>-->
-<!--</li>-->
-<!--<!-- Tasks: style can be found in dropdown.less -->-->
-<!--<li class="dropdown tasks-menu">-->
-  <!--<a href="#" class="dropdown-toggle" data-toggle="dropdown">-->
-    <!--<i class="fa fa-flag-o"></i>-->
-    <!--<span class="label label-danger">9</span>-->
-  <!--</a>-->
-  <!--<ul class="dropdown-menu">-->
-    <!--<li class="header">You have 9 tasks</li>-->
-    <!--<li>-->
-      <!--<!-- inner menu: contains the actual data -->-->
-      <!--<ul class="menu">-->
-        <!--<li><!-- Task item -->-->
-          <!--<a href="#">-->
-            <!--<h3>-->
-              <!--Design some buttons-->
-              <!--<small class="pull-right">20%</small>-->
-            <!--</h3>-->
-            <!--<div class="progress xs">-->
-              <!--<div class="progress-bar progress-bar-aqua" style="width: 20%" role="progressbar" aria-valuenow="20"-->
-                   <!--aria-valuemin="0" aria-valuemax="100">-->
-                <!--<span class="sr-only">20% Complete</span>-->
-              <!--</div>-->
-            <!--</div>-->
-          <!--</a>-->
-        <!--</li>-->
-        <!--<!-- end task item -->-->
-        <!--<li><!-- Task item -->-->
-          <!--<a href="#">-->
-            <!--<h3>-->
-              <!--Create a nice theme-->
-              <!--<small class="pull-right">40%</small>-->
-            <!--</h3>-->
-            <!--<div class="progress xs">-->
-              <!--<div class="progress-bar progress-bar-green" style="width: 40%" role="progressbar" aria-valuenow="20"-->
-                   <!--aria-valuemin="0" aria-valuemax="100">-->
-                <!--<span class="sr-only">40% Complete</span>-->
-              <!--</div>-->
-            <!--</div>-->
-          <!--</a>-->
-        <!--</li>-->
-        <!--<!-- end task item -->-->
-        <!--<li><!-- Task item -->-->
-          <!--<a href="#">-->
-            <!--<h3>-->
-              <!--Some task I need to do-->
-              <!--<small class="pull-right">60%</small>-->
-            <!--</h3>-->
-            <!--<div class="progress xs">-->
-              <!--<div class="progress-bar progress-bar-red" style="width: 60%" role="progressbar" aria-valuenow="20"-->
-                   <!--aria-valuemin="0" aria-valuemax="100">-->
-                <!--<span class="sr-only">60% Complete</span>-->
-              <!--</div>-->
-            <!--</div>-->
-          <!--</a>-->
-        <!--</li>-->
-        <!--<!-- end task item -->-->
-        <!--<li><!-- Task item -->-->
-          <!--<a href="#">-->
-            <!--<h3>-->
-              <!--Make beautiful transitions-->
-              <!--<small class="pull-right">80%</small>-->
-            <!--</h3>-->
-            <!--<div class="progress xs">-->
-              <!--<div class="progress-bar progress-bar-yellow" style="width: 80%" role="progressbar" aria-valuenow="20"-->
-                   <!--aria-valuemin="0" aria-valuemax="100">-->
-                <!--<span class="sr-only">80% Complete</span>-->
-              <!--</div>-->
-            <!--</div>-->
-          <!--</a>-->
-        <!--</li>-->
-        <!--<!-- end task item -->-->
-      <!--</ul>-->
-    <!--</li>-->
-    <!--<li class="footer">-->
-      <!--<a href="#">View all tasks</a>-->
-    <!--</li>-->
-  <!--</ul>-->
-<!--</li>-->
-<!-- User Account: style can be found in dropdown.less -->
-<li class="dropdown user user-menu">
-  <a href="" class="dropdown-toggle" data-toggle="dropdown">
-    <img src="css/dist/img/user2-160x160.jpg" class="user-image" alt="User Image">
-    <span class="hidden-xs">Илия Илиев</span>
-  </a>
-  <ul class="dropdown-menu">
-    <!-- User image -->
-    <li class="user-header">
-      <img src="css/dist/img/user2-160x160.jpg" class="img-circle" alt="User Image">
+      <div class="navbar-custom-menu">
+        <ul class="nav navbar-nav">
+          <!-- Stop/ start sound -->
+          <li>
+            <a href="" ng-click="Admin.toggleSound()">
+              <i class="fa fa-volume-up" ng-show="Admin.sound"></i><i class="fa fa-volume-off"
+                                                                      ng-hide="Admin.sound"></i>
+            </a>
+          </li>
+          <li class="dropdown user user-menu">
+            <a href="" class="dropdown-toggle" data-toggle="dropdown">
+              <img ng-src="{{Admin.profile.picture}}" class="user-image" alt="User Image">
+              <span class="hidden-xs">{{Admin.profile.name}}</span>
+            </a>
+            <ul class="dropdown-menu" ng-if="Admin.profile.user_metadata">
+              <!-- User image -->
+              <li class="user-header">
+                <p>Лични данни</p>
 
-      <p>
-        Alexander Pierce - Web Developer
-        <small>Member since Nov. 2012</small>
-      </p>
-    </li>
-    <!-- Menu Body -->
-    <li class="user-body">
-      <div class="col-xs-4 text-center">
-        <a href="#">Followers</a>
-      </div>
-      <div class="col-xs-4 text-center">
-        <a href="#">Sales</a>
-      </div>
-      <div class="col-xs-4 text-center">
-        <a href="#">Friends</a>
-      </div>
-    </li>
-    <!-- Menu Footer-->
-    <li class="user-footer">
-      <div class="pull-left">
-        <a href="#admin/profile" class="btn btn-default btn-flat">Profile</a>
-      </div>
-      <div class="pull-right">
-        <a href="#" class="btn btn-default btn-flat">Sign out</a>
-      </div>
-    </li>
-  </ul>
-</li>
-<!-- Logout Button -->
-<li ng-if="!Admin.auth.isAuthenticated">
-  <a href="" ng-click="Admin.login()"><i class="fa fa-sign-in"></i>Влез</a>
-</li>
-<!-- Logout Button -->
-<li ng-if="Admin.auth.isAuthenticated">
-  <a href="" ng-click="Admin.logout()"><i class="fa fa-sign-out"></i>Изход</a>
-</li>
-</ul>
-</div>
-</nav>
-</header>
-<!-- Left side column. contains the logo and sidebar -->
-<aside class="main-sidebar">
-  <!-- sidebar: style can be found in sidebar.less -->
-  <section class="sidebar">
-    <ul class="sidebar-menu">
-      <!--<li class="header">MAIN NAVIGATION</li>-->
-      <li><a href="#admin/case"><i class="fa fa-book"></i><span>Дела</span><i
-        class="fa fa-angle-left pull-right"></i></a></li>
-      <li><a href="#admin/archive"><i class="fa fa-archive"></i><span>Архив</span><i
-        class="fa fa-angle-left pull-right"></i></a></li>
-      <li><a href="#admin/file"><i class="fa fa-file-word-o"></i><span>Файлове</span><i
-        class="fa fa-angle-left pull-right"></i></a></li>
-      <li><a href="#admin/file/type"><i class="fa fa-files-o"></i><span>Типове файлове</span><i
-        class="fa fa-angle-left pull-right"></i></a></li>
-      <li><a href="#admin/court"><i class="fa fa-balance-scale"></i><span>Съдилища</span><i
-        class="fa fa-angle-left pull-right"></i></a></li>
-      <li><a href="#admin/calendar"><i class="fa fa-calendar"></i><span>Календар</span><i
-        class="fa fa-angle-left pull-right"></i></a></li>
-      <li><a href="#admin/history"><i class="fa fa-history"></i><span>История</span><i
-        class="fa fa-angle-left pull-right"></i></a></li>
-      <li><a href="#admin/profile"><i class="fa fa-user"></i><span>Профил</span><i
-        class="fa fa-angle-left pull-right"></i></a></li>
-    </ul>
-  </section>
-  <!-- /.sidebar -->
-</aside>
+                <p>{{Admin.profile.user_metadata.name}}</p>
 
-<!-- Content Wrapper. Contains page content -->
-<div class="content-wrapper">
-  <!-- Main content -->
-  <section class="content">
-    <div class="row">
-      <div class="col-xs-12 ng-view">
-      </div>
-    </div>
-  </section>
-</div>
-<!-- /.content-wrapper -->
+                <p>{{Admin.profile.user_metadata.number}} {{Admin.profile.user_metadata.email}}</p>
 
-<footer class="main-footer">
-  <div class="pull-right hidden-xs">
-    <b>Version</b> 1.0.3
+                <p>{{Admin.profile.user_metadata.phone}} {{Admin.profile.user_metadata.fax}}</p>
+
+                <p>{{Admin.profile.user_metadata.address}}</p>
+              </li>
+              <!-- Menu Footer-->
+              <li class="user-footer">
+                <div class="text-center">
+                  <a href="#admin/profile" class="btn btn-default btn-flat">Промени</a>
+                </div>
+              </li>
+            </ul>
+          </li>
+          <!-- Logout Button -->
+          <li ng-if="!Admin.auth.isAuthenticated">
+            <a href="" ng-click="Admin.login()"><i class="fa fa-sign-in"></i>Влез</a>
+          </li>
+          <!-- Logout Button -->
+          <li ng-if="Admin.auth.isAuthenticated">
+            <a href="" ng-click="Admin.logout()"><i class="fa fa-sign-out"></i>Изход</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  <!-- Left side column. contains the logo and sidebar -->
+  <aside class="main-sidebar">
+    <!-- sidebar: style can be found in sidebar.less -->
+    <section class="sidebar">
+      <ul class="sidebar-menu">
+        <!--<li class="header">MAIN NAVIGATION</li>-->
+        <li><a href="#admin/case"><i class="fa fa-book"></i><span>Дела</span><i
+          class="fa fa-angle-left pull-right"></i></a></li>
+        <li><a href="#admin/archive"><i class="fa fa-archive"></i><span>Архив</span><i
+          class="fa fa-angle-left pull-right"></i></a></li>
+        <li><a href="#admin/file"><i class="fa fa-file-word-o"></i><span>Файлове</span><i
+          class="fa fa-angle-left pull-right"></i></a></li>
+        <li><a href="#admin/file/type"><i class="fa fa-files-o"></i><span>Типове файлове</span><i
+          class="fa fa-angle-left pull-right"></i></a></li>
+        <li><a href="#admin/court"><i class="fa fa-balance-scale"></i><span>Съдилища</span><i
+          class="fa fa-angle-left pull-right"></i></a></li>
+        <li><a href="#admin/calendar"><i class="fa fa-calendar"></i><span>Календар</span><i
+          class="fa fa-angle-left pull-right"></i></a></li>
+        <li><a href="#admin/history"><i class="fa fa-history"></i><span>История</span><i
+          class="fa fa-angle-left pull-right"></i></a></li>
+        <li><a href="#admin/profile"><i class="fa fa-user"></i><span>Профил</span><i
+          class="fa fa-angle-left pull-right"></i></a></li>
+      </ul>
+    </section>
+    <!-- /.sidebar -->
+  </aside>
+
+  <!-- Content Wrapper. Contains page content -->
+  <div class="content-wrapper">
+    <!-- Main content -->
+    <section class="content">
+      <div class="row">
+        <div class="col-xs-12 ng-view">
+        </div>
+      </div>
+    </section>
   </div>
-  <strong>Copyright &copy; 2014-2016 <a href="http://kataraga.com">Kataraga Studio</a>.</strong> All rights reserved.
-</footer>
+  <!-- /.content-wrapper -->
+
+  <footer class="main-footer">
+    <div class="pull-right hidden-xs"><b>Version</b> 1.0.3</div>
+    <strong>Copyright &copy; 2014-2016 <a href="http://kataraga.com">Kataraga Studio</a>.</strong> All rights reserved.
+  </footer>
 
 </div>
 
@@ -404,21 +193,6 @@
 <!-- Notifications -->
 <script src="node_modules/noty/js/noty/packaged/jquery.noty.packaged.js"></script>
 <script src="node_modules/ion-sound/js/ion.sound.min.js"></script>
-<!-- Histats.com  START (hidden counter)-->
-<script type="text/javascript">
-  document.write(unescape("%3Cscript src=%27http://s10.histats.com/js15.js%27 type=%27text/javascript%27%3E%3C/script%3E"));
-  try {
-    Histats.start(1, 3407093, 4, 0, 0, 0, "");
-    Histats.track_hits();
-  } catch (err) {
-  }
-  ;
-</script>
-<noscript>
-  <a href="http://www.histats.com" target="_blank">
-    <img src="http://sstatic1.histats.com/0.gif?3407093&101" alt="" border="0">
-  </a>
-</noscript>
-<!-- Histats.com  END  -->
+
 </body>
 </html>
