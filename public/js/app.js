@@ -2,8 +2,8 @@
 
 angular
   .module('app', ['ngRoute', 'auth0', 'angular-storage', 'angular-jwt'])
-  //.constant('baseUrl', 'http://nodejs-kataraga.rhcloud.com')
-  .constant('baseUrl', '')
+  .constant('baseUrl', 'http://nodejs-kataraga.rhcloud.com')
+  //.constant('baseUrl', '')
   .config(function ($httpProvider, $routeProvider, $provide, authProvider, jwtInterceptorProvider) {
 
     authProvider.init({
