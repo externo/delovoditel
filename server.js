@@ -21,11 +21,11 @@ var authCheck = jwt({
   secret: new Buffer('b9FK5q_1luMsQh3NExGd7Rk5bSBmBgKkiORIT2RgDzU4eIlJ1PVruI8eA0gVkw-Z', 'base64'),
   audience: 'wwcIqotTbjHGVVJ0Me1ZtrmB3NCRzII5'
 });
-app.use('/admin/case', authCheck);
+//app.use('/admin/case', authCheck);
 
 //app.use(express.static(__dirname + '/public'));
 app.use(function(req, res, next) {
-  res.setHeader("Access-Control-Allow-Origin", "http://delovoditel.gq");
+  res.setHeader("Access-Control-Allow-Origin", "*");
   res.setHeader("Access-Control-Allow-Headers", "Authorization, Origin, X-Requested-With, Content-Type, Accept, Key, filename, Metadata, header");
   res.setHeader("Access-Control-Allow-Methods", "GET, POST, PUT, DELETE, OPTIONS");
   next();

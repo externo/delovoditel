@@ -11,9 +11,22 @@
   "dependencies": {
     "angular": "^1.5.5",
     "angular-route": "^1.5.5",
+    "angular-sanitize": "^1.5.5",
+    "textangular": "^1.5.1",
     "docxtemplater": "^2.1.0",
     "font-awesome": "^4.6.1",
     "ion-sound": "^3.0.7",
-    "noty": "^2.3.8"
+    "noty": "^2.3.8",
+    "gulp": "^3.9.1",
+    "gulp-browserify": "^0.5.1",
+    "gulp-clean": "^0.3.2",
+    "gulp-concat": "^2.6.0",
+    "gulp-connect": "^4.0.0",
+    "gulp-htmlmin": "^2.0.0",
+    "gulp-jshint": "^2.0.1",
+    "gulp-minify-css": "^1.2.4",
+    "gulp-uglify": "^1.5.3",
+    "jshint": "^2.9.2",
+    "run-sequence": "^1.1.5"
   }
 }
