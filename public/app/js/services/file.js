@@ -1,10 +1,4 @@
-'use strict';
-
-angular
-  .module('app')
-  .factory('FileService', FileService);
-
-function FileService($http, baseUrl) {
+module.exports = function($http, baseUrl) {
 
   return {
     findAll: findAll,
@@ -26,4 +20,4 @@ function FileService($http, baseUrl) {
     $http.delete(baseUrl + '/admin/file/' + id)
       .success(callback);
   }
-}
+};

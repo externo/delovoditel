@@ -1,10 +1,4 @@
-'use strict';
-
-angular
-  .module('app')
-  .factory('CourtService', CourtService);
-
-function CourtService($http, baseUrl) {
+module.exports = function($http, baseUrl) {
 
   return {
     create: create,
@@ -26,4 +20,4 @@ function CourtService($http, baseUrl) {
     $http.get(baseUrl + '/admin/court')
       .success(callback);
   }
-}
+};

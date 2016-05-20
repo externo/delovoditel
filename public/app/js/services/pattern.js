@@ -1,10 +1,4 @@
-'use strict';
-
-angular
-  .module('app')
-  .factory('PatternService', PatternService);
-
-function PatternService() {
+module.exports = function() {
 
   return {
     generatePattern: generatePattern

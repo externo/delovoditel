@@ -1,10 +1,4 @@
-'use strict';
-
-angular
-  .module('app')
-  .factory('CaseService', CaseService);
-
-function CaseService($http, baseUrl) {
+module.exports = function($http, baseUrl) {
 
   return {
     findAll: findAll,
@@ -49,4 +43,4 @@ function CaseService($http, baseUrl) {
       .success(callback);
   }
 
-}
+};

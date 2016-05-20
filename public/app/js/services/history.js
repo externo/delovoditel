@@ -1,10 +1,4 @@
-'use strict';
-
-angular
-  .module('app')
-  .factory('HistoryService', HistoryService);
-
-function HistoryService($http, baseUrl) {
+module.exports = function($http, baseUrl) {
 
   return {
     create: create,

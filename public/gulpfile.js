@@ -26,18 +26,20 @@ gulp.task('clean', function() {
 gulp.task('minify-html', function() {
   gulp.src(['app/**/*.html', '!app/node_modules/**/*.*'])
     .pipe(minifyHTML({collapseWhitespace: true}))
+    //.pipe(gzip())
     .pipe(gulp.dest('dist'))
 });
 gulp.task('minify-css', function() {
   var opts = {comments:true,spare:true};
   gulp.src(['./app/assets/styles/*.css'])
-    .pipe(minifyCSS(opts))
     .pipe(concat('all.css'))
+    .pipe(minifyCSS(opts))
+    //.pipe(gzip())
     .pipe(gulp.dest('./dist/assets/styles'));
 });
 gulp.task('copy-assets', function () {
-  gulp.src(['./app/assets/**/*.*', '!./app/assets/styles/**/*.*'])
-    .pipe(gulp.dest('dist/assets'));
+  gulp.src(['./app/**/*.*', '!./app/states/**/*.html', '!./app/js/**/*.*'])
+    .pipe(gulp.dest('./dist'));
 });
 gulp.task('browserify-js', function() {
   gulp.src(['app/js/app.js'])
@@ -45,19 +47,26 @@ gulp.task('browserify-js', function() {
       insertGlobals: true,
       debug: true
     }))
+    .pipe(concat('bundled.js'))
+    .pipe(gulp.dest('./dist'));
+});
+gulp.task('minify-js', function() {
+  gulp.src(['app/node_modules/jquery/dist/jquery.js', 'app/bundled.js', 'app/js/lib/mobile-menu.js'])
+    .pipe(concat('all.js'))
     .pipe(uglify({
       // inSourceMap:
       // outSourceMap: "app.js.map"
     }))
-    .pipe(concat('bundled.js'))
-    .pipe(gulp.dest('./app'));
-});
-gulp.task('concat-js', function() {
-  gulp.src(['app/node_modules/jquery/dist/jquery.js', 'app/bundled.js', 'app/js/lib/mobile-menu.js'])
-    .pipe(concat('all.js'))
+    //.pipe(gzip())
     .pipe(gulp.dest('./dist/'));
 });
-gulp.task('connect', function () {
+gulp.task('connect-app', function () {
+  connect.server({
+    root: 'app/',
+    port: 9999
+  });
+});
+gulp.task('connect-dist', function () {
   connect.server({
     root: 'dist/',
     port: 9999
@@ -68,11 +77,11 @@ gulp.task('build', function() {
     [
       'clean',
       'minify-html',
-      'minify-css',
+      //'minify-css',
       'copy-assets',
       'browserify-js',
-      'concat-js',
-      'connect'
+      //'minify-js',
+      'connect-dist'
     ]
   );
 });

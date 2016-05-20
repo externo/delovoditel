@@ -1,10 +1,4 @@
-'use strict';
-
-angular
-  .module('app')
-  .factory('FileTypeService', FileTypeService);
-
-function FileTypeService($http, baseUrl) {
+module.exports = function($http, baseUrl) {
 
   return {
     create: create,

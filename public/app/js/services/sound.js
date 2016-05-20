@@ -1,10 +1,4 @@
-'use strict';
-
-angular
-  .module('app')
-  .factory('SoundService', SoundService);
-
-function SoundService() {
+module.exports = function() {
 
   var sounds = [
     {name: "metal_plate"},

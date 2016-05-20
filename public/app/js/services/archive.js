@@ -1,10 +1,4 @@
-'use strict';
-
-angular
-  .module('app')
-  .factory('ArchiveService', ArchiveService);
-
-function ArchiveService($http, baseUrl) {
+module.exports = function($http, baseUrl) {
 
   return {
     findAll: findAll,
@@ -33,4 +27,4 @@ function ArchiveService($http, baseUrl) {
       .success(callback);
   }
 
-}
+};

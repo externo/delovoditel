@@ -1,10 +1,4 @@
-'use strict';
-
-angular
-  .module('app')
-  .factory('NotyService', NotyService);
-
-function NotyService(CaseService, HistoryService) {
+module.exports = function(CaseService, HistoryService) {
 
   var time = 4000;
   var layout = 'topCenter';
