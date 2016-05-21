@@ -221,7 +221,9 @@ module.exports = function(CaseService, CourtService, FileTypeService, FileServic
       + ' на ' + Case.currentCase.client.name;
 
     var courts = Case.courts;
-    var court = courts.find(x=> x.name == Case.currentCase.info.court);
+    var court = courts.find(function (court) {
+      return court.name == Case.currentCase.info.court;
+    });
     PatternService.generatePattern(Case.patternType, court, Case.currentCase, Case.profile);
 
     NotyService.success(msg);

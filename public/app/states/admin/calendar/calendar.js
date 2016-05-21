@@ -1,19 +1,21 @@
-module.exports = function($http, CaseService, NotyService, HistoryService) {
+module.exports = function ($http, CaseService, NotyService, HistoryService) {
   var Calendar = this;
 
   Calendar.current = null;
   Calendar.events = [];
 
   CaseService.findAll(function (response) {
-    response.forEach(c=>(Calendar.events.push({
-      editable: true,
-      startEditable: true,
-      durationEditable: false,
-      allDay: false,
-      title: '\n' + c.client.name,
-      start: c.info.datetime,
-      _id: c._id
-    })));
+    response.forEach(function (c) {
+      Calendar.events.push({
+        editable: true,
+        startEditable: true,
+        durationEditable: false,
+        allDay: false,
+        title: '\n' + c.client.name,
+        start: c.info.datetime,
+        _id: c._id
+      });
+    });
 
     $('#calendar').fullCalendar({
       timezone: 'local',

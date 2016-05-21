@@ -1,64 +1,83 @@
-// gulp
 var gulp = require('gulp');
-
-// plugins
+var plumber = require('gulp-plumber');
 var connect = require('gulp-connect');
 var jshint = require('gulp-jshint');
-var uglify = require('gulp-uglify');
-var minifyCSS = require('gulp-minify-css');
+var uglify = require('gulp-uglifyjs');
+var cleanCSS = require('gulp-clean-css');
 var minifyHTML = require('gulp-htmlmin');
 var clean = require('gulp-clean');
 var browserify = require('gulp-browserify');
 var concat = require('gulp-concat');
 var runSequence = require('run-sequence');
 
-// tasks
-gulp.task('lint', function() {
+gulp.task('lint', function () {
   gulp.src(['./app/js/lib/*.js', '!./app/bower_components/**'])
     .pipe(jshint())
     .pipe(jshint.reporter('default'))
     .pipe(jshint.reporter('fail'));
 });
-gulp.task('clean', function() {
-  gulp.src('dist', {read: false})
+gulp.task('clean', function () {
+  gulp.src(['dist'], {read: false})
     .pipe(clean());
 });
-gulp.task('minify-html', function() {
-  gulp.src(['app/**/*.html', '!app/node_modules/**/*.*'])
+gulp.task('minify-css', function() {
+  gulp.src('app/assets/style.css')
+    .pipe(plumber())
+    .pipe(cleanCSS())
+    .pipe(concat('style.min.css'))
+    .pipe(gulp.dest('dist/assets'));
+});
+gulp.task('minify-html', function () {
+  gulp.src(['app/**/*.html', '!./app/node_modules/**/*.*'])
     .pipe(minifyHTML({collapseWhitespace: true}))
-    //.pipe(gzip())
     .pipe(gulp.dest('dist'))
 });
-gulp.task('minify-css', function() {
-  var opts = {comments:true,spare:true};
-  gulp.src(['./app/assets/styles/*.css'])
-    .pipe(concat('all.css'))
-    .pipe(minifyCSS(opts))
-    //.pipe(gzip())
-    .pipe(gulp.dest('./dist/assets/styles'));
+gulp.task('copy-fonts', function () {
+  gulp.src(['./app/assets/fonts/*.*', '!./app/assets/fonts/*.css'])
+    .pipe(gulp.dest('./dist/assets/fonts'));
 });
-gulp.task('copy-assets', function () {
-  gulp.src(['./app/**/*.*', '!./app/states/**/*.html', '!./app/js/**/*.*'])
-    .pipe(gulp.dest('./dist'));
+gulp.task('copy-sounds', function () {
+  gulp.src(['./app/assets/sounds/*.*'])
+    .pipe(gulp.dest('./dist/assets/sounds'));
 });
-gulp.task('browserify-js', function() {
+gulp.task('copy-patterns', function () {
+  gulp.src(['./app/patterns/**/*.*'])
+    .pipe(gulp.dest('./dist/patterns'));
+});
+gulp.task('copy-node_modules', function () {
+  gulp.src(['./app/node_modules/**/*.*'])
+    .pipe(gulp.dest('./dist/node_modules'));
+});
+gulp.task('browserify-js', function () {
   gulp.src(['app/js/app.js'])
     .pipe(browserify({
       insertGlobals: true,
       debug: true
     }))
     .pipe(concat('bundled.js'))
-    .pipe(gulp.dest('./dist'));
+    .pipe(gulp.dest('./app'));
 });
-gulp.task('minify-js', function() {
-  gulp.src(['app/node_modules/jquery/dist/jquery.js', 'app/bundled.js', 'app/js/lib/mobile-menu.js'])
-    .pipe(concat('all.js'))
-    .pipe(uglify({
-      // inSourceMap:
-      // outSourceMap: "app.js.map"
-    }))
-    //.pipe(gzip())
-    .pipe(gulp.dest('./dist/'));
+gulp.task('concat-js', function () {
+  gulp.src([
+    'app/node_modules/jquery/jquery-2.2.3.js',
+    'app/assets/bootstrap/js/bootstrap.js',
+    'app/assets/dist/js/app.js',
+    'app/bundled.js',
+    'app/assets/plugins/moment.min.js',
+    'app/assets/plugins/daterange/daterangepicker.js',
+    'app/assets/plugins/calendar/fullcalendar.js',
+    'app/node_modules/docxtemplater/build/docxgen.js',
+    'app/node_modules/docxtemplater/build/angular-expressions.js',
+    'app/node_modules/docxtemplater/vendor/jszip-utils.js',
+    'app/node_modules/docxtemplater/vendor/FileSaver.min.js',
+    'app/node_modules/ion-sound/js/ion.sound.min.js',
+    'app/assets/lock.min.js',
+    'app/node_modules/noty/js/noty/packaged/jquery.noty.packaged.js',
+  ])
+    .pipe(plumber())
+    .pipe(concat('all.min.js'))
+    .pipe(uglify( { } ))
+    .pipe(gulp.dest('./dist'));
 });
 gulp.task('connect-app', function () {
   connect.server({
@@ -72,15 +91,17 @@ gulp.task('connect-dist', function () {
     port: 9999
   });
 });
-gulp.task('build', function() {
+gulp.task('build', function () {
   runSequence(
     [
       'clean',
+      'copy-fonts',
+      'copy-sounds',
+      'copy-patterns',
+      'minify-css',
       'minify-html',
-      //'minify-css',
-      'copy-assets',
       'browserify-js',
-      //'minify-js',
+      'concat-js',
       'connect-dist'
     ]
   );

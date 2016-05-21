@@ -22,14 +22,16 @@ module.exports = function() {
   function start() {
     ion.sound({
       sounds: sounds,
-      path: "node_modules/ion-sound/sounds/",
+      path: "assets/sounds/",
       preload: true,
       volume: 1.0
     });
   }
 
   function stop() {
-    sounds.forEach(sound=>ion.sound.destroy(sound.name));
+    sounds.forEach(function (sound) {
+      ion.sound.destroy(sound.name);
+    });
   }
 
   function archive() {
