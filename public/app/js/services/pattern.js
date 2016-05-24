@@ -117,15 +117,16 @@ module.exports = function() {
         break;
     }
 
-    var patternName = patternType + ".docx"; // output file name
+    var patternName = patternType + ".docx"; // search file name
     var patternUrl = "patterns/" + patternName; // pick the corresponded file
+    var outputName = patternType + '_' + moment(new Date).format('dd-mm-yyyy') + ".docx"; // output file name
 
     JSZipUtils.getBinaryContent(patternUrl, function (err, content) {
       var doc = new Docxgen(content);
       doc.setData(data); //set the templateVariables
       doc.render(); //apply them (replace all occurences...)
       var out = doc.getZip().generate({type: "blob"}); //Output the document using Data-URI
-      saveAs(out, patternName + moment(new Date).format('dd.mm.yyyy'));
+      saveAs(out, outputName);
     });
   }
 };

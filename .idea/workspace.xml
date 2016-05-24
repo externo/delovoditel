@@ -104,8 +104,8 @@
       <file leaf-file-name="pattern.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/public/app/js/services/pattern.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.7886598" vertical-offset="408" max-vertical-offset="1020">
-              <caret line="127" column="69" selection-start-line="127" selection-start-column="69" selection-end-line="127" selection-end-column="69" />
+            <state vertical-scroll-proportion="0.61340207" vertical-offset="408" max-vertical-offset="1037">
+              <caret line="121" column="39" selection-start-line="121" selection-start-column="39" selection-end-line="121" selection-end-column="39" />
               <folding>
                 <element signature="e#242#2224#0" expanded="false" />
                 <element signature="e#2285#2833#0" expanded="false" />
@@ -853,8 +853,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/public/app/js/services/pattern.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.7886598" vertical-offset="408" max-vertical-offset="1020">
-          <caret line="127" column="69" selection-start-line="127" selection-start-column="69" selection-end-line="127" selection-end-column="69" />
+        <state vertical-scroll-proportion="0.61340207" vertical-offset="408" max-vertical-offset="1037">
+          <caret line="121" column="39" selection-start-line="121" selection-start-column="39" selection-end-line="121" selection-end-column="39" />
           <folding>
             <element signature="e#242#2224#0" expanded="false" />
             <element signature="e#2285#2833#0" expanded="false" />
