@@ -116,7 +116,7 @@ module.exports = function() {
         break;
     }
 
-    var patternName = patternType + ".docx"; // output file name
+    var patternName = patternType + moment(new Date).format('dd.mm.yyyy') + ".docx"; // output file name
     var patternUrl = "patterns/" + patternName; // pick the corresponded file
 
     JSZipUtils.getBinaryContent(patternUrl, function (err, content) {
@@ -127,4 +127,4 @@ module.exports = function() {
       saveAs(out, patternName);
     });
   }
-}
+};
