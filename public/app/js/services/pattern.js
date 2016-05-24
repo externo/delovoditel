@@ -5,6 +5,7 @@ module.exports = function() {
   };
 
   function generatePattern(patternType, court, currentCase, profile) {
+
     var data;
 
     switch (patternType) {
@@ -116,7 +117,7 @@ module.exports = function() {
         break;
     }
 
-    var patternName = patternType + moment(new Date).format('dd.mm.yyyy') + ".docx"; // output file name
+    var patternName = patternType + ".docx"; // output file name
     var patternUrl = "patterns/" + patternName; // pick the corresponded file
 
     JSZipUtils.getBinaryContent(patternUrl, function (err, content) {
@@ -124,7 +125,7 @@ module.exports = function() {
       doc.setData(data); //set the templateVariables
       doc.render(); //apply them (replace all occurences...)
       var out = doc.getZip().generate({type: "blob"}); //Output the document using Data-URI
-      saveAs(out, patternName);
+      saveAs(out, patternName + moment(new Date).format('dd.mm.yyyy'));
     });
   }
 };

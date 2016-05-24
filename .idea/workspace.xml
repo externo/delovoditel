@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="049e9152-c971-46cc-ac3f-2f62a80821dc" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server.js" afterPath="$PROJECT_DIR$/server.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/app/js/services/pattern.js" afterPath="$PROJECT_DIR$/public/app/js/services/pattern.js" />
     </list>
     <ignored path="nodejs.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -91,12 +91,33 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="server.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="server.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/server.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.80667835" vertical-offset="0" max-vertical-offset="1173">
+            <state vertical-scroll-proportion="-18.36" vertical-offset="0" max-vertical-offset="1173">
               <caret line="27" column="78" selection-start-line="27" selection-start-column="78" selection-end-line="27" selection-end-column="78" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="pattern.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/public/app/js/services/pattern.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.7886598" vertical-offset="408" max-vertical-offset="1020">
+              <caret line="127" column="69" selection-start-line="127" selection-start-column="69" selection-end-line="127" selection-end-column="69" />
+              <folding>
+                <element signature="e#242#2224#0" expanded="false" />
+                <element signature="e#2285#2833#0" expanded="false" />
+                <element signature="e#2896#3444#0" expanded="false" />
+                <element signature="e#3507#4361#0" expanded="false" />
+                <element signature="e#4416#5270#0" expanded="false" />
+                <element signature="e#5334#6268#0" expanded="false" />
+                <element signature="e#6336#7190#0" expanded="false" />
+                <element signature="e#7257#7739#0" expanded="false" />
+                <element signature="e#7801#8426#0" expanded="false" />
+                <element signature="e#8496#9394#0" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -158,7 +179,6 @@
         <option value="$PROJECT_DIR$/public/app/states/admin/case/case.js" />
         <option value="$PROJECT_DIR$/public/app/states/admin/calendar/calendar.js" />
         <option value="$PROJECT_DIR$/public/app/assets/style.css" />
-        <option value="$PROJECT_DIR$/public/app/js/services/pattern.js" />
         <option value="$PROJECT_DIR$/public/app/index.html" />
         <option value="$PROJECT_DIR$/public/package.json" />
         <option value="$PROJECT_DIR$/public/app/js/services/sound.js" />
@@ -166,6 +186,7 @@
         <option value="$PROJECT_DIR$/public/gulpfile.js" />
         <option value="$PROJECT_DIR$/public/node_modules/auth0/index.js" />
         <option value="$PROJECT_DIR$/server.js" />
+        <option value="$PROJECT_DIR$/public/app/js/services/pattern.js" />
       </list>
     </option>
   </component>
@@ -248,7 +269,51 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="dist" />
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="nodejs" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="nodejs" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="public" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="patterns" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="nodejs" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="nodejs" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="public" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="js" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -676,13 +741,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/app/js/services/pattern.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-12.2" vertical-offset="1701" max-vertical-offset="2295">
-          <caret line="118" column="71" selection-start-line="118" selection-start-column="71" selection-end-line="118" selection-end-column="71" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/app/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.7521515" vertical-offset="1909" max-vertical-offset="2516">
@@ -787,9 +845,28 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/server.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.80667835" vertical-offset="0" max-vertical-offset="1173">
+        <state vertical-scroll-proportion="-18.36" vertical-offset="0" max-vertical-offset="1173">
           <caret line="27" column="78" selection-start-line="27" selection-start-column="78" selection-end-line="27" selection-end-column="78" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/app/js/services/pattern.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.7886598" vertical-offset="408" max-vertical-offset="1020">
+          <caret line="127" column="69" selection-start-line="127" selection-start-column="69" selection-end-line="127" selection-end-column="69" />
+          <folding>
+            <element signature="e#242#2224#0" expanded="false" />
+            <element signature="e#2285#2833#0" expanded="false" />
+            <element signature="e#2896#3444#0" expanded="false" />
+            <element signature="e#3507#4361#0" expanded="false" />
+            <element signature="e#4416#5270#0" expanded="false" />
+            <element signature="e#5334#6268#0" expanded="false" />
+            <element signature="e#6336#7190#0" expanded="false" />
+            <element signature="e#7257#7739#0" expanded="false" />
+            <element signature="e#7801#8426#0" expanded="false" />
+            <element signature="e#8496#9394#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
