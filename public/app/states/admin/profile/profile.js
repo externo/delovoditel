@@ -4,7 +4,7 @@ module.exports = function(baseUrl, ProfileService) {
 
   Profile.baseUrl = baseUrl;
 
-  ProfileService.find('', function (res) {
+  ProfileService.find('57474ec5256c63ac84466394', function (res) {
     Profile.currentProfile = res;
   });
 
