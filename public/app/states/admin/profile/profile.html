@@ -3,15 +3,15 @@
   <!-- Profile Image -->
   <div class="box box-primary">
     <div class="box-body box-profile">
-      <img class="profile-user-img img-responsive img-circle" ng-src="{{Profile.profile.picture}}"
+      <img class="profile-user-img img-responsive img-circle" ng-src="{{Profile.currentProfile.picture}}"
            alt="User profile picture">
 
-      <h3 class="profile-username text-center">{{Profile.profile.name}}</h3>
+      <h3 class="profile-username text-center">{{Profile.currentProfile.name}}</h3>
 
-      <p class="text-muted text-center">{{Profile.profile.email}}</p>
+      <p class="text-muted text-center">{{Profile.currentProfile.email}}</p>
 
       <ul class="list-group list-group-unbordered">
-        <li class="list-group-item text-center" ng-repeat="identity in Profile.profile.identities">
+        <li class="list-group-item text-center" ng-repeat="identity in Profile.currentProfile.identities">
           <b>{{identity.provider}}</b>
         </li>
       </ul>
@@ -36,40 +36,40 @@
               <div class="input-group">
                 <div class="input-group-addon"><i class="fa fa-user"></i></div>
                 <input type="text" class="form-control" placeholder="Име на клиента/ дружеството/ организацията"
-                       ng-model="Profile.profile.user_metadata.name" name="name" required>
+                       ng-model="Profile.currentProfile.user_metadata.name" name="name" required>
               </div>
               <div class="col-md-6">
                 <div class="input-group">
                   <div class="input-group-addon"><i class="fa fa-server"></i></div>
                   <input type="text" class="form-control" placeholder="ЕГН/ ЛНЧ/ ЕИК/ Код по БУЛСТАТ"
-                         ng-model="Profile.profile.user_metadata.number">
+                         ng-model="Profile.currentProfile.user_metadata.number">
                 </div>
               </div>
               <div class="col-md-6">
                 <div class="input-group">
                   <div class="input-group-addon"><i class="fa fa-envelope-o"></i></div>
                   <input type="text" class="form-control" placeholder="my@mail.bg"
-                         ng-model="Profile.profile.user_metadata.email">
+                         ng-model="Profile.currentProfile.user_metadata.email">
                 </div>
               </div>
               <div class="col-md-6">
                 <div class="input-group">
                   <div class="input-group-addon"><i class="fa fa-phone"></i></div>
                   <input type="text" class="form-control" placeholder="Телефон"
-                         ng-model="Profile.profile.user_metadata.phone">
+                         ng-model="Profile.currentProfile.user_metadata.phone">
                 </div>
               </div>
               <div class="col-md-6">
                 <div class="input-group">
                   <div class="input-group-addon"><i class="fa fa-fax"></i></div>
                   <input type="text" class="form-control" placeholder="Факс"
-                         ng-model="Profile.profile.user_metadata.fax">
+                         ng-model="Profile.currentProfile.user_metadata.fax">
                 </div>
               </div>
               <div class="input-group">
                 <div class="input-group-addon"><i class="fa fa-home"></i></div>
                 <input type="text" class="form-control" placeholder="Адрес"
-                       ng-model="Profile.profile.user_metadata.address" name="address" required>
+                       ng-model="Profile.currentProfile.user_metadata.address" name="address" required>
               </div>
             </div>
             </form>
