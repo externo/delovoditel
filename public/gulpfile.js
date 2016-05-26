@@ -95,12 +95,12 @@ gulp.task('build', function () {
   runSequence(
     [
       'clean',
+      'browserify-js',
       'copy-fonts',
       'copy-sounds',
       'copy-patterns',
       'minify-css',
       'minify-html',
-      'browserify-js',
       'concat-js',
       'connect-dist'
     ]

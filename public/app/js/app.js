@@ -9,6 +9,7 @@
   require('angular-jwt');
 
   // Load services
+  var profileSrvc = require('./services/profile');
   var courtSrvc = require('./services/court');
   var caseSrvc = require('./services/case');
   var archiveSrvc = require('./services/archive');
@@ -138,6 +139,7 @@
     .factory('FileService', ['$http', 'baseUrl', fileSrvc])
     .factory('FileTypeService', ['$http', 'baseUrl', filetypeSrvc])
     .factory('PatternService', [patternSrvc])
+    .factory('ProfileService', [profileSrvc])
     .factory('HistoryService', ['$http', 'baseUrl', historySrvc])
     .factory('NotyService', ['CaseService', 'HistoryService', notySrvc])
     .factory('SoundService', [soundSrvc])
@@ -146,7 +148,7 @@
     .directive('datetimePicker', [datetimePickerDrctv])
     .directive('validFile', [validFileDrctv])
     .controller('AdminController', ['$http', '$location', 'auth', 'store', 'SoundService', 'NotyService', 'HistoryService', adminCtrl])
-    .controller('ProfileController', ['$http', 'store', profileCtrl])
+    .controller('ProfileController', ['baseUrl', 'ProfileService', profileCtrl])
     .controller('CourtController', ['CourtService', 'NotyService', courtCtrl])
     .controller('CaseController', ['CaseService', 'CourtService', 'FileTypeService', 'FileService', 'PatternService', 'NotyService', 'SoundService', 'HistoryService', caseCtrl])
     .controller('ArchiveController', ['$http', 'ArchiveService', 'CourtService', 'NotyService', 'SoundService', 'HistoryService', archiveCtrl])

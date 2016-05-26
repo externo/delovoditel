@@ -23,9 +23,9 @@ var authCheck = jwt({
 });
 //app.use('/admin/case', authCheck);
 
-//app.use(express.static(__dirname + '/public'));
 app.use(function(req, res, next) {
   res.setHeader("Access-Control-Allow-Origin", "http://admin-dela.kataraga.com");
+  //res.setHeader("Access-Control-Allow-Origin", "*");
   res.setHeader("Access-Control-Allow-Headers", "Authorization, Origin, X-Requested-With, Content-Type, Accept, Key, filename, Metadata, header");
   res.setHeader("Access-Control-Allow-Methods", "GET, POST, PUT, DELETE, OPTIONS");
   next();
@@ -50,6 +50,7 @@ MongoClient.connect(connectionUrl, function (err, database) {
   require('./routes/court')(app, mongo, db);
   require('./routes/fileType')(app, mongo, db);
   require('./routes/file')(app, mongo, gfs, busboy);
+  require('./routes/profile')(app, mongo, db);
   require('./routes/history')(app, db);
 
 });
