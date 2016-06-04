@@ -22,6 +22,7 @@ var authCheck = jwt({
   audience: 'wwcIqotTbjHGVVJ0Me1ZtrmB3NCRzII5'
 });
 //app.use('/admin/case', authCheck);
+//app.use('/admin', authCheck);
 
 app.use(function(req, res, next) {
   //res.setHeader("Access-Control-Allow-Origin", "http://admin-dela.kataraga.com");
