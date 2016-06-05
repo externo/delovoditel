@@ -30,7 +30,7 @@ module.exports = function (app, mongo, db) {
           name: req.body.name,
           phone: req.body.phone,
           email: req.body.email,
-          address: req.body.address
+          fax: req.body.fax
         }
       },
       function (err, doc) {
