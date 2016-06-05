@@ -1,4 +1,4 @@
-module.exports = function(CaseService, CourtService, FileTypeService, FileService, PatternService, NotyService, SoundService, HistoryService) {
+module.exports = function(ProfileService, CaseService, CourtService, FileTypeService, FileService, PatternService, NotyService, SoundService, HistoryService) {
 
   var Case = this;
 
@@ -10,13 +10,9 @@ module.exports = function(CaseService, CourtService, FileTypeService, FileServic
   Case.fileType = null;         // temp variable for storing new-file-type before add to case
   Case.patternType = null;      // temp variable for storing pattern-type before generating it
 
-  Case.profile = {
-    name: "Pitagor Pontiiski",
-    phone: '345345',
-    fax: '#!@$!#@',
-    email: "drevna@greece.eu"
-  };
-  // TODO: above code to be removed in admin Ctrl or in app.js
+  ProfileService.find('57474ec5256c63ac84466394', function (res) {
+    Case.profile = res;
+  });
 
   function formatDate(date) {
 

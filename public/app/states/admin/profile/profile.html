@@ -32,11 +32,13 @@
           <div class="user-block">
             <form name="formEditProfile">
               <div class="col-md-12 separate">
-                <label>Данните са необходими за генериране на бланки в делата</label>
-                <div class="input-group">
-                  <div class="input-group-addon"><i class="fa fa-user"></i></div>
-                  <input type="text" class="form-control" placeholder="Вашето име"
-                         ng-model="Profile.currentProfile.name" name="name" required>
+                <label>Данните са необходими за генериране на някои от бланките в делата</label>
+                <div class="col-md-6">
+                  <div class="input-group">
+                    <div class="input-group-addon"><i class="fa fa-user"></i></div>
+                    <input type="text" class="form-control" placeholder="Вашето име"
+                           ng-model="Profile.currentProfile.name" name="name" required>
+                  </div>
                 </div>
                 <div class="col-md-6">
                   <div class="input-group">
@@ -52,10 +54,12 @@
                            ng-model="Profile.currentProfile.phone" name="phone" required>
                   </div>
                 </div>
-                <div class="input-group">
-                  <div class="input-group-addon"><i class="fa fa-home"></i></div>
-                  <input type="text" class="form-control" placeholder="Вашият адрес"
-                         ng-model="Profile.currentProfile.address" name="address" required>
+                <div class="col-md-6">
+                  <div class="input-group">
+                    <div class="input-group-addon"><i class="fa fa-fax"></i></div>
+                    <input type="text" class="form-control" placeholder="Вашият факс"
+                           ng-model="Profile.currentProfile.fax" name="fax" required>
+                  </div>
                 </div>
               </div>
             </form>
@@ -63,12 +67,16 @@
               <label class="text-red" ng-show="formEditProfile.name.$error.required
                                                 || formEditProfile.email.$error.required
                                                 || formEditProfile.phone.$error.required
-                                                || formEditProfile.address.$error.required">
+                                                || formEditProfile.fax.$error.required">
                 <i class="fa fa-warning"></i> Всички полета са задължителни</label>
 
               <div class="btn-group pull-right">
                 <button type="button" class="btn btn-warning" ng-click="Profile.editProfile()"
-                        ng-disabled="formEditProfile.name.$error.required || formEditProfile.address.$error.required || !formEditProfile.$dirty">
+                        ng-disabled="formEditProfile.name.$error.required
+                                      || formEditProfile.email.$error.required
+                                      || formEditProfile.phone.$error.required
+                                      || formEditProfile.fax.$error.required
+                                      || !formEditProfile.$dirty">
                   Запази</button>
               </div>
             </div>
