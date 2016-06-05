@@ -148,7 +148,7 @@
     .directive('datetimePicker', [datetimePickerDrctv])
     .directive('validFile', [validFileDrctv])
     .controller('AdminController', ['$http', '$location', 'auth', 'store', 'SoundService', 'NotyService', 'HistoryService', adminCtrl])
-    .controller('ProfileController', ['baseUrl', 'ProfileService', profileCtrl])
+    .controller('ProfileController', ['baseUrl', 'ProfileService', 'FileService', 'NotyService', 'SoundService', 'HistoryService', profileCtrl])
     .controller('CourtController', ['CourtService', 'NotyService', courtCtrl])
     .controller('CaseController', ['CaseService', 'CourtService', 'FileTypeService', 'FileService', 'PatternService', 'NotyService', 'SoundService', 'HistoryService', caseCtrl])
     .controller('ArchiveController', ['$http', 'ArchiveService', 'CourtService', 'NotyService', 'SoundService', 'HistoryService', archiveCtrl])

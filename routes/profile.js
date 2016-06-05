@@ -17,22 +17,20 @@ module.exports = function (app, mongo, db) {
   });
 
   app.post('/admin/user', function (req, res) {
-    db.collection('users').insertOne( req.body);
+    db.collection('users').insertOne(req.body);
     res.end();
   });
 
   app.put('/admin/user/:id', function (req, res) {
-    var articleId = new mongo.ObjectID(req.params.id);
+    var profileId = new mongo.ObjectID(req.params.id);
     db.collection('users').updateOne(
-      {"_id": articleId},
+      {"_id": profileId},
       {
         $set: {
           name: req.body.name,
-          address: req.body.address,
-          image: req.body.image,
           phone: req.body.phone,
           email: req.body.email,
-          presentation: req.body.presentation
+          address: req.body.address
         }
       },
       function (err, doc) {
