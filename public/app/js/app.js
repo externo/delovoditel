@@ -44,7 +44,7 @@
       'angular-storage',
       'angular-jwt'
     ])
-    .constant('baseUrl', 'http://nodejs-kataraga.rhcloud.com')
+    .constant('baseUrl', 'http://37.247.116.78:27017')
     //.constant('baseUrl', '')
     .config([
       '$httpProvider',
