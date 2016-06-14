@@ -1,7 +1,8 @@
-module.exports = function(ProfileService, CaseService, CourtService, FileTypeService, FileService, PatternService, NotyService, SoundService, HistoryService) {
+module.exports = function(baseUrl, ProfileService, CaseService, CourtService, FileTypeService, FileService, PatternService, NotyService, SoundService, HistoryService) {
 
   var Case = this;
 
+  Case.baseUrl = baseUrl;
   Case.currentCase = null;      // temp variable for edit selected case
   Case.newCase = null;          // temp variable for add new case
   Case.openForm = false;        // help variable for toggle open/close for add-new-case form
@@ -245,4 +246,4 @@ module.exports = function(ProfileService, CaseService, CourtService, FileTypeSer
     Case.fileTypes = response;
   });
 
-}
+};

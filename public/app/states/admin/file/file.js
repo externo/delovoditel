@@ -1,6 +1,8 @@
-module.exports = function(FileService, FileTypeService, CourtService, NotyService) {
+module.exports = function(baseUrl, FileService, FileTypeService, CourtService, NotyService) {
 
   var File = this;
+
+  File.baseUrl = baseUrl;
 
   FileService.findAll(function (response) {
     var filesLength = response.length;

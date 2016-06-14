@@ -1,5 +1,5 @@
-var ip = process.env.OPENSHIFT_NODEJS_IP || 'localhost';
-var port = process.env.OPENSHIFT_NODEJS_PORT || 3000;
+var ip = '37.247.116.78' || 'localhost';
+var port = 27017 || 3000;
 
 var busboy = require('busboy');
 var express = require('express');
@@ -34,8 +34,8 @@ app.use(function(req, res, next) {
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended: true}));
 
-var mongoUrl = process.env.OPENSHIFT_MONGODB_DB_URL;
-var connectionUrl = mongoUrl || 'mongodb://localhost/test';
+//var mongoUrl = process.env.OPENSHIFT_MONGODB_DB_URL;
+var connectionUrl = 'mongodb://127.0.0.1:27017/delovoditel';
 
 // Initialize connection once
 MongoClient.connect(connectionUrl, function (err, database) {

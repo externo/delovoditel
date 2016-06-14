@@ -150,9 +150,9 @@
     .controller('AdminController', ['$http', '$location', 'auth', 'store', 'SoundService', 'NotyService', 'HistoryService', adminCtrl])
     .controller('ProfileController', ['baseUrl', 'ProfileService', 'FileService', 'NotyService', 'SoundService', 'HistoryService', profileCtrl])
     .controller('CourtController', ['CourtService', 'NotyService', courtCtrl])
-    .controller('CaseController', ['ProfileService', 'CaseService', 'CourtService', 'FileTypeService', 'FileService', 'PatternService', 'NotyService', 'SoundService', 'HistoryService', caseCtrl])
+    .controller('CaseController', ['baseUrl', 'ProfileService', 'CaseService', 'CourtService', 'FileTypeService', 'FileService', 'PatternService', 'NotyService', 'SoundService', 'HistoryService', caseCtrl])
     .controller('ArchiveController', ['$http', 'ArchiveService', 'CourtService', 'NotyService', 'SoundService', 'HistoryService', archiveCtrl])
-    .controller('FileController', ['FileService', 'FileTypeService', 'CourtService', 'NotyService', fileCtrl])
+    .controller('FileController', ['baseUrl', 'FileService', 'FileTypeService', 'CourtService', 'NotyService', fileCtrl])
     .controller('FileTypeController', ['FileTypeService', 'NotyService', filetypeCtrl])
     .controller('CalendarController', ['$http', 'CaseService', 'NotyService', 'HistoryService', calendarCtrl])
     .controller('HistoryController', ['HistoryService', historyCtrl]);

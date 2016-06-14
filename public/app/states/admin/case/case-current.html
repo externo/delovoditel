@@ -170,7 +170,7 @@
     <label ng-if="Case.currentCase.files.length>0">Сканирани документи към делото</label>
     <tbody>
     <tr ng-repeat="file in Case.currentCase.files">
-      <td><a href="http://nodejs-kataraga.rhcloud.com/admin/file/{{file.id}}">{{file.name}}</a></td>
+      <td><a href="http://37.247.116.78:27017/admin/file/{{file.id}}">{{file.name}}</a></td>
       <td>{{file.type}}</td>
       <td>
         <button class="btn btn-danger pull-right" ng-click="Case.removeFile(file)">
