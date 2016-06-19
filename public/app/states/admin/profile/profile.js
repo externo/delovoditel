@@ -44,7 +44,7 @@ module.exports = function(baseUrl, ProfileService, FileService, NotyService, Sou
 
   };
 
-  ProfileService.find('575ff26efa2bdcb4ff0097b5', function (res) {
+  ProfileService.find('57474ec5256c63ac84466394', function (res) {
     Profile.currentProfile = res;
   });
 

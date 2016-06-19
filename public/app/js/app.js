@@ -44,7 +44,7 @@
       'angular-storage',
       'angular-jwt'
     ])
-    .constant('baseUrl', 'http://37.247.116.78:27017')
+    .constant('baseUrl', 'http://dela.kataraga.com')
     //.constant('baseUrl', '')
     .config([
       '$httpProvider',

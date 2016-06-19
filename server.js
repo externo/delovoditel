@@ -1,5 +1,5 @@
-var ip = '37.247.116.78' || 'localhost';
-var port = 27017 || 3000;
+var ip = 'localhost';
+var port = 3000;
 
 var busboy = require('busboy');
 var express = require('express');
